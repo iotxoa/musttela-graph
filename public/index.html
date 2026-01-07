@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Musttela - Grafo de Conocimiento</title>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; overflow: hidden; background: #000011; color: white; }
+        
+        #graph-container { width: 100vw; height: 100vh; }
+        
+        /* Panel lateral de información */
+        #info-panel {
+            position: absolute; top: 20px; right: 20px; width: 350px;
+            background: rgba(10, 10, 20, 0.9); border: 1px solid #334455;
+            padding: 20px; border-radius: 12px; backdrop-filter: blur(10px);
+            display: none; max-height: 85vh; overflow-y: auto;
+            box-shadow: 0 0 30px rgba(0,0,0,0.8);
+            transition: opacity 0.3s; z-index: 100;
+        }
+        
+        /* Tipografía y estilos del panel */
+        h2 { font-size: 1.3rem; margin-top: 0; color: #44aaff; text-shadow: 0 0 10px rgba(68,170,255,0.3); }
+        .meta { font-size: 0.8rem; color: #8899aa; margin-bottom: 15px; border-bottom: 1px solid #334455; padding-bottom: 10px; }
+        .abstract { font-size: 0.95rem; line-height: 1.6; color: #ddeeff; margin: 15px 0; text-align: justify; }
+        
+        /* Botón de leer */
+        .btn { 
+            display: block; width: 100%; text-align: center;
+            background: linear-gradient(90deg, #0066ff, #00ccff); 
+            color: white; text-decoration: none; padding: 12px 0; 
+            border-radius: 6px; font-weight: bold; margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0,100,255,0.4);
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: scale(1.02); }
+        .close-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; color: #556677; cursor: pointer; font-size: 1.2rem; }
+        .close-btn:hover { color: white; }
+
+        /* Etiqueta flotante */
+        .scene-tooltip { color: #ccddff !important; background: rgba(0,0,10,0.8) !important; border-radius: 4px; padding: 6px !important; }
+    </style>
+    
+    <script src="//unpkg.com/3d-force-graph"></script>
+</head>
+<body>
+
+    <div id="graph-container"></div>
+
+    <div id="info-panel">
+        <button class="close-btn" onclick="document.getElementById('info-panel').style.display='none'">&times;</button>
+        <h2 id="p-title">Título del Paper</h2>
+        <div class="meta" id="p-meta"></div>
+        <div class="abstract" id="p-abstract"></div>
+        <a href="#" target="_blank" class="btn" id="p-link">📄 Leer PDF Original</a>
+    </div>
+
+    <script>
+        // Configuración visual
+        const elem = document.getElementById('graph-container');
+        
+        const Graph = ForceGraph3D()
+            (elem)
+            .jsonUrl('./graph_data.json') // Carga tu archivo JSON
+            
+            // --- Estilo de Nodos ---
+            .nodeLabel('name')
+            .nodeAutoColorBy('group') // Colores distintos para Paper y Tema
+            .nodeVal('val')           // Tamaño basado en la importancia
+            .nodeResolution(24)       // Calidad geométrica de las esferas
+            .nodeOpacity(0.9)
+            
+            // --- Estilo de Enlaces ---
+            .linkWidth(link => link.value * 0.2) // Grosor según relevancia
+            .linkOpacity(0.2)
+            .linkDirectionalParticles(2) // Partículas flotando en las líneas
+            .linkDirectionalParticleWidth(1.5)
+
+            // --- Interacción ---
+            .onNodeClick(node => {
+                // Mover cámara al hacer clic
+                const distance = 60;
+                const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+
+                Graph.cameraPosition(
+                    { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, 
+                    node, 
+                    2000 
+                );
+
+                // Si es un paper, mostrar panel lateral
+                if (node.group === 'paper') {
+                    showPanel(node);
+                }
+            });
+
+        function showPanel(node) {
+            const panel = document.getElementById('info-panel');
+            document.getElementById('p-title').innerText = node.name;
+            
+            // Cortar abstract si es muy largo
+            const absText = node.abstract ? node.abstract : 'Sin resumen disponible.';
+            document.getElementById('p-abstract').innerText = absText.length > 800 ? absText.substring(0, 800) + '...' : absText;
+            
+            document.getElementById('p-meta').innerText = `📅 ${node.date.split('T')[0]} | ✍ ${node.authors ? node.authors.slice(0,3).join(', ') : 'Desconocido'}`;
+            document.getElementById('p-link').href = node.url;
+            
+            panel.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

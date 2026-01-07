@@ -1,0 +1,39 @@
+name: Actualizar Grafo Musttela
+
+on:
+  schedule:
+    # Se ejecuta todos los días a las 09:00 UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Permite que tú le des al botón "Run" manualmente si quieres
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-update:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Chequear repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        run: |
+          pip install -r requirements.txt
+
+      - name: Ejecutar script de recolección
+        run: python updater.py
+
+      - name: Guardar cambios (Commit & Push)
+        run: |
+          git config --global user.name 'Musttela Bot'
+          git config --global user.email 'bot@musttela.com'
+          git add public/graph_data.json
+          # Solo hace commit si hay cambios reales
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto: Nuevos papers añadidos" && git push)
