@@ -34,6 +34,6 @@ jobs:
         run: |
           git config --global user.name 'Musttela Bot'
           git config --global user.email 'bot@musttela.com'
-          git add public/graph_data.json
+          git add docs/graph_data.json
           # Solo hace commit si hay cambios reales
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto: Nuevos papers añadidos" && git push)
