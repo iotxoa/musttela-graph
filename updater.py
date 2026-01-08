@@ -6,7 +6,7 @@ from datetime import datetime
 
 # --- CONFIGURACIÓN ---
 # Archivo donde se guardará la base de datos visual
-JSON_FILE = "public/graph_data.json"
+JSON_FILE = "docs/graph_data.json"
 
 # Tu búsqueda personalizada.
 # Busca en categorías de Computación y Sociedad (cs.CY) o IA (cs.AI)
