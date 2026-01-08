@@ -3,139 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musttela | Research Glass</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>MUSTTELA | Knowledge Graph</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-color: #050505;
-            --glass-bg: rgba(255, 255, 255, 0.05);
-            --glass-border: rgba(255, 255, 255, 0.1);
-            --text-main: #ffffff;
-            --highlight: #00d2ff;
+            --bg-color: #08080a; /* Negro casi puro, muy elegante */
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --accent: #d4af37; /* Oro editorial sutil */
+            --paper-color: #e2e8f0; /* Blanco azulado */
+            --topic-color: #94a3b8; /* Gris neutro */
+            --author-color: #d4af37; /* Oro */
         }
 
-        body { margin: 0; font-family: 'Inter', sans-serif; overflow: hidden; background: var(--bg-color); color: var(--text-main); }
+        body { margin: 0; font-family: 'Manrope', sans-serif; overflow: hidden; background: var(--bg-color); color: var(--text-primary); }
         #graph-container { width: 100vw; height: 100vh; }
 
-        /* --- ESTILO GLASS FROST --- */
+        /* --- UI: GLASS CONTAINER --- */
         .glass-panel {
             background: var(--glass-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid var(--glass-border);
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-            padding: 20px;
-            color: white;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
         }
 
-        /* --- UI: Panel Izquierdo (Controles) --- */
-        .controls {
-            position: absolute; top: 20px; left: 20px; width: 280px;
+        /* --- HEADER & SEARCH --- */
+        .top-bar {
+            position: absolute; top: 20px; left: 20px;
+            display: flex; gap: 15px; align-items: center;
             z-index: 10;
         }
 
-        h1 { margin: 0 0 15px 0; font-size: 1.5rem; letter-spacing: -1px; background: linear-gradient(to right, #fff, #888); -webkit-background-clip: text; color: transparent; }
+        h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 1.8rem; margin: 0; letter-spacing: 0.5px; 
+            color: white; padding-right: 20px; border-right: 1px solid var(--glass-border);
+        }
 
+        .search-wrapper { position: relative; }
         .search-box {
-            width: 100%; background: rgba(0,0,0,0.3); border: 1px solid #444; 
-            color: white; padding: 10px; border-radius: 8px; margin-bottom: 15px;
-            font-family: inherit;
+            background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border);
+            color: white; padding: 10px 15px; padding-right: 35px; border-radius: 8px;
+            font-family: 'Manrope', sans-serif; width: 250px; transition: all 0.3s;
         }
+        .search-box:focus { outline: none; border-color: var(--accent); background: black; }
+        .search-icon { position: absolute; right: 10px; top: 10px; opacity: 0.5; pointer-events: none;}
 
-        .filter-group { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
-        .filter-btn {
-            background: rgba(255,255,255,0.1); border: none; color: #aaa; 
-            padding: 6px 12px; border-radius: 20px; cursor: pointer; font-size: 0.8rem;
-            transition: all 0.2s; border: 1px solid transparent;
+        /* --- CONTROLES DE ZOOM --- */
+        .controls {
+            position: absolute; bottom: 30px; left: 30px;
+            display: flex; flex-direction: column; gap: 8px; z-index: 10;
         }
-        .filter-btn.active { background: var(--highlight); color: #000; font-weight: bold; box-shadow: 0 0 10px var(--highlight); }
+        .ctrl-btn {
+            width: 40px; height: 40px; border-radius: 50%; border: none;
+            background: var(--glass-bg); color: white; cursor: pointer;
+            font-size: 1.2rem; display: flex; align-items: center; justify-content: center;
+            backdrop-filter: blur(10px); border: 1px solid var(--glass-border);
+            transition: all 0.2s;
+        }
+        .ctrl-btn:hover { background: white; color: black; transform: translateY(-2px); }
 
-        /* --- UI: Panel Derecho (Info) --- */
+        /* --- LEYENDA (Tags) --- */
+        .legend {
+            position: absolute; bottom: 30px; right: 30px;
+            display: flex; gap: 15px; z-index: 10;
+        }
+        .legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--text-secondary); }
+        .dot { width: 8px; height: 8px; border-radius: 50%; }
+
+        /* --- PANEL DE DETALLE (SLIDE-IN) --- */
         #info-panel {
-            position: absolute; top: 20px; right: 20px; width: 350px;
-            display: none; max-height: 85vh; overflow-y: auto; z-index: 10;
-            transform: translateX(20px); opacity: 0; transition: all 0.3s ease;
+            position: absolute; top: 0; right: 0; height: 100vh; width: 400px;
+            background: rgba(5, 5, 8, 0.9);
+            border-left: 1px solid var(--glass-border);
+            padding: 40px; box-sizing: border-box;
+            transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+            z-index: 100; overflow-y: auto;
         }
-        #info-panel.visible { transform: translateX(0); opacity: 1; }
+        #info-panel.visible { transform: translateX(0); }
 
-        .tag { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; margin-right: 5px; margin-bottom: 5px; font-weight: 600; }
-        .tag.paper { background: rgba(0, 210, 255, 0.2); color: #00d2ff; }
-        .tag.author { background: rgba(255, 174, 0, 0.2); color: #ffae00; }
-        .tag.topic { background: rgba(255, 0, 128, 0.2); color: #ff0080; }
+        .panel-header { display: flex; justify-content: space-between; margin-bottom: 30px; }
+        .close-btn { background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; opacity: 0.7; }
+        .close-btn:hover { opacity: 1; }
 
-        .abstract { font-size: 0.9rem; line-height: 1.5; color: #ccc; margin: 15px 0; }
-        .btn-link { 
-            display: block; text-align: center; background: white; color: black; 
-            padding: 10px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 15px; 
-        }
+        h2#p-title { font-family: 'Playfair Display', serif; font-size: 1.8rem; line-height: 1.3; margin-top: 0; }
         
+        .meta-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin: 25px 0; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); padding: 20px 0; }
+        .meta-item { display: flex; flex-direction: column; }
+        .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin-bottom: 5px; }
+        .value { font-size: 0.95rem; }
+
+        .abstract { font-size: 1rem; line-height: 1.7; color: #d1d5db; font-weight: 300; text-align: justify; }
+        
+        .btn-read {
+            display: inline-block; margin-top: 30px;
+            padding: 12px 30px; background: white; color: black;
+            text-decoration: none; font-weight: 600; font-size: 0.9rem;
+            border-radius: 4px; transition: transform 0.2s;
+        }
+        .btn-read:hover { transform: scale(1.02); }
+
     </style>
     <script src="//unpkg.com/3d-force-graph"></script>
-</head>
+    <script src="//unpkg.com/d3-force"></script> </head>
 <body>
 
-    <div class="controls glass-panel">
-        <h1>MUSTTELA</h1>
-        <input type="text" id="search" class="search-box" placeholder="Buscar concepto o autor..." onkeyup="searchNode()">
-        
-        <div style="font-size: 0.8rem; color:#888; margin-bottom:5px;">FILTROS VISUALES</div>
-        <div class="filter-group">
-            <button class="filter-btn active" onclick="toggleGroup('paper', this)">Papers</button>
-            <button class="filter-btn active" onclick="toggleGroup('author', this)">Autores</button>
-            <button class="filter-btn active" onclick="toggleGroup('topic', this)">Temas</button>
+    <div class="top-bar glass-panel" style="border-radius: 50px; padding: 10px 25px;">
+        <h1>Musttela.</h1>
+        <div class="search-wrapper">
+            <input type="text" id="search" class="search-box" placeholder="Buscar paper, autor..." onkeyup="handleSearch(event)">
+            <span class="search-icon">🔍</span>
         </div>
-        <div style="margin-top: 15px; font-size: 0.7rem; color: #555;">
-            *Pasa el ratón sobre un nodo para ver sus conexiones.
-        </div>
+    </div>
+
+    <div class="controls">
+        <button class="ctrl-btn" onclick="zoomIn()" title="Acercar">+</button>
+        <button class="ctrl-btn" onclick="zoomOut()" title="Alejar">−</button>
+        <button class="ctrl-btn" onclick="resetCam()" title="Vista General">⟲</button>
+    </div>
+
+    <div class="legend glass-panel" style="padding: 10px 20px; border-radius: 20px;">
+        <div class="legend-item"><div class="dot" style="background:var(--paper-color)"></div>Paper</div>
+        <div class="legend-item"><div class="dot" style="background:var(--author-color)"></div>Autor</div>
+        <div class="legend-item"><div class="dot" style="background:var(--topic-color)"></div>Tema</div>
     </div>
 
     <div id="graph-container"></div>
 
-    <div id="info-panel" class="glass-panel">
-        <div style="display:flex; justify-content:space-between;">
-            <span id="p-type" class="tag">TIPO</span>
-            <button onclick="closePanel()" style="background:none; border:none; color:white; cursor:pointer;">✕</button>
+    <div id="info-panel">
+        <div class="panel-header">
+            <span class="label">DETALLE DEL NODO</span>
+            <button class="close-btn" onclick="closePanel()">✕</button>
         </div>
-        <h2 id="p-title" style="margin: 10px 0; color: white;">Título</h2>
-        <div id="p-meta" style="font-size: 0.8rem; color: #888; margin-bottom:10px;"></div>
-        <div id="p-abstract" class="abstract"></div>
-        <a id="p-link" href="#" target="_blank" class="btn-link">Leer Documento</a>
+        <h2 id="p-title"></h2>
+        
+        <div class="meta-grid">
+            <div class="meta-item">
+                <span class="label">FECHA</span>
+                <span class="value" id="p-date"></span>
+            </div>
+            <div class="meta-item">
+                <span class="label">TIPO</span>
+                <span class="value" id="p-type" style="text-transform: capitalize;"></span>
+            </div>
+        </div>
+
+        <div class="abstract" id="p-abstract"></div>
+        <a id="p-link" href="#" target="_blank" class="btn-read">Leer Documento Original ↗</a>
     </div>
 
     <script>
         const elem = document.getElementById('graph-container');
         let graphData = { nodes: [], links: [] };
-        let hiddenGroups = new Set();
         let highlightNodes = new Set();
         let highlightLinks = new Set();
         let hoverNode = null;
 
+        // Configuración del Grafo
         const Graph = ForceGraph3D()
             (elem)
             .jsonUrl('./graph_data.json')
+            // --- ESTÉTICA ---
+            .backgroundColor('#08080a')
             .nodeLabel('name')
             .nodeColor(node => {
-                // Colores highlight o apagados
-                if (hoverNode && !highlightNodes.has(node)) return 'rgba(255,255,255,0.1)';
+                // Si estamos haciendo hover, apagar los que no están conectados
+                if (hoverNode && !highlightNodes.has(node)) return 'rgba(255,255,255,0.05)';
                 
                 switch(node.group) {
-                    case 'paper': return '#00d2ff'; // Cian
-                    case 'author': return '#ffae00'; // Naranja
-                    case 'topic': return '#ff0080'; // Rosa
-                    default: return '#ffffff';
+                    case 'paper': return '#e2e8f0';
+                    case 'author': return '#d4af37'; 
+                    case 'topic': return '#64748b'; 
+                    default: return '#fff';
                 }
             })
-            .nodeVal('val')
-            .nodeResolution(16)
-            .linkWidth(link => highlightLinks.has(link) ? 2 : 0.5)
-            .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
-            .linkDirectionalParticleWidth(2)
+            .nodeVal(node => {
+                // Hacemos los nodos más grandes para clicarlos mejor
+                return node.group === 'paper' ? 30 : (node.group === 'author' ? 15 : 8);
+            })
+            .nodeResolution(32) // Más suavidad en las esferas
+            .nodeOpacity(1)
+            .linkWidth(link => highlightLinks.has(link) ? 1.5 : 0.3)
+            .linkColor(() => '#334155')
             .linkOpacity(0.3)
-            .backgroundColor('#050505')
             
-            // --- Lógica de Focus (Highlight) ---
+            // --- FÍSICA (Para juntarlos más) ---
+            .d3Force('charge', d3.forceManyBody().strength(-80)) // Menos repulsión (antes era -100 o más)
+            .d3Force('link', d3.forceLink().distance(40)) // Enlaces más cortos
+            
+            // --- INTERACCIÓN ---
             .onNodeHover(node => {
                 elem.style.cursor = node ? 'pointer' : null;
                 hoverNode = node || null;
@@ -144,7 +204,6 @@
                 
                 if (node) {
                     highlightNodes.add(node);
-                    // Buscar vecinos
                     graphData.links.forEach(link => {
                         if (link.source.id === node.id || link.target.id === node.id) {
                             highlightLinks.add(link);
@@ -153,22 +212,36 @@
                         }
                     });
                 }
-                Graph.nodeColor(Graph.nodeColor()); // Refrescar colores
+                Graph.nodeColor(Graph.nodeColor());
                 Graph.linkWidth(Graph.linkWidth());
-                Graph.linkDirectionalParticles(Graph.linkDirectionalParticles());
             })
             .onNodeClick(node => {
-                focusCamera(node);
+                flyToNode(node);
                 showPanel(node);
             })
             .onEngineStop(() => {
-                graphData = Graph.graphData(); // Guardar datos para filtros
+                graphData = Graph.graphData();
             });
 
-        // --- Funciones UI ---
+        // --- FUNCIONES DE CÁMARA (ZOOM) ---
+        function zoomIn() {
+            const pos = Graph.cameraPosition();
+            // Acercarse un 30%
+            Graph.cameraPosition({ x: pos.x * 0.7, y: pos.y * 0.7, z: pos.z * 0.7 }, null, 1000);
+        }
 
-        function focusCamera(node) {
-            const distance = 60;
+        function zoomOut() {
+            const pos = Graph.cameraPosition();
+            // Alejarse
+            Graph.cameraPosition({ x: pos.x * 1.3, y: pos.y * 1.3, z: pos.z * 1.3 }, null, 1000);
+        }
+
+        function resetCam() {
+            Graph.zoomToFit(1000, 100);
+        }
+
+        function flyToNode(node) {
+            const distance = 80;
             const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
             Graph.cameraPosition(
                 { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, 
@@ -177,74 +250,46 @@
             );
         }
 
+        // --- BUSCADOR ---
+        function handleSearch(e) {
+            // Busca al pulsar Enter o mientras escribes
+            const val = e.target.value.toLowerCase();
+            if (!val) return;
+
+            // Busca coincidencias parciales
+            const found = graphData.nodes.find(n => n.name.toLowerCase().includes(val));
+            if (found) {
+                flyToNode(found);
+                showPanel(found);
+            }
+        }
+
+        // --- PANEL DE INFORMACIÓN ---
         function showPanel(node) {
             const panel = document.getElementById('info-panel');
-            const pType = document.getElementById('p-type');
             
             document.getElementById('p-title').innerText = node.name;
-            pType.innerText = node.group.toUpperCase();
-            pType.className = `tag ${node.group}`;
+            document.getElementById('p-type').innerText = node.group;
+            document.getElementById('p-date').innerText = node.date ? node.date.split('T')[0] : 'N/A';
+            
+            const absDiv = document.getElementById('p-abstract');
+            const linkBtn = document.getElementById('p-link');
 
             if (node.group === 'paper') {
-                document.getElementById('p-abstract').style.display = 'block';
-                document.getElementById('p-abstract').innerText = node.abstract ? node.abstract.substring(0, 500) + '...' : '';
-                document.getElementById('p-link').style.display = 'block';
-                document.getElementById('p-link').href = node.url;
-                document.getElementById('p-meta').innerText = node.date ? `Publicado: ${node.date.split('T')[0]}` : '';
+                absDiv.style.display = 'block';
+                absDiv.innerText = node.abstract || "Sin resumen disponible.";
+                linkBtn.style.display = 'inline-block';
+                linkBtn.href = node.url;
             } else {
-                // Si es autor o tema, ocultamos cosas irrelevantes
-                document.getElementById('p-abstract').style.display = 'none';
-                document.getElementById('p-link').style.display = 'none';
-                document.getElementById('p-meta').innerText = 'Nodo de conexión';
+                absDiv.style.display = 'none';
+                linkBtn.style.display = 'none';
             }
             
-            panel.style.display = 'block';
-            setTimeout(() => panel.classList.add('visible'), 10);
+            panel.classList.add('visible');
         }
 
         function closePanel() {
-            const panel = document.getElementById('info-panel');
-            panel.classList.remove('visible');
-            setTimeout(() => panel.style.display = 'none', 300);
-        }
-
-        // --- Filtros ---
-        function toggleGroup(group, btn) {
-            if (hiddenGroups.has(group)) {
-                hiddenGroups.delete(group);
-                btn.classList.add('active');
-            } else {
-                hiddenGroups.add(group);
-                btn.classList.remove('active');
-            }
-            refreshGraph();
-        }
-
-        function refreshGraph() {
-            // Filtramos nodos visibles
-            const visibleNodes = graphData.nodes.filter(n => !hiddenGroups.has(n.group));
-            // Filtramos links validos (ambos extremos deben ser visibles)
-            const visibleLinks = graphData.links.filter(l => 
-                !hiddenGroups.has(l.source.group) && !hiddenGroups.has(l.target.group)
-            );
-            
-            // Actualizamos grafo (esto reinicia la simulación un poco)
-            // Nota: ForceGraph3D maneja mal el filtrado dinámico sin resetear, 
-            // así que usamos 'visibility' visualmente
-            Graph.nodeVisibility(node => !hiddenGroups.has(node.group));
-            Graph.linkVisibility(link => 
-                !hiddenGroups.has(link.source.group) && !hiddenGroups.has(link.target.group)
-            );
-        }
-
-        function searchNode() {
-            const val = document.getElementById('search').value.toLowerCase();
-            if(!val) return;
-            const node = graphData.nodes.find(n => n.name.toLowerCase().includes(val));
-            if(node) {
-                focusCamera(node);
-                showPanel(node);
-            }
+            document.getElementById('info-panel').classList.remove('visible');
         }
     </script>
 </body>
