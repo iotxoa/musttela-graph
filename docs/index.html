@@ -2,109 +2,199 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Musttela - Grafo de Conocimiento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musttela | Intelligence Graph</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        body { margin: 0; font-family: 'Segoe UI', sans-serif; overflow: hidden; background: #000011; color: white; }
+        :root {
+            --bg-color: #030014;
+            --panel-bg: rgba(10, 15, 30, 0.85);
+            --accent: #00f3ff;
+            --text-main: #e0e6ed;
+            --text-dim: #94a3b8;
+        }
+
+        body { 
+            margin: 0; 
+            font-family: 'Rajdhani', sans-serif; 
+            overflow: hidden; 
+            background: var(--bg-color); 
+            color: var(--text-main); 
+        }
         
         #graph-container { width: 100vw; height: 100vh; }
-        
-        /* Panel lateral de información */
-        #info-panel {
-            position: absolute; top: 20px; right: 20px; width: 350px;
-            background: rgba(10, 10, 20, 0.9); border: 1px solid #334455;
-            padding: 20px; border-radius: 12px; backdrop-filter: blur(10px);
-            display: none; max-height: 85vh; overflow-y: auto;
-            box-shadow: 0 0 30px rgba(0,0,0,0.8);
-            transition: opacity 0.3s; z-index: 100;
-        }
-        
-        /* Tipografía y estilos del panel */
-        h2 { font-size: 1.3rem; margin-top: 0; color: #44aaff; text-shadow: 0 0 10px rgba(68,170,255,0.3); }
-        .meta { font-size: 0.8rem; color: #8899aa; margin-bottom: 15px; border-bottom: 1px solid #334455; padding-bottom: 10px; }
-        .abstract { font-size: 0.95rem; line-height: 1.6; color: #ddeeff; margin: 15px 0; text-align: justify; }
-        
-        /* Botón de leer */
-        .btn { 
-            display: block; width: 100%; text-align: center;
-            background: linear-gradient(90deg, #0066ff, #00ccff); 
-            color: white; text-decoration: none; padding: 12px 0; 
-            border-radius: 6px; font-weight: bold; margin-top: 20px;
-            box-shadow: 0 4px 15px rgba(0,100,255,0.4);
-            transition: transform 0.2s;
-        }
-        .btn:hover { transform: scale(1.02); }
-        .close-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; color: #556677; cursor: pointer; font-size: 1.2rem; }
-        .close-btn:hover { color: white; }
 
-        /* Etiqueta flotante */
-        .scene-tooltip { color: #ccddff !important; background: rgba(0,0,10,0.8) !important; border-radius: 4px; padding: 6px !important; }
+        /* --- UI: Cabecera y Buscador --- */
+        .header-overlay {
+            position: absolute; top: 20px; left: 20px;
+            z-index: 10; pointer-events: none; /* Dejar pasar clic al grafo */
+        }
+        
+        h1 {
+            margin: 0; font-size: 2rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 2px;
+            background: linear-gradient(90deg, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+            pointer-events: auto;
+        }
+
+        .search-container {
+            margin-top: 15px; pointer-events: auto;
+            display: flex; gap: 10px;
+        }
+
+        input#search-input {
+            background: rgba(0,0,0,0.6); border: 1px solid #334155;
+            color: var(--accent); padding: 10px 15px; border-radius: 4px;
+            font-family: 'Rajdhani', sans-serif; font-size: 1.1rem;
+            width: 250px; outline: none; transition: all 0.3s;
+        }
+        input#search-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+        }
+
+        /* --- UI: Panel Lateral --- */
+        #info-panel {
+            position: absolute; top: 20px; right: 20px; width: 380px;
+            background: var(--panel-bg); 
+            border-left: 2px solid var(--accent);
+            padding: 25px; 
+            backdrop-filter: blur(12px);
+            display: none; 
+            max-height: 90vh; overflow-y: auto;
+            box-shadow: -10px 0 40px rgba(0,0,0,0.5);
+            transform: translateX(120%); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 100;
+        }
+        
+        #info-panel.visible { transform: translateX(0); }
+
+        .panel-header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 20px; }
+        h2 { font-size: 1.5rem; margin: 0; line-height: 1.2; color: white; }
+        .close-btn { 
+            background: none; border: none; color: var(--text-dim); 
+            font-size: 2rem; line-height: 0.5; cursor: pointer; padding: 0;
+        }
+        .close-btn:hover { color: var(--accent); }
+
+        .meta-tag { 
+            display: inline-block; background: rgba(0, 243, 255, 0.1); 
+            color: var(--accent); padding: 4px 8px; font-size: 0.85rem; 
+            border-radius: 2px; margin-bottom: 15px; font-weight: 600; letter-spacing: 1px;
+        }
+
+        .abstract { font-size: 1.1rem; line-height: 1.6; color: #cbd5e1; margin-bottom: 25px; font-weight: 400; }
+
+        .btn-read { 
+            display: block; width: 100%; text-align: center;
+            background: var(--accent); color: #000; 
+            text-decoration: none; padding: 15px 0; 
+            font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+            transition: all 0.2s; clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 100%, 0 100%);
+        }
+        .btn-read:hover { background: white; box-shadow: 0 0 20px var(--accent); }
+
+        /* Scrollbar bonito */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
     </style>
     
     <script src="//unpkg.com/3d-force-graph"></script>
 </head>
 <body>
 
+    <div class="header-overlay">
+        <h1>Musttela /// Graph</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar nodo (ej: Ethics)..." onkeyup="searchNode()">
+        </div>
+    </div>
+
     <div id="graph-container"></div>
 
     <div id="info-panel">
-        <button class="close-btn" onclick="document.getElementById('info-panel').style.display='none'">&times;</button>
-        <h2 id="p-title">Título del Paper</h2>
-        <div class="meta" id="p-meta"></div>
+        <div class="panel-header">
+            <h2 id="p-title">Título</h2>
+            <button class="close-btn" onclick="closePanel()">&times;</button>
+        </div>
+        <div id="p-tags"></div>
         <div class="abstract" id="p-abstract"></div>
-        <a href="#" target="_blank" class="btn" id="p-link">📄 Leer PDF Original</a>
+        <a href="#" target="_blank" class="btn-read" id="p-link">Acceder al Paper</a>
     </div>
 
     <script>
-        // Configuración visual
         const elem = document.getElementById('graph-container');
-        
+        let graphData = { nodes: [], links: [] };
+
         const Graph = ForceGraph3D()
             (elem)
-            .jsonUrl('./graph_data.json') // Carga tu archivo JSON
-            
-            // --- Estilo de Nodos ---
+            .jsonUrl('./graph_data.json')
             .nodeLabel('name')
-            .nodeAutoColorBy('group') // Colores distintos para Paper y Tema
-            .nodeVal('val')           // Tamaño basado en la importancia
-            .nodeResolution(24)       // Calidad geométrica de las esferas
+            .nodeColor(node => node.group === 'paper' ? '#00f3ff' : '#ff0055') // Azul cian vs Rojo neón
+            .nodeVal('val')
+            .nodeResolution(24)
             .nodeOpacity(0.9)
-            
-            // --- Estilo de Enlaces ---
-            .linkWidth(link => link.value * 0.2) // Grosor según relevancia
-            .linkOpacity(0.2)
-            .linkDirectionalParticles(2) // Partículas flotando en las líneas
-            .linkDirectionalParticleWidth(1.5)
-
-            // --- Interacción ---
+            .linkWidth(0.5)
+            .linkColor(() => '#334155') // Enlaces oscuros
+            .backgroundColor('#030014')
             .onNodeClick(node => {
-                // Mover cámara al hacer clic
-                const distance = 60;
-                const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
-
-                Graph.cameraPosition(
-                    { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, 
-                    node, 
-                    2000 
-                );
-
-                // Si es un paper, mostrar panel lateral
-                if (node.group === 'paper') {
-                    showPanel(node);
-                }
+                focusNode(node);
+            })
+            .onEngineStop(() => {
+                // Guardamos los datos una vez cargados para el buscador
+                graphData = Graph.graphData();
             });
 
+        // Función para enfocar cámara
+        function focusNode(node) {
+            const distance = 50;
+            const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+
+            Graph.cameraPosition(
+                { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, 
+                node, 
+                2000 
+            );
+
+            if (node.group === 'paper') showPanel(node);
+        }
+
+        // Mostrar Panel
         function showPanel(node) {
             const panel = document.getElementById('info-panel');
             document.getElementById('p-title').innerText = node.name;
             
-            // Cortar abstract si es muy largo
-            const absText = node.abstract ? node.abstract : 'Sin resumen disponible.';
-            document.getElementById('p-abstract').innerText = absText.length > 800 ? absText.substring(0, 800) + '...' : absText;
-            
-            document.getElementById('p-meta').innerText = `📅 ${node.date.split('T')[0]} | ✍ ${node.authors ? node.authors.slice(0,3).join(', ') : 'Desconocido'}`;
+            // Meta info
+            const tagsDiv = document.getElementById('p-tags');
+            tagsDiv.innerHTML = `<span class="meta-tag">📅 ${node.date.split('T')[0]}</span>`;
+            if(node.authors) tagsDiv.innerHTML += `<span class="meta-tag" style="margin-left:10px; background:rgba(255,255,255,0.1); color:white">✍ ${node.authors.slice(0,2).join(', ')}</span>`;
+
+            document.getElementById('p-abstract').innerText = node.abstract ? (node.abstract.substring(0, 600) + '...') : 'Sin resumen.';
             document.getElementById('p-link').href = node.url;
             
+            panel.classList.add('visible');
             panel.style.display = 'block';
+        }
+
+        function closePanel() {
+            document.getElementById('info-panel').classList.remove('visible');
+        }
+
+        // Lógica del Buscador
+        function searchNode() {
+            const input = document.getElementById('search-input').value.toLowerCase();
+            if (!input) return;
+
+            // Buscar en los datos cargados
+            const matchingNode = graphData.nodes.find(n => n.name.toLowerCase().includes(input));
+            
+            if (matchingNode) {
+                focusNode(matchingNode);
+            }
         }
     </script>
 </body>
