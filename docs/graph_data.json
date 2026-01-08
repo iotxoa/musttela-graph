@@ -698,6 +698,147 @@
       "name": "focusing trust",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.04175v1",
+      "name": "Legal Alignment for Safe and Ethical AI",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Alignment of artificial intelligence (AI) encompasses the normative problem of specifying how AI systems should act and the technical problem of ensuring AI systems comply with those specifications. To date, AI alignment has generally overlooked an important source of knowledge and practice for grappling with these problems: law. In this paper, we aim to fill this gap by exploring how legal rules, principles, and methods can be leveraged to address problems of alignment and inform the design of AI systems that operate safely and ethically. This emerging field -- legal alignment -- focuses on three research directions: (1) designing AI systems to comply with the content of legal rules developed through legitimate institutions and processes, (2) adapting methods from legal interpretation to guide how AI systems reason and make decisions, and (3) harnessing legal concepts as a structural blueprint for confronting challenges of reliability, trust, and cooperation in AI systems. These research directions present new conceptual, empirical, and institutional questions, which include examining the specific set of laws that particular AI systems should follow, creating evaluations to assess their legal compliance in real-world settings, and developing governance frameworks to support the implementation of legal alignment in practice. Tackling these questions requires expertise across law, computer science, and other disciplines, offering these communities the opportunity to collaborate in designing AI for the better.",
+      "url": "https://arxiv.org/pdf/2601.04175v1",
+      "date": "2026-01-07T18:42:04+00:00"
+    },
+    {
+      "id": "auth_noam_kolt",
+      "name": "Noam Kolt",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_nicholas_caputo",
+      "name": "Nicholas Caputo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jack_boeglin",
+      "name": "Jack Boeglin",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_cullen_o'keefe",
+      "name": "Cullen O'Keefe",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_rishi_bommasani",
+      "name": "Rishi Bommasani",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_stephen_casper",
+      "name": "Stephen Casper",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mariano_florentino_cuéllar",
+      "name": "Mariano-Florentino Cuéllar",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_noah_feldman",
+      "name": "Noah Feldman",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_iason_gabriel",
+      "name": "Iason Gabriel",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_gillian_k_hadfield",
+      "name": "Gillian K. Hadfield",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_lewis_hammond",
+      "name": "Lewis Hammond",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_peter_henderson",
+      "name": "Peter Henderson",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_atoosa_kasirzadeh",
+      "name": "Atoosa Kasirzadeh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_seth_lazar",
+      "name": "Seth Lazar",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_anka_reuel",
+      "name": "Anka Reuel",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kevin_l_wei",
+      "name": "Kevin L. Wei",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jonathan_zittrain",
+      "name": "Jonathan Zittrain",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_legal_alignment",
+      "name": "legal alignment",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_legal_compliance",
+      "name": "legal compliance",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_exploring_legal",
+      "name": "exploring legal",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_specifying_ai",
+      "name": "specifying ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ensuring_ai",
+      "name": "ensuring ai",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -1314,6 +1455,116 @@
     {
       "source": "2601.03222v1",
       "target": "topic_focusing_trust",
+      "value": 2
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_noam_kolt",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_nicholas_caputo",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_jack_boeglin",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_cullen_o'keefe",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_rishi_bommasani",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_stephen_casper",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_mariano_florentino_cuéllar",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_noah_feldman",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_iason_gabriel",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_gillian_k_hadfield",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_lewis_hammond",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_peter_henderson",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_atoosa_kasirzadeh",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_seth_lazar",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_anka_reuel",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_kevin_l_wei",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_jonathan_zittrain",
+      "value": 5
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "topic_legal_alignment",
+      "value": 2
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "topic_legal_compliance",
+      "value": 2
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "topic_exploring_legal",
+      "value": 2
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "topic_specifying_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "topic_ensuring_ai",
       "value": 2
     }
   ]
