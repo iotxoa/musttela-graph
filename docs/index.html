@@ -1,296 +1,2133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUSTTELA | Knowledge Graph</title>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bg-color: #08080a; /* Negro casi puro, muy elegante */
-            --glass-bg: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.08);
-            --text-primary: #ffffff;
-            --text-secondary: #a1a1aa;
-            --accent: #d4af37; /* Oro editorial sutil */
-            --paper-color: #e2e8f0; /* Blanco azulado */
-            --topic-color: #94a3b8; /* Gris neutro */
-            --author-color: #d4af37; /* Oro */
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MUSTTELA | Ethereal Archive</title>
+  <meta name="description" content="MUSTTELA es un archivo navegable: grafo 3D + grid curado, búsqueda instantánea y un panel de detalle accesible." />
+  <meta name="theme-color" content="#030305" />
 
-        body { margin: 0; font-family: 'Manrope', sans-serif; overflow: hidden; background: var(--bg-color); color: var(--text-primary); }
-        #graph-container { width: 100vw; height: 100vh; }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-        /* --- UI: GLASS CONTAINER --- */
-        .glass-panel {
-            background: var(--glass-bg);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-        }
+  <!-- Libs -->
+  <script src="//unpkg.com/three"></script>
+  <script src="//unpkg.com/three-spritetext"></script>
+  <script src="//unpkg.com/3d-force-graph"></script>
+  <script src="//unpkg.com/d3"></script>
 
-        /* --- HEADER & SEARCH --- */
-        .top-bar {
-            position: absolute; top: 20px; left: 20px;
-            display: flex; gap: 15px; align-items: center;
-            z-index: 10;
-        }
+  <style>
+    :root{
+      --bg-deep:#030305;
+      --panel:#07070a;
+      --glass:rgba(20,20,25,.45);
+      --glass-strong:rgba(10,10,12,.82);
+      --glass-border:rgba(255,255,255,.10);
+      --glass-border-strong:rgba(255,255,255,.18);
 
-        h1 { 
-            font-family: 'Playfair Display', serif; 
-            font-size: 1.8rem; margin: 0; letter-spacing: 0.5px; 
-            color: white; padding-right: 20px; border-right: 1px solid var(--glass-border);
-        }
+      --text-main:#ffffff;
+      --text-muted:#a3a3a3;
+      --text-dim:#7a7a7a;
 
-        .search-wrapper { position: relative; }
-        .search-box {
-            background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border);
-            color: white; padding: 10px 15px; padding-right: 35px; border-radius: 8px;
-            font-family: 'Manrope', sans-serif; width: 250px; transition: all 0.3s;
-        }
-        .search-box:focus { outline: none; border-color: var(--accent); background: black; }
-        .search-icon { position: absolute; right: 10px; top: 10px; opacity: 0.5; pointer-events: none;}
+      --neon-cyan:#00f3ff;
+      --neon-pink:#ff00aa;
+      --neon-violet:#8e2de2;
+      --neon-blue:#00C6FF;
 
-        /* --- CONTROLES DE ZOOM --- */
-        .controls {
-            position: absolute; bottom: 30px; left: 30px;
-            display: flex; flex-direction: column; gap: 8px; z-index: 10;
-        }
-        .ctrl-btn {
-            width: 40px; height: 40px; border-radius: 50%; border: none;
-            background: var(--glass-bg); color: white; cursor: pointer;
-            font-size: 1.2rem; display: flex; align-items: center; justify-content: center;
-            backdrop-filter: blur(10px); border: 1px solid var(--glass-border);
-            transition: all 0.2s;
-        }
-        .ctrl-btn:hover { background: white; color: black; transform: translateY(-2px); }
+      --radius-lg:20px;
+      --radius-md:14px;
+      --radius-sm:10px;
 
-        /* --- LEYENDA (Tags) --- */
-        .legend {
-            position: absolute; bottom: 30px; right: 30px;
-            display: flex; gap: 15px; z-index: 10;
-        }
-        .legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--text-secondary); }
-        .dot { width: 8px; height: 8px; border-radius: 50%; }
+      --shadow-lg:0 18px 60px rgba(0,0,0,.55);
+      --shadow-md:0 12px 40px rgba(0,0,0,.45);
 
-        /* --- PANEL DE DETALLE (SLIDE-IN) --- */
-        #info-panel {
-            position: absolute; top: 0; right: 0; height: 100vh; width: 400px;
-            background: rgba(5, 5, 8, 0.9);
-            border-left: 1px solid var(--glass-border);
-            padding: 40px; box-sizing: border-box;
-            transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-            z-index: 100; overflow-y: auto;
-        }
-        #info-panel.visible { transform: translateX(0); }
+      --font-head:'Space Grotesk',system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+      --font-body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 
-        .panel-header { display: flex; justify-content: space-between; margin-bottom: 30px; }
-        .close-btn { background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; opacity: 0.7; }
-        .close-btn:hover { opacity: 1; }
+      --focus:0 0 0 3px rgba(0,243,255,.25), 0 0 0 1px rgba(0,243,255,.65);
+      --tap:44px;
+    }
 
-        h2#p-title { font-family: 'Playfair Display', serif; font-size: 1.8rem; line-height: 1.3; margin-top: 0; }
-        
-        .meta-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin: 25px 0; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); padding: 20px 0; }
-        .meta-item { display: flex; flex-direction: column; }
-        .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin-bottom: 5px; }
-        .value { font-size: 0.95rem; }
+    *{ box-sizing:border-box; }
+    html, body{ height:100%; }
+    body{
+      margin:0;
+      background:var(--bg-deep);
+      color:var(--text-main);
+      font-family:var(--font-body);
+      overflow:hidden;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
 
-        .abstract { font-size: 1rem; line-height: 1.7; color: #d1d5db; font-weight: 300; text-align: justify; }
-        
-        .btn-read {
-            display: inline-block; margin-top: 30px;
-            padding: 12px 30px; background: white; color: black;
-            text-decoration: none; font-weight: 600; font-size: 0.9rem;
-            border-radius: 4px; transition: transform 0.2s;
-        }
-        .btn-read:hover { transform: scale(1.02); }
+    /* Skip link */
+    .skip-link{
+      position:absolute;
+      left:-9999px;
+      top:12px;
+      padding:10px 14px;
+      background:#fff;
+      color:#000;
+      border-radius:10px;
+      z-index:9999;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .skip-link:focus{ left:12px; outline:none; box-shadow:var(--focus); }
 
-    </style>
-    <script src="//unpkg.com/3d-force-graph"></script>
-    <script src="//unpkg.com/d3-force"></script> </head>
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce){
+      *{ animation:none!important; transition:none!important; scroll-behavior:auto!important; }
+    }
+
+    /* Background FX */
+    .background-fx{
+      position:fixed; inset:0; z-index:-2; overflow:hidden; pointer-events:none;
+      background:
+        radial-gradient(700px 450px at 10% 10%, rgba(142,45,226,.20), transparent 60%),
+        radial-gradient(600px 400px at 90% 90%, rgba(0,243,255,.13), transparent 60%),
+        radial-gradient(500px 350px at 50% 55%, rgba(0,176,155,.10), transparent 60%);
+    }
+    .orb{
+      position:absolute; border-radius:50%;
+      filter:blur(90px);
+      opacity:.35;
+      animation:float 18s infinite ease-in-out;
+      transform:translate3d(0,0,0);
+      will-change:transform;
+    }
+    .orb-1{ width:52vw; height:52vw; background:#4a00e0; top:-12%; left:-12%; }
+    .orb-2{ width:44vw; height:44vw; background:#8e2de2; bottom:-12%; right:-12%; animation-delay:-6s; }
+    .orb-3{ width:32vw; height:32vw; background:#00b09b; top:38%; left:40%; opacity:.18; animation-delay:-12s; }
+    @keyframes float{
+      0%{ transform:translate(0,0) scale(1); }
+      50%{ transform:translate(26px,-42px) scale(1.08); }
+      100%{ transform:translate(0,0) scale(1); }
+    }
+
+    .grain-overlay{
+      position:fixed; inset:0; z-index:-1; pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.07'/%3E%3C/svg%3E");
+      mix-blend-mode:overlay;
+    }
+
+    /* App layout */
+    #app{
+      position:fixed; inset:0;
+      display:none;
+    }
+    #app.active{ display:block; }
+
+    /* Top bar */
+    .header-bar{
+      position:fixed; top:18px; left:18px; right:18px; height:64px;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px;
+      z-index:120;
+      pointer-events:none;
+    }
+    .brand{
+      pointer-events:auto;
+      display:flex; align-items:center; gap:12px;
+      padding:10px 14px;
+      border:1px solid var(--glass-border);
+      border-radius:999px;
+      background:rgba(0,0,0,.25);
+      backdrop-filter: blur(14px) saturate(140%);
+      box-shadow:var(--shadow-md);
+      user-select:none;
+    }
+    .brand .mark{
+      width:28px; height:28px; border-radius:10px;
+      background:linear-gradient(135deg, rgba(0,243,255,.9), rgba(255,0,170,.85));
+      box-shadow:0 0 20px rgba(0,243,255,.15);
+    }
+    .brand .title{
+      font-family:var(--font-head);
+      letter-spacing:2px;
+      font-weight:700;
+      font-size:.92rem;
+      text-transform:uppercase;
+      line-height:1;
+    }
+    .brand .meta{
+      color:var(--text-dim);
+      font-family:var(--font-head);
+      font-size:.72rem;
+      letter-spacing:1.6px;
+      text-transform:uppercase;
+      margin-top:2px;
+    }
+
+    .search-container{
+      pointer-events:auto;
+      position:relative;
+      width:min(440px, 52vw);
+      height:54px;
+      background:var(--glass);
+      border:1px solid var(--glass-border);
+      border-radius:999px;
+      backdrop-filter: blur(14px) saturate(150%);
+      display:flex;
+      align-items:center;
+      padding:0 16px;
+      box-shadow:var(--shadow-md);
+      transition:border-color .2s ease, transform .2s ease;
+    }
+    .search-container:focus-within{
+      border-color:var(--glass-border-strong);
+      box-shadow:var(--shadow-md), 0 0 30px rgba(0,198,255,.12);
+      transform:translateY(-1px);
+    }
+    .search-icon{ opacity:.55; margin-right:10px; }
+    .search-input{
+      width:100%;
+      height:100%;
+      background:transparent;
+      border:none;
+      outline:none;
+      color:var(--text-main);
+      font-family:var(--font-head);
+      text-transform:uppercase;
+      letter-spacing:1.4px;
+      font-size:.88rem;
+    }
+    .search-input::placeholder{ color:rgba(255,255,255,.40); }
+
+    .suggestions-box{
+      position:absolute;
+      top:60px; left:0;
+      width:100%;
+      background:rgba(8,8,10,.92);
+      border:1px solid var(--glass-border);
+      border-radius:14px;
+      box-shadow:var(--shadow-lg);
+      overflow:hidden;
+      display:none;
+      max-height:420px;
+    }
+    .suggestions-box[aria-hidden="false"]{ display:block; }
+    .s-item{
+      padding:12px 14px;
+      display:flex; justify-content:space-between; align-items:center;
+      border-bottom:1px solid rgba(255,255,255,.06);
+      cursor:pointer;
+      gap:14px;
+    }
+    .s-item:hover,
+    .s-item[aria-selected="true"]{
+      background:rgba(255,255,255,.06);
+    }
+    .s-item .name{
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+      max-width:320px;
+      font-size:.92rem;
+    }
+    .s-tag{
+      flex:0 0 auto;
+      font-family:var(--font-head);
+      font-size:.66rem;
+      letter-spacing:1.4px;
+      padding:3px 8px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      color:rgba(255,255,255,.75);
+      text-transform:uppercase;
+    }
+    .tag-paper{ border-color:rgba(255,255,255,.18); }
+    .tag-author{ border-color:rgba(0,243,255,.35); color:rgba(0,243,255,.95); }
+    .tag-topic{ border-color:rgba(255,0,170,.35); color:rgba(255,0,170,.95); }
+
+    /* Left dock */
+    .nav-dock{
+      position:fixed;
+      top:50%; left:18px; transform:translateY(-50%);
+      display:flex; flex-direction:column; gap:12px;
+      z-index:120;
+      pointer-events:auto;
+    }
+    .nav-btn{
+      width:var(--tap); height:var(--tap);
+      border-radius:999px;
+      border:1px solid var(--glass-border);
+      background:rgba(0,0,0,.25);
+      color:rgba(255,255,255,.55);
+      cursor:pointer;
+      display:grid; place-items:center;
+      transition:transform .15s ease, border-color .15s ease, background .15s ease, color .15s ease;
+      backdrop-filter: blur(12px) saturate(140%);
+    }
+    .nav-btn:hover{ transform:translateY(-1px); border-color:var(--glass-border-strong); color:#fff; }
+    .nav-btn.active{
+      color:#fff;
+      border-color:rgba(0,243,255,.35);
+      box-shadow:0 0 0 1px rgba(0,243,255,.15), 0 0 26px rgba(0,243,255,.12);
+      background:linear-gradient(135deg, rgba(255,255,255,.08), rgba(0,0,0,.15));
+    }
+    .nav-btn:focus{ outline:none; box-shadow:var(--focus); }
+
+    /* Bottom-right controls */
+    .controls-dock{
+      position:fixed; right:18px; bottom:18px;
+      display:flex; gap:10px;
+      z-index:120;
+      pointer-events:auto;
+    }
+    .c-btn{
+      width:var(--tap); height:var(--tap);
+      border-radius:14px;
+      border:1px solid var(--glass-border);
+      background:var(--glass);
+      color:#fff;
+      cursor:pointer;
+      display:grid; place-items:center;
+      font-size:1.05rem;
+      backdrop-filter: blur(12px) saturate(150%);
+      transition:transform .15s ease, background .15s ease, color .15s ease, border-color .15s ease;
+      box-shadow:var(--shadow-md);
+    }
+    .c-btn:hover{ background:#fff; color:#000; transform:translateY(-1px); }
+    .c-btn:focus{ outline:none; box-shadow:var(--focus); }
+
+    /* View containers */
+    #view-graph{
+      position:fixed;
+      inset:0;
+      width:100vw; height:100vh;
+      z-index:1;
+    }
+    .view-container{
+      display:none;
+      position:fixed;
+      inset:0;
+      z-index:60;
+      padding:96px 22px 22px 86px;
+      overflow:auto;
+    }
+    .view-container.active{ 
+      display:block; 
+        background:
+    radial-gradient(900px 600px at 40% 20%, rgba(0,243,255,.06), transparent 55%),
+    radial-gradient(900px 600px at 70% 80%, rgba(255,0,170,.05), transparent 55%),
+    rgba(0,0,0,.25);
+  backdrop-filter: blur(6px);
+    }
+    .view-head{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:18px;
+      margin-bottom:18px;
+      background: radial-gradient(900px 600px at 40% 20%, rgba(0,243,255,.06), transparent 55%),
+              radial-gradient(900px 600px at 70% 80%, rgba(255,0,170,.05), transparent 55%),
+              rgba(0,0,0,.25);
+      backdrop-filter: blur(6px);
+    }
+    .view-title{
+      font-family:var(--font-head);
+      font-weight:400;
+      letter-spacing:1.2px;
+      font-size:clamp(1.2rem, 1.4vw + 1rem, 1.8rem);
+      margin:0;
+    }
+    .filters{
+      display:flex; flex-wrap:wrap; gap:10px;
+      justify-content:flex-end;
+    }
+    .chip{
+      height:40px;
+      display:inline-flex; align-items:center; gap:8px;
+      padding:0 12px;
+      border:1px solid var(--glass-border);
+      background:rgba(255,255,255,.03);
+      border-radius:999px;
+      backdrop-filter: blur(10px);
+    }
+    .chip label{
+      font-size:.76rem;
+      color:rgba(255,255,255,.70);
+      font-family:var(--font-head);
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+    .chip select{
+      background:transparent;
+      color:#fff;
+      border:none;
+      outline:none;
+      font-family:var(--font-body);
+      font-size:.9rem;
+      appearance:none;
+      padding-right:18px;
+      cursor:pointer;
+    }
+    .chip select:focus{ outline:none; }
+    .chip .chev{ opacity:.6; }
+
+    .bento-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill, minmax(290px, 1fr));
+      gap:16px;
+      margin-top:10px;
+    }
+.bento-card{
+  background: rgba(12,12,16,.45);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 18px;
+  padding: 18px;
+  cursor: pointer;
+  transition: transform .15s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease;
+  display:flex;
+  flex-direction:column;
+  min-height:148px;
+  backdrop-filter: blur(16px) saturate(140%);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.bento-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(0,243,255,.28);
+  background: rgba(12,12,16,.58);
+  box-shadow: 0 16px 40px rgba(0,0,0,.45);
+}
+
+
+    .bc-title{
+      font-size:1rem;
+      font-weight:600;
+      letter-spacing:.2px;
+      margin:0 0 10px 0;
+      line-height:1.25;
+    }
+    .bc-meta{
+      display:flex; gap:8px; flex-wrap:wrap;
+      margin-top:auto;
+      align-items:center;
+      color:rgba(255,255,255,.65);
+    }
+    .pill{
+      font-family:var(--font-head);
+      font-size:.68rem;
+      letter-spacing:1.4px;
+      padding:4px 9px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      text-transform:uppercase;
+    }
+    .pill.paper{ border-color:rgba(255,255,255,.16); }
+    .pill.author{ border-color:rgba(0,243,255,.35); color:rgba(0,243,255,.95); }
+    .pill.topic{ border-color:rgba(255,0,170,.35); color:rgba(255,0,170,.95); }
+    .bc-date{
+      margin-left:auto;
+      font-size:.78rem;
+      color:rgba(255,255,255,.45);
+      font-family:var(--font-head);
+      letter-spacing:1px;
+    }
+
+    /* Drawer = dialog */
+    .drawer{
+      position:fixed;
+      top:0; right:0; bottom:0;
+      width:min(480px, 92vw);
+      background:rgba(8,8,10,.86);
+      backdrop-filter: blur(22px) saturate(150%);
+      border-left:1px solid var(--glass-border);
+      transform:translateX(102%);
+      transition:transform .35s cubic-bezier(.2,.85,.2,1);
+      z-index:220;
+      display:flex;
+      flex-direction:column;
+      box-shadow:var(--shadow-lg);
+    }
+    .drawer.open{ transform:translateX(0); }
+    .drawer-header{
+      padding:22px 20px;
+      border-bottom:1px solid rgba(255,255,255,.07);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-shrink:0;
+      gap:14px;
+    }
+    .drawer-header-left{
+      display:flex; flex-direction:column; gap:4px; min-width:0;
+    }
+    .d-tag{
+      font-family:var(--font-head);
+      font-size:.72rem;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:var(--neon-cyan);
+      line-height:1;
+    }
+    .d-sub{
+      font-size:.85rem;
+      color:rgba(255,255,255,.55);
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+      max-width:340px;
+    }
+    .close-btn{
+      width:44px; height:44px;
+      border-radius:14px;
+      border:1px solid var(--glass-border);
+      background:rgba(255,255,255,.04);
+      color:#fff;
+      cursor:pointer;
+      display:grid; place-items:center;
+      font-size:1.4rem;
+      transition:background .15s ease, transform .15s ease, border-color .15s ease;
+    }
+    .close-btn:hover{ background:rgba(255,255,255,.10); transform:translateY(-1px); border-color:var(--glass-border-strong); }
+    .close-btn:focus{ outline:none; box-shadow:var(--focus); }
+
+    .drawer-scroll-area{
+      flex:1;
+      overflow:auto;
+      padding:20px;
+    }
+    .d-title{
+      font-family:var(--font-head);
+      font-size:1.75rem;
+      line-height:1.15;
+      margin:0 0 10px 0;
+      background:linear-gradient(90deg, #fff, #bfbfbf);
+      -webkit-background-clip:text;
+      color:transparent;
+    }
+    .d-abstract{
+      line-height:1.7;
+      color:rgba(255,255,255,.78);
+      font-weight:300;
+      font-size:.98rem;
+      margin:0 0 18px 0;
+    }
+    .btn-primary{
+      width:100%;
+      height:48px;
+      border-radius:14px;
+      border:none;
+      cursor:pointer;
+      font-family:var(--font-head);
+      letter-spacing:1.8px;
+      font-weight:800;
+      text-transform:uppercase;
+      background:#fff;
+      color:#000;
+      transition:transform .15s ease, box-shadow .15s ease;
+      text-decoration:none;
+      display:grid;
+      place-items:center;
+      margin-top:10px;
+    }
+    .btn-primary:hover{ transform:translateY(-1px); box-shadow:0 0 24px rgba(255,255,255,.20); }
+    .btn-primary:focus{ outline:none; box-shadow:var(--focus); }
+
+    .section-title{
+      margin:18px 0 10px 0;
+      font-family:var(--font-head);
+      letter-spacing:1.6px;
+      text-transform:uppercase;
+      font-size:.78rem;
+      color:rgba(255,255,255,.70);
+    }
+    .link-list{ display:flex; flex-direction:column; gap:10px; }
+    .link-item{
+      padding:14px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:14px;
+      background:rgba(255,255,255,.03);
+      cursor:pointer;
+      transition:border-color .15s ease, background .15s ease, transform .15s ease;
+    }
+    .link-item:hover{
+      border-color:rgba(0,243,255,.35);
+      background:rgba(0,243,255,.06);
+      transform:translateY(-1px);
+    }
+    .li-title{ color:#fff; font-size:.96rem; margin-bottom:6px; line-height:1.25; }
+    .li-date{ color:rgba(255,255,255,.45); font-size:.78rem; font-family:var(--font-head); letter-spacing:1px; }
+
+    /* Toast / status */
+    .status{
+      position:fixed;
+      left:18px;
+      bottom:18px;
+      z-index:200;
+      pointer-events:none;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      max-width:min(520px, 92vw);
+    }
+    .toast{
+      pointer-events:auto;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(8,8,10,.88);
+      backdrop-filter: blur(14px) saturate(140%);
+      box-shadow:var(--shadow-md);
+      display:flex; align-items:flex-start; gap:12px;
+    }
+    .toast .dot{
+      width:10px; height:10px; border-radius:999px; margin-top:5px;
+      background:rgba(255,255,255,.45);
+      box-shadow:0 0 18px rgba(255,255,255,.12);
+      flex:0 0 auto;
+    }
+    .toast.error .dot{ background:rgba(255,0,170,.85); box-shadow:0 0 18px rgba(255,0,170,.18); }
+    .toast.ok .dot{ background:rgba(0,243,255,.85); box-shadow:0 0 18px rgba(0,243,255,.18); }
+    .toast .msg{
+      color:rgba(255,255,255,.82);
+      font-size:.92rem;
+      line-height:1.35;
+    }
+    .toast button{
+      margin-left:auto;
+      border:none;
+      background:transparent;
+      color:rgba(255,255,255,.75);
+      cursor:pointer;
+      font-size:1.05rem;
+      width:32px; height:32px; border-radius:10px;
+    }
+    .toast button:hover{ background:rgba(255,255,255,.06); }
+
+    /* Landing */
+    #landing{
+      position:fixed; inset:0;
+      display:grid;
+      place-items:center;
+      padding:28px;
+      z-index:300;
+    }
+    .landing-card{
+      width:min(980px, 92vw);
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(8,8,10,.78);
+      backdrop-filter: blur(20px) saturate(150%);
+      border-radius:28px;
+      box-shadow:var(--shadow-lg);
+      overflow:hidden;
+    }
+    .landing-inner{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:0;
+      min-height:520px;
+    }
+    @media (max-width: 920px){
+      .landing-inner{ grid-template-columns:1fr; }
+    }
+    .landing-left{
+      padding:36px 32px;
+    }
+    .landing-right{
+      padding:36px 32px;
+      border-left:1px solid rgba(255,255,255,.08);
+      background:
+        radial-gradient(700px 500px at 30% 30%, rgba(0,243,255,.12), transparent 55%),
+        radial-gradient(700px 500px at 70% 70%, rgba(255,0,170,.10), transparent 55%),
+        rgba(255,255,255,.02);
+    }
+    @media (max-width: 920px){
+      .landing-right{ border-left:none; border-top:1px solid rgba(255,255,255,.08); }
+    }
+    .kicker{
+      font-family:var(--font-head);
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:rgba(255,255,255,.70);
+      font-size:.82rem;
+      display:flex; align-items:center; gap:10px;
+    }
+    .kicker .line{
+      height:1px; width:34px;
+      background:linear-gradient(90deg, rgba(0,243,255,.9), rgba(255,0,170,.75));
+      opacity:.9;
+    }
+    .landing-h1{
+      font-family:var(--font-head);
+      font-size:clamp(2.0rem, 2.8vw + 1.2rem, 3.25rem);
+      line-height:1.04;
+      margin:14px 0 14px 0;
+      letter-spacing:-.6px;
+    }
+    .landing-p{
+      color:rgba(255,255,255,.78);
+      font-size:1.02rem;
+      line-height:1.75;
+      margin:0 0 22px 0;
+      max-width:52ch;
+      font-weight:300;
+    }
+    .cta-row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top:14px;
+    }
+    .btn-cta{
+      height:50px;
+      padding:0 18px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.12);
+      cursor:pointer;
+      font-family:var(--font-head);
+      letter-spacing:1.6px;
+      text-transform:uppercase;
+      font-weight:800;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      background:#fff;
+      color:#000;
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
+    .btn-cta:hover{ transform:translateY(-1px); box-shadow:0 0 26px rgba(255,255,255,.20); }
+    .btn-cta:focus{ outline:none; box-shadow:var(--focus); }
+
+    .btn-secondary{
+      height:50px;
+      padding:0 18px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.14);
+      cursor:pointer;
+      font-family:var(--font-head);
+      letter-spacing:1.6px;
+      text-transform:uppercase;
+      font-weight:800;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      background:rgba(255,255,255,.05);
+      color:#fff;
+      transition:transform .15s ease, background .15s ease;
+    }
+    .btn-secondary:hover{ transform:translateY(-1px); background:rgba(255,255,255,.08); }
+    .btn-secondary:focus{ outline:none; box-shadow:var(--focus); }
+
+    .feature-list{
+      display:grid;
+      gap:12px;
+      margin-top:6px;
+    }
+    .feature{
+      padding:14px 14px;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.18);
+    }
+    .feature .t{
+      font-family:var(--font-head);
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      font-size:.78rem;
+      margin:0 0 8px 0;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      color:rgba(255,255,255,.82);
+    }
+    .feature .d{
+      margin:0;
+      font-weight:300;
+      color:rgba(255,255,255,.70);
+      line-height:1.55;
+      font-size:.95rem;
+    }
+    .kbd{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size:.78rem;
+      color:rgba(255,255,255,.78);
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.05);
+      padding:3px 8px;
+      border-radius:10px;
+      white-space:nowrap;
+    }
+
+    /* Modal (settings) */
+    .modal-backdrop{
+      position:fixed; inset:0;
+      display:none;
+      z-index:260;
+      background:rgba(0,0,0,.55);
+      backdrop-filter: blur(6px);
+    }
+    .modal-backdrop.open{ display:block; }
+    .modal{
+      position:absolute;
+      top:50%; left:50%;
+      transform:translate(-50%,-50%);
+      width:min(520px, 92vw);
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(8,8,10,.92);
+      box-shadow:var(--shadow-lg);
+      overflow:hidden;
+    }
+    .modal-head{
+      padding:18px 18px;
+      display:flex; align-items:center; justify-content:space-between;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .modal-title{
+      font-family:var(--font-head);
+      letter-spacing:2px;
+      text-transform:uppercase;
+      font-size:.92rem;
+      margin:0;
+    }
+    .modal-body{ padding:18px; }
+    .row{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px;
+      padding:12px 0;
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .row:last-child{ border-bottom:none; }
+    .row .label{
+      color:rgba(255,255,255,.80);
+      font-size:.98rem;
+    }
+    .row .hint{
+      color:rgba(255,255,255,.55);
+      font-size:.86rem;
+      margin-top:4px;
+      font-weight:300;
+      line-height:1.35;
+    }
+    .toggle{
+      width:54px; height:32px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.06);
+      position:relative;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+    .toggle::after{
+      content:"";
+      position:absolute;
+      top:50%; left:6px;
+      width:22px; height:22px;
+      transform:translateY(-50%);
+      border-radius:999px;
+      background:#fff;
+      transition:left .15s ease;
+      background: .15s ease;
+    }
+    .toggle[aria-checked="true"]{
+      border-color:rgba(0,243,255,.35);
+      box-shadow:0 0 0 1px rgba(0,243,255,.18);
+    }
+    .toggle[aria-checked="true"]::after{
+      left:26px;
+      background:linear-gradient(135deg, rgba(0,243,255,.95), rgba(255,0,170,.88));
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar{ width:8px; height:8px; }
+    ::-webkit-scrollbar-thumb{ background:rgba(255,255,255,.16); border-radius:999px; }
+    ::-webkit-scrollbar-thumb:hover{ background:rgba(255,255,255,.22); }
+
+    /* Visually hidden */
+    .sr-only{
+      position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+      overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+    }
+  </style>
+</head>
+
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-    <div class="top-bar glass-panel" style="border-radius: 50px; padding: 10px 25px;">
-        <h1>Musttela.</h1>
-        <div class="search-wrapper">
-            <input type="text" id="search" class="search-box" placeholder="Buscar paper, autor..." onkeyup="handleSearch(event)">
-            <span class="search-icon">🔍</span>
+  <div class="background-fx" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- LANDING -->
+  <section id="landing" aria-label="Landing de MUSTTELA">
+    <div class="landing-card" role="region" aria-label="Introducción">
+      <div class="landing-inner">
+        <div class="landing-left">
+          <div class="kicker"><span class="line" aria-hidden="true"></span> Ethereal Archive</div>
+          <h1 class="landing-h1">MUSTTELA</h1>
+          <p class="landing-p">
+            Un archivo navegable pensado para <strong>explorar conexiones</strong>:
+            papers, autores y temas como un ecosistema. Grafo 3D para “descubrir”,
+            grid para “consultar”, y un panel de detalle limpio y usable.
+          </p>
+
+          <div class="cta-row">
+            <button id="enterBtn" class="btn-cta" type="button">
+              Entrar al archivo <span aria-hidden="true">→</span>
+            </button>
+            <button id="tourBtn" class="btn-secondary" type="button">
+              Ver atajos <span aria-hidden="true">⌘</span>
+            </button>
+          </div>
+
+          <details id="shortcutsPanel" style="margin-top:16px;">
+  <summary style="cursor:pointer; color:rgba(255,255,255,.75); font-family:var(--font-head); letter-spacing:1.6px; text-transform:uppercase; font-size:.78rem;">
+    Atajos de teclado
+  </summary>
+  <div style="margin-top:10px; padding:14px; border-radius:18px; border:1px solid rgba(255,255,255,.10); background:rgba(0,0,0,.18); backdrop-filter: blur(14px) saturate(140%);">
+    <div style="display:flex; flex-wrap:wrap; gap:10px; line-height:1.7; color:rgba(255,255,255,.72); font-weight:300;">
+      <span><span class="kbd">/</span> Buscar</span>
+      <span><span class="kbd">1</span> Grafo</span>
+      <span><span class="kbd">2</span> Grid</span>
+      <span><span class="kbd">S</span> Ajustes</span>
+      <span><span class="kbd">Esc</span> Cerrar</span>
+      <span><span class="kbd">+</span>/<span class="kbd">−</span>/<span class="kbd">0</span> Cámara</span>
+    </div>
+  </div>
+</details>
+
+
+          <p style="margin:16px 0 0 0; color:rgba(255,255,255,.55); font-weight:300; line-height:1.55;">
+            Recomendado: ratón o trackpad. Accesible con teclado.
+            Si tu navegador no soporta WebGL, tendrás el modo grid igualmente.
+          </p>
         </div>
+
+          <div style="display:grid; gap:14px;">
+  <div style="padding:16px; border-radius:18px; border:1px solid rgba(255,255,255,.10); background:rgba(0,0,0,.18); backdrop-filter: blur(14px) saturate(140%);">
+    <p style="margin:0 0 10px 0; font-family:var(--font-head); letter-spacing:1.6px; text-transform:uppercase; font-size:.78rem; color:rgba(255,255,255,.78);">
+      Cómo se usa
+    </p>
+    <p style="margin:0; color:rgba(255,255,255,.68); font-weight:300; line-height:1.7;">
+      Explora en <strong>grafo 3D</strong> para descubrir conexiones, y cambia a <strong>grid</strong> cuando quieras comparar y filtrar.
+      El panel lateral es tu “lectura profunda”.
+    </p>
+  </div>
+
+  <div style="padding:16px; border-radius:18px; border:1px solid rgba(255,255,255,.10); background:rgba(0,0,0,.18); backdrop-filter: blur(14px) saturate(140%);">
+    <p style="margin:0 0 10px 0; font-family:var(--font-head); letter-spacing:1.6px; text-transform:uppercase; font-size:.78rem; color:rgba(255,255,255,.78);">
+      Roadmap
+    </p>
+    <ul style="margin:0; padding-left:18px; color:rgba(255,255,255,.65); font-weight:300; line-height:1.7;">
+      <li>Deep-links y compartir nodos</li>
+      <li>Favoritos, colecciones, tags avanzados</li>
+      <li>Export (CSV/JSON) + modo edición privado</li>
+    </ul>
+  </div>
+
+  <div style="padding:16px; border-radius:18px; border:1px solid rgba(255,255,255,.10); background:rgba(0,0,0,.18); backdrop-filter: blur(14px) saturate(140%);">
+    <p style="margin:0; color:rgba(255,255,255,.65); font-weight:300; line-height:1.7;">
+      <span class="kbd">/</span> busca · <span class="kbd">1</span>/<span class="kbd">2</span> vistas · <span class="kbd">S</span> ajustes
+    </p>
+  </div>
+</div>
+
+
+      </div>
     </div>
+  </section>
 
-    <div class="controls">
-        <button class="ctrl-btn" onclick="zoomIn()" title="Acercar">+</button>
-        <button class="ctrl-btn" onclick="zoomOut()" title="Alejar">−</button>
-        <button class="ctrl-btn" onclick="resetCam()" title="Vista General">⟲</button>
-    </div>
+  <!-- APP -->
+  <div id="app">
+    <header class="header-bar" aria-label="Barra superior">
+      <div class="search-container" role="search" aria-label="Buscar en el archivo">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input
+          id="searchInput"
+          type="text"
+          class="search-input"
+          placeholder="EXPLORE ARCHIVE…"
+          autocomplete="off"
+          aria-autocomplete="list"
+          aria-controls="suggestions"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+        />
+        <div
+          id="suggestions"
+          class="suggestions-box"
+          role="listbox"
+          aria-label="Sugerencias"
+          aria-hidden="true"
+        ></div>
+      </div>
 
-    <div class="legend glass-panel" style="padding: 10px 20px; border-radius: 20px;">
-        <div class="legend-item"><div class="dot" style="background:var(--paper-color)"></div>Paper</div>
-        <div class="legend-item"><div class="dot" style="background:var(--author-color)"></div>Autor</div>
-        <div class="legend-item"><div class="dot" style="background:var(--topic-color)"></div>Tema</div>
-    </div>
-
-    <div id="graph-container"></div>
-
-    <div id="info-panel">
-        <div class="panel-header">
-            <span class="label">DETALLE DEL NODO</span>
-            <button class="close-btn" onclick="closePanel()">✕</button>
+      <div class="brand" role="button" tabindex="0" aria-label="Abrir ajustes (S)">
+        <div class="mark" aria-hidden="true"></div>
+        <div style="min-width:0;">
+          <div class="title">MUSTTELA</div>
+          <div class="meta" id="brandMeta">v9 • archive</div>
         </div>
-        <h2 id="p-title"></h2>
-        
-        <div class="meta-grid">
-            <div class="meta-item">
-                <span class="label">FECHA</span>
-                <span class="value" id="p-date"></span>
+      </div>
+    </header>
+
+    <nav class="nav-dock" aria-label="Cambiar vista">
+      <button id="btnGraph" class="nav-btn active" type="button" aria-pressed="true" title="Grafo (1)">
+        <span aria-hidden="true">🕸</span><span class="sr-only">Vista grafo</span>
+      </button>
+      <button id="btnGrid" class="nav-btn" type="button" aria-pressed="false" title="Grid (2)">
+        <span aria-hidden="true">⊞</span><span class="sr-only">Vista grid</span>
+      </button>
+    </nav>
+
+    <main id="main" aria-label="Contenido principal">
+      <div id="view-graph" aria-label="Grafo 3D"></div>
+
+      <section id="view-grid" class="view-container" aria-label="Vista en grid">
+        <div class="view-head">
+          <h2 class="view-title">DATABASE GRID</h2>
+          <div class="filters" aria-label="Filtros">
+            <div class="chip">
+              <label for="filterType">Tipo</label>
+              <select id="filterType">
+                <option value="all">Todo</option>
+                <option value="paper">Papers</option>
+                <option value="author">Authors</option>
+                <option value="topic">Topics</option>
+              </select>
+              <span class="chev" aria-hidden="true">▾</span>
             </div>
-            <div class="meta-item">
-                <span class="label">TIPO</span>
-                <span class="value" id="p-type" style="text-transform: capitalize;"></span>
+
+            <div class="chip">
+              <label for="sortBy">Orden</label>
+              <select id="sortBy">
+                <option value="relevance">Relevancia</option>
+                <option value="date_desc">Fecha ↓</option>
+                <option value="date_asc">Fecha ↑</option>
+                <option value="name_asc">Nombre A→Z</option>
+              </select>
+              <span class="chev" aria-hidden="true">▾</span>
             </div>
+          </div>
         </div>
 
-        <div class="abstract" id="p-abstract"></div>
-        <a id="p-link" href="#" target="_blank" class="btn-read">Leer Documento Original ↗</a>
+        <div id="grid-content" class="bento-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <div class="controls-dock" aria-label="Controles de cámara">
+      <button class="c-btn" id="zoomInBtn" type="button" title="Zoom in (+)">+</button>
+      <button class="c-btn" id="zoomOutBtn" type="button" title="Zoom out (-)">−</button>
+      <button class="c-btn" id="fitBtn" type="button" title="Encajar (0)">⟲</button>
+      <button class="c-btn" id="settingsBtn" type="button" title="Ajustes (S)">⚙</button>
     </div>
 
-    <script>
-        const elem = document.getElementById('graph-container');
-        let graphData = { nodes: [], links: [] };
-        let highlightNodes = new Set();
-        let highlightLinks = new Set();
-        let hoverNode = null;
+    <!-- Drawer as dialog -->
+    <aside
+      id="drawer"
+      class="drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="d-title"
+      aria-hidden="true"
+    >
+      <div class="drawer-header">
+        <div class="drawer-header-left">
+          <span id="d-label" class="d-tag">PAPER</span>
+          <div id="d-sub" class="d-sub">—</div>
+        </div>
+        <button class="close-btn" id="closeDrawerBtn" type="button" aria-label="Cerrar panel (Esc)">×</button>
+      </div>
 
-        // Configuración del Grafo
-        const Graph = ForceGraph3D()
-            (elem)
-            .jsonUrl('./graph_data.json')
-            // --- ESTÉTICA ---
-            .backgroundColor('#08080a')
-            .nodeLabel('name')
-            .nodeColor(node => {
-                // Si estamos haciendo hover, apagar los que no están conectados
-                if (hoverNode && !highlightNodes.has(node)) return 'rgba(255,255,255,0.05)';
-                
-                switch(node.group) {
-                    case 'paper': return '#e2e8f0';
-                    case 'author': return '#d4af37'; 
-                    case 'topic': return '#64748b'; 
-                    default: return '#fff';
-                }
-            })
-            .nodeVal(node => {
-                // Hacemos los nodos más grandes para clicarlos mejor
-                return node.group === 'paper' ? 30 : (node.group === 'author' ? 15 : 8);
-            })
-            .nodeResolution(32) // Más suavidad en las esferas
-            .nodeOpacity(1)
-            .linkWidth(link => highlightLinks.has(link) ? 1.5 : 0.3)
-            .linkColor(() => '#334155')
-            .linkOpacity(0.3)
-            
-            // --- FÍSICA (Para juntarlos más) ---
-            .d3Force('charge', d3.forceManyBody().strength(-80)) // Menos repulsión (antes era -100 o más)
-            .d3Force('link', d3.forceLink().distance(40)) // Enlaces más cortos
-            
-            // --- INTERACCIÓN ---
-            .onNodeHover(node => {
-                elem.style.cursor = node ? 'pointer' : null;
-                hoverNode = node || null;
-                highlightNodes.clear();
-                highlightLinks.clear();
-                
-                if (node) {
-                    highlightNodes.add(node);
-                    graphData.links.forEach(link => {
-                        if (link.source.id === node.id || link.target.id === node.id) {
-                            highlightLinks.add(link);
-                            highlightNodes.add(link.source);
-                            highlightNodes.add(link.target);
-                        }
-                    });
-                }
-                Graph.nodeColor(Graph.nodeColor());
-                Graph.linkWidth(Graph.linkWidth());
-            })
-            .onNodeClick(node => {
-                flyToNode(node);
-                showPanel(node);
-            })
-            .onEngineStop(() => {
-                graphData = Graph.graphData();
+      <div class="drawer-scroll-area">
+        <h3 id="d-title" class="d-title">Title</h3>
+
+        <div id="content-paper" style="display:none;">
+          <p id="d-abstract" class="d-abstract">Abstract…</p>
+          <a id="d-link" href="#" target="_blank" rel="noopener" class="btn-primary">READ PAPER</a>
+
+          <div class="section-title">Acciones (hooks)</div>
+          <div class="link-list">
+            <div class="link-item" id="copyLinkBtn" role="button" tabindex="0">
+              <div class="li-title">Copiar link a este nodo</div>
+              <div class="li-date">Deep-link listo (URL hash)</div>
+            </div>
+            <div class="link-item" id="favoriteBtn" role="button" tabindex="0">
+              <div class="li-title">Guardar en favoritos</div>
+              <div class="li-date">Persistencia local (demo)</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="content-links" style="display:none;">
+          <p style="color:rgba(255,255,255,.60); font-weight:300; margin:0 0 14px 0;">
+            Documentos conectados a este nodo:
+          </p>
+          <div id="links-list" class="link-list"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Status/toasts -->
+    <div class="status" id="statusArea" aria-live="polite" aria-relevant="additions"></div>
+
+    <!-- Settings modal -->
+    <div id="settingsModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Ajustes" aria-hidden="true">
+      <div class="modal">
+        <div class="modal-head">
+          <h3 class="modal-title">Ajustes</h3>
+          <button class="close-btn" id="closeSettingsBtn" type="button" aria-label="Cerrar ajustes">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div>
+              <div class="label">Reduce motion</div>
+              <div class="hint">Desactiva animaciones y movimientos “flotantes”.</div>
+            </div>
+            <button class="toggle" id="toggleMotion" role="switch" aria-checked="false" type="button"></button>
+          </div>
+
+          <div class="row">
+            <div>
+              <div class="label">Mostrar etiquetas en nodos</div>
+              <div class="hint">Mejor legibilidad, peor “misterio”. (Coste de performance.)</div>
+            </div>
+            <button class="toggle" id="toggleLabels" role="switch" aria-checked="false" type="button"></button>
+          </div>
+
+          <div class="row">
+            <div>
+              <div class="label">Fuerza de links</div>
+              <div class="hint">Ajuste fino para densidad y estabilidad del grafo.</div>
+            </div>
+            <div class="chip" style="height:44px;">
+              <label for="linkForce" class="sr-only">Fuerza de links</label>
+              <select id="linkForce">
+                <option value="default">Default</option>
+                <option value="soft">Soft</option>
+                <option value="strong">Strong</option>
+              </select>
+              <span class="chev" aria-hidden="true">▾</span>
+            </div>
+          </div>
+
+          <div style="margin-top:14px; color:rgba(255,255,255,.55); font-weight:300; line-height:1.55;">
+            Nota: estos ajustes se guardan en tu navegador (localStorage).
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ <script>
+    ;(() => {
+      "use strict";
+
+      // ---------------------------
+      // Helpers
+      // ---------------------------
+      const $ = (sel, root=document) => root.querySelector(sel);
+      const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+      const state = {
+        graphData: { nodes: [], links: [] },
+        Graph: null,
+        hoverNode: null,
+        highlightNodes: new Set(),
+        highlightLinks: new Set(),
+        lastFocusEl: null,
+        suggestions: { open:false, items:[], activeIndex:-1 },
+        prefs: {
+          reduceMotion: false,
+          showLabels: false,
+          linkForce: "default"
+        },
+        favorites: new Set(),
+        activeView: "graph",
+        ready: false
+      };
+
+      const STORAGE_KEYS = {
+        prefs: "musttela_prefs_v1",
+        favorites: "musttela_favorites_v1"
+      };
+
+      function loadPrefs(){
+        try{
+          const raw = localStorage.getItem(STORAGE_KEYS.prefs);
+          if(raw) state.prefs = { ...state.prefs, ...JSON.parse(raw) };
+        } catch {}
+        try{
+          const favRaw = localStorage.getItem(STORAGE_KEYS.favorites);
+          if(favRaw){
+            const arr = JSON.parse(favRaw);
+            state.favorites = new Set(Array.isArray(arr) ? arr : []);
+          }
+        } catch {}
+      }
+      function savePrefs(){
+        try{ localStorage.setItem(STORAGE_KEYS.prefs, JSON.stringify(state.prefs)); } catch {}
+      }
+      function saveFavorites(){
+        try{ localStorage.setItem(STORAGE_KEYS.favorites, JSON.stringify(Array.from(state.favorites))); } catch {}
+      }
+
+      function toast(message, type="ok", timeout=4200){
+        const area = $("#statusArea");
+        if(!area) return;
+
+        const el = document.createElement("div");
+        el.className = `toast ${type}`;
+        el.innerHTML = `
+          <div class="dot" aria-hidden="true"></div>
+          <div class="msg">${escapeHTML(message)}</div>
+          <button type="button" aria-label="Cerrar">×</button>
+        `;
+        el.querySelector("button").addEventListener("click", () => el.remove());
+        area.appendChild(el);
+
+        if(timeout){
+          setTimeout(() => { if(el.isConnected) el.remove(); }, timeout);
+        }
+      }
+
+      function escapeHTML(str){
+        return String(str ?? "")
+          .replaceAll("&","&amp;")
+          .replaceAll("<","&lt;")
+          .replaceAll(">","&gt;")
+          .replaceAll('"',"&quot;")
+          .replaceAll("'","&#039;");
+      }
+
+      function supportsWebGL(){
+        try{
+          const canvas = document.createElement("canvas");
+          return !!(window.WebGLRenderingContext && (canvas.getContext("webgl") || canvas.getContext("experimental-webgl")));
+        } catch { return false; }
+      }
+
+      function normalizeData(data){
+        const nodes = (data?.nodes ?? []).map((n, idx) => ({
+          id: n.id ?? n.slug ?? `${n.group ?? "node"}_${idx}_${hashStr(n.name ?? "node")}`,
+          name: n.name ?? "Untitled",
+          group: n.group ?? "paper",
+          url: n.url ?? "",
+          abstract: n.abstract ?? "",
+          date: n.date ?? "",
+          ...n
+        }));
+
+        const nodeById = new Map(nodes.map(n => [String(n.id), n]));
+        const links = (data?.links ?? []).map((l, idx) => {
+          const s = typeof l.source === "object" ? l.source.id : l.source;
+          const t = typeof l.target === "object" ? l.target.id : l.target;
+          const sid = String(s ?? "");
+          const tid = String(t ?? "");
+          if(!nodeById.has(sid) || !nodeById.has(tid)) return null;
+
+          return {
+            id: l.id ?? `link_${idx}_${sid}_${tid}`,
+            source: sid,
+            target: tid,
+            ...l
+          };
+        }).filter(Boolean);
+
+        return { nodes, links };
+      }
+
+      function hashStr(s){
+        let h = 2166136261;
+        for(let i=0;i<s.length;i++){
+          h ^= s.charCodeAt(i);
+          h = Math.imul(h, 16777619);
+        }
+        return (h >>> 0).toString(16);
+      }
+
+      function parseDate(d){
+        const dt = d ? new Date(d) : null;
+        return (dt && !Number.isNaN(dt.valueOf())) ? dt : null;
+      }
+
+      function formatDate(d){
+        const dt = parseDate(d);
+        if(!dt) return "";
+        const y = dt.getFullYear();
+        const m = String(dt.getMonth()+1).padStart(2,"0");
+        const day = String(dt.getDate()).padStart(2,"0");
+        return `${y}-${m}-${day}`;
+      }
+
+      // ---------------------------
+      // Views
+      // ---------------------------
+      function setActiveView(view){
+        state.activeView = view;
+        const isGrid = view === "grid";
+
+        const grid = $("#view-grid");
+        grid.classList.toggle("active", isGrid);
+
+        // Make grid focusable (JS-only, no HTML changes)
+        if(isGrid){
+          if(!grid.hasAttribute("tabindex")) grid.setAttribute("tabindex","-1");
+        }
+
+        $("#btnGrid").classList.toggle("active", isGrid);
+        $("#btnGraph").classList.toggle("active", !isGrid);
+        $("#btnGrid").setAttribute("aria-pressed", String(isGrid));
+        $("#btnGraph").setAttribute("aria-pressed", String(!isGrid));
+        $(".controls-dock").style.display = isGrid ? "none" : "flex";
+
+        if(isGrid){
+          grid.focus?.({ preventScroll:true });
+        } else {
+          $("#searchInput").focus({ preventScroll:true });
+        }
+      }
+
+      // ---------------------------
+      // Drawer + focus trap
+      // ---------------------------
+      function openDrawer(node, reason="open"){
+        const drawer = $("#drawer");
+        state.lastFocusEl = document.activeElement;
+
+        $("#d-title").textContent = node.name;
+        $("#d-label").textContent = (node.group || "node").toUpperCase();
+
+        const sub = [];
+        if(node.group) sub.push(node.group);
+        const d = formatDate(node.date);
+        if(d) sub.push(d);
+        $("#d-sub").textContent = sub.length ? sub.join(" • ") : "—";
+
+        const label = $("#d-label");
+        if(node.group === "paper") label.style.color = "white";
+        else if(node.group === "author") label.style.color = "var(--neon-cyan)";
+        else label.style.color = "var(--neon-pink)";
+
+        const cPaper = $("#content-paper");
+        const cLinks = $("#content-links");
+
+        if(node.group === "paper"){
+          cPaper.style.display = "block";
+          cLinks.style.display = "none";
+          $("#d-abstract").textContent = node.abstract || "Sin resumen.";
+          const link = $("#d-link");
+          link.href = node.url || "#";
+          link.style.opacity = node.url ? "1" : ".6";
+          link.style.pointerEvents = node.url ? "auto" : "none";
+        } else {
+          cPaper.style.display = "none";
+          cLinks.style.display = "block";
+          renderConnectedPapers(node);
+        }
+
+        drawer.classList.add("open");
+        drawer.setAttribute("aria-hidden","false");
+        trapFocus(drawer);
+
+        if(reason !== "hash"){
+          history.replaceState(null, "", `#node=${encodeURIComponent(node.id)}`);
+        }
+      }
+
+      function closeDrawer(){
+        const drawer = $("#drawer");
+        drawer.classList.remove("open");
+        drawer.setAttribute("aria-hidden","true");
+        releaseFocusTrap();
+
+        if(location.hash.startsWith("#node=")){
+          history.replaceState(null, "", "#");
+        }
+        if(state.lastFocusEl?.focus){
+          state.lastFocusEl.focus({ preventScroll:true });
+        }
+      }
+
+      let focusTrapCleanup = null;
+      function trapFocus(container){
+        releaseFocusTrap();
+
+        const focusable = () => $$(
+          'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])',
+          container
+        ).filter(el => el.offsetParent !== null);
+
+        const onKeyDown = (e) => {
+          if(e.key === "Escape"){
+            e.preventDefault();
+            closeDrawer();
+            return;
+          }
+          if(e.key !== "Tab") return;
+
+          const items = focusable();
+          if(!items.length) return;
+
+          const first = items[0];
+          const last = items[items.length - 1];
+
+          if(e.shiftKey && document.activeElement === first){
+            e.preventDefault();
+            last.focus();
+          } else if(!e.shiftKey && document.activeElement === last){
+            e.preventDefault();
+            first.focus();
+          }
+        };
+
+        document.addEventListener("keydown", onKeyDown, true);
+        focusTrapCleanup = () => document.removeEventListener("keydown", onKeyDown, true);
+
+        const items = focusable();
+        (items[0] || container).focus?.({ preventScroll:true });
+      }
+
+      function releaseFocusTrap(){
+        if(focusTrapCleanup){
+          focusTrapCleanup();
+          focusTrapCleanup = null;
+        }
+      }
+
+      function renderConnectedPapers(node){
+        const list = $("#links-list");
+        list.innerHTML = "";
+
+        const papers = findConnectedPapers(node);
+        if(!papers.length){
+          list.innerHTML = `<div style="color:rgba(255,255,255,.45); padding:10px 2px;">No hay documentos conectados.</div>`;
+          return;
+        }
+
+        papers
+          .sort((a,b) => (parseDate(b.date)?.valueOf() ?? 0) - (parseDate(a.date)?.valueOf() ?? 0))
+          .forEach(p => {
+            const div = document.createElement("div");
+            div.className = "link-item";
+            div.setAttribute("role","button");
+            div.setAttribute("tabindex","0");
+            div.innerHTML = `
+              <div class="li-title">${escapeHTML(p.name)}</div>
+              <div class="li-date">${escapeHTML(formatDate(p.date))}</div>
+            `;
+            const go = () => {
+              focusNode(p);
+              openDrawer(p);
+            };
+            div.addEventListener("click", go);
+            div.addEventListener("keydown", (e) => {
+              if(e.key === "Enter" || e.key === " "){
+                e.preventDefault();
+                go();
+              }
             });
+            list.appendChild(div);
+          });
+      }
 
-        // --- FUNCIONES DE CÁMARA (ZOOM) ---
-        function zoomIn() {
-            const pos = Graph.cameraPosition();
-            // Acercarse un 30%
-            Graph.cameraPosition({ x: pos.x * 0.7, y: pos.y * 0.7, z: pos.z * 0.7 }, null, 1000);
-        }
+      // ---------------------------
+      // Graph
+      // ---------------------------
+      function createGraph(){
+        const elem = $("#view-graph");
+        const Graph = ForceGraph3D()(elem);
 
-        function zoomOut() {
-            const pos = Graph.cameraPosition();
-            // Alejarse
-            Graph.cameraPosition({ x: pos.x * 1.3, y: pos.y * 1.3, z: pos.z * 1.3 }, null, 1000);
-        }
+        Graph
+          .backgroundColor("rgba(0,0,0,0)")
+          .nodeId("id")
+          .nodeLabel((n) => n.name)
+          .nodeVal((n) => (n.group === "paper" ? 24 : 7))
+          .nodeResolution(28)
+          .nodeOpacity(1)
+          .linkOpacity(0.22)
+          .linkWidth(0.2)
+          .linkColor("#444");
 
-        function resetCam() {
-            Graph.zoomToFit(1000, 100);
-        }
+        applyLinkForce(Graph);
 
-        function flyToNode(node) {
-            const distance = 80;
-            const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
-            Graph.cameraPosition(
-                { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, 
-                node, 
-                2000 
-            );
-        }
+        Graph
+          .onNodeHover((node) => {
+            elem.style.cursor = node ? "pointer" : "";
+            state.hoverNode = node || null;
+            state.highlightNodes.clear();
+            state.highlightLinks.clear();
 
-        // --- BUSCADOR ---
-        function handleSearch(e) {
-            // Busca al pulsar Enter o mientras escribes
-            const val = e.target.value.toLowerCase();
-            if (!val) return;
+            if(node){
+              state.highlightNodes.add(node);
 
-            // Busca coincidencias parciales
-            const found = graphData.nodes.find(n => n.name.toLowerCase().includes(val));
-            if (found) {
-                flyToNode(found);
-                showPanel(found);
+              state.graphData.links.forEach((link) => {
+                const sid = (typeof link.source === "object") ? link.source.id : link.source;
+                const tid = (typeof link.target === "object") ? link.target.id : link.target;
+
+                if(String(sid) === String(node.id) || String(tid) === String(node.id)){
+                  state.highlightLinks.add(link);
+
+                  const sNode = (typeof link.source === "object") ? link.source : getNodeById(sid);
+                  const tNode = (typeof link.target === "object") ? link.target : getNodeById(tid);
+                  if(sNode) state.highlightNodes.add(sNode);
+                  if(tNode) state.highlightNodes.add(tNode);
+                }
+              });
             }
-        }
 
-        // --- PANEL DE INFORMACIÓN ---
-        function showPanel(node) {
-            const panel = document.getElementById('info-panel');
-            
-            document.getElementById('p-title').innerText = node.name;
-            document.getElementById('p-type').innerText = node.group;
-            document.getElementById('p-date').innerText = node.date ? node.date.split('T')[0] : 'N/A';
-            
-            const absDiv = document.getElementById('p-abstract');
-            const linkBtn = document.getElementById('p-link');
+            // refresco visual seguro
+            Graph.nodeColor(Graph.nodeColor());
+            Graph.linkWidth(Graph.linkWidth());
+            Graph.linkColor(Graph.linkColor());
+            Graph.linkOpacity(Graph.linkOpacity());
+          })
+          .onNodeClick((node) => {
+            focusNode(node);
+            openDrawer(node);
+          });
 
-            if (node.group === 'paper') {
-                absDiv.style.display = 'block';
-                absDiv.innerText = node.abstract || "Sin resumen disponible.";
-                linkBtn.style.display = 'inline-block';
-                linkBtn.href = node.url;
-            } else {
-                absDiv.style.display = 'none';
-                linkBtn.style.display = 'none';
+        Graph
+          .nodeColor((node) => {
+            if(state.hoverNode && !state.highlightNodes.has(node)){
+              return "rgba(255,255,255,0.05)";
             }
-            
-            panel.classList.add('visible');
+            switch(node.group){
+              case "paper": return "#ffffff";
+              case "author": return "#00f3ff";
+              case "topic": return "#ff00aa";
+              default: return "#ffffff";
+            }
+          })
+          .linkWidth((link) => state.highlightLinks.has(link) ? 2 : 0.2)
+          .linkColor((link) => state.highlightLinks.has(link) ? "#fff" : "#444")
+          .linkOpacity((link) => state.highlightLinks.has(link) ? 1 : 0.22);
+
+        applyLabels(Graph);
+
+        state.Graph = Graph;
+        return Graph;
+      }
+
+      function applyLabels(Graph){
+        if(!Graph) return;
+
+        if(state.prefs.showLabels){
+          Graph.nodeThreeObject((node) => {
+            const label = new SpriteText(node.name);
+            label.material.depthWrite = false;
+            label.material.depthTest = false; 
+            label.renderOrder = 999;
+
+            label.color = (node.group === "author") ? "#00f3ff"
+                        : (node.group === "topic")  ? "#ff00aa"
+                        : "#ffffff";
+
+            label.textHeight = (node.group === "paper") ? 5.5 : 4.6;
+            label.backgroundColor = "rgba(0,0,0,0.45)";
+            label.padding = 6;
+            label.borderRadius = 10;
+            return label;
+          });
+
+          Graph.nodeThreeObjectExtend(true);
+        } else {
+          Graph.nodeThreeObject(null);
+          Graph.nodeThreeObjectExtend(false);
+        }
+      }
+
+      function applyLinkForce(Graph){
+        if(!Graph) return;
+        const engine = Graph.d3Force("link");
+        if(!engine) return;
+
+        if(state.prefs.linkForce === "soft"){
+          engine.distance(70).strength(0.06);
+        } else if(state.prefs.linkForce === "strong"){
+          engine.distance(45).strength(0.16);
+        } else {
+          engine.distance(55).strength(0.10);
+        }
+      }
+
+      function getNodeById(id){
+        return state.graphData.nodes.find(n => String(n.id) === String(id));
+      }
+
+      function focusNode(node){
+        if(!state.Graph || !node) return;
+        const distance = 80;
+        const x = node.x ?? 0, y = node.y ?? 0, z = node.z ?? 0;
+        const distRatio = 1 + distance / Math.hypot(x, y, z);
+        state.Graph.cameraPosition(
+          { x: x * distRatio, y: y * distRatio, z: z * distRatio },
+          node,
+          1200
+        );
+      }
+
+      function zoomIn(){
+        if(!state.Graph) return;
+        const p = state.Graph.cameraPosition();
+        state.Graph.cameraPosition({ x:p.x*0.65, y:p.y*0.65, z:p.z*0.65 }, null, 450);
+      }
+      function zoomOut(){
+        if(!state.Graph) return;
+        const p = state.Graph.cameraPosition();
+        state.Graph.cameraPosition({ x:p.x*1.35, y:p.y*1.35, z:p.z*1.35 }, null, 450);
+      }
+      function resetZoom(){
+        if(!state.Graph) return;
+        state.Graph.zoomToFit(950, 70);
+      }
+
+      function findConnectedPapers(node){
+        const out = [];
+        state.graphData.links.forEach((link) => {
+          const sid = (typeof link.source === "object") ? link.source.id : link.source;
+          const tid = (typeof link.target === "object") ? link.target.id : link.target;
+
+          if(String(sid) === String(node.id)){
+            const other = getNodeById(tid) || link.target;
+            if(other?.group === "paper") out.push(other);
+          } else if(String(tid) === String(node.id)){
+            const other = getNodeById(sid) || link.source;
+            if(other?.group === "paper") out.push(other);
+          }
+        });
+
+        const seen = new Set();
+        return out.filter(p => (seen.has(p.id) ? false : (seen.add(p.id), true)));
+      }
+
+      // ---------------------------
+      // Grid
+      // ---------------------------
+      function renderGrid(){
+        const container = $("#grid-content");
+        container.innerHTML = "";
+
+        const type = $("#filterType").value;
+        const sortBy = $("#sortBy").value;
+
+        let items = state.graphData.nodes.slice();
+
+        if(type !== "all"){
+          items = items.filter(n => n.group === type);
         }
 
-        function closePanel() {
-            document.getElementById('info-panel').classList.remove('visible');
+        const q = ($("#searchInput").value || "").trim().toLowerCase();
+        if(q.length >= 2){
+          items = items
+            .map(n => ({ n, score: scoreMatch(n.name, q) }))
+            .filter(x => x.score > 0)
+            .sort((a,b) => b.score - a.score)
+            .map(x => x.n);
         }
-    </script>
+
+        if(sortBy === "name_asc"){
+          items.sort((a,b) => (a.name||"").localeCompare(b.name||""));
+        } else if(sortBy === "date_desc"){
+          items.sort((a,b) => (parseDate(b.date)?.valueOf() ?? 0) - (parseDate(a.date)?.valueOf() ?? 0));
+        } else if(sortBy === "date_asc"){
+          items.sort((a,b) => (parseDate(a.date)?.valueOf() ?? 0) - (parseDate(b.date)?.valueOf() ?? 0));
+        } else {
+          items.sort((a,b) => (degree(b.id) - degree(a.id)));
+        }
+
+        if(!items.length){
+          const empty = document.createElement("div");
+          empty.style.color = "rgba(255,255,255,.55)";
+          empty.style.fontWeight = "300";
+          empty.style.padding = "10px 2px";
+          empty.textContent = "No hay resultados.";
+          container.appendChild(empty);
+          return;
+        }
+
+        items.forEach((n) => {
+          const card = document.createElement("article");
+          card.className = "bento-card";
+          card.setAttribute("tabindex","0");
+          card.setAttribute("role","button");
+          card.setAttribute("aria-label", `Abrir ${n.group}: ${n.name}`);
+
+          const pillClass = n.group;
+          const date = formatDate(n.date);
+
+          card.innerHTML = `
+            <h3 class="bc-title">${escapeHTML(n.name)}</h3>
+            <div class="bc-meta">
+              <span class="pill ${pillClass}">${escapeHTML(n.group)}</span>
+              ${state.favorites.has(String(n.id)) ? `<span class="pill" style="border-color:rgba(255,255,255,.20);">★</span>` : ``}
+              <span class="bc-date">${escapeHTML(date)}</span>
+            </div>
+          `;
+
+          const open = () => {
+            setActiveView("graph");
+            setTimeout(() => {
+              focusNode(n);
+              openDrawer(n);
+            }, 120);
+          };
+
+          card.addEventListener("click", open);
+          card.addEventListener("keydown", (e) => {
+            if(e.key === "Enter" || e.key === " "){
+              e.preventDefault();
+              open();
+            }
+          });
+
+          container.appendChild(card);
+        });
+
+        $("#brandMeta").textContent = `v9 • ${items.length} items`;
+      }
+
+      function degree(nodeId){
+        let d = 0;
+        state.graphData.links.forEach((l) => {
+          const sid = (typeof l.source === "object") ? l.source.id : l.source;
+          const tid = (typeof l.target === "object") ? l.target.id : l.target;
+          if(String(sid) === String(nodeId) || String(tid) === String(nodeId)) d++;
+        });
+        return d;
+      }
+
+      function scoreMatch(text, q){
+        const t = (text || "").toLowerCase();
+        if(!t.includes(q)) return 0;
+        if(t === q) return 100;
+        if(t.startsWith(q)) return 70;
+        return 40 - Math.min(30, t.indexOf(q));
+      }
+
+      // ---------------------------
+      // Search (listbox)
+      // ---------------------------
+      function openSuggestions(items){
+        const box = $("#suggestions");
+        state.suggestions.open = true;
+        state.suggestions.items = items;
+        state.suggestions.activeIndex = -1;
+        box.setAttribute("aria-hidden","false");
+        $("#searchInput").setAttribute("aria-expanded","true");
+        renderSuggestions();
+      }
+
+      function closeSuggestions(){
+        const box = $("#suggestions");
+        state.suggestions.open = false;
+        state.suggestions.items = [];
+        state.suggestions.activeIndex = -1;
+        box.setAttribute("aria-hidden","true");
+        $("#searchInput").setAttribute("aria-expanded","false");
+        box.innerHTML = "";
+      }
+
+      function renderSuggestions(){
+        const box = $("#suggestions");
+        box.innerHTML = "";
+
+        const items = state.suggestions.items;
+        if(!items.length){
+          closeSuggestions();
+          return;
+        }
+
+        items.forEach((m, idx) => {
+          const item = document.createElement("div");
+          item.className = "s-item";
+          item.setAttribute("role","option");
+          item.id = `sug_${idx}`;
+          item.setAttribute("aria-selected", String(idx === state.suggestions.activeIndex));
+
+          const tagClass = m.group === "author" ? "tag-author" : (m.group === "topic" ? "tag-topic" : "tag-paper");
+          item.innerHTML = `
+            <span class="name">${escapeHTML(m.name)}</span>
+            <span class="s-tag ${tagClass}">${escapeHTML(m.group)}</span>
+          `;
+
+          const go = () => {
+            closeSuggestions();
+            $("#searchInput").value = "";
+            setActiveView("graph");
+            focusNode(m);
+            openDrawer(m);
+          };
+
+          item.addEventListener("click", go);
+          item.addEventListener("mousemove", () => {
+            state.suggestions.activeIndex = idx;
+            updateActiveSuggestion();
+          });
+
+          box.appendChild(item);
+        });
+
+        updateActiveSuggestion();
+      }
+
+      function updateActiveSuggestion(){
+        const box = $("#suggestions");
+        const idx = state.suggestions.activeIndex;
+        const children = Array.from(box.children);
+        children.forEach((c, i) => c.setAttribute("aria-selected", String(i === idx)));
+        if(idx >= 0){
+          $("#searchInput").setAttribute("aria-activedescendant", `sug_${idx}`);
+        } else {
+          $("#searchInput").removeAttribute("aria-activedescendant");
+        }
+      }
+
+      function handleSearchInput(){
+        const val = ($("#searchInput").value || "").trim().toLowerCase();
+        if(val.length < 2){
+          closeSuggestions();
+          return;
+        }
+        const matches = state.graphData.nodes
+          .map(n => ({ n, score: scoreMatch(n.name, val) }))
+          .filter(x => x.score > 0)
+          .sort((a,b) => b.score - a.score)
+          .slice(0, 8)
+          .map(x => x.n);
+
+        openSuggestions(matches);
+      }
+
+      // ---------------------------
+      // Settings modal
+      // ---------------------------
+      function openSettings(){
+        const modal = $("#settingsModal");
+        state.lastFocusEl = document.activeElement;
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden","false");
+        $("#toggleMotion").focus({ preventScroll:true });
+        document.addEventListener("keydown", onSettingsKey, true);
+      }
+
+      function closeSettings(){
+        const modal = $("#settingsModal");
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden","true");
+        document.removeEventListener("keydown", onSettingsKey, true);
+        if(state.lastFocusEl?.focus) state.lastFocusEl.focus({ preventScroll:true });
+      }
+
+      function onSettingsKey(e){
+        if(e.key === "Escape"){
+          e.preventDefault();
+          closeSettings();
+        }
+      }
+
+      function syncSettingsUI(){
+        $("#toggleMotion").setAttribute("aria-checked", String(state.prefs.reduceMotion));
+        $("#toggleLabels").setAttribute("aria-checked", String(state.prefs.showLabels));
+        $("#linkForce").value = state.prefs.linkForce;
+
+        if(state.prefs.reduceMotion){
+          $$(".orb").forEach(o => o.style.animation = "none");
+        } else {
+          $$(".orb").forEach(o => o.style.animation = "");
+        }
+
+        if(state.Graph){
+          // Apply labels + forces safely (no reliance on refresh())
+          applyLabels(state.Graph);
+          applyLinkForce(state.Graph);
+
+          // Nudge graph to re-render
+          state.Graph.nodeColor(state.Graph.nodeColor());
+          state.Graph.linkWidth(state.Graph.linkWidth());
+          state.Graph.linkColor(state.Graph.linkColor());
+          state.Graph.linkOpacity(state.Graph.linkOpacity());
+
+          // Optional internal refresh if available
+          state.Graph.refresh?.();
+        }
+      }
+
+      // ---------------------------
+      // Deep link / hash
+      // ---------------------------
+      function openFromHash(){
+        if(!location.hash.startsWith("#node=")) return;
+        const id = decodeURIComponent(location.hash.slice(6));
+        const n = getNodeById(id);
+        if(n){
+          setActiveView("graph");
+          focusNode(n);
+          openDrawer(n, "hash");
+        }
+      }
+
+      // ---------------------------
+      // Data load
+      // ---------------------------
+      async function loadData(){
+        try{
+          const res = await fetch("./graph_data.json", { cache:"no-store" });
+          if(!res.ok) throw new Error(`HTTP ${res.status}`);
+          const raw = await res.json();
+          state.graphData = normalizeData(raw);
+
+          $("#brandMeta").textContent = `v9 • ${state.graphData.nodes.length} nodes`;
+          toast(`Archivo cargado: ${state.graphData.nodes.length} nodos · ${state.graphData.links.length} links`, "ok", 2800);
+          return true;
+        } catch (err){
+          console.error(err);
+          toast("No se pudo cargar graph_data.json. Revisa la ruta y el JSON.", "error", 8000);
+          $("#brandMeta").textContent = `v9 • error`;
+          return false;
+        }
+      }
+
+      // ---------------------------
+      // Init app
+      // ---------------------------
+      async function initApp(){
+        loadPrefs();
+        syncSettingsUI();
+
+        $("#landing").style.display = "none";
+        $("#app").classList.add("active");
+
+        const webgl = supportsWebGL();
+        if(!webgl){
+          toast("WebGL no disponible: activando modo GRID. (El grafo 3D requiere WebGL.)", "error", 9000);
+          $("#view-graph").style.display = "none";
+          setActiveView("grid");
+        }
+
+        const ok = await loadData();
+        if(!ok){
+          setActiveView("grid");
+          renderGrid();
+          return;
+        }
+
+        renderGrid();
+
+        if(webgl){
+          const Graph = createGraph();
+          Graph.graphData(state.graphData);
+          setTimeout(() => resetZoom(), 350);
+        } else {
+          setActiveView("grid");
+        }
+
+        state.ready = true;
+        openFromHash();
+      }
+
+      // ---------------------------
+      // Global keyboard shortcuts
+      // ---------------------------
+      function onKeyDown(e){
+        const tag = (e.target?.tagName || "").toLowerCase();
+        const typing = tag === "input" || tag === "textarea" || e.target?.isContentEditable;
+
+        if(e.key === "/" && !typing){
+          e.preventDefault();
+          $("#searchInput").focus({ preventScroll:true });
+          return;
+        }
+
+        if(!typing && (e.key === "1" || e.key === "2")){
+          e.preventDefault();
+          setActiveView(e.key === "1" ? "graph" : "grid");
+          return;
+        }
+
+        if(!typing && (e.key === "s" || e.key === "S")){
+          e.preventDefault();
+          openSettings();
+          return;
+        }
+
+        if(state.activeView === "graph" && !typing){
+          if(e.key === "+" || e.key === "="){ e.preventDefault(); zoomIn(); }
+          if(e.key === "-" || e.key === "_"){ e.preventDefault(); zoomOut(); }
+          if(e.key === "0"){ e.preventDefault(); resetZoom(); }
+        }
+
+        if(e.key === "Escape"){
+          if($("#drawer").classList.contains("open")){
+            e.preventDefault();
+            closeDrawer();
+          } else if($("#settingsModal").classList.contains("open")){
+            e.preventDefault();
+            closeSettings();
+          } else if(state.suggestions.open){
+            e.preventDefault();
+            closeSuggestions();
+          }
+        }
+
+        if(e.target === $("#searchInput") && state.suggestions.open){
+          if(e.key === "ArrowDown"){
+            e.preventDefault();
+            state.suggestions.activeIndex = Math.min(state.suggestions.activeIndex + 1, state.suggestions.items.length - 1);
+            updateActiveSuggestion();
+          } else if(e.key === "ArrowUp"){
+            e.preventDefault();
+            state.suggestions.activeIndex = Math.max(state.suggestions.activeIndex - 1, -1);
+            updateActiveSuggestion();
+          } else if(e.key === "Enter"){
+            if(state.suggestions.activeIndex >= 0){
+              e.preventDefault();
+              const m = state.suggestions.items[state.suggestions.activeIndex];
+              closeSuggestions();
+              $("#searchInput").value = "";
+              setActiveView("graph");
+              focusNode(m);
+              openDrawer(m);
+            }
+          }
+        }
+      }
+
+      // ---------------------------
+      // UI events
+      // ---------------------------
+      function bindEvents(){
+        // Landing
+        $("#enterBtn").addEventListener("click", initApp);
+        const tour = $("#tourBtn");
+        if(tour) tour.addEventListener("click", () => {
+          const panel = $("#shortcutsPanel");
+          if(!panel) return;
+          panel.open = !panel.open;
+          panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        });
+
+        // Brand -> settings
+        $(".brand").addEventListener("click", openSettings);
+        $(".brand").addEventListener("keydown", (e) => {
+          if(e.key === "Enter" || e.key === " "){
+            e.preventDefault();
+            openSettings();
+          }
+        });
+
+        // Views
+        $("#btnGraph").addEventListener("click", () => setActiveView("graph"));
+        $("#btnGrid").addEventListener("click", () => setActiveView("grid"));
+
+        // Camera
+        $("#zoomInBtn").addEventListener("click", zoomIn);
+        $("#zoomOutBtn").addEventListener("click", zoomOut);
+        $("#fitBtn").addEventListener("click", resetZoom);
+        $("#settingsBtn").addEventListener("click", openSettings);
+
+        // Drawer close
+        $("#closeDrawerBtn").addEventListener("click", closeDrawer);
+
+        // Click outside drawer
+        document.addEventListener("mousedown", (e) => {
+          const drawer = $("#drawer");
+          if(!drawer.classList.contains("open")) return;
+          if(drawer.contains(e.target)) return;
+          closeDrawer();
+        });
+
+        // Search
+        $("#searchInput").addEventListener("input", () => {
+          handleSearchInput();
+          if(state.activeView === "grid") renderGrid();
+        });
+
+        $("#searchInput").addEventListener("blur", () => {
+          setTimeout(() => {
+            if(document.activeElement?.closest?.("#suggestions")) return;
+            closeSuggestions();
+          }, 120);
+        });
+
+        // Filters
+        $("#filterType").addEventListener("change", renderGrid);
+        $("#sortBy").addEventListener("change", renderGrid);
+
+        // Settings modal
+        $("#closeSettingsBtn").addEventListener("click", closeSettings);
+        $("#settingsModal").addEventListener("mousedown", (e) => {
+          if(e.target === $("#settingsModal")) closeSettings();
+        });
+
+        $("#toggleMotion").addEventListener("click", () => {
+          state.prefs.reduceMotion = !state.prefs.reduceMotion;
+          savePrefs();
+          syncSettingsUI();
+          toast(`Reduce motion: ${state.prefs.reduceMotion ? "ON" : "OFF"}`, "ok", 2400);
+        });
+
+        $("#toggleLabels").addEventListener("click", () => {
+          state.prefs.showLabels = !state.prefs.showLabels;
+          savePrefs();
+          syncSettingsUI();
+          toast(`Labels: ${state.prefs.showLabels ? "ON" : "OFF"}`, "ok", 2400);
+        });
+
+        $("#linkForce").addEventListener("change", (e) => {
+          state.prefs.linkForce = e.target.value;
+          savePrefs();
+          syncSettingsUI();
+          toast(`Link force: ${state.prefs.linkForce}`, "ok", 2400);
+        });
+
+        // Drawer hooks
+        $("#copyLinkBtn").addEventListener("click", async () => {
+          let url = location.href;
+          if(!location.hash.startsWith("#node=")){
+            url = location.href.replace(/#.*$/, "");
+          }
+          try{
+            await navigator.clipboard.writeText(url);
+            toast("Link copiado al portapapeles.", "ok", 2500);
+          } catch {
+            toast("No se pudo copiar (permiso del navegador).", "error", 4500);
+          }
+        });
+
+        $("#favoriteBtn").addEventListener("click", () => {
+          if(!location.hash.startsWith("#node=")) return;
+          const nid = decodeURIComponent(location.hash.slice(6));
+          if(state.favorites.has(String(nid))){
+            state.favorites.delete(String(nid));
+            toast("Eliminado de favoritos.", "ok", 2500);
+          } else {
+            state.favorites.add(String(nid));
+            toast("Guardado en favoritos.", "ok", 2500);
+          }
+          saveFavorites();
+          renderGrid();
+        });
+
+        // Global keyboard
+        document.addEventListener("keydown", onKeyDown);
+
+        // Hash change
+        window.addEventListener("hashchange", () => {
+          if(!state.ready) return;
+          openFromHash();
+        });
+      }
+
+      // ---------------------------
+      // Boot
+      // ---------------------------
+      window.addEventListener("DOMContentLoaded", () => {
+        try {
+          bindEvents();
+        } catch (err) {
+          console.error("bindEvents() failed:", err);
+        }
+
+        setTimeout(() => {
+          toast("Tip: pulsa / para buscar. 1 grafo, 2 grid, S ajustes.", "ok", 6500);
+        }, 600);
+      });
+    })();
+  </script>
+
 </body>
 </html>
