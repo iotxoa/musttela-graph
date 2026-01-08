@@ -2,109 +2,249 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Musttela - Grafo de Conocimiento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musttela | Research Glass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    
     <style>
-        body { margin: 0; font-family: 'Segoe UI', sans-serif; overflow: hidden; background: #000011; color: white; }
-        
+        :root {
+            --bg-color: #050505;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #ffffff;
+            --highlight: #00d2ff;
+        }
+
+        body { margin: 0; font-family: 'Inter', sans-serif; overflow: hidden; background: var(--bg-color); color: var(--text-main); }
         #graph-container { width: 100vw; height: 100vh; }
-        
-        /* Panel lateral de información */
+
+        /* --- ESTILO GLASS FROST --- */
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            color: white;
+        }
+
+        /* --- UI: Panel Izquierdo (Controles) --- */
+        .controls {
+            position: absolute; top: 20px; left: 20px; width: 280px;
+            z-index: 10;
+        }
+
+        h1 { margin: 0 0 15px 0; font-size: 1.5rem; letter-spacing: -1px; background: linear-gradient(to right, #fff, #888); -webkit-background-clip: text; color: transparent; }
+
+        .search-box {
+            width: 100%; background: rgba(0,0,0,0.3); border: 1px solid #444; 
+            color: white; padding: 10px; border-radius: 8px; margin-bottom: 15px;
+            font-family: inherit;
+        }
+
+        .filter-group { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+        .filter-btn {
+            background: rgba(255,255,255,0.1); border: none; color: #aaa; 
+            padding: 6px 12px; border-radius: 20px; cursor: pointer; font-size: 0.8rem;
+            transition: all 0.2s; border: 1px solid transparent;
+        }
+        .filter-btn.active { background: var(--highlight); color: #000; font-weight: bold; box-shadow: 0 0 10px var(--highlight); }
+
+        /* --- UI: Panel Derecho (Info) --- */
         #info-panel {
             position: absolute; top: 20px; right: 20px; width: 350px;
-            background: rgba(10, 10, 20, 0.9); border: 1px solid #334455;
-            padding: 20px; border-radius: 12px; backdrop-filter: blur(10px);
-            display: none; max-height: 85vh; overflow-y: auto;
-            box-shadow: 0 0 30px rgba(0,0,0,0.8);
-            transition: opacity 0.3s; z-index: 100;
+            display: none; max-height: 85vh; overflow-y: auto; z-index: 10;
+            transform: translateX(20px); opacity: 0; transition: all 0.3s ease;
         }
-        
-        /* Tipografía y estilos del panel */
-        h2 { font-size: 1.3rem; margin-top: 0; color: #44aaff; text-shadow: 0 0 10px rgba(68,170,255,0.3); }
-        .meta { font-size: 0.8rem; color: #8899aa; margin-bottom: 15px; border-bottom: 1px solid #334455; padding-bottom: 10px; }
-        .abstract { font-size: 0.95rem; line-height: 1.6; color: #ddeeff; margin: 15px 0; text-align: justify; }
-        
-        /* Botón de leer */
-        .btn { 
-            display: block; width: 100%; text-align: center;
-            background: linear-gradient(90deg, #0066ff, #00ccff); 
-            color: white; text-decoration: none; padding: 12px 0; 
-            border-radius: 6px; font-weight: bold; margin-top: 20px;
-            box-shadow: 0 4px 15px rgba(0,100,255,0.4);
-            transition: transform 0.2s;
-        }
-        .btn:hover { transform: scale(1.02); }
-        .close-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; color: #556677; cursor: pointer; font-size: 1.2rem; }
-        .close-btn:hover { color: white; }
+        #info-panel.visible { transform: translateX(0); opacity: 1; }
 
-        /* Etiqueta flotante */
-        .scene-tooltip { color: #ccddff !important; background: rgba(0,0,10,0.8) !important; border-radius: 4px; padding: 6px !important; }
+        .tag { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; margin-right: 5px; margin-bottom: 5px; font-weight: 600; }
+        .tag.paper { background: rgba(0, 210, 255, 0.2); color: #00d2ff; }
+        .tag.author { background: rgba(255, 174, 0, 0.2); color: #ffae00; }
+        .tag.topic { background: rgba(255, 0, 128, 0.2); color: #ff0080; }
+
+        .abstract { font-size: 0.9rem; line-height: 1.5; color: #ccc; margin: 15px 0; }
+        .btn-link { 
+            display: block; text-align: center; background: white; color: black; 
+            padding: 10px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 15px; 
+        }
+        
     </style>
-    
     <script src="//unpkg.com/3d-force-graph"></script>
 </head>
 <body>
 
+    <div class="controls glass-panel">
+        <h1>MUSTTELA</h1>
+        <input type="text" id="search" class="search-box" placeholder="Buscar concepto o autor..." onkeyup="searchNode()">
+        
+        <div style="font-size: 0.8rem; color:#888; margin-bottom:5px;">FILTROS VISUALES</div>
+        <div class="filter-group">
+            <button class="filter-btn active" onclick="toggleGroup('paper', this)">Papers</button>
+            <button class="filter-btn active" onclick="toggleGroup('author', this)">Autores</button>
+            <button class="filter-btn active" onclick="toggleGroup('topic', this)">Temas</button>
+        </div>
+        <div style="margin-top: 15px; font-size: 0.7rem; color: #555;">
+            *Pasa el ratón sobre un nodo para ver sus conexiones.
+        </div>
+    </div>
+
     <div id="graph-container"></div>
 
-    <div id="info-panel">
-        <button class="close-btn" onclick="document.getElementById('info-panel').style.display='none'">&times;</button>
-        <h2 id="p-title">Título del Paper</h2>
-        <div class="meta" id="p-meta"></div>
-        <div class="abstract" id="p-abstract"></div>
-        <a href="#" target="_blank" class="btn" id="p-link">📄 Leer PDF Original</a>
+    <div id="info-panel" class="glass-panel">
+        <div style="display:flex; justify-content:space-between;">
+            <span id="p-type" class="tag">TIPO</span>
+            <button onclick="closePanel()" style="background:none; border:none; color:white; cursor:pointer;">✕</button>
+        </div>
+        <h2 id="p-title" style="margin: 10px 0; color: white;">Título</h2>
+        <div id="p-meta" style="font-size: 0.8rem; color: #888; margin-bottom:10px;"></div>
+        <div id="p-abstract" class="abstract"></div>
+        <a id="p-link" href="#" target="_blank" class="btn-link">Leer Documento</a>
     </div>
 
     <script>
-        // Configuración visual
         const elem = document.getElementById('graph-container');
-        
+        let graphData = { nodes: [], links: [] };
+        let hiddenGroups = new Set();
+        let highlightNodes = new Set();
+        let highlightLinks = new Set();
+        let hoverNode = null;
+
         const Graph = ForceGraph3D()
             (elem)
-            .jsonUrl('./graph_data.json') // Carga tu archivo JSON
-            
-            // --- Estilo de Nodos ---
+            .jsonUrl('./graph_data.json')
             .nodeLabel('name')
-            .nodeAutoColorBy('group') // Colores distintos para Paper y Tema
-            .nodeVal('val')           // Tamaño basado en la importancia
-            .nodeResolution(24)       // Calidad geométrica de las esferas
-            .nodeOpacity(0.9)
-            
-            // --- Estilo de Enlaces ---
-            .linkWidth(link => link.value * 0.2) // Grosor según relevancia
-            .linkOpacity(0.2)
-            .linkDirectionalParticles(2) // Partículas flotando en las líneas
-            .linkDirectionalParticleWidth(1.5)
-
-            // --- Interacción ---
-            .onNodeClick(node => {
-                // Mover cámara al hacer clic
-                const distance = 60;
-                const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
-
-                Graph.cameraPosition(
-                    { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, 
-                    node, 
-                    2000 
-                );
-
-                // Si es un paper, mostrar panel lateral
-                if (node.group === 'paper') {
-                    showPanel(node);
+            .nodeColor(node => {
+                // Colores highlight o apagados
+                if (hoverNode && !highlightNodes.has(node)) return 'rgba(255,255,255,0.1)';
+                
+                switch(node.group) {
+                    case 'paper': return '#00d2ff'; // Cian
+                    case 'author': return '#ffae00'; // Naranja
+                    case 'topic': return '#ff0080'; // Rosa
+                    default: return '#ffffff';
                 }
+            })
+            .nodeVal('val')
+            .nodeResolution(16)
+            .linkWidth(link => highlightLinks.has(link) ? 2 : 0.5)
+            .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
+            .linkDirectionalParticleWidth(2)
+            .linkOpacity(0.3)
+            .backgroundColor('#050505')
+            
+            // --- Lógica de Focus (Highlight) ---
+            .onNodeHover(node => {
+                elem.style.cursor = node ? 'pointer' : null;
+                hoverNode = node || null;
+                highlightNodes.clear();
+                highlightLinks.clear();
+                
+                if (node) {
+                    highlightNodes.add(node);
+                    // Buscar vecinos
+                    graphData.links.forEach(link => {
+                        if (link.source.id === node.id || link.target.id === node.id) {
+                            highlightLinks.add(link);
+                            highlightNodes.add(link.source);
+                            highlightNodes.add(link.target);
+                        }
+                    });
+                }
+                Graph.nodeColor(Graph.nodeColor()); // Refrescar colores
+                Graph.linkWidth(Graph.linkWidth());
+                Graph.linkDirectionalParticles(Graph.linkDirectionalParticles());
+            })
+            .onNodeClick(node => {
+                focusCamera(node);
+                showPanel(node);
+            })
+            .onEngineStop(() => {
+                graphData = Graph.graphData(); // Guardar datos para filtros
             });
+
+        // --- Funciones UI ---
+
+        function focusCamera(node) {
+            const distance = 60;
+            const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+            Graph.cameraPosition(
+                { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, 
+                node, 
+                2000 
+            );
+        }
 
         function showPanel(node) {
             const panel = document.getElementById('info-panel');
+            const pType = document.getElementById('p-type');
+            
             document.getElementById('p-title').innerText = node.name;
-            
-            // Cortar abstract si es muy largo
-            const absText = node.abstract ? node.abstract : 'Sin resumen disponible.';
-            document.getElementById('p-abstract').innerText = absText.length > 800 ? absText.substring(0, 800) + '...' : absText;
-            
-            document.getElementById('p-meta').innerText = `📅 ${node.date.split('T')[0]} | ✍ ${node.authors ? node.authors.slice(0,3).join(', ') : 'Desconocido'}`;
-            document.getElementById('p-link').href = node.url;
+            pType.innerText = node.group.toUpperCase();
+            pType.className = `tag ${node.group}`;
+
+            if (node.group === 'paper') {
+                document.getElementById('p-abstract').style.display = 'block';
+                document.getElementById('p-abstract').innerText = node.abstract ? node.abstract.substring(0, 500) + '...' : '';
+                document.getElementById('p-link').style.display = 'block';
+                document.getElementById('p-link').href = node.url;
+                document.getElementById('p-meta').innerText = node.date ? `Publicado: ${node.date.split('T')[0]}` : '';
+            } else {
+                // Si es autor o tema, ocultamos cosas irrelevantes
+                document.getElementById('p-abstract').style.display = 'none';
+                document.getElementById('p-link').style.display = 'none';
+                document.getElementById('p-meta').innerText = 'Nodo de conexión';
+            }
             
             panel.style.display = 'block';
+            setTimeout(() => panel.classList.add('visible'), 10);
+        }
+
+        function closePanel() {
+            const panel = document.getElementById('info-panel');
+            panel.classList.remove('visible');
+            setTimeout(() => panel.style.display = 'none', 300);
+        }
+
+        // --- Filtros ---
+        function toggleGroup(group, btn) {
+            if (hiddenGroups.has(group)) {
+                hiddenGroups.delete(group);
+                btn.classList.add('active');
+            } else {
+                hiddenGroups.add(group);
+                btn.classList.remove('active');
+            }
+            refreshGraph();
+        }
+
+        function refreshGraph() {
+            // Filtramos nodos visibles
+            const visibleNodes = graphData.nodes.filter(n => !hiddenGroups.has(n.group));
+            // Filtramos links validos (ambos extremos deben ser visibles)
+            const visibleLinks = graphData.links.filter(l => 
+                !hiddenGroups.has(l.source.group) && !hiddenGroups.has(l.target.group)
+            );
+            
+            // Actualizamos grafo (esto reinicia la simulación un poco)
+            // Nota: ForceGraph3D maneja mal el filtrado dinámico sin resetear, 
+            // así que usamos 'visibility' visualmente
+            Graph.nodeVisibility(node => !hiddenGroups.has(node.group));
+            Graph.linkVisibility(link => 
+                !hiddenGroups.has(link.source.group) && !hiddenGroups.has(link.target.group)
+            );
+        }
+
+        function searchNode() {
+            const val = document.getElementById('search').value.toLowerCase();
+            if(!val) return;
+            const node = graphData.nodes.find(n => n.name.toLowerCase().includes(val));
+            if(node) {
+                focusCamera(node);
+                showPanel(node);
+            }
         }
     </script>
 </body>

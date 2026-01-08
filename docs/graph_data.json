@@ -1,392 +1,1143 @@
 {
   "nodes": [
     {
-      "id": "2601.03222v1",
-      "name": "The Fake Friend Dilemma: Trust and the Political Economy of Conversational AI",
+      "id": "2601.04175v1",
+      "name": "Legal Alignment for Safe and Ethical AI",
       "group": "paper",
-      "val": 20,
-      "abstract": "As conversational AI systems become increasingly integrated into everyday life, they raise pressing concerns about user autonomy, trust, and the commercial interests that influence their behavior. To address these concerns, this paper develops the Fake Friend Dilemma (FFD), a sociotechnical condition in which users place trust in AI agents that appear supportive while pursuing goals that are misaligned with the user's own. The FFD provides a critical framework for examining how anthropomorphic AI systems facilitate subtle forms of manipulation and exploitation. Drawing on literature in trust, AI alignment, and surveillance capitalism, we construct a typology of harms, including covert advertising, political propaganda, behavioral nudging, and surveillance. We then assess possible mitigation strategies, including both structural and technical interventions. By focusing on trust as a vector of asymmetrical power, the FFD offers a lens for understanding how AI systems may undermine user autonomy while maintaining the appearance of helpfulness.",
-      "url": "https://arxiv.org/pdf/2601.03222v1",
-      "date": "2026-01-06T18:07:52+00:00",
-      "authors": [
-        "Jacob Erickson"
-      ]
+      "val": 25,
+      "abstract": "Alignment of artificial intelligence (AI) encompasses the normative problem of specifying how AI systems should act and the technical problem of ensuring AI systems comply with those specifications. To date, AI alignment has generally overlooked an important source of knowledge and practice for grappling with these problems: law. In this paper, we aim to fill this gap by exploring how legal rules, principles, and methods can be leveraged to address problems of alignment and inform the design of AI systems that operate safely and ethically. This emerging field -- legal alignment -- focuses on three research directions: (1) designing AI systems to comply with the content of legal rules developed through legitimate institutions and processes, (2) adapting methods from legal interpretation to guide how AI systems reason and make decisions, and (3) harnessing legal concepts as a structural blueprint for confronting challenges of reliability, trust, and cooperation in AI systems. These research directions present new conceptual, empirical, and institutional questions, which include examining the specific set of laws that particular AI systems should follow, creating evaluations to assess their legal compliance in real-world settings, and developing governance frameworks to support the implementation of legal alignment in practice. Tackling these questions requires expertise across law, computer science, and other disciplines, offering these communities the opportunity to collaborate in designing AI for the better.",
+      "url": "https://arxiv.org/pdf/2601.04175v1",
+      "date": "2026-01-07T18:42:04+00:00",
+      "year": 2026
     },
     {
-      "id": "topic_trust_ai",
-      "name": "trust ai",
+      "id": "auth_noam_kolt",
+      "name": "Noam Kolt",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_nicholas_caputo",
+      "name": "Nicholas Caputo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jack_boeglin",
+      "name": "Jack Boeglin",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_cullen_o'keefe",
+      "name": "Cullen O'Keefe",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_rishi_bommasani",
+      "name": "Rishi Bommasani",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_stephen_casper",
+      "name": "Stephen Casper",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mariano-florentino_cuéllar",
+      "name": "Mariano-Florentino Cuéllar",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_noah_feldman",
+      "name": "Noah Feldman",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_iason_gabriel",
+      "name": "Iason Gabriel",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_gillian_k_hadfield",
+      "name": "Gillian K. Hadfield",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_lewis_hammond",
+      "name": "Lewis Hammond",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_peter_henderson",
+      "name": "Peter Henderson",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_atoosa_kasirzadeh",
+      "name": "Atoosa Kasirzadeh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_seth_lazar",
+      "name": "Seth Lazar",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_anka_reuel",
+      "name": "Anka Reuel",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kevin_l_wei",
+      "name": "Kevin L. Wei",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jonathan_zittrain",
+      "name": "Jonathan Zittrain",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_legal_alignment",
+      "name": "legal alignment",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_autonomy_trust",
-      "name": "autonomy trust",
+      "id": "topic_legal_compliance",
+      "name": "legal compliance",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_conversational_ai",
-      "name": "conversational ai",
+      "id": "topic_exploring_legal",
+      "name": "exploring legal",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_ai_agents",
-      "name": "ai agents",
+      "id": "topic_specifying_ai",
+      "name": "specifying ai",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "2601.03156v1",
-      "name": "Prompt-Counterfactual Explanations for Generative AI System Behavior",
+      "id": "2601.04107v1",
+      "name": "From Abstract Threats to Institutional Realities: A Comparative Semantic Network Analysis of AI Securitisation in the US, EU, and China",
       "group": "paper",
-      "val": 20,
-      "abstract": "As generative AI systems become integrated into real-world applications, organizations increasingly need to be able to understand and interpret their behavior. In particular, decision-makers need to understand what causes generative AI systems to exhibit specific output characteristics. Within this general topic, this paper examines a key question: what is it about the input -- the prompt -- that causes an LLM-based generative AI system to produce output that exhibits specific characteristics, such as toxicity, negative sentiment, or political bias. To examine this question, we adapt a common technique from the Explainable AI literature: counterfactual explanations. We explain why traditional counterfactual explanations cannot be applied directly to generative AI systems, due to several differences in how generative AI systems function. We then propose a flexible framework that adapts counterfactual explanations to non-deterministic, generative AI systems in scenarios where downstream classifiers can reveal key characteristics of their outputs. Based on this framework, we introduce an algorithm for generating prompt-counterfactual explanations (PCEs). Finally, we demonstrate the production of counterfactual explanations for generative AI systems with three case studies, examining different output characteristics (viz., political leaning, toxicity, and sentiment). The case studies further show that PCEs can streamline prompt engineering to suppress undesirable output characteristics and can enhance red-teaming efforts to uncover additional prompts that elicit undesirable outputs. Ultimately, this work lays a foundation for prompt-focused interpretability in generative AI: a capability that will become indispensable as these models are entrusted with higher-stakes tasks and subject to emerging regulatory requirements for transparency and accountability.",
-      "url": "https://arxiv.org/pdf/2601.03156v1",
-      "date": "2026-01-06T16:33:19+00:00",
-      "authors": [
-        "Sofie Goethals",
-        "Foster Provost",
-        "João Sedoc"
-      ]
+      "val": 25,
+      "abstract": "Artificial intelligence governance exhibits a striking paradox: while major jurisdictions converge rhetorically around concepts such as safety, risk, and accountability, their regulatory frameworks remain fundamentally divergent and mutually unintelligible. This paper argues that this fragmentation cannot be explained solely by geopolitical rivalry, institutional complexity, or instrument selection. Instead, it stems from how AI is constituted as an object of governance through distinct institutional logics. Integrating securitisation theory with the concept of the dispositif, we demonstrate that jurisdictions govern ontologically different objects under the same vocabulary. Using semantic network analysis of official policy texts from the European Union, the United States, and China (2023-2025), we trace how concepts like safety are embedded within divergent semantic architectures. Our findings reveal that the EU juridifies AI as a certifiable product through legal-bureaucratic logic; the US operationalises AI as an optimisable system through market-liberal logic; and China governs AI as socio-technical infrastructure through holistic state logic. We introduce the concept of structural incommensurability to describe this condition of ontological divergence masked by terminological convergence. This reframing challenges ethics-by-principles approaches to global AI governance, suggesting that coordination failures arise not from disagreement over values but from the absence of a shared reference object.",
+      "url": "https://arxiv.org/pdf/2601.04107v1",
+      "date": "2026-01-07T17:12:03+00:00",
+      "year": 2026
     },
     {
-      "id": "topic_explanations_generative",
-      "name": "explanations generative",
+      "id": "auth_ruiyi_guo",
+      "name": "Ruiyi Guo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_bodong_zhang",
+      "name": "Bodong Zhang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_institutional_logics",
+      "name": "institutional logics",
       "group": "topic",
-      "val": 8
-    },
-    {
-      "id": "topic_interpretability_generative",
-      "name": "interpretability generative",
-      "group": "topic",
-      "val": 8
-    },
-    {
-      "id": "topic_counterfactual_explanations",
-      "name": "counterfactual explanations",
-      "group": "topic",
-      "val": 8
-    },
-    {
-      "id": "topic_generative_ai",
-      "name": "generative ai",
-      "group": "topic",
-      "val": 8
-    },
-    {
-      "id": "2601.03061v1",
-      "name": "Vertical tacit collusion in AI-mediated markets",
-      "group": "paper",
-      "val": 20,
-      "abstract": "AI shopping agents are being deployed to hundreds of millions of consumers, creating a new intermediary between platforms, sellers, and buyers. We identify a novel market failure: vertical tacit collusion, where platforms controlling rankings and sellers controlling product descriptions independently learn to exploit documented AI cognitive biases. Using multi-agent simulation calibrated to empirical measurements of large language model biases, we show that joint exploitation produces consumer harm more than double what would occur if strategies were independent. This super-additive harm arises because platform ranking determines which products occupy bias-triggering positions while seller manipulation determines conversion rates. Unlike horizontal algorithmic collusion, vertical tacit collusion requires no coordination and evades antitrust detection because harm emerges from aligned incentives rather than agreement. Our findings identify an urgent regulatory gap as AI shopping agents reach mainstream adoption.",
-      "url": "https://arxiv.org/pdf/2601.03061v1",
-      "date": "2026-01-06T14:43:14+00:00",
-      "authors": [
-        "Felipe M. Affonso"
-      ]
-    },
-    {
-      "id": "topic_ai_shopping",
-      "name": "ai shopping",
-      "group": "topic",
-      "val": 8
-    },
-    {
-      "id": "topic_collusion_platforms",
-      "name": "collusion platforms",
-      "group": "topic",
-      "val": 8
-    },
-    {
-      "id": "topic_evades_antitrust",
-      "name": "evades antitrust",
-      "group": "topic",
-      "val": 8
-    },
-    {
-      "id": "topic_platforms_sellers",
-      "name": "platforms sellers",
-      "group": "topic",
-      "val": 8
-    },
-    {
-      "id": "2601.02773v1",
-      "name": "From Slaves to Synths? Superintelligence and the Evolution of Legal Personality",
-      "group": "paper",
-      "val": 20,
-      "abstract": "This essay examines the evolving concept of legal personality through the lens of recent developments in artificial intelligence and the possible emergence of superintelligence. Legal systems have long been open to extending personhood to non-human entities, most prominently corporations, for instrumental or inherent reasons. Instrumental rationales emphasize accountability and administrative efficiency, whereas inherent ones appeal to moral worth and autonomy. Neither is yet sufficient to justify conferring personhood on AI. Nevertheless, the acceleration of technological autonomy may lead us to reconsider how law conceptualizes agency and responsibility. Drawing on comparative jurisprudence, corporate theory, and the emerging literature on AI governance, the paper argues that existing frameworks can address short-term accountability gaps, but the eventual development of superintelligence may force a paradigmatic shift in our understanding of law itself. In such a speculative future, legal personality may depend less on the cognitive sophistication of machines than on humanity's ability to preserve our own moral and institutional sovereignty.",
-      "url": "https://arxiv.org/pdf/2601.02773v1",
-      "date": "2026-01-06T07:09:55+00:00",
-      "authors": [
-        "Simon Chesterman"
-      ]
-    },
-    {
-      "id": "topic_superintelligence_legal",
-      "name": "superintelligence legal",
-      "group": "topic",
-      "val": 8
-    },
-    {
-      "id": "topic_legal_personality",
-      "name": "legal personality",
-      "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
       "id": "topic_ai_governance",
       "name": "ai governance",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_jurisprudence_corporate",
-      "name": "jurisprudence corporate",
+      "id": "topic_governs_ai",
+      "name": "governs ai",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "2601.02633v1",
-      "name": "Fluid Agency in AI Systems: A Case for Functional Equivalence in Copyright, Patent, and Tort",
+      "id": "topic_intelligence_governance",
+      "name": "intelligence governance",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.04094v1",
+      "name": "The Bathtub of European AI Governance: Identifying Technical Sandboxes as the Micro-Foundation of Regulatory Learning",
       "group": "paper",
-      "val": 20,
-      "abstract": "Modern Artificial Intelligence (AI) systems lack human-like consciousness or culpability, yet they exhibit fluid agency: behavior that is (i) stochastic (probabilistic and path-dependent), (ii) dynamic (co-evolving with user interaction), and (iii) adaptive (able to reorient across contexts). Fluid agency generates valuable outputs but collapses attribution, irreducibly entangling human and machine inputs. This fundamental unmappability fractures doctrines that assume traceable provenance--authorship, inventorship, and liability--yielding ownership gaps and moral \"crumple zones.\" This Article argues that only functional equivalence stabilizes doctrine. Where provenance is indeterminate, legal frameworks must treat human and AI contributions as equivalent for allocating rights and responsibility--not as a claim of moral or economic parity but as a pragmatic default. This principle stabilizes doctrine across domains, offering administrable rules: in copyright, vesting ownership in human orchestrators without parsing inseparable contributions; in patent, tying inventor-of-record status to human orchestration and reduction to practice, even when AI supplies the pivotal insight; and in tort, replacing intractable causation inquiries with enterprise-level and sector-specific strict or no-fault schemes. The contribution is both descriptive and normative: fluid agency explains why origin-based tests fail, while functional equivalence supplies an outcome-focused framework to allocate rights and responsibility when attribution collapses.",
-      "url": "https://arxiv.org/pdf/2601.02633v1",
-      "date": "2026-01-06T01:06:07+00:00",
-      "authors": [
-        "Anirban Mukherjee",
-        "Hannah Hanwen Chang"
-      ]
+      "val": 25,
+      "abstract": "The EU AI Act adopts a horizontal and adaptive approach to govern AI technologies characterised by rapid development and unpredictable emerging capabilities. To maintain relevance, the Act embeds provisions for regulatory learning. However, these provisions operate within a complex network of actors and mechanisms that lack a clearly defined technical basis for scalable information flow. This paper addresses this gap by establishing a theoretical model of regulatory learning space defined by the AI Act, decomposed into micro, meso, and macro levels. Drawing from this functional perspective of this model, we situate the diverse stakeholders - ranging from the EU Commission at the macro level to AI developers at the micro level - within the transitions of enforcement (macro-micro) and evidence aggregation (micro-macro). We identify AI Technical Sandboxes as the essential engine for evidence generation at the micro level, providing the necessary data to drive scalable learning across all levels of the model. By providing an extensive discussion of the requirements and challenges for AITSes to serve as this micro-level evidence generator, we aim to bridge the gap between legislative commands and technical operationalisation, thereby enabling a structured discourse between technical and legal experts.",
+      "url": "https://arxiv.org/pdf/2601.04094v1",
+      "date": "2026-01-07T17:01:06+00:00",
+      "year": 2026
     },
     {
-      "id": "topic_doctrine_provenance",
-      "name": "doctrine provenance",
+      "id": "auth_tom_deckenbrunnen",
+      "name": "Tom Deckenbrunnen",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_alessio_buscemi",
+      "name": "Alessio Buscemi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_marco_almada",
+      "name": "Marco Almada",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_alfredo_capozucca",
+      "name": "Alfredo Capozucca",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_german_castignani",
+      "name": "German Castignani",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_eu_ai",
+      "name": "eu ai",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_ai_contributions",
-      "name": "ai contributions",
+      "id": "topic_ai_act",
+      "name": "ai act",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_ai",
-      "name": "ai",
+      "id": "topic_enforcement_macro",
+      "name": "enforcement macro",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_provenance",
-      "name": "provenance",
+      "id": "topic_govern_ai",
+      "name": "govern ai",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "2601.02631v1",
-      "name": "Copyright Laundering Through the AI Ouroboros: Adapting the 'Fruit of the Poisonous Tree' Doctrine to Recursive AI Training",
+      "id": "2601.03788v1",
+      "name": "Criminal Liability of Generative Artificial Intelligence Providers for User-Generated Child Sexual Abuse Material",
       "group": "paper",
-      "val": 20,
-      "abstract": "Copyright enforcement rests on an evidentiary bargain: a plaintiff must show both the defendant's access to the work and substantial similarity in the challenged output. That bargain comes under strain when AI systems are trained through multi-generational pipelines with recursive synthetic data. As successive models are tuned on the outputs of its predecessors, any copyrighted material absorbed by an early model is diffused into deeper statistical abstractions. The result is an evidentiary blind spot where overlaps that emerge look coincidental, while the chain of provenance is too attenuated to trace. These conditions are ripe for \"copyright laundering\"--the use of multi-generational synthetic pipelines, an \"AI Ouroboros,\" to render traditional proof of infringement impracticable. This Article adapts the \"fruit of the poisonous tree\" (FOPT) principle to propose a AI-FOPT standard: if a foundational AI model's training is adjudged infringing (either for unlawful sourcing or for non-transformative ingestion that fails fair-use), then subsequent AI models principally derived from the foundational model's outputs or distilled weights carry a rebuttable presumption of taint. The burden shifts to downstream developers--those who control the evidence of provenance--to restore the evidentiary bargain by affirmatively demonstrating a verifiably independent and lawfully sourced lineage or a curative rebuild, without displacing fair-use analysis at the initial ingestion stage. Absent such proof, commercial deployment of tainted models and their outputs is actionable. This Article develops the standard by specifying its trigger, presumption, and concrete rebuttal paths (e.g., independent lineage or verifiable unlearning); addresses counterarguments concerning chilling innovation and fair use; and demonstrates why this lineage-focused approach is both administrable and essential.",
-      "url": "https://arxiv.org/pdf/2601.02631v1",
-      "date": "2026-01-06T01:02:50+00:00",
-      "authors": [
-        "Anirban Mukherjee",
-        "Hannah Hanwen Chang"
-      ]
+      "val": 25,
+      "abstract": "The development of more powerful Generative Artificial Intelligence (GenAI) has expanded its capabilities and the variety of outputs. This has introduced significant legal challenges, including gray areas in various legal systems, such as the assessment of criminal liability for those responsible for these models. Therefore, we conducted a multidisciplinary study utilizing the statutory interpretation of relevant German laws, which, in conjunction with scenarios, provides a perspective on the different properties of GenAI in the context of Child Sexual Abuse Material (CSAM) generation. We found that generating CSAM with GenAI may have criminal and legal consequences not only for the user committing the primary offense but also for individuals responsible for the models, such as independent software developers, researchers, and company representatives. Additionally, the assessment of criminal liability may be affected by contextual and technical factors, including the type of generated image, content moderation policies, and the model's intended purpose. Based on our findings, we discussed the implications for different roles, as well as the requirements when developing such systems.",
+      "url": "https://arxiv.org/pdf/2601.03788v1",
+      "date": "2026-01-07T10:38:35+00:00",
+      "year": 2026
     },
     {
-      "id": "topic_proof_infringement",
-      "name": "proof infringement",
+      "id": "auth_anamaria_mojica-hanke",
+      "name": "Anamaria Mojica-Hanke",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_thomas_goger",
+      "name": "Thomas Goger",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_svenja_wölfel",
+      "name": "Svenja Wölfel",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_brian_valerius",
+      "name": "Brian Valerius",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_steffen_herbold",
+      "name": "Steffen Herbold",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_offense_individuals",
+      "name": "offense individuals",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_copyright_enforcement",
-      "name": "copyright enforcement",
+      "id": "topic_criminal_liability",
+      "name": "criminal liability",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_copyright_laundering",
-      "name": "copyright laundering",
+      "id": "topic_legal_consequences",
+      "name": "legal consequences",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_infringement_impracticable",
-      "name": "infringement impracticable",
+      "id": "topic_criminal_legal",
+      "name": "criminal legal",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "2601.02554v1",
-      "name": "AI-exposed jobs deteriorated before ChatGPT",
+      "id": "2601.03733v1",
+      "name": "RadDiff: Describing Differences in Radiology Image Sets with Natural Language",
       "group": "paper",
-      "val": 20,
-      "abstract": "Public debate links worsening job prospects for AI-exposed occupations to the release of ChatGPT in late 2022. Using monthly U.S. unemployment insurance records, we measure occupation- and location-specific unemployment risk and find that risk rose in AI-exposed occupations beginning in early 2022, months before ChatGPT. Analyzing millions of LinkedIn profiles, we show that graduate cohorts from 2021 onward entered AI-exposed jobs at lower rates than earlier cohorts, with gaps opening before late 2022. Finally, from millions of university syllabi, we find that graduates taking more AI-exposed curricula had higher first-job pay and shorter job searches after ChatGPT. Together, these results point to forces pre-dating generative AI and to the ongoing value of LLM-relevant education.",
-      "url": "https://arxiv.org/pdf/2601.02554v1",
-      "date": "2026-01-05T21:03:21+00:00",
-      "authors": [
-        "Morgan R. Frank",
-        "Alireza Javadian Sabet",
-        "Lisa Simon",
-        "Sarah H. Bana",
-        "Renzhe Yu"
-      ]
+      "val": 25,
+      "abstract": "Understanding how two radiology image sets differ is critical for generating clinical insights and for interpreting medical AI systems. We introduce RadDiff, a multimodal agentic system that performs radiologist-style comparative reasoning to describe clinically meaningful differences between paired radiology studies. RadDiff builds on a proposer-ranker framework from VisDiff, and incorporates four innovations inspired by real diagnostic workflows: (1) medical knowledge injection through domain-adapted vision-language models; (2) multimodal reasoning that integrates images with their clinical reports; (3) iterative hypothesis refinement across multiple reasoning rounds; and (4) targeted visual search that localizes and zooms in on salient regions to capture subtle findings. To evaluate RadDiff, we construct RadDiffBench, a challenging benchmark comprising 57 expert-validated radiology study pairs with ground-truth difference descriptions. On RadDiffBench, RadDiff achieves 47% accuracy, and 50% accuracy when guided by ground-truth reports, significantly outperforming the general-domain VisDiff baseline. We further demonstrate RadDiff's versatility across diverse clinical tasks, including COVID-19 phenotype comparison, racial subgroup analysis, and discovery of survival-related imaging features. Together, RadDiff and RadDiffBench provide the first method-and-benchmark foundation for systematically uncovering meaningful differences in radiological data.",
+      "url": "https://arxiv.org/pdf/2601.03733v1",
+      "date": "2026-01-07T09:25:04+00:00",
+      "year": 2026
     },
     {
-      "id": "topic_job_prospects",
-      "name": "job prospects",
+      "id": "auth_xiaoxian_shen",
+      "name": "Xiaoxian Shen",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yuhui_zhang",
+      "name": "Yuhui Zhang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sahithi_ankireddy",
+      "name": "Sahithi Ankireddy",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_xiaohan_wang",
+      "name": "Xiaohan Wang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_maya_varma",
+      "name": "Maya Varma",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_henry_guo",
+      "name": "Henry Guo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_curtis_langlotz",
+      "name": "Curtis Langlotz",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_serena_yeung-levy",
+      "name": "Serena Yeung-Levy",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_multimodal_reasoning",
+      "name": "multimodal reasoning",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_exposed_jobs",
-      "name": "exposed jobs",
+      "id": "topic_medical_ai",
+      "name": "medical ai",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_occupations_release",
-      "name": "occupations release",
+      "id": "topic_radiology_image",
+      "name": "radiology image",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_prospects_ai",
-      "name": "prospects ai",
+      "id": "topic_understanding_radiology",
+      "name": "understanding radiology",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "2601.02504v1",
-      "name": "Enhancing Debugging Skills with AI-Powered Assistance: A Real-Time Tool for Debugging Support",
+      "id": "2601.03709v1",
+      "name": "The Power of 10: New Rules for the Digital World",
       "group": "paper",
-      "val": 20,
-      "abstract": "Debugging is a crucial skill in programming education and software development, yet it is often overlooked in CS curricula. To address this, we introduce an AI-powered debugging assistant integrated into an IDE. It offers real-time support by analyzing code, suggesting breakpoints, and providing contextual hints. Using RAG with LLMs, program slicing, and custom heuristics, it enhances efficiency by minimizing LLM calls and improving accuracy. A three-level evaluation - technical analysis, UX study, and classroom tests - highlights its potential for teaching debugging.",
-      "url": "https://arxiv.org/pdf/2601.02504v1",
-      "date": "2026-01-05T19:20:59+00:00",
-      "authors": [
-        "Elizaveta Artser",
-        "Daniil Karol",
-        "Anna Potriasaeva",
-        "Aleksei Rostovskii",
-        "Katsiaryna Dzialets",
-        "Ekaterina Koshchenko",
-        "Xiaotian Su",
-        "April Yi Wang",
-        "Anastasiia Birillo"
-      ]
+      "val": 25,
+      "abstract": "As artificial intelligence rapidly advances, society is increasingly captivated by promises of superhuman machines and seamless digital futures. Yet these visions often obscure mounting social, ethical, and psychological concerns tied to pervasive digital technologies - from surveillance to mental health crises. This article argues that a guiding ethos is urgently needed to navigate these transformations. Inspired by the lasting influence of the biblical Ten Commandments, a European interdisciplinary group has proposed \"Ten Rules for the Digital World\" - a novel ethical framework to help individuals and societies make prudent, human-centered decisions in the age of \"supercharged\" technology.",
+      "url": "https://arxiv.org/pdf/2601.03709v1",
+      "date": "2026-01-07T08:49:02+00:00",
+      "year": 2026
     },
     {
-      "id": "topic_teaching_debugging",
-      "name": "teaching debugging",
+      "id": "auth_sarah_spiekermann-hoff",
+      "name": "Sarah Spiekermann-Hoff",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_marc_langheinrich",
+      "name": "Marc Langheinrich",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_johannes_hoff",
+      "name": "Johannes Hoff",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_christiane_wendehorst",
+      "name": "Christiane Wendehorst",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jürgen_pfeffer",
+      "name": "Jürgen Pfeffer",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_thomas_fuchs",
+      "name": "Thomas Fuchs",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_armin_grunwald",
+      "name": "Armin Grunwald",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_digital_world",
+      "name": "digital world",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_debugging_assistant",
-      "name": "debugging assistant",
+      "id": "topic_digital_technologies",
+      "name": "digital technologies",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_debugging",
-      "name": "debugging",
+      "id": "topic_ethical_psychological",
+      "name": "ethical psychological",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_powered_debugging",
-      "name": "powered debugging",
+      "id": "topic_rules_digital",
+      "name": "rules digital",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "2601.02205v1",
-      "name": "From Chat Control to Robot Control: The Backdoors Left Open for the Sake of Safety",
+      "id": "2601.03693v1",
+      "name": "Can AI Chatbots Provide Coaching in Engineering? Beyond Information Processing Toward Mastery",
       "group": "paper",
-      "val": 20,
-      "abstract": "This paper explores how a recent European Union proposal, the so-called Chat Control law, which creates regulatory incentives for providers to implement content detection and communication scanning, could transform the foundations of human-robot interaction (HRI). As robots increasingly act as interpersonal communication channels in care, education, and telepresence, they convey not only speech but also gesture, emotion, and contextual cues. We argue that extending digital surveillance laws to such embodied systems would entail continuous monitoring, embedding observation into the very design of everyday robots. This regulation blurs the line between protection and control, turning companions into potential informants. At the same time, monitoring mechanisms that undermine end-to-end encryption function as de facto backdoors, expanding the attack surface and allowing adversaries to exploit legally induced monitoring infrastructures. This creates a paradox of safety through insecurity: systems introduced to protect users may instead compromise their privacy, autonomy, and trust. This work does not aim to predict the future, but to raise awareness and help prevent certain futures from materialising.",
-      "url": "https://arxiv.org/pdf/2601.02205v1",
-      "date": "2026-01-05T15:27:07+00:00",
-      "authors": [
-        "Neziha Akalin",
-        "Alberto Giaretta"
-      ]
+      "val": 25,
+      "abstract": "Engineering education faces a double disruption: traditional apprenticeship models that cultivated judgment and tacit skill are eroding, just as generative AI emerges as an informal coaching partner. This convergence rekindles long-standing questions in the philosophy of AI and cognition about the limits of computation, the nature of embodied rationality, and the distinction between information processing and wisdom. Building on this rich intellectual tradition, this paper examines whether AI chatbots can provide coaching that fosters mastery rather than merely delivering information. We synthesize critical perspectives from decades of scholarship on expertise, tacit knowledge, and human-machine interaction, situating them within the context of contemporary AI-driven education. Empirically, we report findings from a mixed-methods study (N = 75 students, N = 7 faculty) exploring the use of a coaching chatbot in engineering education. Results reveal a consistent boundary: participants accept AI for technical problem solving (convergent tasks; M = 3.84 on a 1-5 Likert scale) but remain skeptical of its capacity for moral, emotional, and contextual judgment (divergent tasks). Faculty express stronger concerns over risk (M = 4.71 vs. M = 4.14, p = 0.003), and privacy emerges as a key requirement, with 64-71 percent of participants demanding strict confidentiality. Our findings suggest that while generative AI can democratize access to cognitive and procedural support, it cannot replicate the embodied, value-laden dimensions of human mentorship. We propose a multiplex coaching framework that integrates human wisdom within expert-in-the-loop models, preserving the depth of apprenticeship while leveraging AI scalability to enrich the next generation of engineering education.",
+      "url": "https://arxiv.org/pdf/2601.03693v1",
+      "date": "2026-01-07T08:28:47+00:00",
+      "year": 2026
     },
     {
-      "id": "topic_privacy_autonomy",
-      "name": "privacy autonomy",
+      "id": "auth_junaid_qadir",
+      "name": "Junaid Qadir",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_muhammad_adil_attique",
+      "name": "Muhammad Adil Attique",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_saleha_shoaib",
+      "name": "Saleha Shoaib",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_syed_ibrahim_ghaznavi",
+      "name": "Syed Ibrahim Ghaznavi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_examines_ai",
+      "name": "examines ai",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_compromise_privacy",
-      "name": "compromise privacy",
+      "id": "topic_coaching_chatbot",
+      "name": "coaching chatbot",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_robots_regulation",
-      "name": "robots regulation",
+      "id": "topic_ai_technical",
+      "name": "ai technical",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_everyday_robots",
-      "name": "everyday robots",
+      "id": "topic_intellectual",
+      "name": "intellectual",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "2601.01836v1",
-      "name": "COMPASS: A Framework for Evaluating Organization-Specific Policy Alignment in LLMs",
+      "id": "2601.03547v1",
+      "name": "Governance of Technological Transition: A Predator-Prey Analysis of AI Capital in China's Economy and Its Policy Implications",
       "group": "paper",
-      "val": 20,
-      "abstract": "As large language models are deployed in high-stakes enterprise applications, from healthcare to finance, ensuring adherence to organization-specific policies has become essential. Yet existing safety evaluations focus exclusively on universal harms. We present COMPASS (Company/Organization Policy Alignment Assessment), the first systematic framework for evaluating whether LLMs comply with organizational allowlist and denylist policies. We apply COMPASS to eight diverse industry scenarios, generating and validating 5,920 queries that test both routine compliance and adversarial robustness through strategically designed edge cases. Evaluating seven state-of-the-art models, we uncover a fundamental asymmetry: models reliably handle legitimate requests (>95% accuracy) but catastrophically fail at enforcing prohibitions, refusing only 13-40% of adversarial denylist violations. These results demonstrate that current LLMs lack the robustness required for policy-critical deployments, establishing COMPASS as an essential evaluation framework for organizational AI safety.",
-      "url": "https://arxiv.org/pdf/2601.01836v1",
-      "date": "2026-01-05T06:57:45+00:00",
-      "authors": [
-        "Dasol Choi",
-        "DongGeon Lee",
-        "Brigitta Jesica Kartono",
-        "Helena Berndt",
-        "Taeyoun Kwon",
-        "Joonwon Jang",
-        "Haon Park",
-        "Hwanjo Yu",
-        "Minsuk Kahng"
-      ]
+      "val": 25,
+      "abstract": "The rapid integration of Artificial Intelligence (AI) into China's economy presents a classic governance challenge: how to harness its growth potential while managing its disruptive effects on traditional capital and labor markets. This study addresses this policy dilemma by modeling the dynamic interactions between AI capital, physical capital, and labor within a Lotka-Volterra predator-prey framework. Using annual Chinese data (2016-2023), we quantify the interaction strengths, identify stable equilibria, and perform a global sensitivity analysis. Our results reveal a consistent pattern where AI capital acts as the 'prey', stimulating both physical capital accumulation and labor compensation (wage bill), while facing only weak constraining feedback. The equilibrium points are stable nodes, indicating a policy-mediated convergence path rather than volatile cycles. Critically, the sensitivity analysis shows that the labor market equilibrium is overwhelmingly driven by AI-related parameters, whereas the physical capital equilibrium is also influenced by its own saturation dynamics. These findings provide a systemic, quantitative basis for policymakers: (1) to calibrate AI promotion policies by recognizing the asymmetric leverage points in capital vs. labor markets; (2) to anticipate and mitigate structural rigidities that may arise from current regulatory settings; and (3) to prioritize interventions that foster complementary growth between AI and traditional economic structures while ensuring broad-base distribution of technological gains.",
+      "url": "https://arxiv.org/pdf/2601.03547v1",
+      "date": "2026-01-07T03:30:46+00:00",
+      "year": 2026
     },
     {
-      "id": "topic_compliance_adversarial",
-      "name": "compliance adversarial",
-      "group": "topic",
-      "val": 8
+      "id": "auth_kunpeng_wang",
+      "name": "Kunpeng Wang",
+      "group": "author",
+      "val": 15
     },
     {
-      "id": "topic_ai_safety",
-      "name": "ai safety",
-      "group": "topic",
-      "val": 8
+      "id": "auth_jiahui_hu",
+      "name": "Jiahui Hu",
+      "group": "author",
+      "val": 15
     },
     {
-      "id": "topic_organizational_allowlist",
-      "name": "organizational allowlist",
+      "id": "topic_ai_china",
+      "name": "ai china",
       "group": "topic",
-      "val": 8
+      "val": 10
     },
     {
-      "id": "topic_comply_organizational",
-      "name": "comply organizational",
+      "id": "topic_ai_capital",
+      "name": "ai capital",
       "group": "topic",
-      "val": 8
+      "val": 10
+    },
+    {
+      "id": "topic_china_economy",
+      "name": "china economy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_growth_ai",
+      "name": "growth ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.03458v1",
+      "name": "Automated Feedback Generation for Undergraduate Mathematics: Development and Evaluation of an AI Teaching Assistant",
+      "group": "paper",
+      "val": 25,
+      "abstract": "Intelligent tutoring systems have long enabled automated immediate feedback on student work when it is presented in a tightly structured format and when problems are very constrained, but reliably assessing free-form mathematical reasoning remains challenging.   We present a system that processes free-form natural language input, handles a wide range of edge cases, and comments competently not only on the technical correctness of submitted proofs, but also on style and presentation issues. We discuss the advantages and disadvantages of various approaches to the evaluation of such a system, and show that by the metrics we evaluate, the quality of the feedback generated is comparable to that produced by human experts when assessing early undergraduate homework. We stress-test our system with a small set of more advanced and unusual questions, and report both significant gaps and encouraging successes in that more challenging setting.   Our system uses large language models in a modular workflow. The workflow configuration is human-readable and editable without programming knowledge, and allows some intermediate steps to be precomputed or injected by the instructor.   A version of our tool is deployed on the Imperial mathematics homework platform Lambdafeedback. We report also on the integration of our tool into this platform.",
+      "url": "https://arxiv.org/pdf/2601.03458v1",
+      "date": "2026-01-06T23:02:22+00:00",
+      "year": 2026
+    },
+    {
+      "id": "auth_aron_gohr",
+      "name": "Aron Gohr",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_marie-amelie_lawn",
+      "name": "Marie-Amelie Lawn",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kevin_gao",
+      "name": "Kevin Gao",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_inigo_serjeant",
+      "name": "Inigo Serjeant",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_stephen_heslip",
+      "name": "Stephen Heslip",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_tutoring_systems",
+      "name": "tutoring systems",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_intelligent_tutoring",
+      "name": "intelligent tutoring",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_tutoring",
+      "name": "tutoring",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_homework_platform",
+      "name": "homework platform",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.03222v1",
+      "name": "The Fake Friend Dilemma: Trust and the Political Economy of Conversational AI",
+      "group": "paper",
+      "val": 25,
+      "abstract": "As conversational AI systems become increasingly integrated into everyday life, they raise pressing concerns about user autonomy, trust, and the commercial interests that influence their behavior. To address these concerns, this paper develops the Fake Friend Dilemma (FFD), a sociotechnical condition in which users place trust in AI agents that appear supportive while pursuing goals that are misaligned with the user's own. The FFD provides a critical framework for examining how anthropomorphic AI systems facilitate subtle forms of manipulation and exploitation. Drawing on literature in trust, AI alignment, and surveillance capitalism, we construct a typology of harms, including covert advertising, political propaganda, behavioral nudging, and surveillance. We then assess possible mitigation strategies, including both structural and technical interventions. By focusing on trust as a vector of asymmetrical power, the FFD offers a lens for understanding how AI systems may undermine user autonomy while maintaining the appearance of helpfulness.",
+      "url": "https://arxiv.org/pdf/2601.03222v1",
+      "date": "2026-01-06T18:07:52+00:00",
+      "year": 2026
+    },
+    {
+      "id": "auth_jacob_erickson",
+      "name": "Jacob Erickson",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_trust_ai",
+      "name": "trust ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_autonomy_trust",
+      "name": "autonomy trust",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_conversational_ai",
+      "name": "conversational ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_agents",
+      "name": "ai agents",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
+    {
+      "source": "2601.04175v1",
+      "target": "auth_noam_kolt",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_nicholas_caputo",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_jack_boeglin",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_cullen_o'keefe",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_rishi_bommasani",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_stephen_casper",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_mariano-florentino_cuéllar",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_noah_feldman",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_iason_gabriel",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_gillian_k_hadfield",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_lewis_hammond",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_peter_henderson",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_atoosa_kasirzadeh",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_seth_lazar",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_anka_reuel",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_kevin_l_wei",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "auth_jonathan_zittrain",
+      "value": 3
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "topic_legal_alignment",
+      "value": 5.94
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "topic_legal_compliance",
+      "value": 5.22
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "topic_exploring_legal",
+      "value": 5.17
+    },
+    {
+      "source": "2601.04175v1",
+      "target": "topic_specifying_ai",
+      "value": 5.13
+    },
+    {
+      "source": "2601.04107v1",
+      "target": "auth_ruiyi_guo",
+      "value": 3
+    },
+    {
+      "source": "2601.04107v1",
+      "target": "auth_bodong_zhang",
+      "value": 3
+    },
+    {
+      "source": "2601.04107v1",
+      "target": "topic_institutional_logics",
+      "value": 5.29
+    },
+    {
+      "source": "2601.04107v1",
+      "target": "topic_ai_governance",
+      "value": 5.23
+    },
+    {
+      "source": "2601.04107v1",
+      "target": "topic_governs_ai",
+      "value": 5.19
+    },
+    {
+      "source": "2601.04107v1",
+      "target": "topic_intelligence_governance",
+      "value": 4.99
+    },
+    {
+      "source": "2601.04094v1",
+      "target": "auth_tom_deckenbrunnen",
+      "value": 3
+    },
+    {
+      "source": "2601.04094v1",
+      "target": "auth_alessio_buscemi",
+      "value": 3
+    },
+    {
+      "source": "2601.04094v1",
+      "target": "auth_marco_almada",
+      "value": 3
+    },
+    {
+      "source": "2601.04094v1",
+      "target": "auth_alfredo_capozucca",
+      "value": 3
+    },
+    {
+      "source": "2601.04094v1",
+      "target": "auth_german_castignani",
+      "value": 3
+    },
+    {
+      "source": "2601.04094v1",
+      "target": "topic_eu_ai",
+      "value": 5.3
+    },
+    {
+      "source": "2601.04094v1",
+      "target": "topic_ai_act",
+      "value": 4.97
+    },
+    {
+      "source": "2601.04094v1",
+      "target": "topic_enforcement_macro",
+      "value": 4.89
+    },
+    {
+      "source": "2601.04094v1",
+      "target": "topic_govern_ai",
+      "value": 4.79
+    },
+    {
+      "source": "2601.03788v1",
+      "target": "auth_anamaria_mojica-hanke",
+      "value": 3
+    },
+    {
+      "source": "2601.03788v1",
+      "target": "auth_thomas_goger",
+      "value": 3
+    },
+    {
+      "source": "2601.03788v1",
+      "target": "auth_svenja_wölfel",
+      "value": 3
+    },
+    {
+      "source": "2601.03788v1",
+      "target": "auth_brian_valerius",
+      "value": 3
+    },
+    {
+      "source": "2601.03788v1",
+      "target": "auth_steffen_herbold",
+      "value": 3
+    },
+    {
+      "source": "2601.03788v1",
+      "target": "topic_offense_individuals",
+      "value": 4.85
+    },
+    {
+      "source": "2601.03788v1",
+      "target": "topic_criminal_liability",
+      "value": 4.73
+    },
+    {
+      "source": "2601.03788v1",
+      "target": "topic_legal_consequences",
+      "value": 4.52
+    },
+    {
+      "source": "2601.03788v1",
+      "target": "topic_criminal_legal",
+      "value": 4.42
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "auth_xiaoxian_shen",
+      "value": 3
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "auth_yuhui_zhang",
+      "value": 3
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "auth_sahithi_ankireddy",
+      "value": 3
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "auth_xiaohan_wang",
+      "value": 3
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "auth_maya_varma",
+      "value": 3
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "auth_henry_guo",
+      "value": 3
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "auth_curtis_langlotz",
+      "value": 3
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "auth_serena_yeung-levy",
+      "value": 3
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "topic_multimodal_reasoning",
+      "value": 4.81
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "topic_medical_ai",
+      "value": 4.55
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "topic_radiology_image",
+      "value": 4.13
+    },
+    {
+      "source": "2601.03733v1",
+      "target": "topic_understanding_radiology",
+      "value": 4.04
+    },
+    {
+      "source": "2601.03709v1",
+      "target": "auth_sarah_spiekermann-hoff",
+      "value": 3
+    },
+    {
+      "source": "2601.03709v1",
+      "target": "auth_marc_langheinrich",
+      "value": 3
+    },
+    {
+      "source": "2601.03709v1",
+      "target": "auth_johannes_hoff",
+      "value": 3
+    },
+    {
+      "source": "2601.03709v1",
+      "target": "auth_christiane_wendehorst",
+      "value": 3
+    },
+    {
+      "source": "2601.03709v1",
+      "target": "auth_jürgen_pfeffer",
+      "value": 3
+    },
+    {
+      "source": "2601.03709v1",
+      "target": "auth_thomas_fuchs",
+      "value": 3
+    },
+    {
+      "source": "2601.03709v1",
+      "target": "auth_armin_grunwald",
+      "value": 3
+    },
+    {
+      "source": "2601.03709v1",
+      "target": "topic_digital_world",
+      "value": 5.11
+    },
+    {
+      "source": "2601.03709v1",
+      "target": "topic_digital_technologies",
+      "value": 4.74
+    },
+    {
+      "source": "2601.03709v1",
+      "target": "topic_ethical_psychological",
+      "value": 4.48
+    },
+    {
+      "source": "2601.03709v1",
+      "target": "topic_rules_digital",
+      "value": 4.37
+    },
+    {
+      "source": "2601.03693v1",
+      "target": "auth_junaid_qadir",
+      "value": 3
+    },
+    {
+      "source": "2601.03693v1",
+      "target": "auth_muhammad_adil_attique",
+      "value": 3
+    },
+    {
+      "source": "2601.03693v1",
+      "target": "auth_saleha_shoaib",
+      "value": 3
+    },
+    {
+      "source": "2601.03693v1",
+      "target": "auth_syed_ibrahim_ghaznavi",
+      "value": 3
+    },
+    {
+      "source": "2601.03693v1",
+      "target": "topic_examines_ai",
+      "value": 5.09
+    },
+    {
+      "source": "2601.03693v1",
+      "target": "topic_coaching_chatbot",
+      "value": 4.96
+    },
+    {
+      "source": "2601.03693v1",
+      "target": "topic_ai_technical",
+      "value": 4.92
+    },
+    {
+      "source": "2601.03693v1",
+      "target": "topic_intellectual",
+      "value": 4.88
+    },
+    {
+      "source": "2601.03547v1",
+      "target": "auth_kunpeng_wang",
+      "value": 3
+    },
+    {
+      "source": "2601.03547v1",
+      "target": "auth_jiahui_hu",
+      "value": 3
+    },
+    {
+      "source": "2601.03547v1",
+      "target": "topic_ai_china",
+      "value": 5.15
+    },
+    {
+      "source": "2601.03547v1",
+      "target": "topic_ai_capital",
+      "value": 4.67
+    },
+    {
+      "source": "2601.03547v1",
+      "target": "topic_china_economy",
+      "value": 4.55
+    },
+    {
+      "source": "2601.03547v1",
+      "target": "topic_growth_ai",
+      "value": 4.27
+    },
+    {
+      "source": "2601.03458v1",
+      "target": "auth_aron_gohr",
+      "value": 3
+    },
+    {
+      "source": "2601.03458v1",
+      "target": "auth_marie-amelie_lawn",
+      "value": 3
+    },
+    {
+      "source": "2601.03458v1",
+      "target": "auth_kevin_gao",
+      "value": 3
+    },
+    {
+      "source": "2601.03458v1",
+      "target": "auth_inigo_serjeant",
+      "value": 3
+    },
+    {
+      "source": "2601.03458v1",
+      "target": "auth_stephen_heslip",
+      "value": 3
+    },
+    {
+      "source": "2601.03458v1",
+      "target": "topic_tutoring_systems",
+      "value": 6.44
+    },
+    {
+      "source": "2601.03458v1",
+      "target": "topic_intelligent_tutoring",
+      "value": 6.31
+    },
+    {
+      "source": "2601.03458v1",
+      "target": "topic_tutoring",
+      "value": 5.81
+    },
+    {
+      "source": "2601.03458v1",
+      "target": "topic_homework_platform",
+      "value": 4.87
+    },
+    {
+      "source": "2601.03222v1",
+      "target": "auth_jacob_erickson",
+      "value": 3
+    },
     {
       "source": "2601.03222v1",
       "target": "topic_trust_ai",
@@ -406,186 +1157,6 @@
       "source": "2601.03222v1",
       "target": "topic_ai_agents",
       "value": 4.5
-    },
-    {
-      "source": "2601.03156v1",
-      "target": "topic_explanations_generative",
-      "value": 5.71
-    },
-    {
-      "source": "2601.03156v1",
-      "target": "topic_interpretability_generative",
-      "value": 5.21
-    },
-    {
-      "source": "2601.03156v1",
-      "target": "topic_counterfactual_explanations",
-      "value": 5.11
-    },
-    {
-      "source": "2601.03156v1",
-      "target": "topic_generative_ai",
-      "value": 4.93
-    },
-    {
-      "source": "2601.03061v1",
-      "target": "topic_ai_shopping",
-      "value": 5.31
-    },
-    {
-      "source": "2601.03061v1",
-      "target": "topic_collusion_platforms",
-      "value": 4.87
-    },
-    {
-      "source": "2601.03061v1",
-      "target": "topic_evades_antitrust",
-      "value": 4.66
-    },
-    {
-      "source": "2601.03061v1",
-      "target": "topic_platforms_sellers",
-      "value": 4.58
-    },
-    {
-      "source": "2601.02773v1",
-      "target": "topic_superintelligence_legal",
-      "value": 5.97
-    },
-    {
-      "source": "2601.02773v1",
-      "target": "topic_legal_personality",
-      "value": 5.96
-    },
-    {
-      "source": "2601.02773v1",
-      "target": "topic_ai_governance",
-      "value": 5.66
-    },
-    {
-      "source": "2601.02773v1",
-      "target": "topic_jurisprudence_corporate",
-      "value": 5.59
-    },
-    {
-      "source": "2601.02633v1",
-      "target": "topic_doctrine_provenance",
-      "value": 4.82
-    },
-    {
-      "source": "2601.02633v1",
-      "target": "topic_ai_contributions",
-      "value": 4.67
-    },
-    {
-      "source": "2601.02633v1",
-      "target": "topic_ai",
-      "value": 4.61
-    },
-    {
-      "source": "2601.02633v1",
-      "target": "topic_provenance",
-      "value": 4.43
-    },
-    {
-      "source": "2601.02631v1",
-      "target": "topic_proof_infringement",
-      "value": 5.84
-    },
-    {
-      "source": "2601.02631v1",
-      "target": "topic_copyright_enforcement",
-      "value": 5.53
-    },
-    {
-      "source": "2601.02631v1",
-      "target": "topic_copyright_laundering",
-      "value": 5.47
-    },
-    {
-      "source": "2601.02631v1",
-      "target": "topic_infringement_impracticable",
-      "value": 5.42
-    },
-    {
-      "source": "2601.02554v1",
-      "target": "topic_job_prospects",
-      "value": 5.64
-    },
-    {
-      "source": "2601.02554v1",
-      "target": "topic_exposed_jobs",
-      "value": 5.24
-    },
-    {
-      "source": "2601.02554v1",
-      "target": "topic_occupations_release",
-      "value": 4.63
-    },
-    {
-      "source": "2601.02554v1",
-      "target": "topic_prospects_ai",
-      "value": 4.62
-    },
-    {
-      "source": "2601.02504v1",
-      "target": "topic_teaching_debugging",
-      "value": 7.29
-    },
-    {
-      "source": "2601.02504v1",
-      "target": "topic_debugging_assistant",
-      "value": 6.9
-    },
-    {
-      "source": "2601.02504v1",
-      "target": "topic_debugging",
-      "value": 5.81
-    },
-    {
-      "source": "2601.02504v1",
-      "target": "topic_powered_debugging",
-      "value": 5.44
-    },
-    {
-      "source": "2601.02205v1",
-      "target": "topic_privacy_autonomy",
-      "value": 5.27
-    },
-    {
-      "source": "2601.02205v1",
-      "target": "topic_compromise_privacy",
-      "value": 5.09
-    },
-    {
-      "source": "2601.02205v1",
-      "target": "topic_robots_regulation",
-      "value": 5.09
-    },
-    {
-      "source": "2601.02205v1",
-      "target": "topic_everyday_robots",
-      "value": 4.97
-    },
-    {
-      "source": "2601.01836v1",
-      "target": "topic_compliance_adversarial",
-      "value": 5.85
-    },
-    {
-      "source": "2601.01836v1",
-      "target": "topic_ai_safety",
-      "value": 4.8
-    },
-    {
-      "source": "2601.01836v1",
-      "target": "topic_organizational_allowlist",
-      "value": 4.39
-    },
-    {
-      "source": "2601.01836v1",
-      "target": "topic_comply_organizational",
-      "value": 4.36
     }
   ]
 }
