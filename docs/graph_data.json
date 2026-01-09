@@ -839,6 +839,231 @@
       "name": "ensuring ai",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.05232v1",
+      "name": "Measuring and Fostering Peace through Machine Learning and Artificial Intelligence",
+      "group": "paper",
+      "val": 30,
+      "abstract": "We used machine learning and artificial intelligence: 1) to measure levels of peace in countries from news and social media and 2) to develop on-line tools that promote peace by helping users better understand their own media diet. For news media, we used neural networks to measure levels of peace from text embeddings of on-line news sources. The model, trained on one news media dataset also showed high accuracy when used to analyze a different news dataset. For social media, such as YouTube, we developed other models to measure levels of social dimensions important in peace using word level (GoEmotions) and context level (Large Language Model) methods. To promote peace, we note that 71% of people 20-40 years old daily view most of their news through short videos on social media. Content creators of these videos are biased towards creating videos with emotional activation, making you angry to engage you, to increase clicks. We developed and tested a Chrome extension, MirrorMirror, which provides real-time feedback to YouTube viewers about the peacefulness of the media they are watching. Our long term goal is for MirrorMirror to evolve into an open-source tool for content creators, journalists, researchers, platforms, and individual users to better understand the tone of their media creation and consumption and its effects on viewers. Moving beyond simple engagement metrics, we hope to encourage more respectful, nuanced, and informative communication.",
+      "url": "https://arxiv.org/pdf/2601.05232v1",
+      "date": "2026-01-08T18:57:01+00:00"
+    },
+    {
+      "id": "auth_p_gilda",
+      "name": "P. Gilda",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_p_dungarwal",
+      "name": "P. Dungarwal",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_a_thongkham",
+      "name": "A. Thongkham",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_e_t_ajayi",
+      "name": "E. T. Ajayi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_s_choudhary",
+      "name": "S. Choudhary",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_t_m_terol",
+      "name": "T. M. Terol",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_c_lam",
+      "name": "C. Lam",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_j_p_araujo",
+      "name": "J. P. Araujo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_m_mcfadyen_mungalln",
+      "name": "M. McFadyen-Mungalln",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_l_s_liebovitch",
+      "name": "L. S. Liebovitch",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_p_t_coleman",
+      "name": "P. T. Coleman",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_h_west",
+      "name": "H. West",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_k_sieck",
+      "name": "K. Sieck",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_s_carter",
+      "name": "S. Carter",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_news_social",
+      "name": "news social",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_social_media",
+      "name": "social media",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_news_dataset",
+      "name": "news dataset",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_videos_social",
+      "name": "videos social",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_media_youtube",
+      "name": "media youtube",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.04958v1",
+      "name": "The unsuitability of existing regulations to reach sustainable AI",
+      "group": "paper",
+      "val": 30,
+      "abstract": "This paper examines the European Union's emerging regulatory landscape - focusing on the AI Act, corporate sustainability reporting and due diligence regimes (CSRD and CSDDD), and data center regulation - to assess whether it can effectively govern AI's environmental footprint. We argue that, despite incremental progress, current approaches remain ill-suited to correcting the market failures underpinning AI-related energy use, water consumption, and material demand. Key shortcomings include narrow disclosure requirements, excessive reliance on voluntary standards, weak enforcement mechanisms, and a structural disconnect between AI-specific impacts and broader sustainability laws. The analysis situates these regulatory gaps within a wider ecosystem of academic research, civil society advocacy, standard-setting, and industry initiatives, highlighting risks of regulatory capture and greenwashing. Building on this diagnosis, the paper advances strategic recommendations for the COP30 Action Agenda, calling for binding transparency obligations, harmonized international standards for lifecycle assessment, stricter governance of data center expansion, and meaningful public participation in AI infrastructure decisions.",
+      "url": "https://arxiv.org/pdf/2601.04958v1",
+      "date": "2026-01-08T14:02:51+00:00"
+    },
+    {
+      "id": "auth_thomas_le_goff",
+      "name": "Thomas Le Goff",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_sustainability_laws",
+      "name": "sustainability laws",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_regulation_assess",
+      "name": "regulation assess",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_regulatory_landscape",
+      "name": "regulatory landscape",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_sustainability_reporting",
+      "name": "sustainability reporting",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_environmental",
+      "name": "ai environmental",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.04403v1",
+      "name": "Balancing Usability and Compliance in AI Smart Devices: A Privacy-by-Design Audit of Google Home, Alexa, and Siri",
+      "group": "paper",
+      "val": 30,
+      "abstract": "This paper investigates the privacy and usability of AI-enabled smart devices commonly used by youth, focusing on Google Home Mini, Amazon Alexa, and Apple Siri. While these devices provide convenience and efficiency, they also raise privacy and transparency concerns due to their always-listening design and complex data management processes. The study proposes and applies a combined framework of Heuristic Evaluation, Personal Information Protection and Electronic Documents Act (PIPEDA) Compliance Assessment, and Youth-Centered Usability Testing to assess whether these devices align with Privacy-by-Design principles and support meaningful user control. Results show that Google Home achieved the highest usability score, while Siri scored highest in regulatory compliance, indicating a trade-off between user convenience and privacy protection. Alexa demonstrated clearer task navigation but weaker transparency in data retention. Findings suggest that although youth may feel capable of managing their data, their privacy self-efficacy remains limited by technical design, complex settings, and unclear data policies. The paper concludes that enhancing transparency, embedding privacy guidance during onboarding, and improving policy alignment are critical steps toward ensuring that smart devices are both usable and compliant with privacy standards that protect young users.",
+      "url": "https://arxiv.org/pdf/2601.04403v1",
+      "date": "2026-01-07T21:20:58+00:00"
+    },
+    {
+      "id": "auth_trevor_de_clark",
+      "name": "Trevor De Clark",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yulia_bobkova",
+      "name": "Yulia Bobkova",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ajay_kumar_shrestha",
+      "name": "Ajay Kumar Shrestha",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_privacy_usability",
+      "name": "privacy usability",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_privacy_self",
+      "name": "privacy self",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_privacy_guidance",
+      "name": "privacy guidance",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_compliant_privacy",
+      "name": "compliant privacy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_privacy_standards",
+      "name": "privacy standards",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -1565,6 +1790,171 @@
     {
       "source": "2601.04175v1",
       "target": "topic_ensuring_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_p_gilda",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_p_dungarwal",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_a_thongkham",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_e_t_ajayi",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_s_choudhary",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_t_m_terol",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_c_lam",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_j_p_araujo",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_m_mcfadyen_mungalln",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_l_s_liebovitch",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_p_t_coleman",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_h_west",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_k_sieck",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "auth_s_carter",
+      "value": 5
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "topic_news_social",
+      "value": 2
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "topic_social_media",
+      "value": 2
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "topic_news_dataset",
+      "value": 2
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "topic_videos_social",
+      "value": 2
+    },
+    {
+      "source": "2601.05232v1",
+      "target": "topic_media_youtube",
+      "value": 2
+    },
+    {
+      "source": "2601.04958v1",
+      "target": "auth_thomas_le_goff",
+      "value": 5
+    },
+    {
+      "source": "2601.04958v1",
+      "target": "topic_sustainability_laws",
+      "value": 2
+    },
+    {
+      "source": "2601.04958v1",
+      "target": "topic_regulation_assess",
+      "value": 2
+    },
+    {
+      "source": "2601.04958v1",
+      "target": "topic_regulatory_landscape",
+      "value": 2
+    },
+    {
+      "source": "2601.04958v1",
+      "target": "topic_sustainability_reporting",
+      "value": 2
+    },
+    {
+      "source": "2601.04958v1",
+      "target": "topic_ai_environmental",
+      "value": 2
+    },
+    {
+      "source": "2601.04403v1",
+      "target": "auth_trevor_de_clark",
+      "value": 5
+    },
+    {
+      "source": "2601.04403v1",
+      "target": "auth_yulia_bobkova",
+      "value": 5
+    },
+    {
+      "source": "2601.04403v1",
+      "target": "auth_ajay_kumar_shrestha",
+      "value": 5
+    },
+    {
+      "source": "2601.04403v1",
+      "target": "topic_privacy_usability",
+      "value": 2
+    },
+    {
+      "source": "2601.04403v1",
+      "target": "topic_privacy_self",
+      "value": 2
+    },
+    {
+      "source": "2601.04403v1",
+      "target": "topic_privacy_guidance",
+      "value": 2
+    },
+    {
+      "source": "2601.04403v1",
+      "target": "topic_compliant_privacy",
+      "value": 2
+    },
+    {
+      "source": "2601.04403v1",
+      "target": "topic_privacy_standards",
       "value": 2
     }
   ]
