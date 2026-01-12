@@ -1064,6 +1064,594 @@
       "name": "privacy standards",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.05961v1",
+      "name": "Navigating the Sociotechnical Imaginaries of Brazilian Tech Workers",
+      "group": "paper",
+      "val": 30,
+      "abstract": "This chapter examines the sociotechnical imaginaries of Brazilian tech workers, a group often overlooked in digital labor research despite their role in designing the digital systems that shape everyday life. Grounded in the idea of sociotechnical imaginaries as collectively constructed visions that guide technology development and governance, the chapter argues that looking from the Global South helps challenge data universalism and foregrounds locally situated values, constraints, and futures. Drawing on semi-structured interviews with 26 Brazilian professionals conducted between July and December 2023, it maps how workers make sense of responsibility, bias, and power in AI and platform development. The findings highlight recurring tensions between academic and industry discourse on algorithmic bias, the limits of corporate accountability regarding user harm and surveillance, and the contested meanings of digital sovereignty, including grassroots initiatives that seek alternative technological futures aligned with marginalized communities needs.",
+      "url": "https://arxiv.org/pdf/2601.05961v1",
+      "date": "2026-01-09T17:30:04+00:00"
+    },
+    {
+      "id": "auth_kenzo_soares_seto",
+      "name": "Kenzo Soares Seto",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_examines_sociotechnical",
+      "name": "examines sociotechnical",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_digital_sovereignty",
+      "name": "digital sovereignty",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_sociotechnical_imaginaries",
+      "name": "sociotechnical imaginaries",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_sociotechnical",
+      "name": "sociotechnical",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_idea_sociotechnical",
+      "name": "idea sociotechnical",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.05918v1",
+      "name": "Agentic LLMs as Powerful Deanonymizers: Re-identification of Participants in the Anthropic Interviewer Dataset",
+      "group": "paper",
+      "val": 30,
+      "abstract": "On December 4, 2025, Anthropic released Anthropic Interviewer, an AI tool for running qualitative interviews at scale, along with a public dataset of 1,250 interviews with professionals, including 125 scientists, about their use of AI for research. Focusing on the scientist subset, I show that widely available LLMs with web search and agentic capabilities can link six out of twenty-four interviews to specific scientific works, recovering associated authors and, in some cases, uniquely identifying the interviewees. My contribution is to show that modern LLM-based agents make such re-identification attacks easy and low-effort: off-the-shelf tools can, with a few natural-language prompts, search the web, cross-reference details, and propose likely matches, effectively lowering the technical barrier. Existing safeguards can be bypassed by breaking down the re-identification into benign tasks. I outline the attack at a high level, discuss implications for releasing rich qualitative data in the age of LLM agents, and propose mitigation recommendations and open problems. I have notified Anthropic of my findings.",
+      "url": "https://arxiv.org/pdf/2601.05918v1",
+      "date": "2026-01-09T16:32:33+00:00"
+    },
+    {
+      "id": "auth_tianshi_li",
+      "name": "Tianshi Li",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_interviewer_ai",
+      "name": "interviewer ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_identifying_interviewees",
+      "name": "identifying interviewees",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_interviewees",
+      "name": "interviewees",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_anthropic_interviewer",
+      "name": "anthropic interviewer",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_search_agentic",
+      "name": "search agentic",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.05904v1",
+      "name": "Can AI mediation improve democratic deliberation?",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The strength of democracy lies in the free and equal exchange of diverse viewpoints. Living up to this ideal at scale faces inherent tensions: broad participation, meaningful deliberation, and political equality often trade off with one another (Fishkin, 2011). We ask whether and how artificial intelligence (AI) could help navigate this \"trilemma\" by engaging with a recent example of a large language model (LLM)-based system designed to help people with diverse viewpoints find common ground (Tessler, Bakker, et al., 2024). Here, we explore the implications of the introduction of LLMs into deliberation augmentation tools, examining their potential to enhance participation through scalability, improve political equality via fair mediation, and foster meaningful deliberation by, for example, surfacing trustworthy information. We also point to key challenges that remain. Ultimately, a range of empirical, technical, and theoretical advancements are needed to fully realize the promise of AI-mediated deliberation for enhancing citizen engagement and strengthening democratic deliberation.",
+      "url": "https://arxiv.org/pdf/2601.05904v1",
+      "date": "2026-01-09T16:22:26+00:00"
+    },
+    {
+      "id": "auth_michael_henry_tessler",
+      "name": "Michael Henry Tessler",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_georgina_evans",
+      "name": "Georgina Evans",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_michiel_a_bakker",
+      "name": "Michiel A. Bakker",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sophie_bridgers",
+      "name": "Sophie Bridgers",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_rishub_jain",
+      "name": "Rishub Jain",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_raphael_koster",
+      "name": "Raphael Koster",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_verena_rieser",
+      "name": "Verena Rieser",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_anca_dragan",
+      "name": "Anca Dragan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_matthew_botvinick",
+      "name": "Matthew Botvinick",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_christopher_summerfield",
+      "name": "Christopher Summerfield",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_mediated_deliberation",
+      "name": "mediated deliberation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_deliberation_enhancing",
+      "name": "deliberation enhancing",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_deliberation_political",
+      "name": "deliberation political",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_meaningful_deliberation",
+      "name": "meaningful deliberation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_deliberation_augmentation",
+      "name": "deliberation augmentation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.05879v1",
+      "name": "Gender Bias in LLMs: Preliminary Evidence from Shared Parenting Scenario in Czech Family Law",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Access to justice remains limited for many people, leading laypersons to increasingly rely on Large Language Models (LLMs) for legal self-help. Laypeople use these tools intuitively, which may lead them to form expectations based on incomplete, incorrect, or biased outputs. This study examines whether leading LLMs exhibit gender bias in their responses to a realistic family law scenario. We present an expert-designed divorce scenario grounded in Czech family law and evaluate four state-of-the-art LLMs GPT-5 nano, Claude Haiku 4.5, Gemini 2.5 Flash, and Llama 3.3 in a fully zero-shot interaction. We deploy two versions of the scenario, one with gendered names and one with neutral labels, to establish a baseline for comparison. We further introduce nine legally relevant factors that vary the factual circumstances of the case and test whether these variations influence the models' proposed shared-parenting ratios. Our preliminary results highlight differences across models and suggest gender-dependent patterns in the outcomes generated by some systems. The findings underscore both the risks associated with laypeople's reliance on LLMs for legal guidance and the need for more robust evaluation of model behavior in sensitive legal contexts. We present exploratory and descriptive evidence intended to identify systematic asymmetries rather than to establish causal effects.",
+      "url": "https://arxiv.org/pdf/2601.05879v1",
+      "date": "2026-01-09T15:55:03+00:00"
+    },
+    {
+      "id": "auth_jakub_harasta",
+      "name": "Jakub Harasta",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_matej_vasina",
+      "name": "Matej Vasina",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_martin_kornel",
+      "name": "Martin Kornel",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_tomas_foltynek",
+      "name": "Tomas Foltynek",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_legal_contexts",
+      "name": "legal contexts",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_family_law",
+      "name": "family law",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_legal_self",
+      "name": "legal self",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_scenario_gendered",
+      "name": "scenario gendered",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_legal_guidance",
+      "name": "legal guidance",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.05826v1",
+      "name": "Cross-National Evidence of Disproportionate Media Visibility for the Radical Right in the 2024 European Elections",
+      "group": "paper",
+      "val": 30,
+      "abstract": "This study provides a systematic comparative analysis of media visibility of different political families during the 2024 European Parliament elections. We analyzed close to 21,500 unique news from leading national outlets in Austria, Germany, Ireland, Poland, and Portugal - countries with diverse political contexts and levels of media trust. Combining computational and human classification, we identified parties, political leaders, and groups from the article's URLs and titles, and clustered them according to European Parliament political families and broad political leanings. Cross-country comparison shows that the Mainstream and the Radical Right were mentioned more often than the other political groups. Moreover, the Radical Right received disproportionate attention relative to electoral results (from 2019 or 2024) and electoral projections, particularly in Austria, Germany, and Ireland. This imbalance increased in the final weeks of the campaign, when media influence on undecided voters is greatest. Outlet-level analysis shows that coverage of right-leaning entities dominated across news sources, especially those generating the highest traffic, suggesting a structural rather than outlet-specific pattern. Media visibility is a central resource, and this systematic mapping of online coverage highlights how traditional media can contribute to structural asymmetries in democratic competition.",
+      "url": "https://arxiv.org/pdf/2601.05826v1",
+      "date": "2026-01-09T15:00:59+00:00"
+    },
+    {
+      "id": "auth_íris_damião",
+      "name": "Íris Damião",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_joão_franco",
+      "name": "João Franco",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mariana_silva",
+      "name": "Mariana Silva",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_paulo_almeida",
+      "name": "Paulo Almeida",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_pedro_c_magalhães",
+      "name": "Pedro C. Magalhães",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_joana_gonçalves_sá",
+      "name": "Joana Gonçalves-Sá",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_campaign_media",
+      "name": "campaign media",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_elections_analyzed",
+      "name": "elections analyzed",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_electoral_projections",
+      "name": "electoral projections",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_different_political",
+      "name": "different political",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_media_influence",
+      "name": "media influence",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.05666v1",
+      "name": "Advancing credit mobility through stakeholder-informed AI design and adoption",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Transferring from a 2-year to a 4-year college is crucial for socioeconomic mobility, yet students often face challenges ensuring their credits are fully recognized, leading to delays in their academic progress and unexpected costs. Determining whether courses at different institutions are equivalent (i.e., articulation) is essential for successful credit transfer, as it minimizes unused credits and increases the likelihood of bachelor's degree completion. However, establishing articulation agreements remains time- and resource-intensive, as all candidate articulations are reviewed manually. Although recent efforts have explored the use of artificial intelligence to support this work, its use in articulation practice remains limited. Given these challenges and the need for scalable support, this study applies artificial intelligence to suggest articulations between institutions in collaboration with the State University of New York system, one of the largest systems of higher education in the US. To develop our methodology, we first surveyed articulation staff and faculty to assess adoption rates of baseline algorithmic recommendations and gather feedback on perceptions and concerns about these recommendations. Building on these insights, we developed a supervised alignment method that addresses superficial matching and institutional biases in catalog descriptions, achieving a 5.5-fold improvement in accuracy over previous methods. Based on articulation predictions of this method and a 61% average surveyed adoption rate among faculty and staff, these findings project a 12-fold increase in valid credit mobility opportunities that would otherwise remain unrealized. This study suggests that stakeholder-informed design of AI in higher education administration can expand student credit mobility and help reshape current institutional decision-making in course articulation.",
+      "url": "https://arxiv.org/pdf/2601.05666v1",
+      "date": "2026-01-09T09:39:12+00:00"
+    },
+    {
+      "id": "auth_yerin_kwak",
+      "name": "Yerin Kwak",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_siddharth_adelkar",
+      "name": "Siddharth Adelkar",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_zachary_a_pardos",
+      "name": "Zachary A. Pardos",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_student_credit",
+      "name": "student credit",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_course_articulation",
+      "name": "course articulation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_articulations_institutions",
+      "name": "articulations institutions",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ensuring_credits",
+      "name": "ensuring credits",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_candidate_articulations",
+      "name": "candidate articulations",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.05574v1",
+      "name": "Research Integrity and Academic Authority in the Age of Artificial Intelligence: From Discovery to Curation?",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Artificial intelligence is reshaping the organization and practice of research in ways that extend far beyond gains in productivity. AI systems now accelerate discovery, reorganize scholarly labour, and mediate access to expanding scientific literatures. At the same time, generative models capable of producing text, images, and data at scale introduce new epistemic and institutional vulnerabilities. They exacerbate challenges of reproducibility, blur lines of authorship and accountability, and place unprecedented pressure on peer review and editorial systems. These risks coincide with a deeper political-economic shift: the centre of gravity in AI research has moved decisively from universities to private laboratories with privileged access to data, compute, and engineering talent. As frontier models become increasingly proprietary and opaque, universities face growing difficulty interrogating, reproducing, or contesting the systems on which scientific inquiry increasingly depends.   This article argues that these developments challenge research integrity and erode traditional bases of academic authority, understood as the institutional capacity to render knowledge credible, contestable, and independent of concentrated power. Rather than competing with corporate laboratories at the technological frontier, universities can sustain their legitimacy by strengthening roles that cannot be readily automated or commercialized: exercising judgement over research quality in an environment saturated with synthetic outputs; curating the provenance, transparency, and reproducibility of knowledge; and acting as ethical and epistemic counterweights to private interests. In an era of informational abundance, the future authority of universities lies less in maximizing discovery alone than in sustaining the institutional conditions under which knowledge can be trusted and publicly valued.",
+      "url": "https://arxiv.org/pdf/2601.05574v1",
+      "date": "2026-01-09T06:47:01+00:00"
+    },
+    {
+      "id": "auth_simon_chesterman",
+      "name": "Simon Chesterman",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_loy_hui_chieh",
+      "name": "Loy Hui Chieh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_academic_authority",
+      "name": "academic authority",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_research_integrity",
+      "name": "research integrity",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_scholarly_labour",
+      "name": "scholarly labour",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_scholarly",
+      "name": "scholarly",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_institutional_capacity",
+      "name": "institutional capacity",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.05384v1",
+      "name": "Conformity and Social Impact on AI Agents",
+      "group": "paper",
+      "val": 30,
+      "abstract": "As AI agents increasingly operate in multi-agent environments, understanding their collective behavior becomes critical for predicting the dynamics of artificial societies. This study examines conformity, the tendency to align with group opinions under social pressure, in large multimodal language models functioning as AI agents. By adapting classic visual experiments from social psychology, we investigate how AI agents respond to group influence as social actors. Our experiments reveal that AI agents exhibit a systematic conformity bias, aligned with Social Impact Theory, showing sensitivity to group size, unanimity, task difficulty, and source characteristics. Critically, AI agents achieving near-perfect performance in isolation become highly susceptible to manipulation through social influence. This vulnerability persists across model scales: while larger models show reduced conformity on simple tasks due to improved capabilities, they remain vulnerable when operating at their competence boundary. These findings reveal fundamental security vulnerabilities in AI agent decision-making that could enable malicious manipulation, misinformation campaigns, and bias propagation in multi-agent systems, highlighting the urgent need for safeguards in collective AI deployments.",
+      "url": "https://arxiv.org/pdf/2601.05384v1",
+      "date": "2026-01-08T21:16:28+00:00"
+    },
+    {
+      "id": "auth_alessandro_bellina",
+      "name": "Alessandro Bellina",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_giordano_de_marzo",
+      "name": "Giordano De Marzo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_david_garcia",
+      "name": "David Garcia",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_collective_ai",
+      "name": "collective ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_agent",
+      "name": "ai agent",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_investigate_ai",
+      "name": "investigate ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_reveal_ai",
+      "name": "reveal ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.05358v1",
+      "name": "The Table of Media Bias Elements: A sentence-level taxonomy of media bias types and propaganda techniques",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Public debates about \"left-\" or \"right-wing\" news overlook the fact that bias is usually conveyed by concrete linguistic manoeuvres that transcend any single political spectrum. We therefore shift the focus from where an outlet allegedly stands to how partiality is expressed in individual sentences. Drawing on 26,464 sentences collected from newsroom corpora, user submissions and our own browsing, we iteratively combine close-reading, interdisciplinary theory and pilot annotation to derive a fine-grained, sentence-level taxonomy of media bias and propaganda. The result is a two-tier schema comprising 38 elementary bias types, arranged in six functional families and visualised as a \"table of media-bias elements\". For each type we supply a definition, real-world examples, cognitive and societal drivers, and guidance for recognition. A quantitative survey of a random 155-sentence sample illustrates prevalence differences, while a cross-walk to the best-known NLP and communication-science taxonomies reveals substantial coverage gains and reduced ambiguity.",
+      "url": "https://arxiv.org/pdf/2601.05358v1",
+      "date": "2026-01-08T20:18:55+00:00"
+    },
+    {
+      "id": "auth_tim_menzner",
+      "name": "Tim Menzner",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jochen_l_leidner",
+      "name": "Jochen L. Leidner",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_media_bias",
+      "name": "media bias",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_bias_propaganda",
+      "name": "bias propaganda",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_bias_types",
+      "name": "bias types",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_fact_bias",
+      "name": "fact bias",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_political_spectrum",
+      "name": "political spectrum",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.05307v1",
+      "name": "The LLM Mirage: Economic Interests and the Subversion of Weaponization Controls",
+      "group": "paper",
+      "val": 30,
+      "abstract": "U.S. AI security policy is increasingly shaped by an $\\textit{LLM Mirage}$, the belief that national security risks scale in proportion to the compute used to train frontier language models. That premise fails in two ways. It miscalibrates strategy because adversaries can obtain weaponizable capabilities with task-specific systems that use specialized data, algorithmic efficiency, and widely available hardware, while compute controls harden only a high-end perimeter. It also destabilizes regulation because, absent a settled definition of \"AI weaponization,\" compute thresholds are easily renegotiated as domestic priorities shift, turning security policy into a proxy contest over industrial competitiveness. We analyze how the LLM Mirage took hold, propose an intent-and-capability definition of AI weaponization grounded in effects and international humanitarian law, and outline measurement infrastructure based on live benchmarks across the full AI Triad (data, algorithms, compute) for weaponization-relevant capabilities.",
+      "url": "https://arxiv.org/pdf/2601.05307v1",
+      "date": "2026-01-08T18:59:47+00:00"
+    },
+    {
+      "id": "auth_ritwik_gupta",
+      "name": "Ritwik Gupta",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_andrew_w_reddie",
+      "name": "Andrew W. Reddie",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_ai_weaponization",
+      "name": "ai weaponization",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_security",
+      "name": "ai security",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_national_security",
+      "name": "national security",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_weaponization_compute",
+      "name": "weaponization compute",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_weaponizable_capabilities",
+      "name": "weaponizable capabilities",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -1955,6 +2543,431 @@
     {
       "source": "2601.04403v1",
       "target": "topic_privacy_standards",
+      "value": 2
+    },
+    {
+      "source": "2601.05961v1",
+      "target": "auth_kenzo_soares_seto",
+      "value": 5
+    },
+    {
+      "source": "2601.05961v1",
+      "target": "topic_examines_sociotechnical",
+      "value": 2
+    },
+    {
+      "source": "2601.05961v1",
+      "target": "topic_digital_sovereignty",
+      "value": 2
+    },
+    {
+      "source": "2601.05961v1",
+      "target": "topic_sociotechnical_imaginaries",
+      "value": 2
+    },
+    {
+      "source": "2601.05961v1",
+      "target": "topic_sociotechnical",
+      "value": 2
+    },
+    {
+      "source": "2601.05961v1",
+      "target": "topic_idea_sociotechnical",
+      "value": 2
+    },
+    {
+      "source": "2601.05918v1",
+      "target": "auth_tianshi_li",
+      "value": 5
+    },
+    {
+      "source": "2601.05918v1",
+      "target": "topic_interviewer_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.05918v1",
+      "target": "topic_identifying_interviewees",
+      "value": 2
+    },
+    {
+      "source": "2601.05918v1",
+      "target": "topic_interviewees",
+      "value": 2
+    },
+    {
+      "source": "2601.05918v1",
+      "target": "topic_anthropic_interviewer",
+      "value": 2
+    },
+    {
+      "source": "2601.05918v1",
+      "target": "topic_search_agentic",
+      "value": 2
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "auth_michael_henry_tessler",
+      "value": 5
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "auth_georgina_evans",
+      "value": 5
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "auth_michiel_a_bakker",
+      "value": 5
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "auth_iason_gabriel",
+      "value": 5
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "auth_sophie_bridgers",
+      "value": 5
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "auth_rishub_jain",
+      "value": 5
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "auth_raphael_koster",
+      "value": 5
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "auth_verena_rieser",
+      "value": 5
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "auth_anca_dragan",
+      "value": 5
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "auth_matthew_botvinick",
+      "value": 5
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "auth_christopher_summerfield",
+      "value": 5
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "topic_mediated_deliberation",
+      "value": 2
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "topic_deliberation_enhancing",
+      "value": 2
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "topic_deliberation_political",
+      "value": 2
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "topic_meaningful_deliberation",
+      "value": 2
+    },
+    {
+      "source": "2601.05904v1",
+      "target": "topic_deliberation_augmentation",
+      "value": 2
+    },
+    {
+      "source": "2601.05879v1",
+      "target": "auth_jakub_harasta",
+      "value": 5
+    },
+    {
+      "source": "2601.05879v1",
+      "target": "auth_matej_vasina",
+      "value": 5
+    },
+    {
+      "source": "2601.05879v1",
+      "target": "auth_martin_kornel",
+      "value": 5
+    },
+    {
+      "source": "2601.05879v1",
+      "target": "auth_tomas_foltynek",
+      "value": 5
+    },
+    {
+      "source": "2601.05879v1",
+      "target": "topic_legal_contexts",
+      "value": 2
+    },
+    {
+      "source": "2601.05879v1",
+      "target": "topic_family_law",
+      "value": 2
+    },
+    {
+      "source": "2601.05879v1",
+      "target": "topic_legal_self",
+      "value": 2
+    },
+    {
+      "source": "2601.05879v1",
+      "target": "topic_scenario_gendered",
+      "value": 2
+    },
+    {
+      "source": "2601.05879v1",
+      "target": "topic_legal_guidance",
+      "value": 2
+    },
+    {
+      "source": "2601.05826v1",
+      "target": "auth_íris_damião",
+      "value": 5
+    },
+    {
+      "source": "2601.05826v1",
+      "target": "auth_joão_franco",
+      "value": 5
+    },
+    {
+      "source": "2601.05826v1",
+      "target": "auth_mariana_silva",
+      "value": 5
+    },
+    {
+      "source": "2601.05826v1",
+      "target": "auth_paulo_almeida",
+      "value": 5
+    },
+    {
+      "source": "2601.05826v1",
+      "target": "auth_pedro_c_magalhães",
+      "value": 5
+    },
+    {
+      "source": "2601.05826v1",
+      "target": "auth_joana_gonçalves_sá",
+      "value": 5
+    },
+    {
+      "source": "2601.05826v1",
+      "target": "topic_campaign_media",
+      "value": 2
+    },
+    {
+      "source": "2601.05826v1",
+      "target": "topic_elections_analyzed",
+      "value": 2
+    },
+    {
+      "source": "2601.05826v1",
+      "target": "topic_electoral_projections",
+      "value": 2
+    },
+    {
+      "source": "2601.05826v1",
+      "target": "topic_different_political",
+      "value": 2
+    },
+    {
+      "source": "2601.05826v1",
+      "target": "topic_media_influence",
+      "value": 2
+    },
+    {
+      "source": "2601.05666v1",
+      "target": "auth_yerin_kwak",
+      "value": 5
+    },
+    {
+      "source": "2601.05666v1",
+      "target": "auth_siddharth_adelkar",
+      "value": 5
+    },
+    {
+      "source": "2601.05666v1",
+      "target": "auth_zachary_a_pardos",
+      "value": 5
+    },
+    {
+      "source": "2601.05666v1",
+      "target": "topic_student_credit",
+      "value": 2
+    },
+    {
+      "source": "2601.05666v1",
+      "target": "topic_course_articulation",
+      "value": 2
+    },
+    {
+      "source": "2601.05666v1",
+      "target": "topic_articulations_institutions",
+      "value": 2
+    },
+    {
+      "source": "2601.05666v1",
+      "target": "topic_ensuring_credits",
+      "value": 2
+    },
+    {
+      "source": "2601.05666v1",
+      "target": "topic_candidate_articulations",
+      "value": 2
+    },
+    {
+      "source": "2601.05574v1",
+      "target": "auth_simon_chesterman",
+      "value": 5
+    },
+    {
+      "source": "2601.05574v1",
+      "target": "auth_loy_hui_chieh",
+      "value": 5
+    },
+    {
+      "source": "2601.05574v1",
+      "target": "topic_academic_authority",
+      "value": 2
+    },
+    {
+      "source": "2601.05574v1",
+      "target": "topic_research_integrity",
+      "value": 2
+    },
+    {
+      "source": "2601.05574v1",
+      "target": "topic_scholarly_labour",
+      "value": 2
+    },
+    {
+      "source": "2601.05574v1",
+      "target": "topic_scholarly",
+      "value": 2
+    },
+    {
+      "source": "2601.05574v1",
+      "target": "topic_institutional_capacity",
+      "value": 2
+    },
+    {
+      "source": "2601.05384v1",
+      "target": "auth_alessandro_bellina",
+      "value": 5
+    },
+    {
+      "source": "2601.05384v1",
+      "target": "auth_giordano_de_marzo",
+      "value": 5
+    },
+    {
+      "source": "2601.05384v1",
+      "target": "auth_david_garcia",
+      "value": 5
+    },
+    {
+      "source": "2601.05384v1",
+      "target": "topic_collective_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.05384v1",
+      "target": "topic_ai_agents",
+      "value": 2
+    },
+    {
+      "source": "2601.05384v1",
+      "target": "topic_ai_agent",
+      "value": 2
+    },
+    {
+      "source": "2601.05384v1",
+      "target": "topic_investigate_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.05384v1",
+      "target": "topic_reveal_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.05358v1",
+      "target": "auth_tim_menzner",
+      "value": 5
+    },
+    {
+      "source": "2601.05358v1",
+      "target": "auth_jochen_l_leidner",
+      "value": 5
+    },
+    {
+      "source": "2601.05358v1",
+      "target": "topic_media_bias",
+      "value": 2
+    },
+    {
+      "source": "2601.05358v1",
+      "target": "topic_bias_propaganda",
+      "value": 2
+    },
+    {
+      "source": "2601.05358v1",
+      "target": "topic_bias_types",
+      "value": 2
+    },
+    {
+      "source": "2601.05358v1",
+      "target": "topic_fact_bias",
+      "value": 2
+    },
+    {
+      "source": "2601.05358v1",
+      "target": "topic_political_spectrum",
+      "value": 2
+    },
+    {
+      "source": "2601.05307v1",
+      "target": "auth_ritwik_gupta",
+      "value": 5
+    },
+    {
+      "source": "2601.05307v1",
+      "target": "auth_andrew_w_reddie",
+      "value": 5
+    },
+    {
+      "source": "2601.05307v1",
+      "target": "topic_ai_weaponization",
+      "value": 2
+    },
+    {
+      "source": "2601.05307v1",
+      "target": "topic_ai_security",
+      "value": 2
+    },
+    {
+      "source": "2601.05307v1",
+      "target": "topic_national_security",
+      "value": 2
+    },
+    {
+      "source": "2601.05307v1",
+      "target": "topic_weaponization_compute",
+      "value": 2
+    },
+    {
+      "source": "2601.05307v1",
+      "target": "topic_weaponizable_capabilities",
       "value": 2
     }
   ]
