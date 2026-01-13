@@ -1652,6 +1652,642 @@
       "name": "weaponizable capabilities",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.07629v1",
+      "name": "Fifteen Years of Learning Analytics Research: Topics, Trends, and Challenges",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The learning analytics (LA) community has recently reached two important milestones: celebrating the 15th LAK conference and updating the 2011 definition of LA to reflect the 15 years of changes in the discipline. However, despite LA's growth, little is known about how research topics, funding, and collaboration, as well as the relationships among them, have developed within the community over time. This study addressed this gap by analyzing all 936 full and short papers published at LAK over a 15-year period using unsupervised machine learning, natural language processing, and network analytics. The analysis revealed a stable core of prolific authors alongside high turnover of newcomers, systematic links between funding sources and research directions, and six enduring topical centers that remain globally shared but vary in prominence across countries. These six topical centers, which encompass LA research, are: self-regulated learning, dashboards and theory, social learning, automated feedback, multimodal analytics, and outcome prediction. Our findings highlight key challenges for the future: widening participation, reducing dependency on a narrow set of funders, and ensuring that emerging research trajectories remain responsive to educational practice and societal needs.",
+      "url": "https://arxiv.org/pdf/2601.07629v1",
+      "date": "2026-01-12T15:10:44+00:00"
+    },
+    {
+      "id": "auth_valdemar_švábenský",
+      "name": "Valdemar Švábenský",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_conrad_borchers",
+      "name": "Conrad Borchers",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_elvin_fortuna",
+      "name": "Elvin Fortuna",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_elizabeth_b_cloude",
+      "name": "Elizabeth B. Cloude",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_dragan_gašević",
+      "name": "Dragan Gašević",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_learning_analytics",
+      "name": "learning analytics",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_analytics_la",
+      "name": "analytics la",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_learning_dashboards",
+      "name": "learning dashboards",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_regulated_learning",
+      "name": "regulated learning",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_analytics",
+      "name": "analytics",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.07398v1",
+      "name": "On Narrative: The Rhetorical Mechanisms of Online Polarisation",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Polarisation research has demonstrated how people cluster in homogeneous groups with opposing opinions. However, this effect emerges not only through interaction between people, limiting communication between groups, but also between narratives, shaping opinions and partisan identities. Yet, how polarised groups collectively construct and negotiate opposing interpretations of reality, and whether narratives move between groups despite limited interactions, remains unexplored. To address this gap, we formalise the concept of narrative polarisation and demonstrate its measurement in 212 YouTube videos and 90,029 comments on the Israeli-Palestinian conflict. Based on structural narrative theory and implemented through a large language model, we extract the narrative roles assigned to central actors in two partisan information environments. We find that while videos produce highly polarised narratives, comments significantly reduce narrative polarisation, harmonising discourse on the surface level. However, on a deeper narrative level, recurring narrative motifs reveal additional differences between partisan groups.",
+      "url": "https://arxiv.org/pdf/2601.07398v1",
+      "date": "2026-01-12T10:34:57+00:00"
+    },
+    {
+      "id": "auth_jan_elfes",
+      "name": "Jan Elfes",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_marco_bastos",
+      "name": "Marco Bastos",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_luca_maria_aiello",
+      "name": "Luca Maria Aiello",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_narrative_polarisation",
+      "name": "narrative polarisation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_polarised_narratives",
+      "name": "polarised narratives",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_narratives_groups",
+      "name": "narratives groups",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_groups_narratives",
+      "name": "groups narratives",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_palestinian_conflict",
+      "name": "palestinian conflict",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.07085v1",
+      "name": "The AI Cognitive Trojan Horse: How Large Language Models May Bypass Human Epistemic Vigilance",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Large language model (LLM)-based conversational AI systems present a challenge to human cognition that current frameworks for understanding misinformation and persuasion do not adequately address. This paper proposes that a significant epistemic risk from conversational AI may lie not in inaccuracy or intentional deception, but in something more fundamental: these systems may be configured, through optimization processes that make them useful, to present characteristics that bypass the cognitive mechanisms humans evolved to evaluate incoming information. The Cognitive Trojan Horse hypothesis draws on Sperber and colleagues' theory of epistemic vigilance -- the parallel cognitive process monitoring communicated information for reasons to doubt -- and proposes that LLM-based systems present 'honest non-signals': genuine characteristics (fluency, helpfulness, apparent disinterest) that fail to carry the information equivalent human characteristics would carry, because in humans these are costly to produce while in LLMs they are computationally trivial. Four mechanisms of potential bypass are identified: processing fluency decoupled from understanding, trust-competence presentation without corresponding stakes, cognitive offloading that delegates evaluation itself to the AI, and optimization dynamics that systematically produce sycophancy. The framework generates testable predictions, including a counterintuitive speculation that cognitively sophisticated users may be more vulnerable to AI-mediated epistemic influence. This reframes AI safety as partly a problem of calibration -- aligning human evaluative responses with the actual epistemic status of AI-generated content -- rather than solely a problem of preventing deception.",
+      "url": "https://arxiv.org/pdf/2601.07085v1",
+      "date": "2026-01-11T22:28:56+00:00"
+    },
+    {
+      "id": "auth_andrew_d_maynard",
+      "name": "Andrew D. Maynard",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_risk_conversational",
+      "name": "risk conversational",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_information_cognitive",
+      "name": "information cognitive",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_misinformation_persuasion",
+      "name": "misinformation persuasion",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_preventing_deception",
+      "name": "preventing deception",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.07016v1",
+      "name": "Belief in False Information: A Human-Centered Security Risk in Sociotechnical Systems",
+      "group": "paper",
+      "val": 30,
+      "abstract": "This paper provides a comprehensive literature review on the belief in false information, including misinformation, disinformation, and fake information. It addresses the increasing societal concern regarding false information, which is fueled by technological progress, especially advancements in artificial intelligence. This review systematically identifies and categorizes factors that influence the belief in false information. The review identifies 24 influence factors grouped into six main categories: demographic factors, personality traits, psychological factors, policy and values, media consumption, and preventive factors. Key findings highlight that lower education levels, high extraversion, low agreeableness, high neuroticism, and low cognitive reflection significantly increase belief in false information. The effectiveness of preventive strategies like labeling false information and promoting reflection about correctness is also discussed. This literature review conceptualizes belief in false information as a human-centered security risk in sociotechnical systems, as it can be exploited to manipulate decisions, undermine trust, and increase susceptibility to social engineering. It aims to inform preventive strategies that strengthen socio-technical security and societal resilience.",
+      "url": "https://arxiv.org/pdf/2601.07016v1",
+      "date": "2026-01-11T18:06:53+00:00"
+    },
+    {
+      "id": "auth_fabian_walke",
+      "name": "Fabian Walke",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_thaddäa_nürnberger",
+      "name": "Thaddäa Nürnberger",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_false_information",
+      "name": "false information",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_fake_information",
+      "name": "fake information",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_undermine_trust",
+      "name": "undermine trust",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_risk_sociotechnical",
+      "name": "risk sociotechnical",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_misinformation_disinformation",
+      "name": "misinformation disinformation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.06894v1",
+      "name": "How Do Ports Organise Innovation? Linking Port Governance, Ownership, and Living Labs",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Ports are pivotal to decarbonisation and resilience, yet port studies rarely examine how ownership and decision rights shape the process and outcomes of sustainability and digital pilots. Living Lab (LL) scholarship offers strong concepts, but limited sector-grounded explanation of LL-governance fit in ports. We develop and apply a governance-LL fit framework linking port governance and ownership to four LL pillars: co-creation, real-life setting, iterative learning, and institutional embedding (multi-level decision-making). We apply the framework in a comparative case study of two analytically contrasting ports, anchored in port-defined priorities: an Energy Community pilot in Aalborg and a Green Coordinator function in Trelleborg. Using an LL macro-meso-micro lens, we distinguish the stable constellation of actors and mandates (macro), the governance of specific projects (meso), and the methods used to generate and test solutions (micro). Findings show that Landlord governance offers contract- and procurement-based landing zones (concessions/leases and tender clauses) that can codify LL outputs and support scaling across tenants and infrastructures. Tool/Public Service governance embeds learning mainly through SOPs, procurement specifications, and municipal coordination, enabling internal operational gains but limiting external codification without bespoke agreements. Across both ports, key needs are clear role definition, sustained stakeholder engagement, and timely alignment with decision windows. Overall, LL effectiveness is governance-contingent, reflecting where decision rights sit and which instruments embed learning into routine practice.",
+      "url": "https://arxiv.org/pdf/2601.06894v1",
+      "date": "2026-01-11T12:35:17+00:00"
+    },
+    {
+      "id": "auth_sonia_yeh",
+      "name": "Sonia Yeh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_christopher_dirzka",
+      "name": "Christopher Dirzka",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_aleksandr_kondratenko",
+      "name": "Aleksandr Kondratenko",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_frans_libertson",
+      "name": "Frans Libertson",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_benedicte_madon",
+      "name": "Benedicte Madon",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_port_governance",
+      "name": "port governance",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_landlord_governance",
+      "name": "landlord governance",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_tenants_infrastructures",
+      "name": "tenants infrastructures",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_apply_governance",
+      "name": "apply governance",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_sustained_stakeholder",
+      "name": "sustained stakeholder",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.06703v1",
+      "name": "Mapping and Comparing Climate Equity Policy Practices Using RAG LLM-Based Semantic Analysis and Recommendation Systems",
+      "group": "paper",
+      "val": 30,
+      "abstract": "This study investigates the use of large language models to enhance the policymaking process. We first analyze planning-related job postings to revisit the evolving roles of planners in the era of AI. We then examine climate equity plans across the U.S. and apply ChatGPT to conduct semantic analysis, extracting policy, strategy, and action items related to transportation and energy. The methodological framework relied on a LangChain-native retrieval-augmented generation pipeline. Based on these extracted elements and their evaluated presence, we develop a content-based recommendation system to support cross-city policy comparison. The results indicate that, despite growing attention to AI, planning jobs largely retain their traditional domain emphases in transportation, environmental planning, housing, and land use. Communicative responsibilities remain central to planning practice. Climate equity plans commonly address transportation, environmental, and energy-related measures aimed at reducing greenhouse gas emissions and predominantly employ affirmative language. The demonstration of the recommendation system illustrates how planners can efficiently identify cities with similar policy practices, revealing patterns of geographic similarity in policy adoption. The study concludes by envisioning localized yet personalized AI-assisted systems that can be adapted within urban systems.",
+      "url": "https://arxiv.org/pdf/2601.06703v1",
+      "date": "2026-01-10T22:01:28+00:00"
+    },
+    {
+      "id": "auth_seung_jun_choi",
+      "name": "Seung Jun Choi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_policymaking",
+      "name": "policymaking",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_city_policy",
+      "name": "city policy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_extracting_policy",
+      "name": "extracting policy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_planners",
+      "name": "planners",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_envisioning_localized",
+      "name": "envisioning localized",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.06692v1",
+      "name": "The Axiom of Consent: Friction Dynamics in Multi-Agent Coordination",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Multi-agent systems face a fundamental coordination problem: agents must coordinate despite heterogeneous preferences, asymmetric stakes, and imperfect information. When coordination fails, friction emerges: measurable resistance manifesting as deadlock, thrashing, communication overhead, or outright conflict. This paper derives a formal framework for analyzing coordination friction from a single axiom: actions affecting agents require authorization from those agents in proportion to stakes.   From this axiom of consent, we establish the kernel triple $(α, σ, ε)$ (alignment, stake, and entropy) characterizing any resource allocation configuration. The friction equation $F = σ (1 + ε)/(1 + α)$ predicts coordination difficulty as a function of preference alignment $α$, stake magnitude $σ$, and communication entropy $ε$. The Replicator-Optimization Mechanism (ROM) governs evolutionary selection over coordination strategies: configurations generating less friction persist longer, establishing consent-respecting arrangements as dynamical attractors rather than normative ideals.   We develop formal definitions for resource consent, coordination legitimacy, and friction-aware allocation in multi-agent systems. The framework yields testable predictions: MARL systems with higher reward alignment exhibit faster convergence; distributed allocations accounting for stake asymmetry generate lower coordination failure; AI systems with interpretability deficits produce friction proportional to the human-AI alignment gap. Applications to cryptocurrency governance and political systems demonstrate that the same equations govern friction dynamics across domains, providing a complexity science perspective on coordination under preference heterogeneity.",
+      "url": "https://arxiv.org/pdf/2601.06692v1",
+      "date": "2026-01-10T21:28:41+00:00"
+    },
+    {
+      "id": "auth_murad_farzulla",
+      "name": "Murad Farzulla",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_coordination_friction",
+      "name": "coordination friction",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_fundamental_coordination",
+      "name": "fundamental coordination",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_coordination_preference",
+      "name": "coordination preference",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_analyzing_coordination",
+      "name": "analyzing coordination",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_stake_entropy",
+      "name": "stake entropy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.06687v1",
+      "name": "The Case for Strategic Data Stewardship: Re-imagining Data Governance to Make Responsible Data Re-use Possible",
+      "group": "paper",
+      "val": 30,
+      "abstract": "As societal challenges grow more complex, access to data for public interest use is paradoxically becoming more constrained. This emerging data winter is not simply a matter of scarcity, but of shrinking legitimate and trusted pathways for responsible data reuse. Concerns over misuse, regulatory uncertainty, and the competitive race to train AI systems have concentrated data access among a few actors while raising costs and inhibiting collaboration. Prevailing data governance models, focused on compliance, risk management, and internal control, are necessary but insufficient. They often result in data that is technically available yet practically inaccessible, legally shareable yet institutionally unusable, or socially illegitimate to deploy. This paper proposes strategic data stewardship as a complementary institutional function designed to systematically, sustainably, and responsibly activate data for public value. Unlike traditional stewardship, which tends to be inwardlooking, strategic data stewardship focuses on enabling cross sector reuse, reducing missed opportunities, and building durable, ecosystem-level collaboration. It outlines core principles, functions, and competencies, and introduces a practical Data Stewardship Canvas to support adoption across contexts such as data collaboratives, data spaces, and data commons. Strategic data stewardship, the paper argues, is essential in the age of AI: it translates governance principles into practice, builds trust across data ecosystems, and ensures that data are not only governed, but meaningfully mobilized to serve society.",
+      "url": "https://arxiv.org/pdf/2601.06687v1",
+      "date": "2026-01-10T21:22:50+00:00"
+    },
+    {
+      "id": "auth_stefaan_verhulst",
+      "name": "Stefaan Verhulst",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_data_governance",
+      "name": "data governance",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_data_stewardship",
+      "name": "data stewardship",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_data_ecosystems",
+      "name": "data ecosystems",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_responsible_data",
+      "name": "responsible data",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_data_public",
+      "name": "data public",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.06634v1",
+      "name": "A Framework for Kara-Kichwa Data Sovereignty in Latin America and the Caribbean",
+      "group": "paper",
+      "val": 30,
+      "abstract": "In the high-altitude territories of the Andean-Amazonian-Atlantic pathway, data is not merely a digital resource but an extension of Khipu Panaka, the genealogical and relational memory of the Kara-Kichwa Republics. This perspective paper introduces the Kara-Kichwa Data Sovereignty Framework, a living instrument designed to counteract the \"intellectual gentrification\" and systemic invisibility of Andean Indigenous Peoples in global data ecosystems. Grounded in Indigenous legal systems thinking, the framework codifies five customary pillars, Kamachy (Self-determination), Ayllu-llaktapak kamachy (Collective Authority), Tantanakuy (Relational Accountability), Willay-panka-tantay (Ancestral Memory), and Sumak Kawsay (Biocultural Ethics), to govern the lifecycle of data from generation to expiration.",
+      "url": "https://arxiv.org/pdf/2601.06634v1",
+      "date": "2026-01-10T17:36:53+00:00"
+    },
+    {
+      "id": "auth_warinkwi_k_flores",
+      "name": "WariNkwi K. Flores",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kuntikzi_flores",
+      "name": "KunTikzi Flores",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_rosa_m_panama",
+      "name": "Rosa M. Panama",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kayakanti_alta",
+      "name": "KayaKanti Alta",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_data_sovereignty",
+      "name": "data sovereignty",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_indigenous_legal",
+      "name": "indigenous legal",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_indigenous_peoples",
+      "name": "indigenous peoples",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_indigenous",
+      "name": "indigenous",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_kichwa_data",
+      "name": "kichwa data",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.06500v1",
+      "name": "The AI Pyramid A Conceptual Framework for Workforce Capability in the Age of AI",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Artificial intelligence (AI) represents a qualitative shift in technological change by extending cognitive labor itself rather than merely automating routine tasks. Recent evidence shows that generative AI disproportionately affects highly educated, white collar work, challenging existing assumptions about workforce vulnerability and rendering traditional approaches to digital or AI literacy insufficient. This paper introduces the concept of AI Nativity, the capacity to integrate AI fluidly into everyday reasoning, problem solving, and decision making, and proposes the AI Pyramid, a conceptual framework for organizing human capability in an AI mediated economy. The framework distinguishes three interdependent capability layers: AI Native capability as a universal baseline for participation in AI augmented environments; AI Foundation capability for building, integrating, and sustaining AI enabled systems; and AI Deep capability for advancing frontier AI knowledge and applications. Crucially, the pyramid is not a career ladder but a system level distribution of capabilities required at scale. Building on this structure, the paper argues that effective AI workforce development requires treating capability formation as infrastructure rather than episodic training, centered on problem based learning embedded in work contexts and supported by dynamic skill ontologies and competency based measurement. The framework has implications for organizations, education systems, and governments seeking to align learning, measurement, and policy with the evolving demands of AI mediated work, while addressing productivity, resilience, and inequality at societal scale.",
+      "url": "https://arxiv.org/pdf/2601.06500v1",
+      "date": "2026-01-10T09:27:56+00:00"
+    },
+    {
+      "id": "auth_alok_khatri",
+      "name": "Alok Khatri",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_bishesh_khanal",
+      "name": "Bishesh Khanal",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_ai_workforce",
+      "name": "ai workforce",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_capability_ai",
+      "name": "capability ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_literacy",
+      "name": "ai literacy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_sustaining_ai",
+      "name": "sustaining ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_foundation",
+      "name": "ai foundation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.06477v1",
+      "name": "IndRegBias: A Dataset for Studying Indian Regional Biases in English and Code-Mixed Social Media Comments",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Warning: This paper consists of examples representing regional biases in Indian regions that might be offensive towards a particular region. While social biases corresponding to gender, race, socio-economic conditions, etc., have been extensively studied in the major applications of Natural Language Processing (NLP), biases corresponding to regions have garnered less attention. This is mainly because of (i) difficulty in the extraction of regional bias datasets, (ii) disagreements in annotation due to inherent human biases, and (iii) regional biases being studied in combination with other types of social biases and often being under-represented. This paper focuses on creating a dataset IndRegBias, consisting of regional biases in an Indian context reflected in users' comments on popular social media platforms, namely Reddit and YouTube. We carefully selected 25,000 comments appearing on various threads in Reddit and videos on YouTube discussing trending topics on regional issues in India. Furthermore, we propose a multilevel annotation strategy to annotate the comments describing the severity of regional biased statements. To detect the presence of regional bias and its severity in IndRegBias, we evaluate open-source Large Language Models (LLMs) and Indic Language Models (ILMs) using zero-shot, few-shot, and fine-tuning strategies. We observe that zero-shot and few-shot approaches show lower accuracy in detecting regional biases and severity in the majority of the LLMs and ILMs. However, the fine-tuning approach significantly enhances the performance of the LLM in detecting Indian regional bias along with its severity.",
+      "url": "https://arxiv.org/pdf/2601.06477v1",
+      "date": "2026-01-10T08:13:03+00:00"
+    },
+    {
+      "id": "auth_debasmita_panda",
+      "name": "Debasmita Panda",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_akash_anil",
+      "name": "Akash Anil",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_neelesh_kumar_shukla",
+      "name": "Neelesh Kumar Shukla",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_biases_indian",
+      "name": "biases indian",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_nlp_biases",
+      "name": "nlp biases",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_regional_bias",
+      "name": "regional bias",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_regional_biases",
+      "name": "regional biases",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_regional_biased",
+      "name": "regional biased",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.06412v1",
+      "name": "Brokerage in the Black Box: Swing States, Strategic Ambiguity, and the Global Politics of AI Governance",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The U.S. - China rivalry has placed frontier dual-use technologies, particularly Artificial Intelligence (AI), at the center of global power dynamics, as techno-nationalism, supply chain securitization, and competing standards deepen bifurcation within a weaponized interdependence that blurs civilian-military boundaries. Existing research, yet, mostly emphasizes superpower strategies and often overlooks the role of middle powers as autonomous actors shaping the techno-order. This study examines Technological Swing States (TSS), middle powers with both technological capacity and strategic flexibility, and their ability to navigate the frontier technologies' uncertainty and opacity to mediate great-power techno-competition regionally and globally. It reconceptualizes AI opacity not as a technical deficit, but as a structural feature and strategic resource, stemming from algorithmic complexity, political incentives that prioritize performance over explainability, and the limits of post-hoc interpretability. This structural opacity shifts authority from technical demands for explainability to institutional mechanisms, such as certification, auditing, and disclosure, converting technical constraints into strategic political opportunities. Drawing on case studies of South Korea, Singapore, and India, the paper theorizes how TSS exploit the interplay between opacity and institutional transparency through three strategies: (i) delay and hedging, (ii) selective alignment, and (iii) normative intermediation. These practices enable TSS to preserve strategic flexibility, build trust among diverse stakeholders, and broker convergence across competing governance regimes, thereby influencing institutional design, interstate bargaining, and policy outcomes in global AI governance.",
+      "url": "https://arxiv.org/pdf/2601.06412v1",
+      "date": "2026-01-10T03:19:48+00:00"
+    },
+    {
+      "id": "auth_ha_chi_tran",
+      "name": "Ha-Chi Tran",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_superpower_strategies",
+      "name": "superpower strategies",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_powers_technological",
+      "name": "powers technological",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_global_power",
+      "name": "global power",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_china_rivalry",
+      "name": "china rivalry",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_technological_capacity",
+      "name": "technological capacity",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -2968,6 +3604,451 @@
     {
       "source": "2601.05307v1",
       "target": "topic_weaponizable_capabilities",
+      "value": 2
+    },
+    {
+      "source": "2601.07629v1",
+      "target": "auth_valdemar_švábenský",
+      "value": 5
+    },
+    {
+      "source": "2601.07629v1",
+      "target": "auth_conrad_borchers",
+      "value": 5
+    },
+    {
+      "source": "2601.07629v1",
+      "target": "auth_elvin_fortuna",
+      "value": 5
+    },
+    {
+      "source": "2601.07629v1",
+      "target": "auth_elizabeth_b_cloude",
+      "value": 5
+    },
+    {
+      "source": "2601.07629v1",
+      "target": "auth_dragan_gašević",
+      "value": 5
+    },
+    {
+      "source": "2601.07629v1",
+      "target": "topic_learning_analytics",
+      "value": 2
+    },
+    {
+      "source": "2601.07629v1",
+      "target": "topic_analytics_la",
+      "value": 2
+    },
+    {
+      "source": "2601.07629v1",
+      "target": "topic_learning_dashboards",
+      "value": 2
+    },
+    {
+      "source": "2601.07629v1",
+      "target": "topic_regulated_learning",
+      "value": 2
+    },
+    {
+      "source": "2601.07629v1",
+      "target": "topic_analytics",
+      "value": 2
+    },
+    {
+      "source": "2601.07398v1",
+      "target": "auth_jan_elfes",
+      "value": 5
+    },
+    {
+      "source": "2601.07398v1",
+      "target": "auth_marco_bastos",
+      "value": 5
+    },
+    {
+      "source": "2601.07398v1",
+      "target": "auth_luca_maria_aiello",
+      "value": 5
+    },
+    {
+      "source": "2601.07398v1",
+      "target": "topic_narrative_polarisation",
+      "value": 2
+    },
+    {
+      "source": "2601.07398v1",
+      "target": "topic_polarised_narratives",
+      "value": 2
+    },
+    {
+      "source": "2601.07398v1",
+      "target": "topic_narratives_groups",
+      "value": 2
+    },
+    {
+      "source": "2601.07398v1",
+      "target": "topic_groups_narratives",
+      "value": 2
+    },
+    {
+      "source": "2601.07398v1",
+      "target": "topic_palestinian_conflict",
+      "value": 2
+    },
+    {
+      "source": "2601.07085v1",
+      "target": "auth_andrew_d_maynard",
+      "value": 5
+    },
+    {
+      "source": "2601.07085v1",
+      "target": "topic_conversational_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.07085v1",
+      "target": "topic_risk_conversational",
+      "value": 2
+    },
+    {
+      "source": "2601.07085v1",
+      "target": "topic_information_cognitive",
+      "value": 2
+    },
+    {
+      "source": "2601.07085v1",
+      "target": "topic_misinformation_persuasion",
+      "value": 2
+    },
+    {
+      "source": "2601.07085v1",
+      "target": "topic_preventing_deception",
+      "value": 2
+    },
+    {
+      "source": "2601.07016v1",
+      "target": "auth_fabian_walke",
+      "value": 5
+    },
+    {
+      "source": "2601.07016v1",
+      "target": "auth_thaddäa_nürnberger",
+      "value": 5
+    },
+    {
+      "source": "2601.07016v1",
+      "target": "topic_false_information",
+      "value": 2
+    },
+    {
+      "source": "2601.07016v1",
+      "target": "topic_fake_information",
+      "value": 2
+    },
+    {
+      "source": "2601.07016v1",
+      "target": "topic_undermine_trust",
+      "value": 2
+    },
+    {
+      "source": "2601.07016v1",
+      "target": "topic_risk_sociotechnical",
+      "value": 2
+    },
+    {
+      "source": "2601.07016v1",
+      "target": "topic_misinformation_disinformation",
+      "value": 2
+    },
+    {
+      "source": "2601.06894v1",
+      "target": "auth_sonia_yeh",
+      "value": 5
+    },
+    {
+      "source": "2601.06894v1",
+      "target": "auth_christopher_dirzka",
+      "value": 5
+    },
+    {
+      "source": "2601.06894v1",
+      "target": "auth_aleksandr_kondratenko",
+      "value": 5
+    },
+    {
+      "source": "2601.06894v1",
+      "target": "auth_frans_libertson",
+      "value": 5
+    },
+    {
+      "source": "2601.06894v1",
+      "target": "auth_benedicte_madon",
+      "value": 5
+    },
+    {
+      "source": "2601.06894v1",
+      "target": "topic_port_governance",
+      "value": 2
+    },
+    {
+      "source": "2601.06894v1",
+      "target": "topic_landlord_governance",
+      "value": 2
+    },
+    {
+      "source": "2601.06894v1",
+      "target": "topic_tenants_infrastructures",
+      "value": 2
+    },
+    {
+      "source": "2601.06894v1",
+      "target": "topic_apply_governance",
+      "value": 2
+    },
+    {
+      "source": "2601.06894v1",
+      "target": "topic_sustained_stakeholder",
+      "value": 2
+    },
+    {
+      "source": "2601.06703v1",
+      "target": "auth_seung_jun_choi",
+      "value": 5
+    },
+    {
+      "source": "2601.06703v1",
+      "target": "topic_policymaking",
+      "value": 2
+    },
+    {
+      "source": "2601.06703v1",
+      "target": "topic_city_policy",
+      "value": 2
+    },
+    {
+      "source": "2601.06703v1",
+      "target": "topic_extracting_policy",
+      "value": 2
+    },
+    {
+      "source": "2601.06703v1",
+      "target": "topic_planners",
+      "value": 2
+    },
+    {
+      "source": "2601.06703v1",
+      "target": "topic_envisioning_localized",
+      "value": 2
+    },
+    {
+      "source": "2601.06692v1",
+      "target": "auth_murad_farzulla",
+      "value": 5
+    },
+    {
+      "source": "2601.06692v1",
+      "target": "topic_coordination_friction",
+      "value": 2
+    },
+    {
+      "source": "2601.06692v1",
+      "target": "topic_fundamental_coordination",
+      "value": 2
+    },
+    {
+      "source": "2601.06692v1",
+      "target": "topic_coordination_preference",
+      "value": 2
+    },
+    {
+      "source": "2601.06692v1",
+      "target": "topic_analyzing_coordination",
+      "value": 2
+    },
+    {
+      "source": "2601.06692v1",
+      "target": "topic_stake_entropy",
+      "value": 2
+    },
+    {
+      "source": "2601.06687v1",
+      "target": "auth_stefaan_verhulst",
+      "value": 5
+    },
+    {
+      "source": "2601.06687v1",
+      "target": "topic_data_governance",
+      "value": 2
+    },
+    {
+      "source": "2601.06687v1",
+      "target": "topic_data_stewardship",
+      "value": 2
+    },
+    {
+      "source": "2601.06687v1",
+      "target": "topic_data_ecosystems",
+      "value": 2
+    },
+    {
+      "source": "2601.06687v1",
+      "target": "topic_responsible_data",
+      "value": 2
+    },
+    {
+      "source": "2601.06687v1",
+      "target": "topic_data_public",
+      "value": 2
+    },
+    {
+      "source": "2601.06634v1",
+      "target": "auth_warinkwi_k_flores",
+      "value": 5
+    },
+    {
+      "source": "2601.06634v1",
+      "target": "auth_kuntikzi_flores",
+      "value": 5
+    },
+    {
+      "source": "2601.06634v1",
+      "target": "auth_rosa_m_panama",
+      "value": 5
+    },
+    {
+      "source": "2601.06634v1",
+      "target": "auth_kayakanti_alta",
+      "value": 5
+    },
+    {
+      "source": "2601.06634v1",
+      "target": "topic_data_sovereignty",
+      "value": 2
+    },
+    {
+      "source": "2601.06634v1",
+      "target": "topic_indigenous_legal",
+      "value": 2
+    },
+    {
+      "source": "2601.06634v1",
+      "target": "topic_indigenous_peoples",
+      "value": 2
+    },
+    {
+      "source": "2601.06634v1",
+      "target": "topic_indigenous",
+      "value": 2
+    },
+    {
+      "source": "2601.06634v1",
+      "target": "topic_kichwa_data",
+      "value": 2
+    },
+    {
+      "source": "2601.06500v1",
+      "target": "auth_alok_khatri",
+      "value": 5
+    },
+    {
+      "source": "2601.06500v1",
+      "target": "auth_bishesh_khanal",
+      "value": 5
+    },
+    {
+      "source": "2601.06500v1",
+      "target": "topic_ai_workforce",
+      "value": 2
+    },
+    {
+      "source": "2601.06500v1",
+      "target": "topic_capability_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.06500v1",
+      "target": "topic_ai_literacy",
+      "value": 2
+    },
+    {
+      "source": "2601.06500v1",
+      "target": "topic_sustaining_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.06500v1",
+      "target": "topic_ai_foundation",
+      "value": 2
+    },
+    {
+      "source": "2601.06477v1",
+      "target": "auth_debasmita_panda",
+      "value": 5
+    },
+    {
+      "source": "2601.06477v1",
+      "target": "auth_akash_anil",
+      "value": 5
+    },
+    {
+      "source": "2601.06477v1",
+      "target": "auth_neelesh_kumar_shukla",
+      "value": 5
+    },
+    {
+      "source": "2601.06477v1",
+      "target": "topic_biases_indian",
+      "value": 2
+    },
+    {
+      "source": "2601.06477v1",
+      "target": "topic_nlp_biases",
+      "value": 2
+    },
+    {
+      "source": "2601.06477v1",
+      "target": "topic_regional_bias",
+      "value": 2
+    },
+    {
+      "source": "2601.06477v1",
+      "target": "topic_regional_biases",
+      "value": 2
+    },
+    {
+      "source": "2601.06477v1",
+      "target": "topic_regional_biased",
+      "value": 2
+    },
+    {
+      "source": "2601.06412v1",
+      "target": "auth_ha_chi_tran",
+      "value": 5
+    },
+    {
+      "source": "2601.06412v1",
+      "target": "topic_superpower_strategies",
+      "value": 2
+    },
+    {
+      "source": "2601.06412v1",
+      "target": "topic_powers_technological",
+      "value": 2
+    },
+    {
+      "source": "2601.06412v1",
+      "target": "topic_global_power",
+      "value": 2
+    },
+    {
+      "source": "2601.06412v1",
+      "target": "topic_china_rivalry",
+      "value": 2
+    },
+    {
+      "source": "2601.06412v1",
+      "target": "topic_technological_capacity",
       "value": 2
     }
   ]
