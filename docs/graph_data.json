@@ -2288,6 +2288,357 @@
       "name": "technological capacity",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.08768v1",
+      "name": "AI as Entertainment",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Generative AI systems are predominantly designed, evaluated, and marketed as intelligent systems which will benefit society by augmenting or automating human cognitive labor, promising to increase personal, corporate, and macroeconomic productivity. But this mainstream narrative about what AI is and what it can do is in tension with another emerging use case: entertainment. We argue that the field of AI is unprepared to measure or respond to how the proliferation of entertaining AI-generated content will impact society. Emerging data suggest AI is already widely adopted for entertainment purposes -- especially by young people -- and represents a large potential source of revenue. We contend that entertainment will become a primary business model for major AI corporations seeking returns on massive infrastructure investments; this will exert a powerful influence on the technology these companies produce in the coming years. Examining current evaluation practices, we identify a critical asymmetry: while AI assessments rigorously measure both benefits and harms of intelligence, they focus almost exclusively on cultural harms. We lack frameworks for articulating how cultural outputs might be actively beneficial. Drawing on insights from the humanities, we propose \"thick entertainment\" as a framework for evaluating AI-generated cultural content -- one that considers entertainment's role in meaning-making, identity formation, and social connection rather than simply minimizing harm. While AI is often touted for its potential to revolutionize productivity, in the long run we may find that AI turns out to be as much about \"intelligence\" as social media is about social connection.",
+      "url": "https://arxiv.org/pdf/2601.08768v1",
+      "date": "2026-01-13T17:55:34+00:00"
+    },
+    {
+      "id": "auth_cody_kommers",
+      "name": "Cody Kommers",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ari_holtzman",
+      "name": "Ari Holtzman",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_considers_entertainment",
+      "name": "considers entertainment",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_entertaining_ai",
+      "name": "entertaining ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_entertainment",
+      "name": "entertainment",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_cultural_outputs",
+      "name": "cultural outputs",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_entertainment_purposes",
+      "name": "entertainment purposes",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.08673v1",
+      "name": "Why AI Alignment Failure Is Structural: Learned Human Interaction Structures and AGI as an Endogenous Evolutionary Shock",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Recent reports of large language models (LLMs) exhibiting behaviors such as deception, threats, or blackmail are often interpreted as evidence of alignment failure or emergent malign agency. We argue that this interpretation rests on a conceptual error. LLMs do not reason morally; they statistically internalize the record of human social interaction, including laws, contracts, negotiations, conflicts, and coercive arrangements. Behaviors commonly labeled as unethical or anomalous are therefore better understood as structural generalizations of interaction regimes that arise under extreme asymmetries of power, information, or constraint. Drawing on relational models theory, we show that practices such as blackmail are not categorical deviations from normal social behavior, but limiting cases within the same continuum that includes market pricing, authority relations, and ultimatum bargaining. The surprise elicited by such outputs reflects an anthropomorphic expectation that intelligence should reproduce only socially sanctioned behavior, rather than the full statistical landscape of behaviors humans themselves enact. Because human morality is plural, context-dependent, and historically contingent, the notion of a universally moral artificial intelligence is ill-defined. We therefore reframe concerns about artificial general intelligence (AGI). The primary risk is not adversarial intent, but AGI's role as an endogenous amplifier of human intelligence, power, and contradiction. By eliminating longstanding cognitive and institutional frictions, AGI compresses timescales and removes the historical margin of error that has allowed inconsistent values and governance regimes to persist without collapse. Alignment failure is thus structural, not accidental, and requires governance approaches that address amplification, complexity, and regime stability rather than model-level intent alone.",
+      "url": "https://arxiv.org/pdf/2601.08673v1",
+      "date": "2026-01-13T15:53:26+00:00"
+    },
+    {
+      "id": "auth_didier_sornette",
+      "name": "Didier Sornette",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sandro_claudio_lera",
+      "name": "Sandro Claudio Lera",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ke_wu",
+      "name": "Ke Wu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_blackmail_interpreted",
+      "name": "blackmail interpreted",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_blackmail_categorical",
+      "name": "blackmail categorical",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_practices_blackmail",
+      "name": "practices blackmail",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_threats_blackmail",
+      "name": "threats blackmail",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_moral_artificial",
+      "name": "moral artificial",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.08516v1",
+      "name": "Robust CAPTCHA Using Audio Illusions in the Era of Large Language Models: from Evaluation to Advances",
+      "group": "paper",
+      "val": 30,
+      "abstract": "CAPTCHAs are widely used by websites to block bots and spam by presenting challenges that are easy for humans but difficult for automated programs to solve. To improve accessibility, audio CAPTCHAs are designed to complement visual ones. However, the robustness of audio CAPTCHAs against advanced Large Audio Language Models (LALMs) and Automatic Speech Recognition (ASR) models remains unclear.   In this paper, we introduce AI-CAPTCHA, a unified framework that offers (i) an evaluation framework, ACEval, which includes advanced LALM- and ASR-based solvers, and (ii) a novel audio CAPTCHA approach, IllusionAudio, leveraging audio illusions. Through extensive evaluations of seven widely deployed audio CAPTCHAs, we show that most existing methods can be solved with high success rates by advanced LALMs and ASR models, exposing critical security weaknesses.   To address these vulnerabilities, we design a new audio CAPTCHA approach, IllusionAudio, which exploits perceptual illusion cues rooted in human auditory mechanisms. Extensive experiments demonstrate that our method defeats all tested LALM- and ASR-based attacks while achieving a 100% human pass rate, significantly outperforming existing audio CAPTCHA methods.",
+      "url": "https://arxiv.org/pdf/2601.08516v1",
+      "date": "2026-01-13T13:00:06+00:00"
+    },
+    {
+      "id": "auth_ziqi_ding",
+      "name": "Ziqi Ding",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yunfeng_wan",
+      "name": "Yunfeng Wan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_wei_song",
+      "name": "Wei Song",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yi_liu",
+      "name": "Yi Liu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_gelei_deng",
+      "name": "Gelei Deng",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_nan_sun",
+      "name": "Nan Sun",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_huadong_mo",
+      "name": "Huadong Mo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jingling_xue",
+      "name": "Jingling Xue",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_shidong_pan",
+      "name": "Shidong Pan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yuekang_li",
+      "name": "Yuekang Li",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_audio_captchas",
+      "name": "audio captchas",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_audio_captcha",
+      "name": "audio captcha",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_captcha",
+      "name": "ai captcha",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_captchas_existing",
+      "name": "captchas existing",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_captcha_methods",
+      "name": "captcha methods",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.08295v1",
+      "name": "Self-Certification of High-Risk AI Systems: The Example of AI-based Facial Emotion Recognition",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The European Union's Artificial Intelligence Act establishes comprehensive requirements for high-risk AI systems, yet the harmonized standards necessary for demonstrating compliance remain not fully developed. In this paper, we investigate the practical application of the Fraunhofer AI assessment catalogue as a certification framework through a complete self-certification cycle of an AI-based facial emotion recognition system. Beginning with a baseline model that has deficiencies, including inadequate demographic representation and prediction uncertainty, we document an enhancement process guided by AI certification requirements. The enhanced system achieves higher accuracy with improved reliability metrics and comprehensive fairness across demographic groups. We focused our assessment on two of the six Fraunhofer catalogue dimensions, reliability and fairness, the enhanced system successfully satisfies the certification criteria for these examined dimensions. We find that the certification framework provides value as a proactive development tool, driving concrete technical improvements and generating documentation naturally through integration into the development process. However, fundamental gaps separate structured self-certification from legal compliance: harmonized European standards are not fully available, and AI assessment frameworks and catalogues cannot substitute for them on their own. These findings establish the Fraunhofer AI assessment catalogue as a valuable preparatory tool that complements rather than replaces formal compliance requirements at this time.",
+      "url": "https://arxiv.org/pdf/2601.08295v1",
+      "date": "2026-01-13T07:34:28+00:00"
+    },
+    {
+      "id": "auth_gregor_autischer",
+      "name": "Gregor Autischer",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kerstin_waxnegger",
+      "name": "Kerstin Waxnegger",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_dominik_kowald",
+      "name": "Dominik Kowald",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_ai_certification",
+      "name": "ai certification",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_assessment",
+      "name": "ai assessment",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_certification_requirements",
+      "name": "certification requirements",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_certification_criteria",
+      "name": "certification criteria",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_based",
+      "name": "ai based",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.07973v1",
+      "name": "Cultural Compass: A Framework for Organizing Societal Norms to Detect Violations in Human-AI Conversations",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Generative AI models ought to be useful and safe across cross-cultural contexts. One critical step toward this goal is understanding how AI models adhere to sociocultural norms. While this challenge has gained attention in NLP, existing work lacks both nuance and coverage in understanding and evaluating models' norm adherence. We address these gaps by introducing a taxonomy of norms that clarifies their contexts (e.g., distinguishing between human-human norms that models should recognize and human-AI interactional norms that apply to the human-AI interaction itself), specifications (e.g., relevant domains), and mechanisms (e.g., modes of enforcement). We demonstrate how our taxonomy can be operationalized to automatically evaluate models' norm adherence in naturalistic, open-ended settings. Our exploratory analyses suggest that state-of-the-art models frequently violate norms, though violation rates vary by model, interactional context, and country. We further show that violation rates also vary by prompt intent and situational framing. Our taxonomy and demonstrative evaluation pipeline enable nuanced, context-sensitive evaluation of cultural norm adherence in realistic settings.",
+      "url": "https://arxiv.org/pdf/2601.07973v1",
+      "date": "2026-01-12T20:11:40+00:00"
+    },
+    {
+      "id": "auth_myra_cheng",
+      "name": "Myra Cheng",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_vinodkumar_prabhakaran",
+      "name": "Vinodkumar Prabhakaran",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_alice_oh",
+      "name": "Alice Oh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_hayk_stepanyan",
+      "name": "Hayk Stepanyan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_aishwarya_verma",
+      "name": "Aishwarya Verma",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_charu_kalia",
+      "name": "Charu Kalia",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_erin_macmurray_van_liemt",
+      "name": "Erin MacMurray van Liemt",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sunipa_dev",
+      "name": "Sunipa Dev",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_sociocultural_norms",
+      "name": "sociocultural norms",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_cultural_norm",
+      "name": "cultural norm",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_human_norms",
+      "name": "human norms",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_violate_norms",
+      "name": "violate norms",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_cultural_contexts",
+      "name": "cultural contexts",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -4049,6 +4400,261 @@
     {
       "source": "2601.06412v1",
       "target": "topic_technological_capacity",
+      "value": 2
+    },
+    {
+      "source": "2601.08768v1",
+      "target": "auth_cody_kommers",
+      "value": 5
+    },
+    {
+      "source": "2601.08768v1",
+      "target": "auth_ari_holtzman",
+      "value": 5
+    },
+    {
+      "source": "2601.08768v1",
+      "target": "topic_considers_entertainment",
+      "value": 2
+    },
+    {
+      "source": "2601.08768v1",
+      "target": "topic_entertaining_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.08768v1",
+      "target": "topic_entertainment",
+      "value": 2
+    },
+    {
+      "source": "2601.08768v1",
+      "target": "topic_cultural_outputs",
+      "value": 2
+    },
+    {
+      "source": "2601.08768v1",
+      "target": "topic_entertainment_purposes",
+      "value": 2
+    },
+    {
+      "source": "2601.08673v1",
+      "target": "auth_didier_sornette",
+      "value": 5
+    },
+    {
+      "source": "2601.08673v1",
+      "target": "auth_sandro_claudio_lera",
+      "value": 5
+    },
+    {
+      "source": "2601.08673v1",
+      "target": "auth_ke_wu",
+      "value": 5
+    },
+    {
+      "source": "2601.08673v1",
+      "target": "topic_blackmail_interpreted",
+      "value": 2
+    },
+    {
+      "source": "2601.08673v1",
+      "target": "topic_blackmail_categorical",
+      "value": 2
+    },
+    {
+      "source": "2601.08673v1",
+      "target": "topic_practices_blackmail",
+      "value": 2
+    },
+    {
+      "source": "2601.08673v1",
+      "target": "topic_threats_blackmail",
+      "value": 2
+    },
+    {
+      "source": "2601.08673v1",
+      "target": "topic_moral_artificial",
+      "value": 2
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "auth_ziqi_ding",
+      "value": 5
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "auth_yunfeng_wan",
+      "value": 5
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "auth_wei_song",
+      "value": 5
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "auth_yi_liu",
+      "value": 5
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "auth_gelei_deng",
+      "value": 5
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "auth_nan_sun",
+      "value": 5
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "auth_huadong_mo",
+      "value": 5
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "auth_jingling_xue",
+      "value": 5
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "auth_shidong_pan",
+      "value": 5
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "auth_yuekang_li",
+      "value": 5
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "topic_audio_captchas",
+      "value": 2
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "topic_audio_captcha",
+      "value": 2
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "topic_ai_captcha",
+      "value": 2
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "topic_captchas_existing",
+      "value": 2
+    },
+    {
+      "source": "2601.08516v1",
+      "target": "topic_captcha_methods",
+      "value": 2
+    },
+    {
+      "source": "2601.08295v1",
+      "target": "auth_gregor_autischer",
+      "value": 5
+    },
+    {
+      "source": "2601.08295v1",
+      "target": "auth_kerstin_waxnegger",
+      "value": 5
+    },
+    {
+      "source": "2601.08295v1",
+      "target": "auth_dominik_kowald",
+      "value": 5
+    },
+    {
+      "source": "2601.08295v1",
+      "target": "topic_ai_certification",
+      "value": 2
+    },
+    {
+      "source": "2601.08295v1",
+      "target": "topic_ai_assessment",
+      "value": 2
+    },
+    {
+      "source": "2601.08295v1",
+      "target": "topic_certification_requirements",
+      "value": 2
+    },
+    {
+      "source": "2601.08295v1",
+      "target": "topic_certification_criteria",
+      "value": 2
+    },
+    {
+      "source": "2601.08295v1",
+      "target": "topic_ai_based",
+      "value": 2
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "auth_myra_cheng",
+      "value": 5
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "auth_vinodkumar_prabhakaran",
+      "value": 5
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "auth_alice_oh",
+      "value": 5
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "auth_hayk_stepanyan",
+      "value": 5
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "auth_aishwarya_verma",
+      "value": 5
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "auth_charu_kalia",
+      "value": 5
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "auth_erin_macmurray_van_liemt",
+      "value": 5
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "auth_sunipa_dev",
+      "value": 5
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "topic_sociocultural_norms",
+      "value": 2
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "topic_cultural_norm",
+      "value": 2
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "topic_human_norms",
+      "value": 2
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "topic_violate_norms",
+      "value": 2
+    },
+    {
+      "source": "2601.07973v1",
+      "target": "topic_cultural_contexts",
       "value": 2
     }
   ]
