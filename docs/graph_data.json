@@ -2639,6 +2639,447 @@
       "name": "cultural contexts",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.09600v1",
+      "name": "Information Access of the Oppressed: A Problem-Posing Framework for Envisioning Emancipatory Information Access Platforms",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Online information access (IA) platforms are targets of authoritarian capture. These concerns are particularly serious and urgent today in light of the rising levels of democratic erosion worldwide, the emerging capabilities of generative AI technologies such as AI persuasion, and the increasing concentration of economic and political power in the hands of Big Tech. This raises the question of what alternative IA infrastructure we must reimagine and build to mitigate the risks of authoritarian capture of our information ecosystems. We explore this question through the lens of Paulo Freire's theories of emancipatory pedagogy. Freire's theories provide a radically different lens for exploring IA's sociotechnical concerns relative to the current dominating frames of fairness, accountability, confidentiality, transparency, and safety. We make explicit, with the intention to challenge, the dichotomy of how we relate to technology as either technologists (who envision and build technology) and its users. We posit that this mirrors the teacher-student relationship in Freire's analysis. By extending Freire's analysis to IA, we challenge the notion that it is the burden of the (altruistic) technologists to come up with interventions to mitigate the risks that emerging technologies pose to marginalized communities. Instead, we advocate that the first task for the technologists is to pose these as problems to the marginalized communities, to encourage them to make and unmake the technology as part of their material struggle against oppression. Their second task is to redesign our online technology stacks to structurally expose spaces for community members to co-opt and co-construct the technology in aid of their emancipatory struggles. We operationalize Freire's theories to develop a problem-posing framework for envisioning emancipatory IA platforms of the future.",
+      "url": "https://arxiv.org/pdf/2601.09600v1",
+      "date": "2026-01-14T16:15:26+00:00"
+    },
+    {
+      "id": "auth_bhaskar_mitra",
+      "name": "Bhaskar Mitra",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_nicola_neophytou",
+      "name": "Nicola Neophytou",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sireesh_gururaja",
+      "name": "Sireesh Gururaja",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_sociotechnical_concerns",
+      "name": "sociotechnical concerns",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_emancipatory_pedagogy",
+      "name": "emancipatory pedagogy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_technologists_envision",
+      "name": "technologists envision",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_pedagogy_freire",
+      "name": "pedagogy freire",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.09351v1",
+      "name": "Navigating Ethical AI Challenges in the Industrial Sector: Balancing Innovation and Responsibility",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The integration of artificial intelligence (AI) into the industrial sector has not only driven innovation but also expanded the ethical landscape, necessitating a reevaluation of principles governing technology and its applications and awareness in research and development of industrial AI solutions. This chapter explores how AI-empowered industrial innovation inherently intersects with ethics, as advancements in AI introduce new challenges related to transparency, accountability, and fairness. In the chapter, we then examine the ethical aspects of several examples of AI manifestation in industrial use cases and associated factors such as ethical practices in the research and development process and data sharing. With the progress of ethical industrial AI solutions, we emphasize the importance of embedding ethical principles into industrial AI systems and its potential to inspire technological breakthroughs and foster trust among stakeholders. This chapter also offers actionable insights to guide industrial research and development toward a future where AI serves as an enabler for ethical and responsible industrial progress as well as a more inclusive industrial ecosystem.",
+      "url": "https://arxiv.org/pdf/2601.09351v1",
+      "date": "2026-01-14T10:32:21+00:00"
+    },
+    {
+      "id": "auth_ruomu_tan",
+      "name": "Ruomu Tan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_martin_w_hoffmann",
+      "name": "Martin W Hoffmann",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_ethical_industrial",
+      "name": "ethical industrial",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_industrial",
+      "name": "ai industrial",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_industrial_ai",
+      "name": "industrial ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_empowered",
+      "name": "ai empowered",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_examine_ethical",
+      "name": "examine ethical",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.09182v1",
+      "name": "Position on LLM-Assisted Peer Review: Addressing Reviewer Gap through Mentoring and Feedback",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The rapid expansion of AI research has intensified the Reviewer Gap, threatening the peer-review sustainability and perpetuating a cycle of low-quality evaluations. This position paper critiques existing LLM approaches that automatically generate reviews and argues for a paradigm shift that positions LLMs as tools for assisting and educating human reviewers. We define the core principles of high-quality peer review and propose two complementary systems grounded in these foundations: (i) an LLM-assisted mentoring system that cultivates reviewers' long-term competencies, and (ii) an LLM-assisted feedback system that helps reviewers refine the quality of their reviews. This human-centered approach aims to strengthen reviewer expertise and contribute to building a more sustainable scholarly ecosystem.",
+      "url": "https://arxiv.org/pdf/2601.09182v1",
+      "date": "2026-01-14T05:32:35+00:00"
+    },
+    {
+      "id": "auth_jungmin_yun",
+      "name": "JungMin Yun",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_junehyoung_kwon",
+      "name": "JuneHyoung Kwon",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mihyeon_kim",
+      "name": "MiHyeon Kim",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_youngbin_kim",
+      "name": "YoungBin Kim",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_helps_reviewers",
+      "name": "helps reviewers",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_strengthen_reviewer",
+      "name": "strengthen reviewer",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_cultivates_reviewers",
+      "name": "cultivates reviewers",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_peer_review",
+      "name": "peer review",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_generate_reviews",
+      "name": "generate reviews",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.09156v1",
+      "name": "KTCF: Actionable Recourse in Knowledge Tracing via Counterfactual Explanations for Education",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Using Artificial Intelligence to improve teaching and learning benefits greater adaptivity and scalability in education. Knowledge Tracing (KT) is recognized for student modeling task due to its superior performance and application potential in education. To this end, we conceptualize and investigate counterfactual explanation as the connection from XAI for KT to education. Counterfactual explanations offer actionable recourse, are inherently causal and local, and easy for educational stakeholders to understand who are often non-experts. We propose KTCF, a counterfactual explanation generation method for KT that accounts for knowledge concept relationships, and a post-processing scheme that converts a counterfactual explanation into a sequence of educational instructions. We experiment on a large-scale educational dataset and show our KTCF method achieves superior and robust performance over existing methods, with improvements ranging from 5.7% to 34% across metrics. Additionally, we provide a qualitative evaluation of our post-processing scheme, demonstrating that the resulting educational instructions help in reducing large study burden. We show that counterfactuals have the potential to advance the responsible and practical use of AI in education. Future works on XAI for KT may benefit from educationally grounded conceptualization and developing stakeholder-centered methods.",
+      "url": "https://arxiv.org/pdf/2601.09156v1",
+      "date": "2026-01-14T04:51:54+00:00"
+    },
+    {
+      "id": "auth_woojin_kim",
+      "name": "Woojin Kim",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_changkwon_lee",
+      "name": "Changkwon Lee",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_hyeoncheol_kim",
+      "name": "Hyeoncheol Kim",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_knowledge_tracing",
+      "name": "knowledge tracing",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_explanation_generation",
+      "name": "explanation generation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_education",
+      "name": "ai education",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_counterfactual_explanations",
+      "name": "counterfactual explanations",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_education_counterfactual",
+      "name": "education counterfactual",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.09117v1",
+      "name": "A Marketplace for AI-Generated Adult Content and Deepfakes",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Generative AI systems increasingly enable the production of highly realistic synthetic media. Civitai, a popular community-driven platform for AI-generated content, operates a monetized feature called Bounties, which allows users to commission the generation of content in exchange for payment. To examine how this mechanism is used and what content it incentivizes, we conduct a longitudinal analysis of all publicly available bounty requests collected over a 14-month period following the platform's launch. We find that the bounty marketplace is dominated by tools that let users steer AI models toward content they were not trained to generate. At the same time, requests for content that is \"Not Safe For Work\" are widespread and have increased steadily over time, now comprising a majority of all bounties. Participation in bounty creation is uneven, with 20% of requesters accounting for roughly half of requests. Requests for \"deepfake\" - media depicting identifiable real individuals - exhibit a higher concentration than other types of bounties. A nontrivial subset of these requests involves explicit deepfakes despite platform policies prohibiting such content. These bounties disproportionately target female celebrities, revealing a pronounced gender asymmetry in social harm. Together, these findings show how monetized, community-driven generative AI platforms can produce gendered harms, raising questions about consent, governance, and enforcement.",
+      "url": "https://arxiv.org/pdf/2601.09117v1",
+      "date": "2026-01-14T03:33:14+00:00"
+    },
+    {
+      "id": "auth_shalmoli_ghosh",
+      "name": "Shalmoli Ghosh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_matthew_r_deverna",
+      "name": "Matthew R. DeVerna",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_filippo_menczer",
+      "name": "Filippo Menczer",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_content_bounties",
+      "name": "content bounties",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_bounty_requests",
+      "name": "bounty requests",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_bounties_participation",
+      "name": "bounties participation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_bounty_marketplace",
+      "name": "bounty marketplace",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_bounties",
+      "name": "bounties",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.09112v1",
+      "name": "Seeking Human Security Consensus: A Unified Value Scale for Generative AI Value Safety",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The rapid development of generative AI has brought value- and ethics-related risks to the forefront, making value safety a critical concern while a unified consensus remains lacking. In this work, we propose an internationally inclusive and resilient unified value framework, the GenAI Value Safety Scale (GVS-Scale): Grounded in a lifecycle-oriented perspective, we develop a taxonomy of GenAI value safety risks and construct the GenAI Value Safety Incident Repository (GVSIR), and further derive the GVS-Scale through grounded theory and operationalize it via the GenAI Value Safety Benchmark (GVS-Bench). Experiments on mainstream text generation models reveal substantial variation in value safety performance across models and value categories, indicating uneven and fragmented value alignment in current systems. Our findings highlight the importance of establishing shared safety foundations through dialogue and advancing technical safety mechanisms beyond reactive constraints toward more flexible approaches. Data and evaluation guidelines are available at https://github.com/acl2026/GVS-Bench. This paper includes examples that may be offensive or harmful.",
+      "url": "https://arxiv.org/pdf/2601.09112v1",
+      "date": "2026-01-14T03:22:34+00:00"
+    },
+    {
+      "id": "auth_ying_he",
+      "name": "Ying He",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_baiyang_li",
+      "name": "Baiyang Li",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yule_cao",
+      "name": "Yule Cao",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_huirun_xu",
+      "name": "Huirun Xu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_qiuxian_chen",
+      "name": "Qiuxian Chen",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_shu_chen",
+      "name": "Shu Chen",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_shangsheng_ren",
+      "name": "Shangsheng Ren",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_value_safety",
+      "name": "value safety",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_safety_scale",
+      "name": "safety scale",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_safety_critical",
+      "name": "safety critical",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_technical_safety",
+      "name": "technical safety",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_safety_benchmark",
+      "name": "safety benchmark",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.08951v1",
+      "name": "PluriHarms: Benchmarking the Full Spectrum of Human Judgments on AI Harm",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Current AI safety frameworks, which often treat harmfulness as binary, lack the flexibility to handle borderline cases where humans meaningfully disagree. To build more pluralistic systems, it is essential to move beyond consensus and instead understand where and why disagreements arise. We introduce PluriHarms, a benchmark designed to systematically study human harm judgments across two key dimensions -- the harm axis (benign to harmful) and the agreement axis (agreement to disagreement). Our scalable framework generates prompts that capture diverse AI harms and human values while targeting cases with high disagreement rates, validated by human data. The benchmark includes 150 prompts with 15,000 ratings from 100 human annotators, enriched with demographic and psychological traits and prompt-level features of harmful actions, effects, and values. Our analyses show that prompts that relate to imminent risks and tangible harms amplify perceived harmfulness, while annotator traits (e.g., toxicity experience, education) and their interactions with prompt content explain systematic disagreement. We benchmark AI safety models and alignment methods on PluriHarms, finding that while personalization significantly improves prediction of human harm judgments, considerable room remains for future progress. By explicitly targeting value diversity and disagreement, our work provides a principled benchmark for moving beyond \"one-size-fits-all\" safety toward pluralistically safe AI.",
+      "url": "https://arxiv.org/pdf/2601.08951v1",
+      "date": "2026-01-13T19:41:11+00:00"
+    },
+    {
+      "id": "auth_jing_jing_li",
+      "name": "Jing-Jing Li",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_joel_mire",
+      "name": "Joel Mire",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_eve_fleisig",
+      "name": "Eve Fleisig",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_valentina_pyatkin",
+      "name": "Valentina Pyatkin",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_anne_collins",
+      "name": "Anne Collins",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_maarten_sap",
+      "name": "Maarten Sap",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sydney_levine",
+      "name": "Sydney Levine",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_harmfulness_annotator",
+      "name": "harmfulness annotator",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_harms",
+      "name": "ai harms",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_harm_judgments",
+      "name": "harm judgments",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_safety",
+      "name": "ai safety",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_safe_ai",
+      "name": "safe ai",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -4655,6 +5096,326 @@
     {
       "source": "2601.07973v1",
       "target": "topic_cultural_contexts",
+      "value": 2
+    },
+    {
+      "source": "2601.09600v1",
+      "target": "auth_bhaskar_mitra",
+      "value": 5
+    },
+    {
+      "source": "2601.09600v1",
+      "target": "auth_nicola_neophytou",
+      "value": 5
+    },
+    {
+      "source": "2601.09600v1",
+      "target": "auth_sireesh_gururaja",
+      "value": 5
+    },
+    {
+      "source": "2601.09600v1",
+      "target": "topic_sociotechnical_concerns",
+      "value": 2
+    },
+    {
+      "source": "2601.09600v1",
+      "target": "topic_emancipatory_pedagogy",
+      "value": 2
+    },
+    {
+      "source": "2601.09600v1",
+      "target": "topic_technologists_envision",
+      "value": 2
+    },
+    {
+      "source": "2601.09600v1",
+      "target": "topic_sociotechnical",
+      "value": 2
+    },
+    {
+      "source": "2601.09600v1",
+      "target": "topic_pedagogy_freire",
+      "value": 2
+    },
+    {
+      "source": "2601.09351v1",
+      "target": "auth_ruomu_tan",
+      "value": 5
+    },
+    {
+      "source": "2601.09351v1",
+      "target": "auth_martin_w_hoffmann",
+      "value": 5
+    },
+    {
+      "source": "2601.09351v1",
+      "target": "topic_ethical_industrial",
+      "value": 2
+    },
+    {
+      "source": "2601.09351v1",
+      "target": "topic_ai_industrial",
+      "value": 2
+    },
+    {
+      "source": "2601.09351v1",
+      "target": "topic_industrial_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.09351v1",
+      "target": "topic_ai_empowered",
+      "value": 2
+    },
+    {
+      "source": "2601.09351v1",
+      "target": "topic_examine_ethical",
+      "value": 2
+    },
+    {
+      "source": "2601.09182v1",
+      "target": "auth_jungmin_yun",
+      "value": 5
+    },
+    {
+      "source": "2601.09182v1",
+      "target": "auth_junehyoung_kwon",
+      "value": 5
+    },
+    {
+      "source": "2601.09182v1",
+      "target": "auth_mihyeon_kim",
+      "value": 5
+    },
+    {
+      "source": "2601.09182v1",
+      "target": "auth_youngbin_kim",
+      "value": 5
+    },
+    {
+      "source": "2601.09182v1",
+      "target": "topic_helps_reviewers",
+      "value": 2
+    },
+    {
+      "source": "2601.09182v1",
+      "target": "topic_strengthen_reviewer",
+      "value": 2
+    },
+    {
+      "source": "2601.09182v1",
+      "target": "topic_cultivates_reviewers",
+      "value": 2
+    },
+    {
+      "source": "2601.09182v1",
+      "target": "topic_peer_review",
+      "value": 2
+    },
+    {
+      "source": "2601.09182v1",
+      "target": "topic_generate_reviews",
+      "value": 2
+    },
+    {
+      "source": "2601.09156v1",
+      "target": "auth_woojin_kim",
+      "value": 5
+    },
+    {
+      "source": "2601.09156v1",
+      "target": "auth_changkwon_lee",
+      "value": 5
+    },
+    {
+      "source": "2601.09156v1",
+      "target": "auth_hyeoncheol_kim",
+      "value": 5
+    },
+    {
+      "source": "2601.09156v1",
+      "target": "topic_knowledge_tracing",
+      "value": 2
+    },
+    {
+      "source": "2601.09156v1",
+      "target": "topic_explanation_generation",
+      "value": 2
+    },
+    {
+      "source": "2601.09156v1",
+      "target": "topic_ai_education",
+      "value": 2
+    },
+    {
+      "source": "2601.09156v1",
+      "target": "topic_counterfactual_explanations",
+      "value": 2
+    },
+    {
+      "source": "2601.09156v1",
+      "target": "topic_education_counterfactual",
+      "value": 2
+    },
+    {
+      "source": "2601.09117v1",
+      "target": "auth_shalmoli_ghosh",
+      "value": 5
+    },
+    {
+      "source": "2601.09117v1",
+      "target": "auth_matthew_r_deverna",
+      "value": 5
+    },
+    {
+      "source": "2601.09117v1",
+      "target": "auth_filippo_menczer",
+      "value": 5
+    },
+    {
+      "source": "2601.09117v1",
+      "target": "topic_content_bounties",
+      "value": 2
+    },
+    {
+      "source": "2601.09117v1",
+      "target": "topic_bounty_requests",
+      "value": 2
+    },
+    {
+      "source": "2601.09117v1",
+      "target": "topic_bounties_participation",
+      "value": 2
+    },
+    {
+      "source": "2601.09117v1",
+      "target": "topic_bounty_marketplace",
+      "value": 2
+    },
+    {
+      "source": "2601.09117v1",
+      "target": "topic_bounties",
+      "value": 2
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "auth_ying_he",
+      "value": 5
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "auth_baiyang_li",
+      "value": 5
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "auth_yule_cao",
+      "value": 5
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "auth_huirun_xu",
+      "value": 5
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "auth_qiuxian_chen",
+      "value": 5
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "auth_shu_chen",
+      "value": 5
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "auth_shangsheng_ren",
+      "value": 5
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "topic_value_safety",
+      "value": 2
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "topic_safety_scale",
+      "value": 2
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "topic_safety_critical",
+      "value": 2
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "topic_technical_safety",
+      "value": 2
+    },
+    {
+      "source": "2601.09112v1",
+      "target": "topic_safety_benchmark",
+      "value": 2
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "auth_jing_jing_li",
+      "value": 5
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "auth_joel_mire",
+      "value": 5
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "auth_eve_fleisig",
+      "value": 5
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "auth_valentina_pyatkin",
+      "value": 5
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "auth_anne_collins",
+      "value": 5
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "auth_maarten_sap",
+      "value": 5
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "auth_sydney_levine",
+      "value": 5
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "topic_harmfulness_annotator",
+      "value": 2
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "topic_ai_harms",
+      "value": 2
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "topic_harm_judgments",
+      "value": 2
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "topic_ai_safety",
+      "value": 2
+    },
+    {
+      "source": "2601.08951v1",
+      "target": "topic_safe_ai",
       "value": 2
     }
   ]
