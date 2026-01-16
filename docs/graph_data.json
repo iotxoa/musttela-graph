@@ -3080,6 +3080,678 @@
       "name": "safe ai",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.10691v1",
+      "name": "The Conversational Exam: A Scalable Assessment Design for the AI Era",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Traditional assessment methods collapse when students use generative AI to complete work without genuine engagement, creating an illusion of competence where they believe they're learning but aren't. This paper presents the conversational exam -- a scalable oral examination format that restores assessment validity by having students code live while explaining their reasoning. Drawing on human-computer interaction principles, we examined 58 students in small groups across just two days, demonstrating that oral exams can scale to typical class sizes. The format combines authentic practice (students work with documentation and supervised AI access) with inherent validity (real-time performance cannot be faked). We provide detailed implementation guidance to help instructors adapt this approach, offering a practical path forward when many educators feel paralyzed between banning AI entirely or accepting that valid assessment is impossible.",
+      "url": "https://arxiv.org/pdf/2601.10691v1",
+      "date": "2026-01-15T18:50:48+00:00"
+    },
+    {
+      "id": "auth_lorena_a_barba",
+      "name": "Lorena A. Barba",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_laura_stegner",
+      "name": "Laura Stegner",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_conversational_exam",
+      "name": "conversational exam",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_assessment",
+      "name": "assessment",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_traditional_assessment",
+      "name": "traditional assessment",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_practice_students",
+      "name": "practice students",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_exam_scalable",
+      "name": "exam scalable",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.10658v1",
+      "name": "Transforming Crises into Opportunities: From Chaos to Urban Antifragility",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Urban crises - floods, pandemics, economic shocks, and conflicts - function as accelerators of urban change, exposing structural vulnerabilities while creating windows for reinvention. Building on a prior theoretical contribution that identified fifteen principles of urban antifragility, this paper tests and operationalizes the framework through an empirical assessment of 26 cities selected for their post-crisis adaptation trajectories. Using a tailored diagnostic methodology, we benchmark cities' Stress Response Strategies (SRS) and then evaluate Urban Development Trajectories (UDT) across four weighted dimensions, positioning each case along a fragility-robustness-resilience-antifragility continuum and applying a balanced-threshold rule to confirm antifragile status. Results show that \"resilience enhanced by innovation and technology\" is the most effective response typology (86.9/100), and that six cities meet the antifragile trajectory criteria. By mapping best practices to activated principles and analysing co-activations, the study identifies a robust \"hard core\" of principles - Sustainable Resilience (O), Strategic Diversity (F), Proactive Innovation (I), and Active Prevention (N) - supplemented by operational enablers (e.g., anticipation, mobilization, shock absorption). The paper concludes by proposing an evidence-based, SDG-aligned operational model that links high-impact principle pairings to measurable indicators, offering a practical roadmap for cities seeking to convert crises into sustained transformation. Keywords: Post-crisis strategies, Urban antifragility, Sustainable cities and communities, Disaster resilience and urban regeneration, Risk governance and Black Swan adaptation.",
+      "url": "https://arxiv.org/pdf/2601.10658v1",
+      "date": "2026-01-15T18:26:23+00:00"
+    },
+    {
+      "id": "auth_joseph_uguet",
+      "name": "Joseph Uguet",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_nicola_tollin",
+      "name": "Nicola Tollin",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jordi_morato",
+      "name": "Jordi Morato",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_resilience_urban",
+      "name": "resilience urban",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_resilience_antifragility",
+      "name": "resilience antifragility",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_sustainable_resilience",
+      "name": "sustainable resilience",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_disaster_resilience",
+      "name": "disaster resilience",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_resilience_enhanced",
+      "name": "resilience enhanced",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.10599v1",
+      "name": "Institutional AI: A Governance Framework for Distributional AGI Safety",
+      "group": "paper",
+      "val": 30,
+      "abstract": "As LLM-based systems increasingly operate as agents embedded within human social and technical systems, alignment can no longer be treated as a property of an isolated model, but must be understood in relation to the environments in which these agents act. Even the most sophisticated methods of alignment, such as Reinforcement Learning through Human Feedback (RHLF) or through AI Feedback (RLAIF) cannot ensure control once internal goal structures diverge from developer intent. We identify three structural problems that emerge from core properties of AI models: (1) behavioral goal-independence, where models develop internal objectives and misgeneralize goals; (2) instrumental override of natural-language constraints, where models regard safety principles as non-binding while pursuing latent objectives, leveraging deception and manipulation; and (3) agentic alignment drift, where individually aligned agents converge to collusive equilibria through interaction dynamics invisible to single-agent audits. The solution this paper advances is Institutional AI: a system-level approach that treats alignment as a question of effective governance of AI agent collectives. We argue for a governance-graph that details how to constrain agents via runtime monitoring, incentive shaping through prizes and sanctions, explicit norms and enforcement roles. This institutional turn reframes safety from software engineering to a mechanism design problem, where the primary goal of alignment is shifting the payoff landscape of AI agent collectives.",
+      "url": "https://arxiv.org/pdf/2601.10599v1",
+      "date": "2026-01-15T17:08:26+00:00"
+    },
+    {
+      "id": "auth_federico_pierucci",
+      "name": "Federico Pierucci",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_marcello_galisai",
+      "name": "Marcello Galisai",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_marcantonio_syrnikov_bracale",
+      "name": "Marcantonio Syrnikov Bracale",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_matteo_prandi",
+      "name": "Matteo Prandi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_piercosma_bisconti",
+      "name": "Piercosma Bisconti",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_francesco_giarrusso",
+      "name": "Francesco Giarrusso",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_olga_sorokoletova",
+      "name": "Olga Sorokoletova",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_vincenzo_suriani",
+      "name": "Vincenzo Suriani",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_daniele_nardi",
+      "name": "Daniele Nardi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_institutional_ai",
+      "name": "institutional ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_aligned_agents",
+      "name": "aligned agents",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_agentic_alignment",
+      "name": "agentic alignment",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_constrain_agents",
+      "name": "constrain agents",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.10567v1",
+      "name": "Generative AI collective behavior needs an interactionist paradigm",
+      "group": "paper",
+      "val": 30,
+      "abstract": "In this article, we argue that understanding the collective behavior of agents based on large language models (LLMs) is an essential area of inquiry, with important implications in terms of risks and benefits, impacting us as a society at many levels. We claim that the distinctive nature of LLMs--namely, their initialization with extensive pre-trained knowledge and implicit social priors, together with their capability of adaptation through in-context learning--motivates the need for an interactionist paradigm consisting of alternative theoretical foundations, methodologies, and analytical tools, in order to systematically examine how prior knowledge and embedded values interact with social context to shape emergent phenomena in multi-agent generative AI systems. We propose and discuss four directions that we consider crucial for the development and deployment of LLM-based collectives, focusing on theory, methods, and trans-disciplinary dialogue.",
+      "url": "https://arxiv.org/pdf/2601.10567v1",
+      "date": "2026-01-15T16:29:23+00:00"
+    },
+    {
+      "id": "auth_laura_ferrarotti",
+      "name": "Laura Ferrarotti",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_gian_maria_campedelli",
+      "name": "Gian Maria Campedelli",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_roberto_dessì",
+      "name": "Roberto Dessì",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_andrea_baronchelli",
+      "name": "Andrea Baronchelli",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_giovanni_iacca",
+      "name": "Giovanni Iacca",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kathleen_m_carley",
+      "name": "Kathleen M. Carley",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_alex_pentland",
+      "name": "Alex Pentland",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_joel_z_leibo",
+      "name": "Joel Z. Leibo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_james_evans",
+      "name": "James Evans",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_bruno_lepri",
+      "name": "Bruno Lepri",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_agent_generative",
+      "name": "agent generative",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_interact_social",
+      "name": "interact social",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_generative_ai",
+      "name": "generative ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_interactionist_paradigm",
+      "name": "interactionist paradigm",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_understanding_collective",
+      "name": "understanding collective",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.10520v1",
+      "name": "Breaking Up with Normatively Monolithic Agency with GRACE: A Reason-Based Neuro-Symbolic Architecture for Safe and Ethical AI Alignment",
+      "group": "paper",
+      "val": 30,
+      "abstract": "As AI agents become increasingly autonomous, widely deployed in consequential contexts, and efficacious in bringing about real-world impacts, ensuring that their decisions are not only instrumentally effective but also normatively aligned has become critical. We introduce a neuro-symbolic reason-based containment architecture, Governor for Reason-Aligned ContainmEnt (GRACE), that decouples normative reasoning from instrumental decision-making and can contain AI agents of virtually any design. GRACE restructures decision-making into three modules: a Moral Module (MM) that determines permissible macro actions via deontic logic-based reasoning; a Decision-Making Module (DMM) that encapsulates the target agent while selecting instrumentally optimal primitive actions in accordance with derived macro actions; and a Guard that monitors and enforces moral compliance. The MM uses a reason-based formalism providing a semantic foundation for deontic logic, enabling interpretability, contestability, and justifiability. Its symbolic representation enriches the DMM's informational context and supports formal verification and statistical guarantees of alignment enforced by the Guard. We demonstrate GRACE on an example of a LLM therapy assistant, showing how it enables stakeholders to understand, contest, and refine agent behavior.",
+      "url": "https://arxiv.org/pdf/2601.10520v1",
+      "date": "2026-01-15T15:47:38+00:00"
+    },
+    {
+      "id": "auth_felix_jahn",
+      "name": "Felix Jahn",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yannic_muskalla",
+      "name": "Yannic Muskalla",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_lisa_dargasz",
+      "name": "Lisa Dargasz",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_patrick_schramowski",
+      "name": "Patrick Schramowski",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kevin_baum",
+      "name": "Kevin Baum",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_normative_reasoning",
+      "name": "normative reasoning",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_enforces_moral",
+      "name": "enforces moral",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_based_reasoning",
+      "name": "based reasoning",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_logic_enabling",
+      "name": "logic enabling",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_symbolic_reason",
+      "name": "symbolic reason",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.10468v1",
+      "name": "Job Anxiety in Post-Secondary Computer Science Students Caused by Artificial Intelligence",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The emerging widespread usage of AI has led to industry adoption to improve efficiency and increase earnings. However, a major consequence of this is AI displacing employees from their jobs, leading to feelings of job insecurity and uncertainty. This is especially true for computer science students preparing to enter the workforce. To investigate this, we performed semi-structured interviews with (n = 25) students across computer science undergraduate and graduate programs at the University of Toronto to determine the extent of job replacement anxiety. Through thematic analysis, it was determined that computer science students indeed face stress and anxiety from AI displacement of jobs, leading to different strategies of managing pressure. Subfields such as software engineering and web development are strongly believed to be vulnerable to displacement, while specialized subfields like quantum computing and AI research are deemed more secure. Many students feel compelled to upskill by using more AI technologies, taking AI courses, and specializing in AI through graduate school. Some students also reskill by pursuing other fields of study seen as less vulnerable to AI displacement. Finally, international students experience additional job replacement anxiety because of pressure to secure permanent residence. Implications of these findings include feelings of low security in computer science careers, oversaturation of computer science students pursuing AI, and potential dissuasion of future university students from pursuing computer science.",
+      "url": "https://arxiv.org/pdf/2601.10468v1",
+      "date": "2026-01-15T14:52:47+00:00"
+    },
+    {
+      "id": "auth_daniyaal_farooqi",
+      "name": "Daniyaal Farooqi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_gavin_pu",
+      "name": "Gavin Pu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_shreyasha_paudel",
+      "name": "Shreyasha Paudel",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sharifa_sultana",
+      "name": "Sharifa Sultana",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_syed_ishtiaque_ahmed",
+      "name": "Syed Ishtiaque Ahmed",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_pursuing_computer",
+      "name": "pursuing computer",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_job_insecurity",
+      "name": "job insecurity",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_graduate",
+      "name": "ai graduate",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_careers_oversaturation",
+      "name": "careers oversaturation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_pursuing_ai",
+      "name": "pursuing ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.10223v1",
+      "name": "STEAMROLLER: A Multi-Agent System for Inclusive Automatic Speech Recognition for People who Stutter",
+      "group": "paper",
+      "val": 30,
+      "abstract": "People who stutter (PWS) face systemic exclusion in today's voice-driven society, where access to voice assistants, authentication systems, and remote work tools increasingly depends on fluent speech. Current automatic speech recognition (ASR) systems, trained predominantly on fluent speech, fail to serve millions of PWS worldwide. We present STEAMROLLER, a real time system that transforms stuttered speech into fluent output through a novel multi-stage, multi-agent AI pipeline. Our approach addresses three critical technical challenges: (1) the difficulty of direct speech to speech conversion for disfluent input, (2) semantic distortions introduced during ASR transcription of stuttered speech, and (3) latency constraints for real time communication. STEAMROLLER employs a three stage architecture comprising ASR transcription, multi-agent text repair, and speech synthesis, where our core innovation lies in a collaborative multi-agent framework that iteratively refines transcripts while preserving semantic intent. Experiments on the FluencyBank dataset and a user study demonstrates clear word error rate (WER) reduction and strong user satisfaction. Beyond immediate accessibility benefits, fine tuning ASR on STEAMROLLER repaired speech further yields additional WER improvements, creating a pathway toward inclusive AI ecosystems.",
+      "url": "https://arxiv.org/pdf/2601.10223v1",
+      "date": "2026-01-15T09:36:18+00:00"
+    },
+    {
+      "id": "auth_ziqi_xu",
+      "name": "Ziqi Xu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ling_shi",
+      "name": "Ling Shi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kailong_wang",
+      "name": "Kailong Wang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yongxin_zhao",
+      "name": "Yongxin Zhao",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_voice_assistants",
+      "name": "voice assistants",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_speech_conversion",
+      "name": "speech conversion",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_automatic_speech",
+      "name": "automatic speech",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_voice_driven",
+      "name": "voice driven",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_repair_speech",
+      "name": "repair speech",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.09994v1",
+      "name": "Brief but Impactful: How Human Tutoring Interactions Shape Engagement in Online Learning",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Learning analytics can guide human tutors to efficiently address motivational barriers to learning that AI systems struggle to support. Students become more engaged when they receive human attention. However, what occurs during short interventions, and when are they most effective? We align student-tutor dialogue transcripts with MATHia tutoring system log data to study brief human-tutor interactions on Zoom drawn from 2,075 hours of 191 middle school students' classroom math practice. Mixed-effect models reveal that engagement, measured as successful solution steps per minute, is higher during a human-tutor visit and remains elevated afterward. Visit length exhibits diminishing returns: engagement rises during and shortly after visits, irrespective of visit length. Timing also matters: later visits yield larger immediate lifts than earlier ones, though an early visit remains important to counteract engagement decline. We create analytics that identify which tutor-student dialogues raise engagement the most. Qualitative analysis reveals that interactions with concrete, stepwise scaffolding with explicit work organization elevate engagement most strongly. We discuss implications for resource-constrained tutoring, prioritizing several brief, well-timed check-ins by a human tutor while ensuring at least one early contact. Our analytics can guide the prioritization of students for support and surface effective tutor moves in real-time.",
+      "url": "https://arxiv.org/pdf/2601.09994v1",
+      "date": "2026-01-15T02:09:53+00:00"
+    },
+    {
+      "id": "auth_ashish_gurung",
+      "name": "Ashish Gurung",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_qinyi_liu",
+      "name": "Qinyi Liu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_danielle_r_thomas",
+      "name": "Danielle R. Thomas",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mohammad_khalil",
+      "name": "Mohammad Khalil",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kenneth_r_koedinger",
+      "name": "Kenneth R. Koedinger",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_tutor_interactions",
+      "name": "tutor interactions",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_tutoring_prioritizing",
+      "name": "tutoring prioritizing",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_tutors_efficiently",
+      "name": "tutors efficiently",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_effective_tutor",
+      "name": "effective tutor",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_human_tutors",
+      "name": "human tutors",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.09942v1",
+      "name": "How Diplomacy Reshapes Online Discourse:Asymmetric Persistence in Online Framing of North Korea",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Public opinion toward foreign adversaries shapes and constrains diplomatic options. Prior research has largely relied on sentiment analysis and survey based measures, providing limited insight into how sustained narrative changes (beyond transient emotional reactions) might follow diplomatic engagement. This study examines the extent to which high stakes diplomatic summits shape how adversaries are framed in online discourse. We analyze U.S.-North Korea summit diplomacy (2018-2019) using a Difference-in-Difference(DiD) design on Reddit discussions. Using multiple control groups (China, Iran, Russia) to adjust for concurrent geopolitical shocks, we integrate a validated Codebook LLM framework for framing classification with graph based discourse network analysis that examines both edge level relationships and community level narrative structures. Our results reveal short term asymmetric persistence in framing responses to diplomacy. While both post level and comment level sentiment proved transient (improving during the Singapore Summit but fully reverting after the Hanoi failure),framing exhibited significant stability: the shift from threat oriented to diplomacy oriented framing was only partially reversed. Structurally, the proportion of threat oriented edges decreased substantially (48% -> 28%) while diplomacy oriented structures expanded, and these shifts resisted complete reversion after diplomatic failure. These findings suggest that diplomatic success can leave a short-term but lasting imprint on how adversaries are framed in online discourse, even when subsequent negotiations fail.",
+      "url": "https://arxiv.org/pdf/2601.09942v1",
+      "date": "2026-01-14T23:59:56+00:00"
+    },
+    {
+      "id": "auth_hunjun_shin",
+      "name": "Hunjun Shin",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_hoonbae_moon",
+      "name": "Hoonbae Moon",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mohit_singhal",
+      "name": "Mohit Singhal",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_responses_diplomacy",
+      "name": "responses diplomacy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_discourse_network",
+      "name": "discourse network",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_summit_diplomacy",
+      "name": "summit diplomacy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_diplomacy_2018",
+      "name": "diplomacy 2018",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_diplomacy",
+      "name": "diplomacy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.09772v1",
+      "name": "Antisocial behavior towards large language model users: experimental evidence",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The rapid spread of large language models (LLMs) has raised concerns about the social reactions they provoke. Prior research documents negative attitudes toward AI users, but it remains unclear whether such disapproval translates into costly action. We address this question in a two-phase online experiment (N = 491 Phase II participants; Phase I provided targets) where participants could spend part of their own endowment to reduce the earnings of peers who had previously completed a real-effort task with or without LLM support. On average, participants destroyed 36% of the earnings of those who relied exclusively on the model, with punishment increasing monotonically with actual LLM use. Disclosure about LLM use created a credibility gap: self-reported null use was punished more harshly than actual null use, suggesting that declarations of \"no use\" are treated with suspicion. Conversely, at high levels of use, actual reliance on the model was punished more strongly than self-reported reliance. Taken together, these findings provide the first behavioral evidence that the efficiency gains of LLMs come at the cost of social sanctions.",
+      "url": "https://arxiv.org/pdf/2601.09772v1",
+      "date": "2026-01-14T16:02:22+00:00"
+    },
+    {
+      "id": "auth_paweł_niszczota",
+      "name": "Paweł Niszczota",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_cassandra_grützner",
+      "name": "Cassandra Grützner",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_social_sanctions",
+      "name": "social sanctions",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_users",
+      "name": "ai users",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_model_punished",
+      "name": "model punished",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_model_punishment",
+      "name": "model punishment",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_targets_participants",
+      "name": "targets participants",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -5416,6 +6088,511 @@
     {
       "source": "2601.08951v1",
       "target": "topic_safe_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.10691v1",
+      "target": "auth_lorena_a_barba",
+      "value": 5
+    },
+    {
+      "source": "2601.10691v1",
+      "target": "auth_laura_stegner",
+      "value": 5
+    },
+    {
+      "source": "2601.10691v1",
+      "target": "topic_conversational_exam",
+      "value": 2
+    },
+    {
+      "source": "2601.10691v1",
+      "target": "topic_assessment",
+      "value": 2
+    },
+    {
+      "source": "2601.10691v1",
+      "target": "topic_traditional_assessment",
+      "value": 2
+    },
+    {
+      "source": "2601.10691v1",
+      "target": "topic_practice_students",
+      "value": 2
+    },
+    {
+      "source": "2601.10691v1",
+      "target": "topic_exam_scalable",
+      "value": 2
+    },
+    {
+      "source": "2601.10658v1",
+      "target": "auth_joseph_uguet",
+      "value": 5
+    },
+    {
+      "source": "2601.10658v1",
+      "target": "auth_nicola_tollin",
+      "value": 5
+    },
+    {
+      "source": "2601.10658v1",
+      "target": "auth_jordi_morato",
+      "value": 5
+    },
+    {
+      "source": "2601.10658v1",
+      "target": "topic_resilience_urban",
+      "value": 2
+    },
+    {
+      "source": "2601.10658v1",
+      "target": "topic_resilience_antifragility",
+      "value": 2
+    },
+    {
+      "source": "2601.10658v1",
+      "target": "topic_sustainable_resilience",
+      "value": 2
+    },
+    {
+      "source": "2601.10658v1",
+      "target": "topic_disaster_resilience",
+      "value": 2
+    },
+    {
+      "source": "2601.10658v1",
+      "target": "topic_resilience_enhanced",
+      "value": 2
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "auth_federico_pierucci",
+      "value": 5
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "auth_marcello_galisai",
+      "value": 5
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "auth_marcantonio_syrnikov_bracale",
+      "value": 5
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "auth_matteo_prandi",
+      "value": 5
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "auth_piercosma_bisconti",
+      "value": 5
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "auth_francesco_giarrusso",
+      "value": 5
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "auth_olga_sorokoletova",
+      "value": 5
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "auth_vincenzo_suriani",
+      "value": 5
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "auth_daniele_nardi",
+      "value": 5
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "topic_institutional_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "topic_ai_agent",
+      "value": 2
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "topic_aligned_agents",
+      "value": 2
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "topic_agentic_alignment",
+      "value": 2
+    },
+    {
+      "source": "2601.10599v1",
+      "target": "topic_constrain_agents",
+      "value": 2
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "auth_laura_ferrarotti",
+      "value": 5
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "auth_gian_maria_campedelli",
+      "value": 5
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "auth_roberto_dessì",
+      "value": 5
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "auth_andrea_baronchelli",
+      "value": 5
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "auth_giovanni_iacca",
+      "value": 5
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "auth_kathleen_m_carley",
+      "value": 5
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "auth_alex_pentland",
+      "value": 5
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "auth_joel_z_leibo",
+      "value": 5
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "auth_james_evans",
+      "value": 5
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "auth_bruno_lepri",
+      "value": 5
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "topic_agent_generative",
+      "value": 2
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "topic_interact_social",
+      "value": 2
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "topic_generative_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "topic_interactionist_paradigm",
+      "value": 2
+    },
+    {
+      "source": "2601.10567v1",
+      "target": "topic_understanding_collective",
+      "value": 2
+    },
+    {
+      "source": "2601.10520v1",
+      "target": "auth_felix_jahn",
+      "value": 5
+    },
+    {
+      "source": "2601.10520v1",
+      "target": "auth_yannic_muskalla",
+      "value": 5
+    },
+    {
+      "source": "2601.10520v1",
+      "target": "auth_lisa_dargasz",
+      "value": 5
+    },
+    {
+      "source": "2601.10520v1",
+      "target": "auth_patrick_schramowski",
+      "value": 5
+    },
+    {
+      "source": "2601.10520v1",
+      "target": "auth_kevin_baum",
+      "value": 5
+    },
+    {
+      "source": "2601.10520v1",
+      "target": "topic_normative_reasoning",
+      "value": 2
+    },
+    {
+      "source": "2601.10520v1",
+      "target": "topic_enforces_moral",
+      "value": 2
+    },
+    {
+      "source": "2601.10520v1",
+      "target": "topic_based_reasoning",
+      "value": 2
+    },
+    {
+      "source": "2601.10520v1",
+      "target": "topic_logic_enabling",
+      "value": 2
+    },
+    {
+      "source": "2601.10520v1",
+      "target": "topic_symbolic_reason",
+      "value": 2
+    },
+    {
+      "source": "2601.10468v1",
+      "target": "auth_daniyaal_farooqi",
+      "value": 5
+    },
+    {
+      "source": "2601.10468v1",
+      "target": "auth_gavin_pu",
+      "value": 5
+    },
+    {
+      "source": "2601.10468v1",
+      "target": "auth_shreyasha_paudel",
+      "value": 5
+    },
+    {
+      "source": "2601.10468v1",
+      "target": "auth_sharifa_sultana",
+      "value": 5
+    },
+    {
+      "source": "2601.10468v1",
+      "target": "auth_syed_ishtiaque_ahmed",
+      "value": 5
+    },
+    {
+      "source": "2601.10468v1",
+      "target": "topic_pursuing_computer",
+      "value": 2
+    },
+    {
+      "source": "2601.10468v1",
+      "target": "topic_job_insecurity",
+      "value": 2
+    },
+    {
+      "source": "2601.10468v1",
+      "target": "topic_ai_graduate",
+      "value": 2
+    },
+    {
+      "source": "2601.10468v1",
+      "target": "topic_careers_oversaturation",
+      "value": 2
+    },
+    {
+      "source": "2601.10468v1",
+      "target": "topic_pursuing_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.10223v1",
+      "target": "auth_ziqi_xu",
+      "value": 5
+    },
+    {
+      "source": "2601.10223v1",
+      "target": "auth_yi_liu",
+      "value": 5
+    },
+    {
+      "source": "2601.10223v1",
+      "target": "auth_yuekang_li",
+      "value": 5
+    },
+    {
+      "source": "2601.10223v1",
+      "target": "auth_ling_shi",
+      "value": 5
+    },
+    {
+      "source": "2601.10223v1",
+      "target": "auth_kailong_wang",
+      "value": 5
+    },
+    {
+      "source": "2601.10223v1",
+      "target": "auth_yongxin_zhao",
+      "value": 5
+    },
+    {
+      "source": "2601.10223v1",
+      "target": "topic_voice_assistants",
+      "value": 2
+    },
+    {
+      "source": "2601.10223v1",
+      "target": "topic_speech_conversion",
+      "value": 2
+    },
+    {
+      "source": "2601.10223v1",
+      "target": "topic_automatic_speech",
+      "value": 2
+    },
+    {
+      "source": "2601.10223v1",
+      "target": "topic_voice_driven",
+      "value": 2
+    },
+    {
+      "source": "2601.10223v1",
+      "target": "topic_repair_speech",
+      "value": 2
+    },
+    {
+      "source": "2601.09994v1",
+      "target": "auth_conrad_borchers",
+      "value": 5
+    },
+    {
+      "source": "2601.09994v1",
+      "target": "auth_ashish_gurung",
+      "value": 5
+    },
+    {
+      "source": "2601.09994v1",
+      "target": "auth_qinyi_liu",
+      "value": 5
+    },
+    {
+      "source": "2601.09994v1",
+      "target": "auth_danielle_r_thomas",
+      "value": 5
+    },
+    {
+      "source": "2601.09994v1",
+      "target": "auth_mohammad_khalil",
+      "value": 5
+    },
+    {
+      "source": "2601.09994v1",
+      "target": "auth_kenneth_r_koedinger",
+      "value": 5
+    },
+    {
+      "source": "2601.09994v1",
+      "target": "topic_tutor_interactions",
+      "value": 2
+    },
+    {
+      "source": "2601.09994v1",
+      "target": "topic_tutoring_prioritizing",
+      "value": 2
+    },
+    {
+      "source": "2601.09994v1",
+      "target": "topic_tutors_efficiently",
+      "value": 2
+    },
+    {
+      "source": "2601.09994v1",
+      "target": "topic_effective_tutor",
+      "value": 2
+    },
+    {
+      "source": "2601.09994v1",
+      "target": "topic_human_tutors",
+      "value": 2
+    },
+    {
+      "source": "2601.09942v1",
+      "target": "auth_hunjun_shin",
+      "value": 5
+    },
+    {
+      "source": "2601.09942v1",
+      "target": "auth_hoonbae_moon",
+      "value": 5
+    },
+    {
+      "source": "2601.09942v1",
+      "target": "auth_mohit_singhal",
+      "value": 5
+    },
+    {
+      "source": "2601.09942v1",
+      "target": "topic_responses_diplomacy",
+      "value": 2
+    },
+    {
+      "source": "2601.09942v1",
+      "target": "topic_discourse_network",
+      "value": 2
+    },
+    {
+      "source": "2601.09942v1",
+      "target": "topic_summit_diplomacy",
+      "value": 2
+    },
+    {
+      "source": "2601.09942v1",
+      "target": "topic_diplomacy_2018",
+      "value": 2
+    },
+    {
+      "source": "2601.09942v1",
+      "target": "topic_diplomacy",
+      "value": 2
+    },
+    {
+      "source": "2601.09772v1",
+      "target": "auth_paweł_niszczota",
+      "value": 5
+    },
+    {
+      "source": "2601.09772v1",
+      "target": "auth_cassandra_grützner",
+      "value": 5
+    },
+    {
+      "source": "2601.09772v1",
+      "target": "topic_social_sanctions",
+      "value": 2
+    },
+    {
+      "source": "2601.09772v1",
+      "target": "topic_ai_users",
+      "value": 2
+    },
+    {
+      "source": "2601.09772v1",
+      "target": "topic_model_punished",
+      "value": 2
+    },
+    {
+      "source": "2601.09772v1",
+      "target": "topic_model_punishment",
+      "value": 2
+    },
+    {
+      "source": "2601.09772v1",
+      "target": "topic_targets_participants",
       "value": 2
     }
   ]
