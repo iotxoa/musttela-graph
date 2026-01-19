@@ -3752,6 +3752,339 @@
       "name": "targets participants",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.11513v1",
+      "name": "Capacity Constraints Make Admissions Processes Less Predictable",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Machine learning models are often used to make predictions about admissions process outcomes, such as for colleges or jobs. However, such decision processes differ substantially from the conventional machine learning paradigm. Because admissions decisions are capacity-constrained, whether a student is admitted depends on the other applicants who apply. We show how this dependence affects predictive performance even in otherwise ideal settings. Theoretically, we introduce two concepts that characterize the relationship between admission function properties, machine learning representation, and generalization to applicant pool distribution shifts: instability, which measures how many existing decisions can change when a single new applicant is introduced; and variability, which measures the number of unique students whose decisions can change. Empirically, we illustrate our theory on individual-level admissions data from the New York City high school matching system, showing that machine learning performance degrades as the applicant pool increasingly differs from the training data. Furthermore, there are larger performance drops for schools using decision rules that are more unstable and variable. Our work raises questions about the reliability of predicting individual admissions probabilities.",
+      "url": "https://arxiv.org/pdf/2601.11513v1",
+      "date": "2026-01-16T18:48:46+00:00"
+    },
+    {
+      "id": "auth_evan_dong",
+      "name": "Evan Dong",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_nikhil_garg",
+      "name": "Nikhil Garg",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sarah_dean",
+      "name": "Sarah Dean",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_predictions_admissions",
+      "name": "predictions admissions",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_admissions_probabilities",
+      "name": "admissions probabilities",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_admissions_decisions",
+      "name": "admissions decisions",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_individual_admissions",
+      "name": "individual admissions",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_admissions_data",
+      "name": "admissions data",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.11459v1",
+      "name": "Interactive Narrative Analytics: Bridging Computational Narrative Extraction and Human Sensemaking",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Information overload and misinformation create significant challenges in extracting meaningful narratives from large news collections. This paper defines the nascent field of Interactive Narrative Analytics (INA), which combines computational narrative extraction with interactive visual analytics to support sensemaking. INA approaches enable the interactive exploration of narrative structures through computational methods and visual interfaces that facilitate human interpretation. The field faces challenges in scalability, interactivity, knowledge integration, and evaluation standardization, yet offers promising opportunities across news analysis, intelligence, scientific literature exploration, and social media analysis. Through the combination of computational and human insight, INA addresses complex challenges in narrative sensemaking.",
+      "url": "https://arxiv.org/pdf/2601.11459v1",
+      "date": "2026-01-16T17:34:37+00:00"
+    },
+    {
+      "id": "auth_brian_keith",
+      "name": "Brian Keith",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_narrative_analytics",
+      "name": "narrative analytics",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_narrative_sensemaking",
+      "name": "narrative sensemaking",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_interactive_narrative",
+      "name": "interactive narrative",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_computational_narrative",
+      "name": "computational narrative",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_narrative_extraction",
+      "name": "narrative extraction",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.10983v1",
+      "name": "Evaluating 21st-Century Competencies in Postsecondary Curricula with Large Language Models: Performance Benchmarking and Reasoning-Based Prompting Strategies",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The growing emphasis on 21st-century competencies in postsecondary education, intensified by the transformative impact of generative AI, underscores the need to evaluate how these competencies are embedded in curricula and how effectively academic programs align with evolving workforce and societal demands. Curricular Analytics, particularly recent generative AI-powered approaches, offer a promising data-driven pathway. However, analyzing 21st-century competencies requires pedagogical reasoning beyond surface-level information retrieval, and the capabilities of large language models in this context remain underexplored. In this study, we extend prior curricular analytics research by examining a broader range of curriculum documents, competency frameworks, and models. Using 7,600 manually annotated curriculum-competency alignment scores, we assess the informativeness of different curriculum sources, benchmark general-purpose LLMs for curriculum-to-competency mapping, and analyze error patterns. We further introduce a reasoning-based prompting strategy, Curricular CoT, to strengthen LLMs' pedagogical reasoning. Our results show that detailed instructional activity descriptions are the most informative type of curriculum document for competency analytics. Open-weight LLMs achieve accuracy comparable to proprietary models on coarse-grained tasks, demonstrating their scalability and cost-effectiveness for institutional use. However, no model reaches human-level precision in fine-grained pedagogical reasoning. Our proposed Curricular CoT yields modest improvements by reducing bias in instructional keyword inference and improving the detection of nuanced pedagogical evidence in long text. Together, these findings highlight the untapped potential of institutional curriculum documents and provide an empirical foundation for advancing AI-driven curricular analytics.",
+      "url": "https://arxiv.org/pdf/2601.10983v1",
+      "date": "2026-01-16T04:07:23+00:00"
+    },
+    {
+      "id": "auth_zhen_xu",
+      "name": "Zhen Xu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_xin_guan",
+      "name": "Xin Guan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_chenxi_shi",
+      "name": "Chenxi Shi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_qinhao_chen",
+      "name": "Qinhao Chen",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_renzhe_yu",
+      "name": "Renzhe Yu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_curriculum_competency",
+      "name": "curriculum competency",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_annotated_curriculum",
+      "name": "annotated curriculum",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_curriculum",
+      "name": "curriculum",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_curriculum_documents",
+      "name": "curriculum documents",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_curriculum_sources",
+      "name": "curriculum sources",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.10970v1",
+      "name": "Modeling Multi-Party Interaction in Couples Therapy: A Multi-Agent Simulation Approach",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Couples therapy, or relationship counseling, helps partners resolve conflicts, improve satisfaction, and foster psychological growth. Traditional approaches to training couples therapists, such as textbooks and roleplay, often fail to capture the complexity and emotional nuance of real couple dynamics. We present a novel multimodal, multi-agent simulation system that models multi-party interactions in couples therapy. Informed by our systematic research, this system creates a low-stakes environment for trainee therapists to gain valuable practical experience dealing with the critical demand-withdraw communication cycle across six couple-interaction stages. In an evaluation study involving 21 US-based licensed therapists, participants blind to conditions identified the engineered agent behaviors (i.e., the stages and the demand-withdraw cycle) and rated overall realism and agent responses higher for the experimental system than the baseline. As the first known multi-agent framework for training couples therapists, our work builds the foundation for future research that fuses HCI technologies with couples therapy.",
+      "url": "https://arxiv.org/pdf/2601.10970v1",
+      "date": "2026-01-16T03:28:49+00:00"
+    },
+    {
+      "id": "auth_canwen_wang",
+      "name": "Canwen Wang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_angela_chen",
+      "name": "Angela Chen",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_catherine_bao",
+      "name": "Catherine Bao",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_siwei_jin",
+      "name": "Siwei Jin",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yee_kit_chan",
+      "name": "Yee Kit Chan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jessica_r_mindel",
+      "name": "Jessica R Mindel",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sijia_xie",
+      "name": "Sijia Xie",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_holly_swartz",
+      "name": "Holly Swartz",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_tongshuang_wu",
+      "name": "Tongshuang Wu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_robert_e_kraut",
+      "name": "Robert E Kraut",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_haiyi_zhu",
+      "name": "Haiyi Zhu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_couples_therapy",
+      "name": "couples therapy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_couples_therapists",
+      "name": "couples therapists",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_interactions_couples",
+      "name": "interactions couples",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_training_couples",
+      "name": "training couples",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_relationship_counseling",
+      "name": "relationship counseling",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.10852v1",
+      "name": "Gamifying Cyber Governance: A Virtual Escape Room to Transform Cybersecurity Policy Education",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Serious games are gaining popularity as effective teaching and learning tools, providing engaging, interactive, and practical experiences for students. Gamified learning experiences, such as virtual escape rooms, have emerged as powerful tools in bridging theory and practice, fostering deeper understanding and engagement among students. This paper presents the design, implementation, and evaluation of a virtual escape room tailored specifically for cybersecurity governance and policy education. Developed as a 3D immersive environment, the escape room simulates a virtual company scenario to facilitate risk-informed cyber policy development. It consists of three interactive zones, each offering distinct sets of scenario-based problems that target specific educational objectives. Through these zones, students analyze cybersecurity risks, match security frameworks, and draft appropriate policies, thereby developing critical thinking, decision-making skills, and practical cybersecurity competencies. The primary contribution of this work lies in its innovative integration of game-based learning and immersive technology to create robust, interactive learning materials that are also resilient to generative AI interventions, thereby maintaining academic integrity. Additionally, the escape room provides students with exposure to real-world cybersecurity scenarios in a virtual office environment that meets industry expectations. Results from a student survey indicated strong positive feedback, highlighting significant improvements in students engagement, practical understanding, and enthusiasm toward cybersecurity governance and policy concepts, underscoring the effectiveness and potential of gamification in cybersecurity education.",
+      "url": "https://arxiv.org/pdf/2601.10852v1",
+      "date": "2026-01-15T20:41:56+00:00"
+    },
+    {
+      "id": "auth_khondokar_fida_hasan",
+      "name": "Khondokar Fida Hasan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_william_hughes",
+      "name": "William Hughes",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_adrita_rahman",
+      "name": "Adrita Rahman",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_cybersecurity_education",
+      "name": "cybersecurity education",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_gamification_cybersecurity",
+      "name": "gamification cybersecurity",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_cybersecurity_competencies",
+      "name": "cybersecurity competencies",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_cybersecurity_risks",
+      "name": "cybersecurity risks",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_cybersecurity_scenarios",
+      "name": "cybersecurity scenarios",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -6593,6 +6926,246 @@
     {
       "source": "2601.09772v1",
       "target": "topic_targets_participants",
+      "value": 2
+    },
+    {
+      "source": "2601.11513v1",
+      "target": "auth_evan_dong",
+      "value": 5
+    },
+    {
+      "source": "2601.11513v1",
+      "target": "auth_nikhil_garg",
+      "value": 5
+    },
+    {
+      "source": "2601.11513v1",
+      "target": "auth_sarah_dean",
+      "value": 5
+    },
+    {
+      "source": "2601.11513v1",
+      "target": "topic_predictions_admissions",
+      "value": 2
+    },
+    {
+      "source": "2601.11513v1",
+      "target": "topic_admissions_probabilities",
+      "value": 2
+    },
+    {
+      "source": "2601.11513v1",
+      "target": "topic_admissions_decisions",
+      "value": 2
+    },
+    {
+      "source": "2601.11513v1",
+      "target": "topic_individual_admissions",
+      "value": 2
+    },
+    {
+      "source": "2601.11513v1",
+      "target": "topic_admissions_data",
+      "value": 2
+    },
+    {
+      "source": "2601.11459v1",
+      "target": "auth_brian_keith",
+      "value": 5
+    },
+    {
+      "source": "2601.11459v1",
+      "target": "topic_narrative_analytics",
+      "value": 2
+    },
+    {
+      "source": "2601.11459v1",
+      "target": "topic_narrative_sensemaking",
+      "value": 2
+    },
+    {
+      "source": "2601.11459v1",
+      "target": "topic_interactive_narrative",
+      "value": 2
+    },
+    {
+      "source": "2601.11459v1",
+      "target": "topic_computational_narrative",
+      "value": 2
+    },
+    {
+      "source": "2601.11459v1",
+      "target": "topic_narrative_extraction",
+      "value": 2
+    },
+    {
+      "source": "2601.10983v1",
+      "target": "auth_zhen_xu",
+      "value": 5
+    },
+    {
+      "source": "2601.10983v1",
+      "target": "auth_xin_guan",
+      "value": 5
+    },
+    {
+      "source": "2601.10983v1",
+      "target": "auth_chenxi_shi",
+      "value": 5
+    },
+    {
+      "source": "2601.10983v1",
+      "target": "auth_qinhao_chen",
+      "value": 5
+    },
+    {
+      "source": "2601.10983v1",
+      "target": "auth_renzhe_yu",
+      "value": 5
+    },
+    {
+      "source": "2601.10983v1",
+      "target": "topic_curriculum_competency",
+      "value": 2
+    },
+    {
+      "source": "2601.10983v1",
+      "target": "topic_annotated_curriculum",
+      "value": 2
+    },
+    {
+      "source": "2601.10983v1",
+      "target": "topic_curriculum",
+      "value": 2
+    },
+    {
+      "source": "2601.10983v1",
+      "target": "topic_curriculum_documents",
+      "value": 2
+    },
+    {
+      "source": "2601.10983v1",
+      "target": "topic_curriculum_sources",
+      "value": 2
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "auth_canwen_wang",
+      "value": 5
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "auth_angela_chen",
+      "value": 5
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "auth_catherine_bao",
+      "value": 5
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "auth_siwei_jin",
+      "value": 5
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "auth_yee_kit_chan",
+      "value": 5
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "auth_jessica_r_mindel",
+      "value": 5
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "auth_sijia_xie",
+      "value": 5
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "auth_holly_swartz",
+      "value": 5
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "auth_tongshuang_wu",
+      "value": 5
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "auth_robert_e_kraut",
+      "value": 5
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "auth_haiyi_zhu",
+      "value": 5
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "topic_couples_therapy",
+      "value": 2
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "topic_couples_therapists",
+      "value": 2
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "topic_interactions_couples",
+      "value": 2
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "topic_training_couples",
+      "value": 2
+    },
+    {
+      "source": "2601.10970v1",
+      "target": "topic_relationship_counseling",
+      "value": 2
+    },
+    {
+      "source": "2601.10852v1",
+      "target": "auth_khondokar_fida_hasan",
+      "value": 5
+    },
+    {
+      "source": "2601.10852v1",
+      "target": "auth_william_hughes",
+      "value": 5
+    },
+    {
+      "source": "2601.10852v1",
+      "target": "auth_adrita_rahman",
+      "value": 5
+    },
+    {
+      "source": "2601.10852v1",
+      "target": "topic_cybersecurity_education",
+      "value": 2
+    },
+    {
+      "source": "2601.10852v1",
+      "target": "topic_gamification_cybersecurity",
+      "value": 2
+    },
+    {
+      "source": "2601.10852v1",
+      "target": "topic_cybersecurity_competencies",
+      "value": 2
+    },
+    {
+      "source": "2601.10852v1",
+      "target": "topic_cybersecurity_risks",
+      "value": 2
+    },
+    {
+      "source": "2601.10852v1",
+      "target": "topic_cybersecurity_scenarios",
       "value": 2
     }
   ]
