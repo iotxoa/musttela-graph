@@ -4085,6 +4085,744 @@
       "name": "cybersecurity scenarios",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.14190v1",
+      "name": "Analyzing Far-Right Telegram Channels as Constituents of Information Autocracy in Russia",
+      "group": "paper",
+      "val": 30,
+      "abstract": "This study examines how Russian far-right communities on Telegram shape perceptions of political figures through memes and visual narratives. Far from passive spectators, these actors co-produce propaganda, blending state-aligned messages with their own extremist framings. In Russia, such groups are central because they articulate the ideological foundations of the war against Ukraine and reflect the regime's gradual drift toward ultranationalist rhetoric. Drawing on a dataset of 200,000 images from expert-selected far-right Telegram channels, the study employs computer vision and unsupervised clustering to identify memes featuring Russian (Putin, Shoigu) and foreign politicians (Zelensky, Biden, Trump) and to reveal recurrent visual patterns in their representation. By leveraging the large-scale and temporal depth of this dataset, the analysis uncovers differential patterns of legitimation and delegitimation across actors and over time. These insights are not attainable in smaller-scale studies. Preliminary findings show that far-right memes function as instruments of propaganda co-production. These communities do not simply echo official messages but generate bottom-up narratives of legitimation and delegitimation that align with state ideology. By framing leaders as heroic and opponents as corrupt or weak, far-right actors act as informal co-creators of authoritarian legitimacy within Russia's informational autocracy.",
+      "url": "https://arxiv.org/pdf/2601.14190v1",
+      "date": "2026-01-20T17:48:06+00:00"
+    },
+    {
+      "id": "auth_polina_smirnova",
+      "name": "Polina Smirnova",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mykola_makhortykh",
+      "name": "Mykola Makhortykh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_framings_russia",
+      "name": "framings russia",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_propaganda_blending",
+      "name": "propaganda blending",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_examines_russian",
+      "name": "examines russian",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_russia_informational",
+      "name": "russia informational",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_legitimacy_russia",
+      "name": "legitimacy russia",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.13936v1",
+      "name": "Impact Matters! An Audit Method to Evaluate AI Projects and their Impact for Sustainability and Public Interest",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The overall rapid increase of artificial intelligence (AI) use is linked to various initiatives that propose AI 'for good'. However, there is a lack of transparency in the goals of such projects, as well as a missing evaluation of their actual impacts on society and the planet. We close this gap by proposing public interest and sustainability as a regulatory dual-concept, together creating the necessary framework for a just and sustainable development that can be operationalized and utilized for the assessment of AI systems. Based on this framework, and building on existing work in auditing, we introduce the Impact-AI-method, a qualitative audit method to evaluate concrete AI projects with respect to public interest and sustainability. The interview-based method captures a project's governance structure, its theory of change, AI model and data characteristics, and social, environmental, and economic impacts. We also propose a catalog of assessment criteria to rate the outcome of the audit as well as to create an accessible output that can be debated broadly by civil society. The Impact-AI-method, developed in a transdisciplinary research setting together with NGOs and a multi-stakeholder research council, is intended as a reusable blueprint that both informs public debate about AI 'for good' claims and supports the creation of transparency of AI systems that purport to contribute to a just and sustainable development.",
+      "url": "https://arxiv.org/pdf/2601.13936v1",
+      "date": "2026-01-20T13:12:20+00:00"
+    },
+    {
+      "id": "auth_theresa_züger",
+      "name": "Theresa Züger",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_laura_state",
+      "name": "Laura State",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_lena_winter",
+      "name": "Lena Winter",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_ai_projects",
+      "name": "ai projects",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_assessment_ai",
+      "name": "assessment ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_project_governance",
+      "name": "project governance",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_debate_ai",
+      "name": "debate ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_propose_ai",
+      "name": "propose ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.13846v1",
+      "name": "Virtual Urbanism: An AI-Driven Framework for Quantifying Urban Identity. A Tokyo-Based Pilot Study Using Diffusion-Generated Synthetic Environments",
+      "group": "paper",
+      "val": 30,
+      "abstract": "This paper introduces Virtual Urbanism (VU), a multimodal AI-driven analytical framework for quantifying urban identity through the medium of synthetic urban replicas. The framework aims to advance computationally tractable urban identity metrics. To demonstrate feasibility, the pilot study Virtual Urbanism and Tokyo Microcosms is presented. A pipeline integrating Stable Diffusion and LoRA models was used to produce synthetic replicas of nine Tokyo areas rendered as dynamic synthetic urban sequences, excluding existing orientation markers to elicit core identity-forming elements. Human-evaluation experiments (I) assessed perceptual legitimacy of replicas; (II) quantified area-level identity; (III) derived core identity-forming elements. Results showed a mean identification accuracy of ~81%, confirming the validity of the replicas. Urban Identity Level (UIL) metric enabled assessment of identity levels across areas, while semantic analysis revealed culturally embedded typologies as core identity-forming elements, positioning VU as a viable framework for AI-augmented urban analysis, outlining a path toward automated, multi-parameter identity metrics.",
+      "url": "https://arxiv.org/pdf/2601.13846v1",
+      "date": "2026-01-20T10:59:44+00:00"
+    },
+    {
+      "id": "auth_glinskaya_maria",
+      "name": "Glinskaya Maria",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_urban_identity",
+      "name": "urban identity",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_virtual_urbanism",
+      "name": "virtual urbanism",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_quantifying_urban",
+      "name": "quantifying urban",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_replicas_urban",
+      "name": "replicas urban",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_urbanism_vu",
+      "name": "urbanism vu",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.13749v1",
+      "name": "Pro-AI Bias in Large Language Models",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Large language models (LLMs) are increasingly employed for decision-support across multiple domains. We investigate whether these models display a systematic preferential bias in favor of artificial intelligence (AI) itself. Across three complementary experiments, we find consistent evidence of pro-AI bias. First, we show that LLMs disproportionately recommend AI-related options in response to diverse advice-seeking queries, with proprietary models doing so almost deterministically. Second, we demonstrate that models systematically overestimate salaries for AI-related jobs relative to closely matched non-AI jobs, with proprietary models overestimating AI salaries more by 10 percentage points. Finally, probing internal representations of open-weight models reveals that ``Artificial Intelligence'' exhibits the highest similarity to generic prompts for academic fields under positive, negative, and neutral framings alike, indicating valence-invariant representational centrality. These patterns suggest that LLM-generated advice and valuation can systematically skew choices and perceptions in high-stakes decisions.",
+      "url": "https://arxiv.org/pdf/2601.13749v1",
+      "date": "2026-01-20T09:03:57+00:00"
+    },
+    {
+      "id": "auth_benaya_trabelsi",
+      "name": "Benaya Trabelsi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jonathan_shaki",
+      "name": "Jonathan Shaki",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sarit_kraus",
+      "name": "Sarit Kraus",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_ai_bias",
+      "name": "ai bias",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_preferential_bias",
+      "name": "preferential bias",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_bias_favor",
+      "name": "bias favor",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_bias",
+      "name": "bias",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_salaries_ai",
+      "name": "salaries ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.13516v1",
+      "name": "From \"Fail Fast\" to \"Mature Safely:\" Expert Perspectives as Secondary Stakeholders on Teen-Centered Social Media Risk Detection",
+      "group": "paper",
+      "val": 30,
+      "abstract": "In addressing various risks on social media, the HCI community has advocated for teen-centered risk detection technologies over platform-based, parent-centered features. However, their real-world viability remains underexplored by secondary stakeholders beyond the family unit. Therefore, we present an evaluation of a teen-centered social media risk detection dashboard through online interviews with 33 online safety experts. While experts praised our dashboard's clear design for teen agency, their feedback revealed five primary tensions in implementing and sustaining such technology: objective vs. context-dependent risk definition, informing risks vs. meaningful intervention, teen empowerment vs. motivation, need for data vs. data privacy, and independence vs. sustainability. These findings motivate us to rethink \"teen-centered\" and a shift from a \"fail fast\" to a \"mature safely\" paradigm for youth safety technology innovation. We offer design implications for addressing these tensions before system deployment with teens and strategies for aligning secondary stakeholders' interests to deploy and sustain such technologies in the broader ecosystem of youth online safety.",
+      "url": "https://arxiv.org/pdf/2601.13516v1",
+      "date": "2026-01-20T02:09:54+00:00"
+    },
+    {
+      "id": "auth_renkai_ma",
+      "name": "Renkai Ma",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ashwaq_alsoubai",
+      "name": "Ashwaq Alsoubai",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jinkyung_katie_park",
+      "name": "Jinkyung Katie Park",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_pamela_j_wisniewski",
+      "name": "Pamela J. Wisniewski",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_youth_safety",
+      "name": "youth safety",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_teen_centered",
+      "name": "teen centered",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_deployment_teens",
+      "name": "deployment teens",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_youth_online",
+      "name": "youth online",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_teen_empowerment",
+      "name": "teen empowerment",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.13487v1",
+      "name": "The Hidden Toll of Social Media News: Causal Effects on Psychosocial Wellbeing",
+      "group": "paper",
+      "val": 30,
+      "abstract": "News consumption on social media has become ubiquitous, yet how different forms of engagement shape psychosocial outcomes remains unclear. To address this gap, we leveraged a large-scale dataset of ~26M posts and ~45M comments on the BlueSky platform, and conducted a quasi-experimental study, matching 81,345 Treated users exposed to News feeds with 83,711 Control users using stratified propensity score analysis. We examined psychosocial wellbeing, in terms of affective, behavioral, and cognitive outcomes. Our findings reveal that news engagement produces systematic trade-offs: increased depression, stress, and anxiety, yet decreased loneliness and increased social interaction on the platform. Regression models reveal that News feed bookmarking is associated with greater psychosocial deterioration compared to commenting or quoting, with magnitude differences exceeding tenfold. These per-engagement effects accumulate with repeated exposure, showing significant psychosocial impacts. Our work extends theories of news effects beyond crisis-centric frameworks by demonstrating that routine consumption creates distinct psychological dynamics depending on engagement type, and bears implications for tools and interventions for mitigating the psychosocial costs of news consumption on social media.",
+      "url": "https://arxiv.org/pdf/2601.13487v1",
+      "date": "2026-01-20T00:46:51+00:00"
+    },
+    {
+      "id": "auth_olivia_pal",
+      "name": "Olivia Pal",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_agam_goyal",
+      "name": "Agam Goyal",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_eshwar_chandrasekharan",
+      "name": "Eshwar Chandrasekharan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_koustuv_saha",
+      "name": "Koustuv Saha",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_news_consumption",
+      "name": "news consumption",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_news_effects",
+      "name": "news effects",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_news_engagement",
+      "name": "news engagement",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_news_feeds",
+      "name": "news feeds",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_news_feed",
+      "name": "news feed",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.13372v1",
+      "name": "Influence of Normative Theories of Ethics on the European Union Artificial Intelligence Act: A Transformer-Based Analysis Using Semantic Textual Similarity",
+      "group": "paper",
+      "val": 30,
+      "abstract": "This study investigates the ethical grounding of the European Union Artificial Intelligence (EU AI) Act by using Semantic Textual Similarity (STS) to analyze the alignment between normative ethical theories and regulatory language. Despite being regarded as a significant step toward regulating Artificial Intelligence (AI) systems and its emphasis on fundamental rights, the EU AI Act is not immune to moral criticism regarding its ethical foundations. Our work examines the impact of three major normative theories of ethics, virtue ethics, deontological ethics, and consequentialism, on the EU AI Act. We introduce the concept of influence, grounded in philosophical and chronological analysis, to examine the underlying relationship between the theories and the Act. As a proxy measure of this influence, we propose using STS to quantify the degree of alignment between the theories (influencers) and the Act (influencee). To capture intentional and operational ethical consistency, the Act was divided into two parts: the preamble and the statutory provisions. The textual descriptions of the theories were manually preprocessed to reduce semantic overlap and ensure a distinct representation of each theory. A heterogeneous embedding-level ensemble approach was employed, using five modified Bidirectional Encoder Representations from Transformers (BERT) models built on the Transformer architecture to compute STS scores. These scores reflect the semantic alignment between various theories of ethics and the two components of the EU AI Act. The resulting similarity scores were evaluated using voting and averaging, with findings indicating that deontological ethics has the most significant overall influence.",
+      "url": "https://arxiv.org/pdf/2601.13372v1",
+      "date": "2026-01-19T20:15:50+00:00"
+    },
+    {
+      "id": "auth_mehmet_murat_albayrakoglu",
+      "name": "Mehmet Murat Albayrakoglu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mehmet_nafiz_aydin",
+      "name": "Mehmet Nafiz Aydin",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_intelligence_eu",
+      "name": "intelligence eu",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ethics_components",
+      "name": "ethics components",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_normative_ethical",
+      "name": "normative ethical",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.13317v1",
+      "name": "Paid Voices vs. Public Feeds: Interpretable Cross-Platform Theme Modeling of Climate Discourse",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Climate discourse online plays a crucial role in shaping public understanding of climate change and influencing political and policy outcomes. However, climate communication unfolds across structurally distinct platforms with fundamentally different incentive structures: paid advertising ecosystems incentivize targeted, strategic persuasion, while public social media platforms host largely organic, user-driven discourse. Existing computational studies typically analyze these environments in isolation, limiting our ability to distinguish institutional messaging from public expression. In this work, we present a comparative analysis of climate discourse across paid advertisements on Meta (previously known as Facebook) and public posts on Bluesky from July 2024 to September 2025. We introduce an interpretable, end-to-end thematic discovery and assignment framework that clusters texts by semantic similarity and leverages large language models (LLMs) to generate concise, human-interpretable theme labels. We evaluate the quality of the induced themes against traditional topic modeling baselines using both human judgments and an LLM-based evaluator, and further validate their semantic coherence through downstream stance prediction and theme-guided retrieval tasks. Applying the resulting themes, we characterize systematic differences between paid climate messaging and public climate discourse and examine how thematic prevalence shifts around major political events. Our findings show that platform-level incentives are reflected in the thematic structure, stance alignment, and temporal responsiveness of climate narratives. While our empirical analysis focuses on climate communication, the proposed framework is designed to support comparative narrative analysis across heterogeneous communication environments.",
+      "url": "https://arxiv.org/pdf/2601.13317v1",
+      "date": "2026-01-19T19:00:56+00:00"
+    },
+    {
+      "id": "auth_samantha_sudhoff",
+      "name": "Samantha Sudhoff",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_pranav_perumal",
+      "name": "Pranav Perumal",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_zhaoqing_wu",
+      "name": "Zhaoqing Wu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_tunazzina_islam",
+      "name": "Tunazzina Islam",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_climate_discourse",
+      "name": "climate discourse",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_climate_messaging",
+      "name": "climate messaging",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_climate_communication",
+      "name": "climate communication",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_climate_narratives",
+      "name": "climate narratives",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_discourse_online",
+      "name": "discourse online",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.13294v1",
+      "name": "The Tag is the Signal: URL-Agnostic Credibility Scoring for Messages on Telegram",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Telegram has become one of the leading platforms for disseminating misinformational messages. However, many existing pipelines still classify each message's credibility based on the reputation of its associated domain names or its lexical features. Such methods work well on traditional long-form news articles published by well-known sources, but high-risk posts on Telegram are short and URL-sparse, leading to failures for link-based and standard TF-IDF models. To this end, we propose the TAG2CRED pipeline, a method designed for such short, convoluted messages. Our model will directly score each post based on the tags assigned to the text. We designed a concise label system that covers the dimensions of theme, claim type, call to action, and evidence. The fine-tuned large language model (LLM) assigns tags to messages and then maps these tags to calibrated risk scores in the [0,1] interval through L2-regularized logistic regression. We evaluated 87,936 Telegram messages associated with Media Bias/Fact Check (MBFC), using URL masking and domain disjoint splits. The results showed that the ROC-AUC of the TAG2CRED model reached 0.871, the macro-F1 value was 0.787, and the Brier score was 0.167, outperforming the baseline TF-IDF (macro-F1 value 0.737, Brier score 0.248); at the same time, the number of features used in this model is much smaller, and the generalization ability on infrequent domains is stronger. The performance of the stacked ensemble model (TF-IDF + TAG2CRED + SBERT) was further improved over the baseline SBERT. ROC-AUC reached 0.901, and the macro-F1 value was 0.813 (Brier score 0.114). This indicates that style labels and lexical features may capture different but complementary dimensions of information risk.",
+      "url": "https://arxiv.org/pdf/2601.13294v1",
+      "date": "2026-01-19T18:47:36+00:00"
+    },
+    {
+      "id": "auth_yipeng_wang",
+      "name": "Yipeng Wang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_huy_gia_han_vu",
+      "name": "Huy Gia Han Vu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_idf_models",
+      "name": "idf models",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_message_credibility",
+      "name": "message credibility",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_posts_telegram",
+      "name": "posts telegram",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_idf_tag2cred",
+      "name": "idf tag2cred",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_telegram_short",
+      "name": "telegram short",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.13235v1",
+      "name": "RubRIX: Rubric-Driven Risk Mitigation in Caregiver-AI Interactions",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Caregivers seeking AI-mediated support express complex needs -- information-seeking, emotional validation, and distress cues -- that warrant careful evaluation of response safety and appropriateness. Existing AI evaluation frameworks, primarily focused on general risks (toxicity, hallucinations, policy violations, etc), may not adequately capture the nuanced risks of LLM-responses in caregiving-contexts. We introduce RubRIX (Rubric-based Risk Index), a theory-driven, clinician-validated framework for evaluating risks in LLM caregiving responses. Grounded in the Elements of an Ethic of Care, RubRIX operationalizes five empirically-derived risk dimensions: Inattention, Bias & Stigma, Information Inaccuracy, Uncritical Affirmation, and Epistemic Arrogance. We evaluate six state-of-the-art LLMs on over 20,000 caregiver queries from Reddit and ALZConnected. Rubric-guided refinement consistently reduced risk-components by 45-98% after one iteration across models. This work contributes a methodological approach for developing domain-sensitive, user-centered evaluation frameworks for high-burden contexts. Our findings highlight the importance of domain-sensitive, interactional risk evaluation for the responsible deployment of LLMs in caregiving support contexts. We release benchmark datasets to enable future research on contextual risk evaluation in AI-mediated support.",
+      "url": "https://arxiv.org/pdf/2601.13235v1",
+      "date": "2026-01-19T17:10:49+00:00"
+    },
+    {
+      "id": "auth_drishti_goel",
+      "name": "Drishti Goel",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jeongah_lee",
+      "name": "Jeongah Lee",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_qiuyue_joy_zhong",
+      "name": "Qiuyue Joy Zhong",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_violeta_j_rodriguez",
+      "name": "Violeta J. Rodriguez",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_daniel_s_brown",
+      "name": "Daniel S. Brown",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ravi_karkar",
+      "name": "Ravi Karkar",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_dong_whi_yoo",
+      "name": "Dong Whi Yoo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_responses_caregiving",
+      "name": "responses caregiving",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_caregiving_responses",
+      "name": "caregiving responses",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_caregiving_contexts",
+      "name": "caregiving contexts",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_caregivers_seeking",
+      "name": "caregivers seeking",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_evaluating_risks",
+      "name": "evaluating risks",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.13188v1",
+      "name": "Negotiating Relationships with ChatGPT: Perceptions, External Influences, and Strategies for AI Companionship",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Individuals are turning to increasingly anthropomorphic, general-purpose chatbots for AI companionship, rather than roleplay-specific platforms. However, not much is known about how individuals perceive and conduct their relationships with general-purpose chatbots. We analyzed semi-structured interviews (n=13), survey responses (n=43), and community discussions on Reddit (41k+ posts and comments) to triangulate the internal dynamics, external influences, and steering strategies that shape AI companion relationships. We learned that individuals conceptualize their companions based on an interplay of their beliefs about the companion's own agency and the autonomy permitted by the platform, how they pursue interactions with the companion, and the perceived initiatives that the companion takes. In combination with the external entities that affect relationship dynamics, particularly model updates that can derail companion behaviour and stability, individuals make use of different types of steering strategies to preserve their relationship, for example, by setting behavioural instructions or porting to other AI platforms. We discuss implications for accountability and transparency in AI systems, where emotional connection competes with broader product objectives and safety constraints.",
+      "url": "https://arxiv.org/pdf/2601.13188v1",
+      "date": "2026-01-19T16:11:19+00:00"
+    },
+    {
+      "id": "auth_patrick_yung_kang_lee",
+      "name": "Patrick Yung Kang Lee",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jessica_y_bo",
+      "name": "Jessica Y. Bo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_zixin_zhao",
+      "name": "Zixin Zhao",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_paula_akemi_aoyagui",
+      "name": "Paula Akemi Aoyagui",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_matthew_varona",
+      "name": "Matthew Varona",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ashton_anderson",
+      "name": "Ashton Anderson",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_anastasia_kuzminykh",
+      "name": "Anastasia Kuzminykh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_fanny_chevalier",
+      "name": "Fanny Chevalier",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_carolina_nobre",
+      "name": "Carolina Nobre",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_ai_companionship",
+      "name": "ai companionship",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_companion",
+      "name": "ai companion",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_purpose_chatbots",
+      "name": "purpose chatbots",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_chatbots_ai",
+      "name": "chatbots ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_conceptualize_companions",
+      "name": "conceptualize companions",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.13187v1",
+      "name": "Scientific production in the era of Large Language Models",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Large Language Models (LLMs) are rapidly reshaping scientific research. We analyze these changes in multiple, large-scale datasets with 2.1M preprints, 28K peer review reports, and 246M online accesses to scientific documents. We find: 1) scientists adopting LLMs to draft manuscripts demonstrate a large increase in paper production, ranging from 23.7-89.3% depending on scientific field and author background, 2) LLM use has reversed the relationship between writing complexity and paper quality, leading to an influx of manuscripts that are linguistically complex but substantively underwhelming, and 3) LLM adopters access and cite more diverse prior work, including books and younger, less-cited documents. These findings highlight a stunning shift in scientific production that will likely require a change in how journals, funding agencies, and tenure committees evaluate scientific works.",
+      "url": "https://arxiv.org/pdf/2601.13187v1",
+      "date": "2026-01-19T16:10:22+00:00"
+    },
+    {
+      "id": "auth_keigo_kusumegi",
+      "name": "Keigo Kusumegi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_xinyu_yang",
+      "name": "Xinyu Yang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_paul_ginsparg",
+      "name": "Paul Ginsparg",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mathijs_de_vaan",
+      "name": "Mathijs de Vaan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_toby_stuart",
+      "name": "Toby Stuart",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yian_yin",
+      "name": "Yian Yin",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_documents_scientists",
+      "name": "documents scientists",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_scientific_documents",
+      "name": "scientific documents",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_cited_documents",
+      "name": "cited documents",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_draft_manuscripts",
+      "name": "draft manuscripts",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_documents_findings",
+      "name": "documents findings",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -7166,6 +7904,551 @@
     {
       "source": "2601.10852v1",
       "target": "topic_cybersecurity_scenarios",
+      "value": 2
+    },
+    {
+      "source": "2601.14190v1",
+      "target": "auth_polina_smirnova",
+      "value": 5
+    },
+    {
+      "source": "2601.14190v1",
+      "target": "auth_mykola_makhortykh",
+      "value": 5
+    },
+    {
+      "source": "2601.14190v1",
+      "target": "topic_framings_russia",
+      "value": 2
+    },
+    {
+      "source": "2601.14190v1",
+      "target": "topic_propaganda_blending",
+      "value": 2
+    },
+    {
+      "source": "2601.14190v1",
+      "target": "topic_examines_russian",
+      "value": 2
+    },
+    {
+      "source": "2601.14190v1",
+      "target": "topic_russia_informational",
+      "value": 2
+    },
+    {
+      "source": "2601.14190v1",
+      "target": "topic_legitimacy_russia",
+      "value": 2
+    },
+    {
+      "source": "2601.13936v1",
+      "target": "auth_theresa_züger",
+      "value": 5
+    },
+    {
+      "source": "2601.13936v1",
+      "target": "auth_laura_state",
+      "value": 5
+    },
+    {
+      "source": "2601.13936v1",
+      "target": "auth_lena_winter",
+      "value": 5
+    },
+    {
+      "source": "2601.13936v1",
+      "target": "topic_ai_projects",
+      "value": 2
+    },
+    {
+      "source": "2601.13936v1",
+      "target": "topic_assessment_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.13936v1",
+      "target": "topic_project_governance",
+      "value": 2
+    },
+    {
+      "source": "2601.13936v1",
+      "target": "topic_debate_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.13936v1",
+      "target": "topic_propose_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.13846v1",
+      "target": "auth_glinskaya_maria",
+      "value": 5
+    },
+    {
+      "source": "2601.13846v1",
+      "target": "topic_urban_identity",
+      "value": 2
+    },
+    {
+      "source": "2601.13846v1",
+      "target": "topic_virtual_urbanism",
+      "value": 2
+    },
+    {
+      "source": "2601.13846v1",
+      "target": "topic_quantifying_urban",
+      "value": 2
+    },
+    {
+      "source": "2601.13846v1",
+      "target": "topic_replicas_urban",
+      "value": 2
+    },
+    {
+      "source": "2601.13846v1",
+      "target": "topic_urbanism_vu",
+      "value": 2
+    },
+    {
+      "source": "2601.13749v1",
+      "target": "auth_benaya_trabelsi",
+      "value": 5
+    },
+    {
+      "source": "2601.13749v1",
+      "target": "auth_jonathan_shaki",
+      "value": 5
+    },
+    {
+      "source": "2601.13749v1",
+      "target": "auth_sarit_kraus",
+      "value": 5
+    },
+    {
+      "source": "2601.13749v1",
+      "target": "topic_ai_bias",
+      "value": 2
+    },
+    {
+      "source": "2601.13749v1",
+      "target": "topic_preferential_bias",
+      "value": 2
+    },
+    {
+      "source": "2601.13749v1",
+      "target": "topic_bias_favor",
+      "value": 2
+    },
+    {
+      "source": "2601.13749v1",
+      "target": "topic_bias",
+      "value": 2
+    },
+    {
+      "source": "2601.13749v1",
+      "target": "topic_salaries_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.13516v1",
+      "target": "auth_renkai_ma",
+      "value": 5
+    },
+    {
+      "source": "2601.13516v1",
+      "target": "auth_ashwaq_alsoubai",
+      "value": 5
+    },
+    {
+      "source": "2601.13516v1",
+      "target": "auth_jinkyung_katie_park",
+      "value": 5
+    },
+    {
+      "source": "2601.13516v1",
+      "target": "auth_pamela_j_wisniewski",
+      "value": 5
+    },
+    {
+      "source": "2601.13516v1",
+      "target": "topic_youth_safety",
+      "value": 2
+    },
+    {
+      "source": "2601.13516v1",
+      "target": "topic_teen_centered",
+      "value": 2
+    },
+    {
+      "source": "2601.13516v1",
+      "target": "topic_deployment_teens",
+      "value": 2
+    },
+    {
+      "source": "2601.13516v1",
+      "target": "topic_youth_online",
+      "value": 2
+    },
+    {
+      "source": "2601.13516v1",
+      "target": "topic_teen_empowerment",
+      "value": 2
+    },
+    {
+      "source": "2601.13487v1",
+      "target": "auth_olivia_pal",
+      "value": 5
+    },
+    {
+      "source": "2601.13487v1",
+      "target": "auth_agam_goyal",
+      "value": 5
+    },
+    {
+      "source": "2601.13487v1",
+      "target": "auth_eshwar_chandrasekharan",
+      "value": 5
+    },
+    {
+      "source": "2601.13487v1",
+      "target": "auth_koustuv_saha",
+      "value": 5
+    },
+    {
+      "source": "2601.13487v1",
+      "target": "topic_news_consumption",
+      "value": 2
+    },
+    {
+      "source": "2601.13487v1",
+      "target": "topic_news_effects",
+      "value": 2
+    },
+    {
+      "source": "2601.13487v1",
+      "target": "topic_news_engagement",
+      "value": 2
+    },
+    {
+      "source": "2601.13487v1",
+      "target": "topic_news_feeds",
+      "value": 2
+    },
+    {
+      "source": "2601.13487v1",
+      "target": "topic_news_feed",
+      "value": 2
+    },
+    {
+      "source": "2601.13372v1",
+      "target": "auth_mehmet_murat_albayrakoglu",
+      "value": 5
+    },
+    {
+      "source": "2601.13372v1",
+      "target": "auth_mehmet_nafiz_aydin",
+      "value": 5
+    },
+    {
+      "source": "2601.13372v1",
+      "target": "topic_intelligence_eu",
+      "value": 2
+    },
+    {
+      "source": "2601.13372v1",
+      "target": "topic_eu_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.13372v1",
+      "target": "topic_ethics_components",
+      "value": 2
+    },
+    {
+      "source": "2601.13372v1",
+      "target": "topic_ai_act",
+      "value": 2
+    },
+    {
+      "source": "2601.13372v1",
+      "target": "topic_normative_ethical",
+      "value": 2
+    },
+    {
+      "source": "2601.13317v1",
+      "target": "auth_samantha_sudhoff",
+      "value": 5
+    },
+    {
+      "source": "2601.13317v1",
+      "target": "auth_pranav_perumal",
+      "value": 5
+    },
+    {
+      "source": "2601.13317v1",
+      "target": "auth_zhaoqing_wu",
+      "value": 5
+    },
+    {
+      "source": "2601.13317v1",
+      "target": "auth_tunazzina_islam",
+      "value": 5
+    },
+    {
+      "source": "2601.13317v1",
+      "target": "topic_climate_discourse",
+      "value": 2
+    },
+    {
+      "source": "2601.13317v1",
+      "target": "topic_climate_messaging",
+      "value": 2
+    },
+    {
+      "source": "2601.13317v1",
+      "target": "topic_climate_communication",
+      "value": 2
+    },
+    {
+      "source": "2601.13317v1",
+      "target": "topic_climate_narratives",
+      "value": 2
+    },
+    {
+      "source": "2601.13317v1",
+      "target": "topic_discourse_online",
+      "value": 2
+    },
+    {
+      "source": "2601.13294v1",
+      "target": "auth_yipeng_wang",
+      "value": 5
+    },
+    {
+      "source": "2601.13294v1",
+      "target": "auth_huy_gia_han_vu",
+      "value": 5
+    },
+    {
+      "source": "2601.13294v1",
+      "target": "auth_mohit_singhal",
+      "value": 5
+    },
+    {
+      "source": "2601.13294v1",
+      "target": "topic_idf_models",
+      "value": 2
+    },
+    {
+      "source": "2601.13294v1",
+      "target": "topic_message_credibility",
+      "value": 2
+    },
+    {
+      "source": "2601.13294v1",
+      "target": "topic_posts_telegram",
+      "value": 2
+    },
+    {
+      "source": "2601.13294v1",
+      "target": "topic_idf_tag2cred",
+      "value": 2
+    },
+    {
+      "source": "2601.13294v1",
+      "target": "topic_telegram_short",
+      "value": 2
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "auth_drishti_goel",
+      "value": 5
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "auth_jeongah_lee",
+      "value": 5
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "auth_qiuyue_joy_zhong",
+      "value": 5
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "auth_violeta_j_rodriguez",
+      "value": 5
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "auth_daniel_s_brown",
+      "value": 5
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "auth_ravi_karkar",
+      "value": 5
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "auth_dong_whi_yoo",
+      "value": 5
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "auth_koustuv_saha",
+      "value": 5
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "topic_responses_caregiving",
+      "value": 2
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "topic_caregiving_responses",
+      "value": 2
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "topic_caregiving_contexts",
+      "value": 2
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "topic_caregivers_seeking",
+      "value": 2
+    },
+    {
+      "source": "2601.13235v1",
+      "target": "topic_evaluating_risks",
+      "value": 2
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "auth_patrick_yung_kang_lee",
+      "value": 5
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "auth_jessica_y_bo",
+      "value": 5
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "auth_zixin_zhao",
+      "value": 5
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "auth_paula_akemi_aoyagui",
+      "value": 5
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "auth_matthew_varona",
+      "value": 5
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "auth_ashton_anderson",
+      "value": 5
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "auth_anastasia_kuzminykh",
+      "value": 5
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "auth_fanny_chevalier",
+      "value": 5
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "auth_carolina_nobre",
+      "value": 5
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "topic_ai_companionship",
+      "value": 2
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "topic_ai_companion",
+      "value": 2
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "topic_purpose_chatbots",
+      "value": 2
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "topic_chatbots_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.13188v1",
+      "target": "topic_conceptualize_companions",
+      "value": 2
+    },
+    {
+      "source": "2601.13187v1",
+      "target": "auth_keigo_kusumegi",
+      "value": 5
+    },
+    {
+      "source": "2601.13187v1",
+      "target": "auth_xinyu_yang",
+      "value": 5
+    },
+    {
+      "source": "2601.13187v1",
+      "target": "auth_paul_ginsparg",
+      "value": 5
+    },
+    {
+      "source": "2601.13187v1",
+      "target": "auth_mathijs_de_vaan",
+      "value": 5
+    },
+    {
+      "source": "2601.13187v1",
+      "target": "auth_toby_stuart",
+      "value": 5
+    },
+    {
+      "source": "2601.13187v1",
+      "target": "auth_yian_yin",
+      "value": 5
+    },
+    {
+      "source": "2601.13187v1",
+      "target": "topic_documents_scientists",
+      "value": 2
+    },
+    {
+      "source": "2601.13187v1",
+      "target": "topic_scientific_documents",
+      "value": 2
+    },
+    {
+      "source": "2601.13187v1",
+      "target": "topic_cited_documents",
+      "value": 2
+    },
+    {
+      "source": "2601.13187v1",
+      "target": "topic_draft_manuscripts",
+      "value": 2
+    },
+    {
+      "source": "2601.13187v1",
+      "target": "topic_documents_findings",
       "value": 2
     }
   ]
