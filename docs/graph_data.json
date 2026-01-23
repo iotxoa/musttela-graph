@@ -4823,6 +4823,864 @@
       "name": "documents findings",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.15556v1",
+      "name": "LLM or Human? Perceptions of Trust and Information Quality in Research Summaries",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Large Language Models (LLMs) are increasingly used to generate and edit scientific abstracts, yet their integration into academic writing raises questions about trust, quality, and disclosure. Despite growing adoption, little is known about how readers perceive LLM-generated summaries and how these perceptions influence evaluations of scientific work. This paper presents a mixed-methods survey experiment investigating whether readers with ML expertise can distinguish between human- and LLM-generated abstracts, how actual and perceived LLM involvement affects judgments of quality and trustworthiness, and what orientations readers adopt toward AI-assisted writing. Our findings show that participants struggle to reliably identify LLM-generated content, yet their beliefs about LLM involvement significantly shape their evaluations. Notably, abstracts edited by LLMs are rated more favorably than those written solely by humans or LLMs. We also identify three distinct reader orientations toward LLM-assisted writing, offering insights into evolving norms and informing policy around disclosure and acceptable use in scientific communication.",
+      "url": "https://arxiv.org/pdf/2601.15556v1",
+      "date": "2026-01-22T00:53:38+00:00"
+    },
+    {
+      "id": "auth_nil_jana_akpinar",
+      "name": "Nil-Jana Akpinar",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sandeep_avula",
+      "name": "Sandeep Avula",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_cj_lee",
+      "name": "CJ Lee",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_brandon_dang",
+      "name": "Brandon Dang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kaza_razat",
+      "name": "Kaza Razat",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_vanessa_murdock",
+      "name": "Vanessa Murdock",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_academic_writing",
+      "name": "academic writing",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_writing_findings",
+      "name": "writing findings",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_assisted_writing",
+      "name": "assisted writing",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_readers_ml",
+      "name": "readers ml",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_summaries_perceptions",
+      "name": "summaries perceptions",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.15485v1",
+      "name": "The Rise of Large Language Models and the Direction and Impact of US Federal Research Funding",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Federal research funding shapes the direction, diversity, and impact of the US scientific enterprise. Large language models (LLMs) are rapidly diffusing into scientific practice, holding substantial promise while raising widespread concerns. Despite growing attention to AI use in scientific writing and evaluation, little is known about how the rise of LLMs is reshaping the public funding landscape. Here, we examine LLM involvement at key stages of the federal funding pipeline by combining two complementary data sources: confidential National Science Foundation (NSF) and National Institutes of Health (NIH) proposal submissions from two large US R1 universities, including funded, unfunded, and pending proposals, and the full population of publicly released NSF and NIH awards. We find that LLM use rises sharply beginning in 2023 and exhibits a bimodal distribution, indicating a clear split between minimal and substantive use. Across both private submissions and public awards, higher LLM involvement is consistently associated with lower semantic distinctiveness, positioning projects closer to recently funded work within the same agency. The consequences of this shift are agency-dependent. LLM use is positively associated with proposal success and higher subsequent publication output at NIH, whereas no comparable associations are observed at NSF. Notably, the productivity gains at NIH are concentrated in non-hit papers rather than the most highly cited work. Together, these findings provide large-scale evidence that the rise of LLMs is reshaping how scientific ideas are positioned, selected, and translated into publicly funded research, with implications for portfolio governance, research diversity, and the long-run impact of science.",
+      "url": "https://arxiv.org/pdf/2601.15485v1",
+      "date": "2026-01-21T21:37:08+00:00"
+    },
+    {
+      "id": "auth_yifan_qian",
+      "name": "Yifan Qian",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_zhe_wen",
+      "name": "Zhe Wen",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_alexander_c_furnas",
+      "name": "Alexander C. Furnas",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yue_bai",
+      "name": "Yue Bai",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_erzhuo_shao",
+      "name": "Erzhuo Shao",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_dashun_wang",
+      "name": "Dashun Wang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_research_funding",
+      "name": "research funding",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_funded_research",
+      "name": "funded research",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_federal_research",
+      "name": "federal research",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_federal_funding",
+      "name": "federal funding",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_public_funding",
+      "name": "public funding",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.15412v1",
+      "name": "A Checklist for Trustworthy, Safe, and User-Friendly Mental Health Chatbots",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Mental health concerns are rising globally, prompting increased reliance on technology to address the demand-supply gap in mental health services. In particular, mental health chatbots are emerging as a promising solution, but these remain largely untested, raising concerns about safety and potential harms. In this paper, we dive into the literature to identify critical gaps in the design and implementation of mental health chatbots. We contribute an operational checklist to help guide the development and design of more trustworthy, safe, and user-friendly chatbots. The checklist serves as both a developmental framework and an auditing tool to ensure ethical and effective chatbot design. We discuss how this checklist is a step towards supporting more responsible design practices and supporting new standards for sociotechnically sound digital mental health tools.",
+      "url": "https://arxiv.org/pdf/2601.15412v1",
+      "date": "2026-01-21T19:24:27+00:00"
+    },
+    {
+      "id": "auth_shreya_haran",
+      "name": "Shreya Haran",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_samiha_thatikonda",
+      "name": "Samiha Thatikonda",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_health_chatbots",
+      "name": "health chatbots",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_chatbots_checklist",
+      "name": "chatbots checklist",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_chatbots_emerging",
+      "name": "chatbots emerging",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_chatbot_design",
+      "name": "chatbot design",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_effective_chatbot",
+      "name": "effective chatbot",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.15267v1",
+      "name": "Evaluation of Large Language Models in Legal Applications: Challenges, Methods, and Future Directions",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Large language models (LLMs) are being increasingly integrated into legal applications, including judicial decision support, legal practice assistance, and public-facing legal services. While LLMs show strong potential in handling legal knowledge and tasks, their deployment in real-world legal settings raises critical concerns beyond surface-level accuracy, involving the soundness of legal reasoning processes and trustworthy issues such as fairness and reliability. Systematic evaluation of LLM performance in legal tasks has therefore become essential for their responsible adoption. This survey identifies key challenges in evaluating LLMs for legal tasks grounded in real-world legal practice. We analyze the major difficulties involved in assessing LLM performance in the legal domain, including outcome correctness, reasoning reliability, and trustworthiness. Building on these challenges, we review and categorize existing evaluation methods and benchmarks according to their task design, datasets, and evaluation metrics. We further discuss the extent to which current approaches address these challenges, highlight their limitations, and outline future research directions toward more realistic, reliable, and legally grounded evaluation frameworks for LLMs in legal domains.",
+      "url": "https://arxiv.org/pdf/2601.15267v1",
+      "date": "2026-01-21T18:51:37+00:00"
+    },
+    {
+      "id": "auth_yiran_hu",
+      "name": "Yiran Hu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_huanghai_liu",
+      "name": "Huanghai Liu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_chong_wang",
+      "name": "Chong Wang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kunran_li",
+      "name": "Kunran Li",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_tien_hsuan_wu",
+      "name": "Tien-Hsuan Wu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_haitao_li",
+      "name": "Haitao Li",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_xinran_xu",
+      "name": "Xinran Xu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_siqing_huo",
+      "name": "Siqing Huo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_weihang_su",
+      "name": "Weihang Su",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ning_zheng",
+      "name": "Ning Zheng",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_siyuan_zheng",
+      "name": "Siyuan Zheng",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_qingyao_ai",
+      "name": "Qingyao Ai",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yun_liu",
+      "name": "Yun Liu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_renjun_bian",
+      "name": "Renjun Bian",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yiqun_liu",
+      "name": "Yiqun Liu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_charles_l_a_clarke",
+      "name": "Charles L. A. Clarke",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_weixing_shen",
+      "name": "Weixing Shen",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ben_kao",
+      "name": "Ben Kao",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_legal_knowledge",
+      "name": "legal knowledge",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_legal_services",
+      "name": "legal services",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_handling_legal",
+      "name": "handling legal",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_legal_reasoning",
+      "name": "legal reasoning",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_legal_practice",
+      "name": "legal practice",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.15163v1",
+      "name": "The Promises and Perils of using LLMs for Effective Public Services",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Governments are the primary providers of essential public services and are responsible for delivering them effectively. In high-stakes decision-making domains such as child welfare (CW), agencies must protect children without unnecessarily prolonging a family's engagement with the system. With growing optimism around AI, governments are pushing for its integration but concerns regarding feasibility and harms remain. Through collaborations with a large Canadian CW agency, we examined how LocalLLM and BERTopic models can track CW case progress. We demonstrate how the tools can potentially assist workers in opportunistically addressing gaps in their work by signaling case progress/deviations. And yet, we also show how they fail to detect case trajectories that require discretionary judgments grounded in social work training, areas where practitioners would actually want support to pre-emptively address substantive case concerns. We also provide a roadmap of future participatory directions to co-design language tools for/with the public sector.",
+      "url": "https://arxiv.org/pdf/2601.15163v1",
+      "date": "2026-01-21T16:41:46+00:00"
+    },
+    {
+      "id": "auth_erina_seh_young_moon",
+      "name": "Erina Seh-Young Moon",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_matthew_tamura",
+      "name": "Matthew Tamura",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_angelina_zhai",
+      "name": "Angelina Zhai",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_nuzaira_habib",
+      "name": "Nuzaira Habib",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_behnaz_shirazi",
+      "name": "Behnaz Shirazi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_altaf_kassam",
+      "name": "Altaf Kassam",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_devansh_saxena",
+      "name": "Devansh Saxena",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_shion_guha",
+      "name": "Shion Guha",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_agencies",
+      "name": "agencies",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_governments",
+      "name": "ai governments",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_cw_agencies",
+      "name": "cw agencies",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_child_welfare",
+      "name": "child welfare",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_social_work",
+      "name": "social work",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.15109v1",
+      "name": "An Agentic Operationalization of DISARM for FIMI Investigation on Social Media",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The interoperability of data and intelligence across allied partners and their respective end-user groups is considered a foundational enabler to the collective defense capability--both conventional and hybrid--of NATO countries. Foreign Information Manipulation and Interference (FIMI) and related hybrid activities are conducted across various societal dimensions and infospheres, posing an ever greater challenge to the characterization of threats, sustaining situational awareness, and response coordination. Recent advances in AI have further led to the decreasing cost of AI-augmented trolling and interference activities, such as through the generation and amplification of manipulative content. Despite the introduction of the DISARM framework as a standardized metadata and analytical framework for FIMI, operationalizing it at the scale of social media remains a challenge. We propose a framework-agnostic agent-based operationalization of DISARM to investigate FIMI on social media. We develop a multi-agent pipeline in which specialized agentic AI components collaboratively (1) detect candidate manipulative behaviors, and (2) map these behaviors onto standard DISARM taxonomies in a transparent manner. We evaluated the approach on two real-world datasets annotated by domain practitioners. We demonstrate that our approach is effective in scaling the predominantly manual and heavily interpretive work of FIMI analysis, providing a direct contribution to enhancing the situational awareness and data interoperability in the context of operating in media and information-rich settings.",
+      "url": "https://arxiv.org/pdf/2601.15109v1",
+      "date": "2026-01-21T15:50:13+00:00"
+    },
+    {
+      "id": "auth_kevin_tseng",
+      "name": "Kevin Tseng",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_juan_carlos_toledano",
+      "name": "Juan Carlos Toledano",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_bart_de_clerck",
+      "name": "Bart De Clerck",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_yuliia_dukach",
+      "name": "Yuliia Dukach",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_phil_tinn",
+      "name": "Phil Tinn",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_agentic_ai",
+      "name": "agentic ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_interoperability_data",
+      "name": "interoperability data",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_augmented_trolling",
+      "name": "augmented trolling",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_multi_agent",
+      "name": "multi agent",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_interoperability",
+      "name": "interoperability",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.15091v1",
+      "name": "Circadian Modulation of Semantic Exploration in Social Media Language",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Human cognition exhibits strong circadian modulation, yet its influence on high-dimensional semantic behavior remains poorly understood. Using large-scale Reddit data, we quantify time-of-day variation in language use by embedding text into a pretrained transformer model and measuring semantic entropy as an index of linguistic exploration-exploitation, for which we show a robust circadian rhythmicity that could be entrained by seasonal light cues. Distinguishing between local and global semantic entropy reveals a systematic temporal dissociation: local semantic exploration peaks in the morning, reflecting broader exploration of semantic space, whereas global semantic diversity peaks later in the day as submissions accumulate around already established topics, consistent with \"rich-get-richer\" dynamics. These patterns are not explained by sentiment or affective valence, indicating that semantic exploration captures a cognitive dimension distinct from mood. The observed temporal structure aligns with known diurnal patterns in neuromodulatory systems, suggesting that biological circadian rhythms extend to the semantic domain.",
+      "url": "https://arxiv.org/pdf/2601.15091v1",
+      "date": "2026-01-21T15:31:44+00:00"
+    },
+    {
+      "id": "auth_vuong_hung_truong",
+      "name": "Vuong Hung Truong",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mariana_gabrielle_cangco_reyes",
+      "name": "Mariana Gabrielle Cangco Reyes",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_masatoshi_koizumi",
+      "name": "Masatoshi Koizumi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jihwan_myung",
+      "name": "Jihwan Myung",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_circadian_rhythmicity",
+      "name": "circadian rhythmicity",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_circadian_rhythms",
+      "name": "circadian rhythms",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_circadian_modulation",
+      "name": "circadian modulation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_circadian",
+      "name": "circadian",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_biological_circadian",
+      "name": "biological circadian",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.14982v1",
+      "name": "Interoperable Architecture for Digital Identity Delegation for AI Agents with Blockchain Integration",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Verifiable delegation in digital identity systems remains unresolved across centralized, federated, and self-sovereign identity (SSI) environments, particularly where both human users and autonomous AI agents must exercise and transfer authority without exposing primary credentials or private keys. We introduce a unified framework that enables bounded, auditable, and least-privilege delegation across heterogeneous identity ecosystems. The framework includes four key elements: Delegation Grants (DGs), first-class authorization artefacts that encode revocable transfers of authority with enforced scope reduction; a Canonical Verification Context (CVC) that normalizes verification requests into a single structured representation independent of protocols or credential formats; a layered reference architecture that separates trust anchoring, credential and proof validation, policy evaluation, and protocol mediation via a Trust Gateway; and an explicit treatment of blockchain anchoring as an optional integrity layer rather than a structural dependency. Together, these elements advance interoperable delegation and auditability and provide a foundation for future standardization, implementation, and integration of autonomous agents into trusted digital identity infrastructures.",
+      "url": "https://arxiv.org/pdf/2601.14982v1",
+      "date": "2026-01-21T13:29:23+00:00"
+    },
+    {
+      "id": "auth_david_ricardo_saavedra",
+      "name": "David Ricardo Saavedra",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_identity_infrastructures",
+      "name": "identity infrastructures",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_verifiable_delegation",
+      "name": "verifiable delegation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_authorization_artefacts",
+      "name": "authorization artefacts",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_identity_systems",
+      "name": "identity systems",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_delegation_digital",
+      "name": "delegation digital",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.14798v1",
+      "name": "Reflecting in the Reflection: Integrating a Socratic Questioning Framework into Automated AI-Based Question Generation",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Designing good reflection questions is pedagogically important but time-consuming and unevenly supported across teachers. This paper introduces a reflection-in-reflection framework for automated generation of reflection questions with large language models (LLMs). Our approach coordinates two role-specialized agents, a Student-Teacher and a Teacher-Educator, that engage in a Socratic multi-turn dialogue to iteratively refine a single question given a teacher-specified topic, key concepts, student level, and optional instructional materials. The Student-Teacher proposes candidate questions with brief rationales, while the Teacher-Educator evaluates them along clarity, depth, relevance, engagement, and conceptual interconnections, responding only with targeted coaching questions or a fixed signal to stop the dialogue. We evaluate the framework in an authentic lower-secondary ICT setting on the topic, using GPT-4o-mini as the backbone model and a stronger GPT- 4-class LLM as an external evaluator in pairwise comparisons of clarity, relevance, depth, and overall quality. First, we study how interaction design and context (dynamic vs.fixed iteration counts; presence or absence of student level and materials) affect question quality. Dynamic stopping combined with contextual information consistently outperforms fixed 5- or 10-step refinement, with very long dialogues prone to drift or over-complication. Second, we show that our two-agent protocol produces questions that are judged substantially more relevant and deeper, and better overall, than a one-shot baseline using the same backbone model.",
+      "url": "https://arxiv.org/pdf/2601.14798v1",
+      "date": "2026-01-21T09:23:11+00:00"
+    },
+    {
+      "id": "auth_ondřej_holub",
+      "name": "Ondřej Holub",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_essi_ryymin",
+      "name": "Essi Ryymin",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_rodrigo_alves",
+      "name": "Rodrigo Alves",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_reflection_questions",
+      "name": "reflection questions",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_questions_pedagogically",
+      "name": "questions pedagogically",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_question_quality",
+      "name": "question quality",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_reflection_framework",
+      "name": "reflection framework",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_dialogue_iteratively",
+      "name": "dialogue iteratively",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.14589v1",
+      "name": "Designing KRIYA: An AI Companion for Wellbeing Self-Reflection",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Most personal wellbeing apps present summative dashboards of health and physical activity metrics, yet many users struggle to translate this information into meaningful understanding. These apps commonly support engagement through goals, reminders, and structured targets, which can reinforce comparison, judgment, and performance anxiety. To explore a complementary approach that prioritizes self-reflection, we design KRIYA, an AI wellbeing companion that supports co-interpretive engagement with personal wellbeing data. KRIYA aims to collaborate with users to explore questions, explanations, and future scenarios through features such as Comfort Zone, Detective Mode, and What-If Planning. We conducted semi-structured interviews with 18 college students interacting with a KRIYA prototype using hypothetical data. Our findings show that through KRIYA interaction, users framed engaging with wellbeing data as interpretation rather than performance, experienced reflection as supportive or pressuring depending on emotional framing, and developed trust through transparency. We discuss design implications for AI companions that support curiosity, self-compassion, and reflective sensemaking of personal health data.",
+      "url": "https://arxiv.org/pdf/2601.14589v1",
+      "date": "2026-01-21T02:03:12+00:00"
+    },
+    {
+      "id": "auth_shanshan_zhu",
+      "name": "Shanshan Zhu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_wenxuan_song",
+      "name": "Wenxuan Song",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jiayue_melissa_shi",
+      "name": "Jiayue Melissa Shi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_karthik_s_bhat",
+      "name": "Karthik S. Bhat",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_wellbeing_apps",
+      "name": "wellbeing apps",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_wellbeing_data",
+      "name": "wellbeing data",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_wellbeing",
+      "name": "ai wellbeing",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_personal_wellbeing",
+      "name": "personal wellbeing",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_engaging_wellbeing",
+      "name": "engaging wellbeing",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.14512v1",
+      "name": "Aiming for AI Interoperability: Challenges and Opportunities",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The Aiming for AI Interoperability report investigates the ongoing challenge of achieving regulatory and technical AI interoperability as national and global AI governance efforts are proliferating. Here, technical interoperability is the ability of AI systems and networks to function together, and regulatory interoperability is the consistency and overlap of rules across jurisdictions and sectors. This report observes an accelerating trend that many governments, standard-setting bodies, and private firms are drafting, implementing, or passing new AI laws, policies, and frameworks at a staggering pace, resulting in fragmentation and confusion for both private and public sector actors.",
+      "url": "https://arxiv.org/pdf/2601.14512v1",
+      "date": "2026-01-20T22:05:55+00:00"
+    },
+    {
+      "id": "auth_benjamin_faveri",
+      "name": "Benjamin Faveri",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_craig_shank",
+      "name": "Craig Shank",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_richard_whitt",
+      "name": "Richard Whitt",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_phillip_dawson",
+      "name": "Phillip Dawson",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_ai_interoperability",
+      "name": "ai interoperability",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_regulatory_interoperability",
+      "name": "regulatory interoperability",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_laws",
+      "name": "ai laws",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_interoperability_national",
+      "name": "interoperability national",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.14506v1",
+      "name": "Language, Caste, and Context: Demographic Disparities in AI-Generated Explanations Across Indian and American STEM Educational Systems",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The popularization of AI chatbot usage globally has created opportunities for research into their benefits and drawbacks, especially for students using AI assistants for coursework support. This paper asks: how do LLMs perceive the intellectual capabilities of student profiles from intersecting marginalized identities across different cultural contexts? We conduct one of the first large-scale intersectional analyses on LLM explanation quality for Indian and American undergraduate profiles preparing for engineering entrance examinations. By constructing profiles combining multiple demographic dimensions including caste, medium of instruction, and school boards in India, and race, HBCU attendance, and school type in America, alongside universal factors like income and college tier, we examine how quality varies across these factors. We observe biases providing lower-quality outputs to profiles with marginalized backgrounds in both contexts. LLMs such as Qwen2.5-32B-Instruct and GPT-4o demonstrate granular understandings of context-specific discrimination, systematically providing simpler explanations to Hindi/Regional-medium students in India and HBCU profiles in America, treating these as proxies for lower capability. Even when marginalized profiles attain social mobility by getting accepted into elite institutions, they still receive more simplistic explanations, showing how demographic information is inextricably linked to LLM biases. Different models (Qwen2.5-32B-Instruct, GPT-4o, GPT-4o-mini, GPT-OSS 20B) embed similar biases against historically marginalized populations in both contexts, preventing profiles from switching between AI assistants for better results. Our findings have strong implications for AI incorporation into global engineering education.",
+      "url": "https://arxiv.org/pdf/2601.14506v1",
+      "date": "2026-01-20T21:58:45+00:00"
+    },
+    {
+      "id": "auth_amogh_gupta",
+      "name": "Amogh Gupta",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_niharika_patil",
+      "name": "Niharika Patil",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sourojit_ghosh",
+      "name": "Sourojit Ghosh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_snehalkumar",
+      "name": "SnehalKumar",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_s_gaikwad",
+      "name": "S Gaikwad",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_demographic_dimensions",
+      "name": "demographic dimensions",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_students_india",
+      "name": "students india",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_capabilities_student",
+      "name": "capabilities student",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_undergraduate_profiles",
+      "name": "undergraduate profiles",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_discrimination_systematically",
+      "name": "discrimination systematically",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -8449,6 +9307,656 @@
     {
       "source": "2601.13187v1",
       "target": "topic_documents_findings",
+      "value": 2
+    },
+    {
+      "source": "2601.15556v1",
+      "target": "auth_nil_jana_akpinar",
+      "value": 5
+    },
+    {
+      "source": "2601.15556v1",
+      "target": "auth_sandeep_avula",
+      "value": 5
+    },
+    {
+      "source": "2601.15556v1",
+      "target": "auth_cj_lee",
+      "value": 5
+    },
+    {
+      "source": "2601.15556v1",
+      "target": "auth_brandon_dang",
+      "value": 5
+    },
+    {
+      "source": "2601.15556v1",
+      "target": "auth_kaza_razat",
+      "value": 5
+    },
+    {
+      "source": "2601.15556v1",
+      "target": "auth_vanessa_murdock",
+      "value": 5
+    },
+    {
+      "source": "2601.15556v1",
+      "target": "topic_academic_writing",
+      "value": 2
+    },
+    {
+      "source": "2601.15556v1",
+      "target": "topic_writing_findings",
+      "value": 2
+    },
+    {
+      "source": "2601.15556v1",
+      "target": "topic_assisted_writing",
+      "value": 2
+    },
+    {
+      "source": "2601.15556v1",
+      "target": "topic_readers_ml",
+      "value": 2
+    },
+    {
+      "source": "2601.15556v1",
+      "target": "topic_summaries_perceptions",
+      "value": 2
+    },
+    {
+      "source": "2601.15485v1",
+      "target": "auth_yifan_qian",
+      "value": 5
+    },
+    {
+      "source": "2601.15485v1",
+      "target": "auth_zhe_wen",
+      "value": 5
+    },
+    {
+      "source": "2601.15485v1",
+      "target": "auth_alexander_c_furnas",
+      "value": 5
+    },
+    {
+      "source": "2601.15485v1",
+      "target": "auth_yue_bai",
+      "value": 5
+    },
+    {
+      "source": "2601.15485v1",
+      "target": "auth_erzhuo_shao",
+      "value": 5
+    },
+    {
+      "source": "2601.15485v1",
+      "target": "auth_dashun_wang",
+      "value": 5
+    },
+    {
+      "source": "2601.15485v1",
+      "target": "topic_research_funding",
+      "value": 2
+    },
+    {
+      "source": "2601.15485v1",
+      "target": "topic_funded_research",
+      "value": 2
+    },
+    {
+      "source": "2601.15485v1",
+      "target": "topic_federal_research",
+      "value": 2
+    },
+    {
+      "source": "2601.15485v1",
+      "target": "topic_federal_funding",
+      "value": 2
+    },
+    {
+      "source": "2601.15485v1",
+      "target": "topic_public_funding",
+      "value": 2
+    },
+    {
+      "source": "2601.15412v1",
+      "target": "auth_shreya_haran",
+      "value": 5
+    },
+    {
+      "source": "2601.15412v1",
+      "target": "auth_samiha_thatikonda",
+      "value": 5
+    },
+    {
+      "source": "2601.15412v1",
+      "target": "auth_dong_whi_yoo",
+      "value": 5
+    },
+    {
+      "source": "2601.15412v1",
+      "target": "auth_koustuv_saha",
+      "value": 5
+    },
+    {
+      "source": "2601.15412v1",
+      "target": "topic_health_chatbots",
+      "value": 2
+    },
+    {
+      "source": "2601.15412v1",
+      "target": "topic_chatbots_checklist",
+      "value": 2
+    },
+    {
+      "source": "2601.15412v1",
+      "target": "topic_chatbots_emerging",
+      "value": 2
+    },
+    {
+      "source": "2601.15412v1",
+      "target": "topic_chatbot_design",
+      "value": 2
+    },
+    {
+      "source": "2601.15412v1",
+      "target": "topic_effective_chatbot",
+      "value": 2
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_yiran_hu",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_huanghai_liu",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_chong_wang",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_kunran_li",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_tien_hsuan_wu",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_haitao_li",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_xinran_xu",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_siqing_huo",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_weihang_su",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_ning_zheng",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_siyuan_zheng",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_qingyao_ai",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_yun_liu",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_renjun_bian",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_yiqun_liu",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_charles_l_a_clarke",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_weixing_shen",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "auth_ben_kao",
+      "value": 5
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "topic_legal_knowledge",
+      "value": 2
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "topic_legal_services",
+      "value": 2
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "topic_handling_legal",
+      "value": 2
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "topic_legal_reasoning",
+      "value": 2
+    },
+    {
+      "source": "2601.15267v1",
+      "target": "topic_legal_practice",
+      "value": 2
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "auth_erina_seh_young_moon",
+      "value": 5
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "auth_matthew_tamura",
+      "value": 5
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "auth_angelina_zhai",
+      "value": 5
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "auth_nuzaira_habib",
+      "value": 5
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "auth_behnaz_shirazi",
+      "value": 5
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "auth_altaf_kassam",
+      "value": 5
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "auth_devansh_saxena",
+      "value": 5
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "auth_shion_guha",
+      "value": 5
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "topic_agencies",
+      "value": 2
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "topic_ai_governments",
+      "value": 2
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "topic_cw_agencies",
+      "value": 2
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "topic_child_welfare",
+      "value": 2
+    },
+    {
+      "source": "2601.15163v1",
+      "target": "topic_social_work",
+      "value": 2
+    },
+    {
+      "source": "2601.15109v1",
+      "target": "auth_kevin_tseng",
+      "value": 5
+    },
+    {
+      "source": "2601.15109v1",
+      "target": "auth_juan_carlos_toledano",
+      "value": 5
+    },
+    {
+      "source": "2601.15109v1",
+      "target": "auth_bart_de_clerck",
+      "value": 5
+    },
+    {
+      "source": "2601.15109v1",
+      "target": "auth_yuliia_dukach",
+      "value": 5
+    },
+    {
+      "source": "2601.15109v1",
+      "target": "auth_phil_tinn",
+      "value": 5
+    },
+    {
+      "source": "2601.15109v1",
+      "target": "topic_agentic_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.15109v1",
+      "target": "topic_interoperability_data",
+      "value": 2
+    },
+    {
+      "source": "2601.15109v1",
+      "target": "topic_augmented_trolling",
+      "value": 2
+    },
+    {
+      "source": "2601.15109v1",
+      "target": "topic_multi_agent",
+      "value": 2
+    },
+    {
+      "source": "2601.15109v1",
+      "target": "topic_interoperability",
+      "value": 2
+    },
+    {
+      "source": "2601.15091v1",
+      "target": "auth_vuong_hung_truong",
+      "value": 5
+    },
+    {
+      "source": "2601.15091v1",
+      "target": "auth_mariana_gabrielle_cangco_reyes",
+      "value": 5
+    },
+    {
+      "source": "2601.15091v1",
+      "target": "auth_masatoshi_koizumi",
+      "value": 5
+    },
+    {
+      "source": "2601.15091v1",
+      "target": "auth_jihwan_myung",
+      "value": 5
+    },
+    {
+      "source": "2601.15091v1",
+      "target": "topic_circadian_rhythmicity",
+      "value": 2
+    },
+    {
+      "source": "2601.15091v1",
+      "target": "topic_circadian_rhythms",
+      "value": 2
+    },
+    {
+      "source": "2601.15091v1",
+      "target": "topic_circadian_modulation",
+      "value": 2
+    },
+    {
+      "source": "2601.15091v1",
+      "target": "topic_circadian",
+      "value": 2
+    },
+    {
+      "source": "2601.15091v1",
+      "target": "topic_biological_circadian",
+      "value": 2
+    },
+    {
+      "source": "2601.14982v1",
+      "target": "auth_david_ricardo_saavedra",
+      "value": 5
+    },
+    {
+      "source": "2601.14982v1",
+      "target": "topic_identity_infrastructures",
+      "value": 2
+    },
+    {
+      "source": "2601.14982v1",
+      "target": "topic_verifiable_delegation",
+      "value": 2
+    },
+    {
+      "source": "2601.14982v1",
+      "target": "topic_authorization_artefacts",
+      "value": 2
+    },
+    {
+      "source": "2601.14982v1",
+      "target": "topic_identity_systems",
+      "value": 2
+    },
+    {
+      "source": "2601.14982v1",
+      "target": "topic_delegation_digital",
+      "value": 2
+    },
+    {
+      "source": "2601.14798v1",
+      "target": "auth_ondřej_holub",
+      "value": 5
+    },
+    {
+      "source": "2601.14798v1",
+      "target": "auth_essi_ryymin",
+      "value": 5
+    },
+    {
+      "source": "2601.14798v1",
+      "target": "auth_rodrigo_alves",
+      "value": 5
+    },
+    {
+      "source": "2601.14798v1",
+      "target": "topic_reflection_questions",
+      "value": 2
+    },
+    {
+      "source": "2601.14798v1",
+      "target": "topic_questions_pedagogically",
+      "value": 2
+    },
+    {
+      "source": "2601.14798v1",
+      "target": "topic_question_quality",
+      "value": 2
+    },
+    {
+      "source": "2601.14798v1",
+      "target": "topic_reflection_framework",
+      "value": 2
+    },
+    {
+      "source": "2601.14798v1",
+      "target": "topic_dialogue_iteratively",
+      "value": 2
+    },
+    {
+      "source": "2601.14589v1",
+      "target": "auth_shanshan_zhu",
+      "value": 5
+    },
+    {
+      "source": "2601.14589v1",
+      "target": "auth_wenxuan_song",
+      "value": 5
+    },
+    {
+      "source": "2601.14589v1",
+      "target": "auth_jiayue_melissa_shi",
+      "value": 5
+    },
+    {
+      "source": "2601.14589v1",
+      "target": "auth_dong_whi_yoo",
+      "value": 5
+    },
+    {
+      "source": "2601.14589v1",
+      "target": "auth_karthik_s_bhat",
+      "value": 5
+    },
+    {
+      "source": "2601.14589v1",
+      "target": "auth_koustuv_saha",
+      "value": 5
+    },
+    {
+      "source": "2601.14589v1",
+      "target": "topic_wellbeing_apps",
+      "value": 2
+    },
+    {
+      "source": "2601.14589v1",
+      "target": "topic_wellbeing_data",
+      "value": 2
+    },
+    {
+      "source": "2601.14589v1",
+      "target": "topic_ai_wellbeing",
+      "value": 2
+    },
+    {
+      "source": "2601.14589v1",
+      "target": "topic_personal_wellbeing",
+      "value": 2
+    },
+    {
+      "source": "2601.14589v1",
+      "target": "topic_engaging_wellbeing",
+      "value": 2
+    },
+    {
+      "source": "2601.14512v1",
+      "target": "auth_benjamin_faveri",
+      "value": 5
+    },
+    {
+      "source": "2601.14512v1",
+      "target": "auth_craig_shank",
+      "value": 5
+    },
+    {
+      "source": "2601.14512v1",
+      "target": "auth_richard_whitt",
+      "value": 5
+    },
+    {
+      "source": "2601.14512v1",
+      "target": "auth_phillip_dawson",
+      "value": 5
+    },
+    {
+      "source": "2601.14512v1",
+      "target": "topic_ai_interoperability",
+      "value": 2
+    },
+    {
+      "source": "2601.14512v1",
+      "target": "topic_ai_governance",
+      "value": 2
+    },
+    {
+      "source": "2601.14512v1",
+      "target": "topic_regulatory_interoperability",
+      "value": 2
+    },
+    {
+      "source": "2601.14512v1",
+      "target": "topic_ai_laws",
+      "value": 2
+    },
+    {
+      "source": "2601.14512v1",
+      "target": "topic_interoperability_national",
+      "value": 2
+    },
+    {
+      "source": "2601.14506v1",
+      "target": "auth_amogh_gupta",
+      "value": 5
+    },
+    {
+      "source": "2601.14506v1",
+      "target": "auth_niharika_patil",
+      "value": 5
+    },
+    {
+      "source": "2601.14506v1",
+      "target": "auth_sourojit_ghosh",
+      "value": 5
+    },
+    {
+      "source": "2601.14506v1",
+      "target": "auth_snehalkumar",
+      "value": 5
+    },
+    {
+      "source": "2601.14506v1",
+      "target": "auth_s_gaikwad",
+      "value": 5
+    },
+    {
+      "source": "2601.14506v1",
+      "target": "topic_demographic_dimensions",
+      "value": 2
+    },
+    {
+      "source": "2601.14506v1",
+      "target": "topic_students_india",
+      "value": 2
+    },
+    {
+      "source": "2601.14506v1",
+      "target": "topic_capabilities_student",
+      "value": 2
+    },
+    {
+      "source": "2601.14506v1",
+      "target": "topic_undergraduate_profiles",
+      "value": 2
+    },
+    {
+      "source": "2601.14506v1",
+      "target": "topic_discrimination_systematically",
       "value": 2
     }
   ]
