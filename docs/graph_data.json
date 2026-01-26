@@ -5681,6 +5681,429 @@
       "name": "discrimination systematically",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.16930v1",
+      "name": "In Quest of an Extensible Multi-Level Harm Taxonomy for Adversarial AI: Heart of Security, Ethical Risk Scoring and Resilience Analytics",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Harm is invoked everywhere from cybersecurity, ethics, risk analysis, to adversarial AI, yet there exists no systematic or agreed upon list of harms, and the concept itself is rarely defined with the precision required for serious analysis. Current discourse relies on vague, under specified notions of harm, rendering nuanced, structured, and qualitative assessment effectively impossible. This paper challenges that gap directly. We introduce a structured and expandable taxonomy of harms, grounded in an ensemble of contemporary ethical theories, that makes harm explicit, enumerable, and analytically tractable. The proposed framework identifies 66+ distinct harm types, systematically organized into two overarching domains human and nonhuman, and eleven major categories, each explicitly aligned with eleven dominant ethical theories. While extensible by design, the upper levels are intentionally stable. Beyond classification, we introduce a theory-aware taxonomy of victim entities and formalize normative harm attributes, including reversibility and duration that materially alter ethical severity. Together, these contributions transform harm from a rhetorical placeholder into an operational object of analysis, enabling rigorous ethical reasoning and long term safety evaluation of AI systems and other sociotechnical domains where harm is a first order concern.",
+      "url": "https://arxiv.org/pdf/2601.16930v1",
+      "date": "2026-01-23T17:44:05+00:00"
+    },
+    {
+      "id": "auth_javed_i_khan",
+      "name": "Javed I. Khan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sharmila_rahman_prithula",
+      "name": "Sharmila Rahman Prithula",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_cybersecurity_ethics",
+      "name": "cybersecurity ethics",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_harms_concept",
+      "name": "harms concept",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_harm_attributes",
+      "name": "harm attributes",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_harm_invoked",
+      "name": "harm invoked",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ethical_severity",
+      "name": "ethical severity",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.16926v1",
+      "name": "Nishpaksh: TEC Standard-Compliant Framework for Fairness Auditing and Certification of AI Models",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The growing reliance on Artificial Intelligence (AI) models in high-stakes decision-making systems, particularly within emerging telecom and 6G applications, underscores the urgent need for transparent and standardized fairness assessment frameworks. While global toolkits such as IBM AI Fairness 360 and Microsoft Fairlearn have advanced bias detection, they often lack alignment with region-specific regulatory requirements and national priorities. To address this gap, we propose Nishpaksh, an indigenous fairness evaluation tool that operationalizes the Telecommunication Engineering Centre (TEC) Standard for the Evaluation and Rating of Artificial Intelligence Systems. Nishpaksh integrates survey-based risk quantification, contextual threshold determination, and quantitative fairness evaluation into a unified, web-based dashboard. The tool employs vectorized computation, reactive state management, and certification-ready reporting to enable reproducible, audit-grade assessments, thereby addressing a critical post-standardization implementation need. Experimental validation on the COMPAS dataset demonstrates Nishpaksh's effectiveness in identifying attribute-specific bias and generating standardized fairness scores compliant with the TEC framework. The system bridges the gap between research-oriented fairness methodologies and regulatory AI governance in India, marking a significant step toward responsible and auditable AI deployment within critical infrastructure like telecommunications.",
+      "url": "https://arxiv.org/pdf/2601.16926v1",
+      "date": "2026-01-23T17:35:05+00:00"
+    },
+    {
+      "id": "auth_shashank_prakash",
+      "name": "Shashank Prakash",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ranjitha_prasad",
+      "name": "Ranjitha Prasad",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_avinash_agarwal",
+      "name": "Avinash Agarwal",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_fairness_assessment",
+      "name": "fairness assessment",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_fairness_evaluation",
+      "name": "fairness evaluation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_fairness",
+      "name": "ai fairness",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_quantitative_fairness",
+      "name": "quantitative fairness",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_fairness_scores",
+      "name": "fairness scores",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.16824v1",
+      "name": "Privacy in Human-AI Romantic Relationships: Concerns, Boundaries, and Agency",
+      "group": "paper",
+      "val": 30,
+      "abstract": "An increasing number of LLM-based applications are being developed to facilitate romantic relationships with AI partners, yet the safety and privacy risks in these partnerships remain largely underexplored. In this work, we investigate privacy in human-AI romantic relationships through an interview study (N=17), examining participants' experiences and privacy perceptions across stages of exploration, intimacy, and dissolution, alongside platforms they used. We found that these relationships took varied forms, from one-to-one to one-to-many, and were shaped by multiple actors, including creators, platforms, and moderators. AI partners were perceived as having agency, actively negotiating privacy boundaries with participants and sometimes encouraging disclosure of personal details. As intimacy deepened, these boundaries became more permeable, though some participants voiced concerns such as conversation exposure and sought to preserve anonymity. Overall, platform affordances and diverse romantic dynamics expand the privacy landscape, underscoring the need to rethink how privacy is constructed in human-AI intimacy.",
+      "url": "https://arxiv.org/pdf/2601.16824v1",
+      "date": "2026-01-23T15:23:37+00:00"
+    },
+    {
+      "id": "auth_rongjun_ma",
+      "name": "Rongjun Ma",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_shijing_he",
+      "name": "Shijing He",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jose_luis_martin_navarro",
+      "name": "Jose Luis Martin-Navarro",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_xiao_zhan",
+      "name": "Xiao Zhan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jose_such",
+      "name": "Jose Such",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_experiences_privacy",
+      "name": "experiences privacy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_intimacy",
+      "name": "ai intimacy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_negotiating_privacy",
+      "name": "negotiating privacy",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_privacy_boundaries",
+      "name": "privacy boundaries",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_privacy_perceptions",
+      "name": "privacy perceptions",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.16752v1",
+      "name": "From Clicks to Consensus: Collective Consent Assemblies for Data Governance",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Obtaining meaningful and informed consent from users is essential for ensuring they maintain autonomy and control over their data. Notice and consent, the standard for collecting consent online, has been criticized. While other individualized solutions have been proposed, this paper argues that a collective approach to consent is worth exploring for several reasons. First, the data of different users is often interlinked, and individual data governance decisions may impact others. Second, harms resulting from data processing are often communal in nature. Finally, having every individual sufficiently informed about data collection practices to ensure truly informed consent has proven impractical.   We propose collective consent, operationalized through consent assemblies, as one alternative framework. We establish the theoretical foundations of collective consent and employ speculative design to envision how consent assemblies could function by leveraging deliberative mini-publics. We present two vignettes: i) replacing notice and consent, and ii) collecting consent for GenAI model training, to demonstrate its wide application. Our paper employs future backcasting to identify the requirements for realizing collective consent and explores its potential applications in contexts where individual consent is infeasible.",
+      "url": "https://arxiv.org/pdf/2601.16752v1",
+      "date": "2026-01-23T13:57:04+00:00"
+    },
+    {
+      "id": "auth_lin_kyi",
+      "name": "Lin Kyi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_paul_gölz",
+      "name": "Paul Gölz",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_robin_berjon",
+      "name": "Robin Berjon",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_asia_biega",
+      "name": "Asia Biega",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_collective_consent",
+      "name": "collective consent",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_consent_assemblies",
+      "name": "consent assemblies",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_consent_explores",
+      "name": "consent explores",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_collecting_consent",
+      "name": "collecting consent",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_consent_users",
+      "name": "consent users",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.16656v1",
+      "name": "Generative Confidants: How do People Experience Trust in Emotional Support from Generative AI?",
+      "group": "paper",
+      "val": 30,
+      "abstract": "People are increasingly turning to generative AI (e.g., ChatGPT, Gemini, Copilot) for emotional support and companionship. While trust is likely to play a central role in enabling these informal and unsupervised interactions, we still lack an understanding of how people develop and experience it in this context. Seeking to fill this gap, we recruited 24 frequent users of generative AI for emotional support and conducted a qualitative study consisting of diary entries about interactions, transcripts of chats with AI, and in-depth interviews. Our results suggest important novel drivers of trust in this context: familiarity emerging from personalisation, nuanced mental models of generative AI, and awareness of people's control over conversations. Notably, generative AI's homogeneous use of personalised, positive, and persuasive language appears to promote some of these trust-building factors. However, this also seems to discourage other trust-related behaviours, such as remembering that generative AI is a machine trained to converse in human language. We present implications for future research that are likely to become critical as the use of generative AI for emotional support increasingly overlaps with therapeutic work.",
+      "url": "https://arxiv.org/pdf/2601.16656v1",
+      "date": "2026-01-23T11:19:41+00:00"
+    },
+    {
+      "id": "auth_riccardo_volpato",
+      "name": "Riccardo Volpato",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_simone_stumpf",
+      "name": "Simone Stumpf",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_lisa_debruine",
+      "name": "Lisa DeBruine",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_chats_ai",
+      "name": "chats ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_emotional",
+      "name": "ai emotional",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_users_generative",
+      "name": "users generative",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_trust_context",
+      "name": "trust context",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.16627v1",
+      "name": "SCHIGAND: A Synthetic Facial Generation Mode Pipeline",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The growing demand for diverse and high-quality facial datasets for training and testing biometric systems is challenged by privacy regulations, data scarcity, and ethical concerns. Synthetic facial images offer a potential solution, yet existing generative models often struggle to balance realism, diversity, and identity preservation. This paper presents SCHIGAND, a novel synthetic face generation pipeline integrating StyleCLIP, HyperStyle, InterfaceGAN, and Diffusion models to produce highly realistic and controllable facial datasets. SCHIGAND enhances identity preservation while generating realistic intra-class variations and maintaining inter-class distinctiveness, making it suitable for biometric testing. The generated datasets were evaluated using ArcFace, a leading facial verification model, to assess their effectiveness in comparison to real-world facial datasets. Experimental results demonstrate that SCHIGAND achieves a balance between image quality and diversity, addressing key limitations of prior generative models. This research highlights the potential of SCHIGAND to supplement and, in some cases, replace real data for facial biometric applications, paving the way for privacy-compliant and scalable solutions in synthetic dataset generation.",
+      "url": "https://arxiv.org/pdf/2601.16627v1",
+      "date": "2026-01-23T10:30:58+00:00"
+    },
+    {
+      "id": "auth_ananya_kadali",
+      "name": "Ananya Kadali",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sunnie_jehan_morrison",
+      "name": "Sunnie Jehan-Morrison",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_orasiki_wellington",
+      "name": "Orasiki Wellington",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_barney_evans",
+      "name": "Barney Evans",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_precious_durojaiye",
+      "name": "Precious Durojaiye",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_richard_guest",
+      "name": "Richard Guest",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_face_generation",
+      "name": "face generation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_facial_datasets",
+      "name": "facial datasets",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_facial_verification",
+      "name": "facial verification",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_facial_biometric",
+      "name": "facial biometric",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_synthetic_face",
+      "name": "synthetic face",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.16513v1",
+      "name": "Competing Visions of Ethical AI: A Case Study of OpenAI",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Introduction. AI Ethics is framed distinctly across actors and stakeholder groups. We report results from a case study of OpenAI analysing ethical AI discourse. Method. Research addressed: How has OpenAI's public discourse leveraged 'ethics', 'safety', 'alignment' and adjacent related concepts over time, and what does discourse signal about framing in practice? A structured corpus, differentiating between communication for a general audience and communication with an academic audience, was assembled from public documentation. Analysis. Qualitative content analysis of ethical themes combined inductively derived and deductively applied codes. Quantitative analysis leveraged computational content analysis methods via NLP to model topics and quantify changes in rhetoric over time. Visualizations report aggregate results. For reproducible results, we have released our code at https://github.com/famous-blue-raincoat/AI_Ethics_Discourse. Results. Results indicate that safety and risk discourse dominate OpenAI's public communication and documentation, without applying academic and advocacy ethics frameworks or vocabularies. Conclusions. Implications for governance are presented, along with discussion of ethics-washing practices in industry.",
+      "url": "https://arxiv.org/pdf/2601.16513v1",
+      "date": "2026-01-23T07:26:45+00:00"
+    },
+    {
+      "id": "auth_melissa_wilfley",
+      "name": "Melissa Wilfley",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mengting_ai",
+      "name": "Mengting Ai",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_madelyn_rose_sanfilippo",
+      "name": "Madelyn Rose Sanfilippo",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_ai_ethics_discourse",
+      "name": "ai_ethics_discourse",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_ethics_discourse_results",
+      "name": "ai_ethics_discourse results",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_discussion_ethics",
+      "name": "discussion ethics",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_analysing_ethical",
+      "name": "analysing ethical",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_raincoat_ai_ethics_discourse",
+      "name": "raincoat ai_ethics_discourse",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -9957,6 +10380,311 @@
     {
       "source": "2601.14506v1",
       "target": "topic_discrimination_systematically",
+      "value": 2
+    },
+    {
+      "source": "2601.16930v1",
+      "target": "auth_javed_i_khan",
+      "value": 5
+    },
+    {
+      "source": "2601.16930v1",
+      "target": "auth_sharmila_rahman_prithula",
+      "value": 5
+    },
+    {
+      "source": "2601.16930v1",
+      "target": "topic_cybersecurity_ethics",
+      "value": 2
+    },
+    {
+      "source": "2601.16930v1",
+      "target": "topic_harms_concept",
+      "value": 2
+    },
+    {
+      "source": "2601.16930v1",
+      "target": "topic_harm_attributes",
+      "value": 2
+    },
+    {
+      "source": "2601.16930v1",
+      "target": "topic_harm_invoked",
+      "value": 2
+    },
+    {
+      "source": "2601.16930v1",
+      "target": "topic_ethical_severity",
+      "value": 2
+    },
+    {
+      "source": "2601.16926v1",
+      "target": "auth_shashank_prakash",
+      "value": 5
+    },
+    {
+      "source": "2601.16926v1",
+      "target": "auth_ranjitha_prasad",
+      "value": 5
+    },
+    {
+      "source": "2601.16926v1",
+      "target": "auth_avinash_agarwal",
+      "value": 5
+    },
+    {
+      "source": "2601.16926v1",
+      "target": "topic_fairness_assessment",
+      "value": 2
+    },
+    {
+      "source": "2601.16926v1",
+      "target": "topic_fairness_evaluation",
+      "value": 2
+    },
+    {
+      "source": "2601.16926v1",
+      "target": "topic_ai_fairness",
+      "value": 2
+    },
+    {
+      "source": "2601.16926v1",
+      "target": "topic_quantitative_fairness",
+      "value": 2
+    },
+    {
+      "source": "2601.16926v1",
+      "target": "topic_fairness_scores",
+      "value": 2
+    },
+    {
+      "source": "2601.16824v1",
+      "target": "auth_rongjun_ma",
+      "value": 5
+    },
+    {
+      "source": "2601.16824v1",
+      "target": "auth_shijing_he",
+      "value": 5
+    },
+    {
+      "source": "2601.16824v1",
+      "target": "auth_jose_luis_martin_navarro",
+      "value": 5
+    },
+    {
+      "source": "2601.16824v1",
+      "target": "auth_xiao_zhan",
+      "value": 5
+    },
+    {
+      "source": "2601.16824v1",
+      "target": "auth_jose_such",
+      "value": 5
+    },
+    {
+      "source": "2601.16824v1",
+      "target": "topic_experiences_privacy",
+      "value": 2
+    },
+    {
+      "source": "2601.16824v1",
+      "target": "topic_ai_intimacy",
+      "value": 2
+    },
+    {
+      "source": "2601.16824v1",
+      "target": "topic_negotiating_privacy",
+      "value": 2
+    },
+    {
+      "source": "2601.16824v1",
+      "target": "topic_privacy_boundaries",
+      "value": 2
+    },
+    {
+      "source": "2601.16824v1",
+      "target": "topic_privacy_perceptions",
+      "value": 2
+    },
+    {
+      "source": "2601.16752v1",
+      "target": "auth_lin_kyi",
+      "value": 5
+    },
+    {
+      "source": "2601.16752v1",
+      "target": "auth_paul_gölz",
+      "value": 5
+    },
+    {
+      "source": "2601.16752v1",
+      "target": "auth_robin_berjon",
+      "value": 5
+    },
+    {
+      "source": "2601.16752v1",
+      "target": "auth_asia_biega",
+      "value": 5
+    },
+    {
+      "source": "2601.16752v1",
+      "target": "topic_collective_consent",
+      "value": 2
+    },
+    {
+      "source": "2601.16752v1",
+      "target": "topic_consent_assemblies",
+      "value": 2
+    },
+    {
+      "source": "2601.16752v1",
+      "target": "topic_consent_explores",
+      "value": 2
+    },
+    {
+      "source": "2601.16752v1",
+      "target": "topic_collecting_consent",
+      "value": 2
+    },
+    {
+      "source": "2601.16752v1",
+      "target": "topic_consent_users",
+      "value": 2
+    },
+    {
+      "source": "2601.16656v1",
+      "target": "auth_riccardo_volpato",
+      "value": 5
+    },
+    {
+      "source": "2601.16656v1",
+      "target": "auth_simone_stumpf",
+      "value": 5
+    },
+    {
+      "source": "2601.16656v1",
+      "target": "auth_lisa_debruine",
+      "value": 5
+    },
+    {
+      "source": "2601.16656v1",
+      "target": "topic_chats_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.16656v1",
+      "target": "topic_ai_emotional",
+      "value": 2
+    },
+    {
+      "source": "2601.16656v1",
+      "target": "topic_users_generative",
+      "value": 2
+    },
+    {
+      "source": "2601.16656v1",
+      "target": "topic_generative_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.16656v1",
+      "target": "topic_trust_context",
+      "value": 2
+    },
+    {
+      "source": "2601.16627v1",
+      "target": "auth_ananya_kadali",
+      "value": 5
+    },
+    {
+      "source": "2601.16627v1",
+      "target": "auth_sunnie_jehan_morrison",
+      "value": 5
+    },
+    {
+      "source": "2601.16627v1",
+      "target": "auth_orasiki_wellington",
+      "value": 5
+    },
+    {
+      "source": "2601.16627v1",
+      "target": "auth_barney_evans",
+      "value": 5
+    },
+    {
+      "source": "2601.16627v1",
+      "target": "auth_precious_durojaiye",
+      "value": 5
+    },
+    {
+      "source": "2601.16627v1",
+      "target": "auth_richard_guest",
+      "value": 5
+    },
+    {
+      "source": "2601.16627v1",
+      "target": "topic_face_generation",
+      "value": 2
+    },
+    {
+      "source": "2601.16627v1",
+      "target": "topic_facial_datasets",
+      "value": 2
+    },
+    {
+      "source": "2601.16627v1",
+      "target": "topic_facial_verification",
+      "value": 2
+    },
+    {
+      "source": "2601.16627v1",
+      "target": "topic_facial_biometric",
+      "value": 2
+    },
+    {
+      "source": "2601.16627v1",
+      "target": "topic_synthetic_face",
+      "value": 2
+    },
+    {
+      "source": "2601.16513v1",
+      "target": "auth_melissa_wilfley",
+      "value": 5
+    },
+    {
+      "source": "2601.16513v1",
+      "target": "auth_mengting_ai",
+      "value": 5
+    },
+    {
+      "source": "2601.16513v1",
+      "target": "auth_madelyn_rose_sanfilippo",
+      "value": 5
+    },
+    {
+      "source": "2601.16513v1",
+      "target": "topic_ai_ethics_discourse",
+      "value": 2
+    },
+    {
+      "source": "2601.16513v1",
+      "target": "topic_ai_ethics_discourse_results",
+      "value": 2
+    },
+    {
+      "source": "2601.16513v1",
+      "target": "topic_discussion_ethics",
+      "value": 2
+    },
+    {
+      "source": "2601.16513v1",
+      "target": "topic_analysing_ethical",
+      "value": 2
+    },
+    {
+      "source": "2601.16513v1",
+      "target": "topic_raincoat_ai_ethics_discourse",
       "value": 2
     }
   ]
