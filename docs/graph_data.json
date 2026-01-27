@@ -6104,6 +6104,726 @@
       "name": "raincoat ai_ethics_discourse",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.18654v1",
+      "name": "When Is Self-Disclosure Optimal? Incentives and Governance of AI-Generated Content",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Generative artificial intelligence (Gen-AI) is reshaping content creation on digital platforms by reducing production costs and enabling scalable output of varying quality. In response, platforms have begun adopting disclosure policies that require creators to label AI-generated content, often supported by imperfect detection and penalties for non-compliance. This paper develops a formal model to study the economic implications of such disclosure regimes. We compare a non-disclosure benchmark, in which the platform alone detects AI usage, with a mandatory self-disclosure regime in which creators strategically choose whether to disclose or conceal AI use under imperfect enforcement. The model incorporates heterogeneous creators, viewer discounting of AI-labeled content, trust penalties following detected non-disclosure, and endogenous enforcement. The analysis shows that disclosure is optimal only when both the value of AI-generated content and its cost-saving advantage are intermediate. As AI capability improves, the platform's optimal enforcement strategy evolves from strict deterrence to partial screening and eventual deregulation. While disclosure reliably increases transparency, it reduces aggregate creator surplus and can suppress high-quality AI content when AI is technologically advanced. Overall, the results characterize disclosure as a strategic governance instrument whose effectiveness depends on technological maturity and trust frictions.",
+      "url": "https://arxiv.org/pdf/2601.18654v1",
+      "date": "2026-01-26T16:31:04+00:00"
+    },
+    {
+      "id": "auth_juan_wu",
+      "name": "Juan Wu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_zhe",
+      "name": "Zhe",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_zhang",
+      "name": "Zhang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_amit_mehra",
+      "name": "Amit Mehra",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_disclosure_regimes",
+      "name": "disclosure regimes",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_disclosure_optimal",
+      "name": "disclosure optimal",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_disclosure_regime",
+      "name": "disclosure regime",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_disclosure_policies",
+      "name": "disclosure policies",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_characterize_disclosure",
+      "name": "characterize disclosure",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.18641v1",
+      "name": "Unheard in the Digital Age: Rethinking AI Bias and Speech Diversity",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Speech remains one of the most visible yet overlooked vectors of inclusion and exclusion in contemporary society. While fluency is often equated with credibility and competence, individuals with atypical speech patterns are routinely marginalized. Given the current state of the debate, this article focuses on the structural biases that shape perceptions of atypical speech and are now being encoded into artificial intelligence. Automated speech recognition (ASR) systems and voice interfaces, trained predominantly on standardized speech, routinely fail to recognize or respond to diverse voices, compounding digital exclusion. As AI technologies increasingly mediate access to opportunity, the study calls for inclusive technological design, anti-bias training to minimize the impact of discriminatory algorithmic decisions, and enforceable policy reform that explicitly recognize speech diversity as a matter of equity, not merely accessibility. Drawing on interdisciplinary research, the article advocates for a cultural and institutional shift in how we value voice, urging co-created solutions that elevate the rights, representation, and realities of atypical speakers in the digital age. Ultimately, the article reframes speech inclusion as a matter of equity (not accommodation) and advocates for co-created AI systems that reflect the full spectrum of human voices.",
+      "url": "https://arxiv.org/pdf/2601.18641v1",
+      "date": "2026-01-26T16:12:25+00:00"
+    },
+    {
+      "id": "auth_onyedikachi_hope_amaechi_okorie",
+      "name": "Onyedikachi Hope Amaechi-Okorie",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_branislav_radeljic",
+      "name": "Branislav Radeljic",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_speech_inclusion",
+      "name": "speech inclusion",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_speech_diversity",
+      "name": "speech diversity",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_voice_interfaces",
+      "name": "voice interfaces",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_automated_speech",
+      "name": "automated speech",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_standardized_speech",
+      "name": "standardized speech",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.18622v1",
+      "name": "Brazilian Social Media Anti-vaccine Information Disorder Dataset -- Telegram (2020-2025)",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Over the past decade, Brazil has experienced a decline in vaccination coverage, reversing decades of public health progress achieved through the National Immunization Program (PNI). Growing evidence points to the widespread circulation of vaccine-related misinformation -- particularly on social media platforms -- as a key factor driving this decline. Among these platforms, Telegram remains the only major platform permitting accessible and ethical data collection, offering insight into public channels where vaccine misinformation circulates extensively. This data paper introduces a curated dataset of about four million Telegram posts collected from 119 prominent Brazilian anti-vaccine channels between 2020 and 2025. The dataset includes message content, metadata, associated media, and classification related to vaccine posts, enabling researchers to examine how false or misleading information spreads, evolves, and influences public sentiment. By providing this resource, our aim is to support the scientific and public health community in developing evidence-based strategies to counter misinformation, promote trust in vaccination, and engage compassionately with individuals and communities affected by false narratives. The dataset and documentation are openly available for non-commercial research, under strict ethical and privacy guidelines at https://doi.org/10.25824/redu/5JIVDT",
+      "url": "https://arxiv.org/pdf/2601.18622v1",
+      "date": "2026-01-26T15:59:28+00:00"
+    },
+    {
+      "id": "auth_joão_phillipe_cardenuto",
+      "name": "João Phillipe Cardenuto",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ana_carolina_monari",
+      "name": "Ana Carolina Monari",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_michelle_diniz_lopes",
+      "name": "Michelle Diniz Lopes",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_leopoldo_lusquino_filho",
+      "name": "Leopoldo Lusquino Filho",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_anderson_rocha",
+      "name": "Anderson Rocha",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_vaccine_misinformation",
+      "name": "vaccine misinformation",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_vaccine_posts",
+      "name": "vaccine posts",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_trust_vaccination",
+      "name": "trust vaccination",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_anti_vaccine",
+      "name": "anti vaccine",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_vaccine_channels",
+      "name": "vaccine channels",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.18462v1",
+      "name": "Rethinking AI in the age of climate collapse: Ethics, power, and responsibility",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The climate crisis requires responses that integrate scientific, ethical, social, and technological perspectives. Artificial intelligence (AI) has emerged as a powerful tool in climate modelling, environmental monitoring, and energy optimisation, yet its growing use also raises critical environmental, ethical, legal, and social questions. This contribution examines the ambivalent role of AI in the ecological crisis, addressing both its promises and its risks. On the one hand, AI supports improvements in climate forecasting, renewable energy management, and real-time detection of environmental degradation. On the other hand, the energy demands of data centres, resource-intensive hardware production, algorithmic bias, corporate concentration of power, and technocratic decision-making reveal contradictions that challenge its sustainability. The discussion explores these issues through interdisciplinary lenses, including environmental ethics, philosophy of technology, and legal governance, and concludes with recommendations for socially just, ecologically responsible, and democratically accountable uses of AI. Rather than assuming AI as an inherently sustainable solution, this analysis argues that its contribution to climate action depends fundamentally on the values, institutions, and power structures that shape its development.",
+      "url": "https://arxiv.org/pdf/2601.18462v1",
+      "date": "2026-01-26T13:11:19+00:00"
+    },
+    {
+      "id": "auth_julio_vega",
+      "name": "Julio Vega",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_ai_ecological",
+      "name": "ai ecological",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_environmental_ethical",
+      "name": "environmental ethical",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_environmental_ethics",
+      "name": "environmental ethics",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_climate_crisis",
+      "name": "climate crisis",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_challenge_sustainability",
+      "name": "challenge sustainability",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.18405v1",
+      "name": "Beyond the Checkbox: Strengthening DSA Compliance Through Social Media Algorithmic Auditing",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Algorithms of online platforms are required under the Digital Services Act (DSA) to comply with specific obligations concerning algorithmic transparency, user protection and privacy. To verify compliance with these requirements, DSA mandates platforms to undergo independent audits. Little is known about current auditing practices and their effectiveness in ensuring such compliance. To this end, we bridge regulatory and technical perspectives by critically examining selected audit reports across three critical algorithmic-related provisions: restrictions on profiling minors, transparency in recommender systems, and limitations on targeted advertising using sensitive data. Our analysis shows significant inconsistencies in methodologies and lack of technical depth when evaluating AI-powered systems. To enhance the depth, scale, and independence of compliance assessments, we propose to employ algorithmic auditing -- a process of behavioural assessment of AI algorithms by means of simulating user behaviour, observing algorithm responses and analysing them for audited phenomena.",
+      "url": "https://arxiv.org/pdf/2601.18405v1",
+      "date": "2026-01-26T12:00:29+00:00"
+    },
+    {
+      "id": "auth_sara_solarova",
+      "name": "Sara Solarova",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_matúš_mesarčík",
+      "name": "Matúš Mesarčík",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_branislav_pecher",
+      "name": "Branislav Pecher",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ivan_srba",
+      "name": "Ivan Srba",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_algorithmic_auditing",
+      "name": "algorithmic auditing",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_analysing_audited",
+      "name": "analysing audited",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_auditing",
+      "name": "auditing",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_auditing_practices",
+      "name": "auditing practices",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_evaluating_ai",
+      "name": "evaluating ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.18275v1",
+      "name": "When Nobody Around Is Real: Exploring Public Opinions and User Experiences On the Multi-Agent AI Social Platform",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Powered by large language models, a new genre of multi-agent social platforms has emerged. Apps such as Social.AI deploy numerous AI agents that emulate human behavior, creating unprecedented bot-centric social networks. Yet, existing research has predominantly focused on one-on-one chatbots, leaving multi-agent AI platforms underexplored. To bridge this gap, we took Social.AI as a case study and performed a two-stage investigation: (i) content analysis of 883 user comments; (ii) a 7-day diary study with 20 participants to document their firsthand platform experiences. While public discourse expressed greater skepticism, the diary study found that users did project a range of social expectations onto the AI agents. While some user expectations were met, the AI-dominant social environment introduces distinct problems, such as attention overload and homogenized interaction. These tensions signal a future where AI functions not merely as a tool or an anthropomorphized actor, but as the dominant medium of sociality itself-a paradigm shift that foregrounds new forms of architected social life.",
+      "url": "https://arxiv.org/pdf/2601.18275v1",
+      "date": "2026-01-26T08:58:51+00:00"
+    },
+    {
+      "id": "auth_qiufang_yu",
+      "name": "Qiufang Yu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_mengmeng_wu",
+      "name": "Mengmeng Wu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_xingyu_lan",
+      "name": "Xingyu Lan",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_social_ai",
+      "name": "social ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_chatbots",
+      "name": "chatbots",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_focused_chatbots",
+      "name": "focused chatbots",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_agent_social",
+      "name": "agent social",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.18234v1",
+      "name": "Generative AI in Saudi Arabia: A National Survey of Adoption, Risks, and Public Perceptions",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Generative Artificial Intelligence (GenAI) is rapidly becoming embedded in Saudi Arabia's digital transformation under Vision 2030, yet public awareness, adoption, and concerns surrounding these tools remain underexplored. This study provides an early snapshot of GenAI engagement among Saudi nationals. Using a nationwide survey of 330 participants across regions, age groups, and employment sectors, we examine seven dimensions of GenAI use: awareness and understanding, adoption patterns, perceived impacts, training needs, risks and barriers, data-sharing behaviors, and future expectations. Findings show that 93% of respondents actively use GenAI primarily for text-based tasks, while more advanced uses such as programming or multimodal generation are less common. Despite the prevalence of use, overall awareness and conceptual understanding remain uneven, with many reporting limited technical knowledge. Participants recognize GenAI's benefits for productivity, work quality, and understanding complex information, yet caution that sustained reliance may undermine critical thinking and key professional skills. Trust in AI-generated outputs remains cautious, with widespread concerns about privacy, misinformation, and ethical misuse, including potential job displacement. Respondents show strong interest in structured GenAI training that combines foundational skills, domain-specific applications, and clear guidance on privacy, ethics, and responsible use. These results establish a baseline for GenAI engagement in Saudi Arabia and highlight priorities for policymakers and developers: expanding AI literacy, ensuring culturally and linguistically aligned GenAI solutions, and strengthening frameworks for privacy and responsible deployment.",
+      "url": "https://arxiv.org/pdf/2601.18234v1",
+      "date": "2026-01-26T07:40:41+00:00"
+    },
+    {
+      "id": "auth_abdulaziz_aldakheel",
+      "name": "Abdulaziz AlDakheel",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ali_alshehre",
+      "name": "Ali Alshehre",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_esraa_alamoudi",
+      "name": "Esraa Alamoudi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_moslim_alkhabbaz",
+      "name": "Moslim AlKhabbaz",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ahmed_aljohani",
+      "name": "Ahmed Aljohani",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_raed_alharbi",
+      "name": "Raed Alharbi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_intelligence_genai",
+      "name": "intelligence genai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_skills_domain",
+      "name": "skills domain",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_generated",
+      "name": "ai generated",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.18156v1",
+      "name": "Beyond Pairwise Comparisons: A Distributional Test of Distinctiveness for Machine-Generated Works in Intellectual Property Law",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Key doctrines, including novelty (patent), originality (copyright), and distinctiveness (trademark), turn on a shared empirical question: whether a body of work is meaningfully distinct from a relevant reference class. Yet analyses typically operationalize this set-level inquiry using item-level evidence: pairwise comparisons among exemplars. That unit-of-analysis mismatch may be manageable for finite corpora of human-created works, where it can be bridged by ad hoc aggregations. But it becomes acute for machine-generated works, where the object of evaluation is not a fixed set of works but a generative process with an effectively unbounded output space. We propose a distributional alternative: a two-sample test based on maximum mean discrepancy computed on semantic embeddings to determine if two creative processes-whether human or machine-produce statistically distinguishable output distributions. The test requires no task-specific training-obviating the need for discovery of proprietary training data to characterize the generative process-and is sample-efficient, often detecting differences with as few as 5-10 images and 7-20 texts. We validate the framework across three domains: handwritten digits (controlled images), patent abstracts (text), and AI-generated art (real-world images). We reveal a perceptual paradox: even when human evaluators distinguish AI outputs from human-created art with only about 58% accuracy, our method detects distributional distinctiveness. Our results present evidence contrary to the view that generative models act as mere regurgitators of training data. Rather than producing outputs statistically indistinguishable from a human baseline-as simple regurgitation would predict-they produce outputs that are semantically human-like yet stochastically distinct, suggesting their dominant function is as a semantic interpolator within a learned latent space.",
+      "url": "https://arxiv.org/pdf/2601.18156v1",
+      "date": "2026-01-26T05:20:33+00:00"
+    },
+    {
+      "id": "auth_anirban_mukherjee",
+      "name": "Anirban Mukherjee",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_hannah_hanwen_chang",
+      "name": "Hannah Hanwen Chang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_works_generative",
+      "name": "works generative",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_including_novelty",
+      "name": "including novelty",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_copyright_distinctiveness",
+      "name": "copyright distinctiveness",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_characterize_generative",
+      "name": "characterize generative",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_generative",
+      "name": "generative",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.18127v1",
+      "name": "The Limits of AI Data Transparency Policy: Three Disclosure Fallacies",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Data transparency has emerged as a rallying cry for addressing concerns about AI: data quality, privacy, and copyright chief among them. Yet while these calls are crucial for accountability, current transparency policies often fall short of their intended aims. Similar to nutrition facts for food, policies aimed at nutrition facts for AI currently suffer from a limited consideration of research on effective disclosures. We offer an institutional perspective and identify three common fallacies in policy implementations of data disclosures for AI. First, many data transparency proposals exhibit a specification gap between the stated goals of data transparency and the actual disclosures necessary to achieve such goals. Second, reform attempts exhibit an enforcement gap between required disclosures on paper and enforcement to ensure compliance in fact. Third, policy proposals manifest an impact gap between disclosed information and meaningful changes in developer practices and public understanding. Informed by the social science on transparency, our analysis identifies affirmative paths for transparency that are effective rather than merely symbolic.",
+      "url": "https://arxiv.org/pdf/2601.18127v1",
+      "date": "2026-01-26T04:14:53+00:00"
+    },
+    {
+      "id": "auth_judy_hanwen_shen",
+      "name": "Judy Hanwen Shen",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ken_liu",
+      "name": "Ken Liu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_angelina_wang",
+      "name": "Angelina Wang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sarah_h_cen",
+      "name": "Sarah H. Cen",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_andy_k_zhang",
+      "name": "Andy K. Zhang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_caroline_meinhardt",
+      "name": "Caroline Meinhardt",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_daniel_zhang",
+      "name": "Daniel Zhang",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kevin_klyman",
+      "name": "Kevin Klyman",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_daniel_e_ho",
+      "name": "Daniel E. Ho",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_data_disclosures",
+      "name": "data disclosures",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_disclosures_ai",
+      "name": "disclosures ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_transparency_policies",
+      "name": "transparency policies",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_data_transparency",
+      "name": "data transparency",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_transparency_proposals",
+      "name": "transparency proposals",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.17966v1",
+      "name": "\"Lighting The Way For Those Not Here\": How Technology Researchers Can Help Fight the Missing and Murdered Indigenous Relatives (MMIR) Crisis",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Indigenous peoples across Turtle Island (North America) face disproportionate rates of disappearance and murder, a \"genocide\" rooted in settler-colonial violence and systemic erasure. Technology plays a crucial role in the Missing and Murdered Indigenous Relatives (MMIR) crisis: perpetuating harm and impeding investigations, yet enabling advocacy and resistance. Communities utilize technologies such as AMBER alerts, news websites, social media groups, and campaigns (like #MMIW, #MMIWR, #NoMoreStolenSisters, and #NoMoreStolenDaughters) to mobilize searches, amplify awareness, and honor missing relatives. Yet, little research in HCI has critically examined technology's role in shaping the MMIR crisis by centering community voices. Through a large-scale study, we analyze 140 webpages to identify systemic, technological, and institutional barriers that hinder communities' efforts, while highlighting socio-technical actions that foster healing and safety. Finally, we amplify Indigenous voices by providing a dataset of stories that resist epistemic erasure, along with recommendations for HCI researchers to support Indigenous-led initiatives with cultural sensitivity, accountability, and self-determination.",
+      "url": "https://arxiv.org/pdf/2601.17966v1",
+      "date": "2026-01-25T19:49:59+00:00"
+    },
+    {
+      "id": "auth_naman_gupta",
+      "name": "Naman Gupta",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_sophie_stephenson",
+      "name": "Sophie Stephenson",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_chung_chi_yeung",
+      "name": "Chung Chi Yeung",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_wei_ting_wu",
+      "name": "Wei Ting Wu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_jeneile_luebke",
+      "name": "Jeneile Luebke",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kate_walsh",
+      "name": "Kate Walsh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_rahul_chatterjee",
+      "name": "Rahul Chatterjee",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_support_indigenous",
+      "name": "support indigenous",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_indigenous_voices",
+      "name": "indigenous voices",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_communities_efforts",
+      "name": "communities efforts",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_murdered_indigenous",
+      "name": "murdered indigenous",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_indigenous_relatives",
+      "name": "indigenous relatives",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.17892v1",
+      "name": "Artificial Intelligence and Intellectual Property Rights: Comparative Transnational Policy Analysis",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Artificial intelligence's rapid integration with intellectual property rights necessitates assessment of its impact on trade secrets, copyrights and patents. This study addresses lacunae in existing laws where India lacks AI-specific provisions, creating doctrinal inconsistencies and enforcement inefficacies. Global discourse on AI-IPR protections remains nascent. The research identifies gaps in Indian IP laws' adaptability to AI-generated outputs: trade secret protection is inadequate against AI threats; standardized inventorship criteria are absent. Employing doctrinal and comparative methodology, it scrutinizes legislative texts, judicial precedents and policy instruments across India, US, UK and EU. Preliminary findings reveal shortcomings: India's contract law creates fragmented trade secret regime; Section 3(k) of Indian Patents Act blocks AI invention patenting; copyright varies in authorship attribution. The study proposes harmonized legal taxonomy accommodating AI's role while preserving innovation incentives. India's National AI Strategy (2024) shows progress but legislative clarity is imperative. This contributes to global discourse with AI-specific IP protections ensuring resilience and equitable innovation. Promising results underscore recalibrating India's IP jurisprudence for global alignment.",
+      "url": "https://arxiv.org/pdf/2601.17892v1",
+      "date": "2026-01-25T16:00:52+00:00"
+    },
+    {
+      "id": "auth_sahibpreet_singh",
+      "name": "Sahibpreet Singh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_manjit_singh",
+      "name": "Manjit Singh",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_indian_patents",
+      "name": "indian patents",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_intellectual_property",
+      "name": "intellectual property",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_laws_india",
+      "name": "laws india",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_patents_study",
+      "name": "patents study",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_patents",
+      "name": "patents",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.17877v1",
+      "name": "Comparative Algorithmic Governance of Public Health Instruments across India, EU, US and LMICs",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The study investigates the juridico-technological architecture of international public health instruments, focusing on their implementation across India, the European Union, the United States and low- and middle-income countries (LMICs), particularly in Sub-Saharan Africa. It addresses a research lacuna: the insufficient harmonisation between normative health law and algorithmic public health infrastructures in resource-constrained jurisdictions. The principal objective is to assess how artificial intelligence augments implementation of instruments grounded in IHR 2005 and the WHO FCTC while identifying doctrinal and infrastructural bottlenecks. Using comparative doctrinal analysis and legal-normative mapping, the study triangulates legislative instruments, WHO monitoring frameworks, AI systems including BlueDot, Aarogya Setu and EIOS, and compliance metrics. Preliminary results show that AI has improved early detection, surveillance precision and responsiveness in high-capacity jurisdictions, whereas LMICs face infrastructural deficits, data privacy gaps and fragmented legal scaffolding. The findings highlight the relevance of the EU Artificial Intelligence Act and GDPR as regulatory prototypes for health-oriented algorithmic governance and contrast them with embryonic AI integration and limited internet penetration in many LMICs. The study argues for embedding AI within a rights-compliant, supranationally coordinated regulatory framework to secure equitable health outcomes and stronger compliance. It proposes a model for algorithmic treaty-making inspired by FCTC architecture and calls for WHO-led compliance mechanisms modelled on the WTO Dispute Settlement Body to enhance pandemic preparedness, surveillance equity and transnational governance resilience.",
+      "url": "https://arxiv.org/pdf/2601.17877v1",
+      "date": "2026-01-25T15:14:18+00:00"
+    },
+    {
+      "id": "topic_algorithmic_governance",
+      "name": "algorithmic governance",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_rights",
+      "name": "ai rights",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_gdpr_regulatory",
+      "name": "gdpr regulatory",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_health_law",
+      "name": "health law",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_act_gdpr",
+      "name": "act gdpr",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -10685,6 +11405,541 @@
     {
       "source": "2601.16513v1",
       "target": "topic_raincoat_ai_ethics_discourse",
+      "value": 2
+    },
+    {
+      "source": "2601.18654v1",
+      "target": "auth_juan_wu",
+      "value": 5
+    },
+    {
+      "source": "2601.18654v1",
+      "target": "auth_zhe",
+      "value": 5
+    },
+    {
+      "source": "2601.18654v1",
+      "target": "auth_zhang",
+      "value": 5
+    },
+    {
+      "source": "2601.18654v1",
+      "target": "auth_amit_mehra",
+      "value": 5
+    },
+    {
+      "source": "2601.18654v1",
+      "target": "topic_disclosure_regimes",
+      "value": 2
+    },
+    {
+      "source": "2601.18654v1",
+      "target": "topic_disclosure_optimal",
+      "value": 2
+    },
+    {
+      "source": "2601.18654v1",
+      "target": "topic_disclosure_regime",
+      "value": 2
+    },
+    {
+      "source": "2601.18654v1",
+      "target": "topic_disclosure_policies",
+      "value": 2
+    },
+    {
+      "source": "2601.18654v1",
+      "target": "topic_characterize_disclosure",
+      "value": 2
+    },
+    {
+      "source": "2601.18641v1",
+      "target": "auth_onyedikachi_hope_amaechi_okorie",
+      "value": 5
+    },
+    {
+      "source": "2601.18641v1",
+      "target": "auth_branislav_radeljic",
+      "value": 5
+    },
+    {
+      "source": "2601.18641v1",
+      "target": "topic_speech_inclusion",
+      "value": 2
+    },
+    {
+      "source": "2601.18641v1",
+      "target": "topic_speech_diversity",
+      "value": 2
+    },
+    {
+      "source": "2601.18641v1",
+      "target": "topic_voice_interfaces",
+      "value": 2
+    },
+    {
+      "source": "2601.18641v1",
+      "target": "topic_automated_speech",
+      "value": 2
+    },
+    {
+      "source": "2601.18641v1",
+      "target": "topic_standardized_speech",
+      "value": 2
+    },
+    {
+      "source": "2601.18622v1",
+      "target": "auth_joão_phillipe_cardenuto",
+      "value": 5
+    },
+    {
+      "source": "2601.18622v1",
+      "target": "auth_ana_carolina_monari",
+      "value": 5
+    },
+    {
+      "source": "2601.18622v1",
+      "target": "auth_michelle_diniz_lopes",
+      "value": 5
+    },
+    {
+      "source": "2601.18622v1",
+      "target": "auth_leopoldo_lusquino_filho",
+      "value": 5
+    },
+    {
+      "source": "2601.18622v1",
+      "target": "auth_anderson_rocha",
+      "value": 5
+    },
+    {
+      "source": "2601.18622v1",
+      "target": "topic_vaccine_misinformation",
+      "value": 2
+    },
+    {
+      "source": "2601.18622v1",
+      "target": "topic_vaccine_posts",
+      "value": 2
+    },
+    {
+      "source": "2601.18622v1",
+      "target": "topic_trust_vaccination",
+      "value": 2
+    },
+    {
+      "source": "2601.18622v1",
+      "target": "topic_anti_vaccine",
+      "value": 2
+    },
+    {
+      "source": "2601.18622v1",
+      "target": "topic_vaccine_channels",
+      "value": 2
+    },
+    {
+      "source": "2601.18462v1",
+      "target": "auth_julio_vega",
+      "value": 5
+    },
+    {
+      "source": "2601.18462v1",
+      "target": "topic_ai_ecological",
+      "value": 2
+    },
+    {
+      "source": "2601.18462v1",
+      "target": "topic_environmental_ethical",
+      "value": 2
+    },
+    {
+      "source": "2601.18462v1",
+      "target": "topic_environmental_ethics",
+      "value": 2
+    },
+    {
+      "source": "2601.18462v1",
+      "target": "topic_climate_crisis",
+      "value": 2
+    },
+    {
+      "source": "2601.18462v1",
+      "target": "topic_challenge_sustainability",
+      "value": 2
+    },
+    {
+      "source": "2601.18405v1",
+      "target": "auth_sara_solarova",
+      "value": 5
+    },
+    {
+      "source": "2601.18405v1",
+      "target": "auth_matúš_mesarčík",
+      "value": 5
+    },
+    {
+      "source": "2601.18405v1",
+      "target": "auth_branislav_pecher",
+      "value": 5
+    },
+    {
+      "source": "2601.18405v1",
+      "target": "auth_ivan_srba",
+      "value": 5
+    },
+    {
+      "source": "2601.18405v1",
+      "target": "topic_algorithmic_auditing",
+      "value": 2
+    },
+    {
+      "source": "2601.18405v1",
+      "target": "topic_analysing_audited",
+      "value": 2
+    },
+    {
+      "source": "2601.18405v1",
+      "target": "topic_auditing",
+      "value": 2
+    },
+    {
+      "source": "2601.18405v1",
+      "target": "topic_auditing_practices",
+      "value": 2
+    },
+    {
+      "source": "2601.18405v1",
+      "target": "topic_evaluating_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.18275v1",
+      "target": "auth_qiufang_yu",
+      "value": 5
+    },
+    {
+      "source": "2601.18275v1",
+      "target": "auth_mengmeng_wu",
+      "value": 5
+    },
+    {
+      "source": "2601.18275v1",
+      "target": "auth_xingyu_lan",
+      "value": 5
+    },
+    {
+      "source": "2601.18275v1",
+      "target": "topic_social_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.18275v1",
+      "target": "topic_chatbots",
+      "value": 2
+    },
+    {
+      "source": "2601.18275v1",
+      "target": "topic_focused_chatbots",
+      "value": 2
+    },
+    {
+      "source": "2601.18275v1",
+      "target": "topic_agent_social",
+      "value": 2
+    },
+    {
+      "source": "2601.18275v1",
+      "target": "topic_ai_agents",
+      "value": 2
+    },
+    {
+      "source": "2601.18234v1",
+      "target": "auth_abdulaziz_aldakheel",
+      "value": 5
+    },
+    {
+      "source": "2601.18234v1",
+      "target": "auth_ali_alshehre",
+      "value": 5
+    },
+    {
+      "source": "2601.18234v1",
+      "target": "auth_esraa_alamoudi",
+      "value": 5
+    },
+    {
+      "source": "2601.18234v1",
+      "target": "auth_moslim_alkhabbaz",
+      "value": 5
+    },
+    {
+      "source": "2601.18234v1",
+      "target": "auth_ahmed_aljohani",
+      "value": 5
+    },
+    {
+      "source": "2601.18234v1",
+      "target": "auth_raed_alharbi",
+      "value": 5
+    },
+    {
+      "source": "2601.18234v1",
+      "target": "topic_intelligence_genai",
+      "value": 2
+    },
+    {
+      "source": "2601.18234v1",
+      "target": "topic_ai_literacy",
+      "value": 2
+    },
+    {
+      "source": "2601.18234v1",
+      "target": "topic_skills_domain",
+      "value": 2
+    },
+    {
+      "source": "2601.18234v1",
+      "target": "topic_trust_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.18234v1",
+      "target": "topic_ai_generated",
+      "value": 2
+    },
+    {
+      "source": "2601.18156v1",
+      "target": "auth_anirban_mukherjee",
+      "value": 5
+    },
+    {
+      "source": "2601.18156v1",
+      "target": "auth_hannah_hanwen_chang",
+      "value": 5
+    },
+    {
+      "source": "2601.18156v1",
+      "target": "topic_works_generative",
+      "value": 2
+    },
+    {
+      "source": "2601.18156v1",
+      "target": "topic_including_novelty",
+      "value": 2
+    },
+    {
+      "source": "2601.18156v1",
+      "target": "topic_copyright_distinctiveness",
+      "value": 2
+    },
+    {
+      "source": "2601.18156v1",
+      "target": "topic_characterize_generative",
+      "value": 2
+    },
+    {
+      "source": "2601.18156v1",
+      "target": "topic_generative",
+      "value": 2
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "auth_judy_hanwen_shen",
+      "value": 5
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "auth_ken_liu",
+      "value": 5
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "auth_angelina_wang",
+      "value": 5
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "auth_sarah_h_cen",
+      "value": 5
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "auth_andy_k_zhang",
+      "value": 5
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "auth_caroline_meinhardt",
+      "value": 5
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "auth_daniel_zhang",
+      "value": 5
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "auth_kevin_klyman",
+      "value": 5
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "auth_rishi_bommasani",
+      "value": 5
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "auth_daniel_e_ho",
+      "value": 5
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "topic_data_disclosures",
+      "value": 2
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "topic_disclosures_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "topic_transparency_policies",
+      "value": 2
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "topic_data_transparency",
+      "value": 2
+    },
+    {
+      "source": "2601.18127v1",
+      "target": "topic_transparency_proposals",
+      "value": 2
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "auth_naman_gupta",
+      "value": 5
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "auth_sophie_stephenson",
+      "value": 5
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "auth_chung_chi_yeung",
+      "value": 5
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "auth_wei_ting_wu",
+      "value": 5
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "auth_jeneile_luebke",
+      "value": 5
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "auth_kate_walsh",
+      "value": 5
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "auth_rahul_chatterjee",
+      "value": 5
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "topic_support_indigenous",
+      "value": 2
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "topic_indigenous_voices",
+      "value": 2
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "topic_communities_efforts",
+      "value": 2
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "topic_murdered_indigenous",
+      "value": 2
+    },
+    {
+      "source": "2601.17966v1",
+      "target": "topic_indigenous_relatives",
+      "value": 2
+    },
+    {
+      "source": "2601.17892v1",
+      "target": "auth_sahibpreet_singh",
+      "value": 5
+    },
+    {
+      "source": "2601.17892v1",
+      "target": "auth_manjit_singh",
+      "value": 5
+    },
+    {
+      "source": "2601.17892v1",
+      "target": "topic_indian_patents",
+      "value": 2
+    },
+    {
+      "source": "2601.17892v1",
+      "target": "topic_intellectual_property",
+      "value": 2
+    },
+    {
+      "source": "2601.17892v1",
+      "target": "topic_laws_india",
+      "value": 2
+    },
+    {
+      "source": "2601.17892v1",
+      "target": "topic_patents_study",
+      "value": 2
+    },
+    {
+      "source": "2601.17892v1",
+      "target": "topic_patents",
+      "value": 2
+    },
+    {
+      "source": "2601.17877v1",
+      "target": "auth_sahibpreet_singh",
+      "value": 5
+    },
+    {
+      "source": "2601.17877v1",
+      "target": "topic_algorithmic_governance",
+      "value": 2
+    },
+    {
+      "source": "2601.17877v1",
+      "target": "topic_ai_rights",
+      "value": 2
+    },
+    {
+      "source": "2601.17877v1",
+      "target": "topic_gdpr_regulatory",
+      "value": 2
+    },
+    {
+      "source": "2601.17877v1",
+      "target": "topic_health_law",
+      "value": 2
+    },
+    {
+      "source": "2601.17877v1",
+      "target": "topic_act_gdpr",
       "value": 2
     }
   ]
