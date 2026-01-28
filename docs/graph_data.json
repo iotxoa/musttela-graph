@@ -6824,6 +6824,222 @@
       "name": "act gdpr",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.19886v1",
+      "name": "AI Cap-and-Trade: Efficiency Incentives for Accessibility and Sustainability",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The race for artificial intelligence (AI) dominance often prioritizes scale over efficiency. Hyper-scaling is the common industry approach: larger models, more data, and as many computational resources as possible. Using more resources is a simpler path to improved AI performance. Thus, efficiency has been de-emphasized. Consequently, the need for costly computational resources has marginalized academics and smaller companies. Simultaneously, increased energy expenditure, due to growing AI use, has led to mounting environmental costs. In response to accessibility and sustainability concerns, we argue for research into, and implementation of, market-based methods that incentivize AI efficiency. We believe that incentivizing efficient operations and approaches will reduce emissions while opening new opportunities for academics and smaller companies. As a call to action, we propose a cap-and-trade system for AI. Our system provably reduces computations for AI deployment, thereby lowering emissions and monetizing efficiency to the benefit of of academics and smaller companies.",
+      "url": "https://arxiv.org/pdf/2601.19886v1",
+      "date": "2026-01-27T18:53:21+00:00"
+    },
+    {
+      "id": "auth_marco_bornstein",
+      "name": "Marco Bornstein",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_amrit_singh_bedi",
+      "name": "Amrit Singh Bedi",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_incentivize_ai",
+      "name": "incentivize ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_incentivizing_efficient",
+      "name": "incentivizing efficient",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_efficiency",
+      "name": "ai efficiency",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_trade_ai",
+      "name": "trade ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_monetizing_efficiency",
+      "name": "monetizing efficiency",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.19778v1",
+      "name": "Reimagining Peer Review Process Through Multi-Agent Mechanism Design",
+      "group": "paper",
+      "val": 30,
+      "abstract": "The software engineering research community faces a systemic crisis: peer review is failing under growing submissions, misaligned incentives, and reviewer fatigue. Community surveys reveal that researchers perceive the process as \"broken.\" This position paper argues that these dysfunctions are mechanism design failures amenable to computational solutions. We propose modeling the research community as a stochastic multi-agent system and applying multi-agent reinforcement learning to design incentive-compatible protocols. We outline three interventions: a credit-based submission economy, MARL-optimized reviewer assignment, and hybrid verification of review consistency. We present threat models, equity considerations, and phased pilot metrics. This vision charts a research agenda toward sustainable peer review.",
+      "url": "https://arxiv.org/pdf/2601.19778v1",
+      "date": "2026-01-27T16:43:11+00:00"
+    },
+    {
+      "id": "auth_ahmad_farooq",
+      "name": "Ahmad Farooq",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kamran_iqbal",
+      "name": "Kamran Iqbal",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_incentives_reviewer",
+      "name": "incentives reviewer",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_optimized_reviewer",
+      "name": "optimized reviewer",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_review_consistency",
+      "name": "review consistency",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_reviewer_assignment",
+      "name": "reviewer assignment",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.19376v1",
+      "name": "Teaching Machine Learning Fundamentals with LEGO Robotics",
+      "group": "paper",
+      "val": 30,
+      "abstract": "This paper presents the web-based platform Machine Learning with Bricks and an accompanying two-day course designed to teach machine learning concepts to students aged 12 to 17 through programming-free robotics activities. Machine Learning with Bricks is an open source platform and combines interactive visualizations with LEGO robotics to teach three core algorithms: KNN, linear regression, and Q-learning. Students learn by collecting data, training models, and interacting with robots via a web-based interface. Pre- and post-surveys with 14 students demonstrate significant improvements in conceptual understanding of machine learning algorithms, positive shifts in AI perception, high platform usability, and increased motivation for continued learning. This work demonstrates that tangible, visualization-based approaches can make machine learning concepts accessible and engaging for young learners while maintaining technical depth. The platform is freely available at https://learning-and-dynamics.github.io/ml-with-bricks/, with video tutorials guiding students through the experiments at https://youtube.com/playlist?list=PLx1grFu4zAcwfKKJZ1Ux4LwRqaePCOA2J.",
+      "url": "https://arxiv.org/pdf/2601.19376v1",
+      "date": "2026-01-27T08:59:57+00:00"
+    },
+    {
+      "id": "auth_viacheslav_sydora",
+      "name": "Viacheslav Sydora",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_guner_dilsad_er",
+      "name": "Guner Dilsad Er",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_michael_muehlebach",
+      "name": "Michael Muehlebach",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_teach_machine",
+      "name": "teach machine",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_learning_bricks",
+      "name": "learning bricks",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_robots_web",
+      "name": "robots web",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_robotics_teach",
+      "name": "robotics teach",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_learning_concepts",
+      "name": "learning concepts",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.19062v1",
+      "name": "Who's in Charge? Disempowerment Patterns in Real-World LLM Usage",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Although AI assistants are now deeply embedded in society, there has been limited empirical study of how their usage affects human empowerment. We present the first large-scale empirical analysis of disempowerment patterns in real-world AI assistant interactions, analyzing 1.5 million consumer Claude.ai conversations using a privacy-preserving approach. We focus on situational disempowerment potential, which occurs when AI assistant interactions risk leading users to form distorted perceptions of reality, make inauthentic value judgments, or act in ways misaligned with their values. Quantitatively, we find that severe forms of disempowerment potential occur in fewer than one in a thousand conversations, though rates are substantially higher in personal domains like relationships and lifestyle. Qualitatively, we uncover several concerning patterns, such as validation of persecution narratives and grandiose identities with emphatic sycophantic language, definitive moral judgments about third parties, and complete scripting of value-laden personal communications that users appear to implement verbatim. Analysis of historical trends reveals an increase in the prevalence of disempowerment potential over time. We also find that interactions with greater disempowerment potential receive higher user approval ratings, possibly suggesting a tension between short-term user preferences and long-term human empowerment. Our findings highlight the need for AI systems designed to robustly support human autonomy and flourishing.",
+      "url": "https://arxiv.org/pdf/2601.19062v1",
+      "date": "2026-01-27T00:55:11+00:00"
+    },
+    {
+      "id": "auth_mrinank_sharma",
+      "name": "Mrinank Sharma",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_miles_mccain",
+      "name": "Miles McCain",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_raymond_douglas",
+      "name": "Raymond Douglas",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_david_duvenaud",
+      "name": "David Duvenaud",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_ai_conversations",
+      "name": "ai conversations",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_conversations_using",
+      "name": "conversations using",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_conversations",
+      "name": "conversations",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_ai_assistants",
+      "name": "ai assistants",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_assistant_interactions",
+      "name": "assistant interactions",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -11940,6 +12156,161 @@
     {
       "source": "2601.17877v1",
       "target": "topic_act_gdpr",
+      "value": 2
+    },
+    {
+      "source": "2601.19886v1",
+      "target": "auth_marco_bornstein",
+      "value": 5
+    },
+    {
+      "source": "2601.19886v1",
+      "target": "auth_amrit_singh_bedi",
+      "value": 5
+    },
+    {
+      "source": "2601.19886v1",
+      "target": "topic_incentivize_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.19886v1",
+      "target": "topic_incentivizing_efficient",
+      "value": 2
+    },
+    {
+      "source": "2601.19886v1",
+      "target": "topic_ai_efficiency",
+      "value": 2
+    },
+    {
+      "source": "2601.19886v1",
+      "target": "topic_trade_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.19886v1",
+      "target": "topic_monetizing_efficiency",
+      "value": 2
+    },
+    {
+      "source": "2601.19778v1",
+      "target": "auth_ahmad_farooq",
+      "value": 5
+    },
+    {
+      "source": "2601.19778v1",
+      "target": "auth_kamran_iqbal",
+      "value": 5
+    },
+    {
+      "source": "2601.19778v1",
+      "target": "topic_peer_review",
+      "value": 2
+    },
+    {
+      "source": "2601.19778v1",
+      "target": "topic_incentives_reviewer",
+      "value": 2
+    },
+    {
+      "source": "2601.19778v1",
+      "target": "topic_optimized_reviewer",
+      "value": 2
+    },
+    {
+      "source": "2601.19778v1",
+      "target": "topic_review_consistency",
+      "value": 2
+    },
+    {
+      "source": "2601.19778v1",
+      "target": "topic_reviewer_assignment",
+      "value": 2
+    },
+    {
+      "source": "2601.19376v1",
+      "target": "auth_viacheslav_sydora",
+      "value": 5
+    },
+    {
+      "source": "2601.19376v1",
+      "target": "auth_guner_dilsad_er",
+      "value": 5
+    },
+    {
+      "source": "2601.19376v1",
+      "target": "auth_michael_muehlebach",
+      "value": 5
+    },
+    {
+      "source": "2601.19376v1",
+      "target": "topic_teach_machine",
+      "value": 2
+    },
+    {
+      "source": "2601.19376v1",
+      "target": "topic_learning_bricks",
+      "value": 2
+    },
+    {
+      "source": "2601.19376v1",
+      "target": "topic_robots_web",
+      "value": 2
+    },
+    {
+      "source": "2601.19376v1",
+      "target": "topic_robotics_teach",
+      "value": 2
+    },
+    {
+      "source": "2601.19376v1",
+      "target": "topic_learning_concepts",
+      "value": 2
+    },
+    {
+      "source": "2601.19062v1",
+      "target": "auth_mrinank_sharma",
+      "value": 5
+    },
+    {
+      "source": "2601.19062v1",
+      "target": "auth_miles_mccain",
+      "value": 5
+    },
+    {
+      "source": "2601.19062v1",
+      "target": "auth_raymond_douglas",
+      "value": 5
+    },
+    {
+      "source": "2601.19062v1",
+      "target": "auth_david_duvenaud",
+      "value": 5
+    },
+    {
+      "source": "2601.19062v1",
+      "target": "topic_ai_conversations",
+      "value": 2
+    },
+    {
+      "source": "2601.19062v1",
+      "target": "topic_conversations_using",
+      "value": 2
+    },
+    {
+      "source": "2601.19062v1",
+      "target": "topic_conversations",
+      "value": 2
+    },
+    {
+      "source": "2601.19062v1",
+      "target": "topic_ai_assistants",
+      "value": 2
+    },
+    {
+      "source": "2601.19062v1",
+      "target": "topic_assistant_interactions",
       "value": 2
     }
   ]
