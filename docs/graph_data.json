@@ -7040,6 +7040,171 @@
       "name": "assistant interactions",
       "group": "topic",
       "val": 10
+    },
+    {
+      "id": "2601.20245v1",
+      "name": "How AI Impacts Skill Formation",
+      "group": "paper",
+      "val": 30,
+      "abstract": "AI assistance produces significant productivity gains across professional domains, particularly for novice workers. Yet how this assistance affects the development of skills required to effectively supervise AI remains unclear. Novice workers who rely heavily on AI to complete unfamiliar tasks may compromise their own skill acquisition in the process. We conduct randomized experiments to study how developers gained mastery of a new asynchronous programming library with and without the assistance of AI. We find that AI use impairs conceptual understanding, code reading, and debugging abilities, without delivering significant efficiency gains on average. Participants who fully delegated coding tasks showed some productivity improvements, but at the cost of learning the library. We identify six distinct AI interaction patterns, three of which involve cognitive engagement and preserve learning outcomes even when participants receive AI assistance. Our findings suggest that AI-enhanced productivity is not a shortcut to competence and AI assistance should be carefully adopted into workflows to preserve skill formation -- particularly in safety-critical domains.",
+      "url": "https://arxiv.org/pdf/2601.20245v1",
+      "date": "2026-01-28T04:40:43+00:00"
+    },
+    {
+      "id": "auth_alex_tamkin",
+      "name": "Alex Tamkin",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_supervise_ai",
+      "name": "supervise ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_particularly_novice",
+      "name": "particularly novice",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_skill_acquisition",
+      "name": "skill acquisition",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_suggest_ai",
+      "name": "suggest ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_assistance_ai",
+      "name": "assistance ai",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.20100v1",
+      "name": "Taming Toxic Talk: Using chatbots to intervene with users posting toxic comments",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Generative AI chatbots have proven surprisingly effective at persuading people to change their beliefs and attitudes in lab settings. However, the practical implications of these findings are not yet clear. In this work, we explore the impact of rehabilitative conversations with generative AI chatbots on users who share toxic content online. Toxic behaviors -- like insults or threats of violence, are widespread in online communities. Strategies to deal with toxic behavior are typically punitive, such as removing content or banning users. Rehabilitative approaches are rarely attempted, in part due to the emotional and psychological cost of engaging with aggressive users. In collaboration with seven large Reddit communities, we conducted a large-scale field experiment (N=893) to invite people who had recently posted toxic content to participate in conversations with AI chatbots. A qualitative analysis of the conversations shows that many participants engaged in good faith and even expressed remorse or a desire to change. However, we did not observe a significant change in toxic behavior in the following month compared to a control group. We discuss possible explanations for our findings, as well as theoretical and practical implications based on our results.",
+      "url": "https://arxiv.org/pdf/2601.20100v1",
+      "date": "2026-01-27T22:39:23+00:00"
+    },
+    {
+      "id": "auth_jeremy_foote",
+      "name": "Jeremy Foote",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_deepak_kumar",
+      "name": "Deepak Kumar",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_bedadyuti_jha",
+      "name": "Bedadyuti Jha",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_ryan_funkhouser",
+      "name": "Ryan Funkhouser",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_loizos_bitsikokos",
+      "name": "Loizos Bitsikokos",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_hitesh_goel",
+      "name": "Hitesh Goel",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_hsuen_chi_chiu",
+      "name": "Hsuen-Chi Chiu",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_chatbots_users",
+      "name": "chatbots users",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_chatbots_qualitative",
+      "name": "chatbots qualitative",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_chatbots_proven",
+      "name": "chatbots proven",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "2601.20099v1",
+      "name": "Dynamics of Human-AI Collective Knowledge on the Web: A Scalable Model and Insights for Sustainable Growth",
+      "group": "paper",
+      "val": 30,
+      "abstract": "Humans and large language models (LLMs) now co-produce and co-consume the web's shared knowledge archives. Such human-AI collective knowledge ecosystems contain feedback loops with both benefits (e.g., faster growth, easier learning) and systemic risks (e.g., quality dilution, skill reduction, model collapse). To understand such phenomena, we propose a minimal, interpretable dynamical model of the co-evolution of archive size, archive quality, model (LLM) skill, aggregate human skill, and query volume. The model captures two content inflows (human, LLM) controlled by a gate on LLM-content admissions, two learning pathways for humans (archive study vs. LLM assistance), and two LLM-training modalities (corpus-driven scaling vs. learning from human feedback). Through numerical experiments, we identify different growth regimes (e.g., healthy growth, inverted flow, inverted learning, oscillations), and show how platform and policy levers (gate strictness, LLM training, human learning pathways) shift the system across regime boundaries. Two domain configurations (PubMed, GitHub and Copilot) illustrate contrasting steady states under different growth rates and moderation norms. We also fit the model to Wikipedia's knowledge flow during pre-ChatGPT and post-ChatGPT eras separately. We find a rise in LLM additions with a concurrent decline in human inflow, consistent with a regime identified by the model. Our model and analysis yield actionable insights for sustainable growth of human-AI collective knowledge on the Web.",
+      "url": "https://arxiv.org/pdf/2601.20099v1",
+      "date": "2026-01-27T22:36:52+00:00"
+    },
+    {
+      "id": "auth_buddhika_nettasinghe",
+      "name": "Buddhika Nettasinghe",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "auth_kang_zhao",
+      "name": "Kang Zhao",
+      "group": "author",
+      "val": 15
+    },
+    {
+      "id": "topic_knowledge_flow",
+      "name": "knowledge flow",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_knowledge_archives",
+      "name": "knowledge archives",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_knowledge_ecosystems",
+      "name": "knowledge ecosystems",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_human_learning",
+      "name": "human learning",
+      "group": "topic",
+      "val": 10
+    },
+    {
+      "id": "topic_archive_study",
+      "name": "archive study",
+      "group": "topic",
+      "val": 10
     }
   ],
   "links": [
@@ -12311,6 +12476,136 @@
     {
       "source": "2601.19062v1",
       "target": "topic_assistant_interactions",
+      "value": 2
+    },
+    {
+      "source": "2601.20245v1",
+      "target": "auth_judy_hanwen_shen",
+      "value": 5
+    },
+    {
+      "source": "2601.20245v1",
+      "target": "auth_alex_tamkin",
+      "value": 5
+    },
+    {
+      "source": "2601.20245v1",
+      "target": "topic_supervise_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.20245v1",
+      "target": "topic_particularly_novice",
+      "value": 2
+    },
+    {
+      "source": "2601.20245v1",
+      "target": "topic_skill_acquisition",
+      "value": 2
+    },
+    {
+      "source": "2601.20245v1",
+      "target": "topic_suggest_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.20245v1",
+      "target": "topic_assistance_ai",
+      "value": 2
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "auth_jeremy_foote",
+      "value": 5
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "auth_deepak_kumar",
+      "value": 5
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "auth_bedadyuti_jha",
+      "value": 5
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "auth_ryan_funkhouser",
+      "value": 5
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "auth_loizos_bitsikokos",
+      "value": 5
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "auth_hitesh_goel",
+      "value": 5
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "auth_hsuen_chi_chiu",
+      "value": 5
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "topic_chatbots_users",
+      "value": 2
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "topic_chatbots_qualitative",
+      "value": 2
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "topic_chatbots",
+      "value": 2
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "topic_ai_chatbots",
+      "value": 2
+    },
+    {
+      "source": "2601.20100v1",
+      "target": "topic_chatbots_proven",
+      "value": 2
+    },
+    {
+      "source": "2601.20099v1",
+      "target": "auth_buddhika_nettasinghe",
+      "value": 5
+    },
+    {
+      "source": "2601.20099v1",
+      "target": "auth_kang_zhao",
+      "value": 5
+    },
+    {
+      "source": "2601.20099v1",
+      "target": "topic_knowledge_flow",
+      "value": 2
+    },
+    {
+      "source": "2601.20099v1",
+      "target": "topic_knowledge_archives",
+      "value": 2
+    },
+    {
+      "source": "2601.20099v1",
+      "target": "topic_knowledge_ecosystems",
+      "value": 2
+    },
+    {
+      "source": "2601.20099v1",
+      "target": "topic_human_learning",
+      "value": 2
+    },
+    {
+      "source": "2601.20099v1",
+      "target": "topic_archive_study",
       "value": 2
     }
   ]
