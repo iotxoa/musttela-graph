@@ -1,16 +1,13 @@
-name: 🔄 Actualización Diaria
+name: 🚀 Llenado Inicial del Grafo
 
 on:
-  schedule:
-    # Se ejecuta todos los días a las 09:00 UTC
-    - cron: '0 9 * * *'
-  workflow_dispatch:  # También permite trigger manual
+  workflow_dispatch:  # Trigger manual
 
 permissions:
   contents: write
 
 jobs:
-  daily-update:
+  initial-build:
     runs-on: ubuntu-latest
     
     steps:
@@ -27,17 +24,17 @@ jobs:
         run: |
           pip install -r requirements.txt
       
-      - name: 🔄 Ejecutar actualización diaria
+      - name: 🔨 Ejecutar llenado inicial
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           cd scripts
-          python daily_update.py
+          python initial_build.py
       
       - name: 💾 Commit y Push
         run: |
           git config --global user.name 'Musttela Bot'
           git config --global user.email 'bot@musttela.com'
           git add docs/graph_data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 Auto: Actualización diaria" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🎉 Llenado inicial completado" && git push)
