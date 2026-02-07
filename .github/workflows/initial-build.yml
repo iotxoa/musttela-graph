@@ -30,7 +30,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           cd scripts
-          python initial_build.py
+          python -u initial_build.py
       
       - name: 💾 Commit y Push
         run: |
