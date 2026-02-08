@@ -3,32 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUSTTELA - AI Journalism Research Graph</title>
+    <title>MUSTTELA - AI & Journalism Research Archive</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- 3D Force Graph -->
+    <script src="https://unpkg.com/three"></script>
+    <script src="https://unpkg.com/3d-force-graph"></script>
     
     <style>
         :root {
-            --bg-dark: #0a0a0a;
-            --bg-card: #1a1a1a;
-            --bg-hover: #252525;
-            --text-primary: #e0e0e0;
-            --text-secondary: #a0a0a0;
-            --text-dim: #606060;
-            --accent-paper: #4ECDC4;
-            --accent-author: #FF6B6B;
-            --accent-topic: #95E1D3;
-            --accent-seed: #FFD700;
+            /* Ethereal Palette */
+            --cream: #f5f1e8;
+            --cream-dark: #e8e4db;
+            --black-soft: #2a2a2a;
+            --sky-blue: #a8c5dd;
+            --blue-dark: #8ba7bd;
+            --moss-green: #8b9d83;
+            
+            /* Node colors */
+            --paper-color: #2a2a2a;
+            --author-color: #8ba7bd;
+            --topic-color: #8b9d83;
+            --seed-color: #d4af37;
+            
+            /* Source badges */
+            --arxiv-color: #B31B1B;
+            --s2-color: #1E88E5;
+            
+            /* Newness */
             --new-today: #00ff88;
             --new-recent: #44ff99;
             --new-week: #88ffaa;
-            --arxiv-color: #B31B1B;
-            --s2-color: #1E88E5;
-            --font-mono: 'JetBrains Mono', monospace;
-            --font-serif: 'Crimson Pro', serif;
+            
+            /* Typography */
+            --font-serif: 'EB Garamond', serif;
+            --font-mono: 'IBM Plex Mono', monospace;
         }
         
         * {
@@ -38,21 +51,367 @@
         }
         
         body {
-            font-family: var(--font-mono);
-            background: var(--bg-dark);
-            color: var(--text-primary);
+            font-family: var(--font-serif);
+            background: var(--cream);
+            color: var(--black-soft);
             line-height: 1.6;
             overflow-x: hidden;
+            position: relative;
         }
         
+        /* ========== TEXTURAS Y EFECTOS ========== */
+        
+        /* Film grain */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" /></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.15"/></svg>');
+            pointer-events: none;
+            z-index: 9998;
+            mix-blend-mode: multiply;
+        }
+        
+        /* Paper texture */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.02) 2px, rgba(0,0,0,0.02) 4px),
+                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
+            pointer-events: none;
+            z-index: 9997;
+        }
+        
+        /* ASCII rain container */
+        #ascii-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9996;
+            overflow: hidden;
+        }
+        
+        .ascii-particle {
+            position: absolute;
+            font-family: var(--font-mono);
+            color: var(--sky-blue);
+            font-size: 1.2rem;
+            animation: fall linear forwards;
+            pointer-events: none;
+        }
+        
+        @keyframes fall {
+            from {
+                transform: translateY(-50px) rotate(0deg);
+                opacity: 0.4;
+            }
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        /* Cursor trail */
+        .cursor-trail {
+            position: fixed;
+            font-family: var(--font-mono);
+            color: var(--sky-blue);
+            font-size: 1rem;
+            pointer-events: none;
+            z-index: 9995;
+            animation: trailFade 1s ease-out forwards;
+        }
+        
+        @keyframes trailFade {
+            to {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+        }
+        
+        /* Custom cursor */
+        * {
+            cursor: none;
+        }
+        
+        #custom-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--sky-blue);
+            background: transparent;
+            pointer-events: none;
+            z-index: 10000;
+            transition: all 0.15s ease;
+            mix-blend-mode: difference;
+        }
+        
+        #custom-cursor.hover {
+            width: 40px;
+            height: 40px;
+            background: rgba(168, 197, 221, 0.1);
+        }
+        
+        /* ========== LANDING PAGE ========== */
+        
+        #landing {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .ascii-logo {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            line-height: 1;
+            color: var(--sky-blue);
+            white-space: pre;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.2s forwards;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.4s forwards;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--blue-dark);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.6s forwards;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.8s forwards;
+        }
+        
+        .hero-stat {
+            text-align: center;
+        }
+        
+        .hero-stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--sky-blue);
+            font-family: var(--font-mono);
+        }
+        
+        .hero-stat-label {
+            font-size: 0.9rem;
+            color: var(--blue-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .hero-cta {
+            padding: 1.5rem 3rem;
+            background: var(--black-soft);
+            color: var(--cream);
+            border: 2px solid var(--black-soft);
+            font-family: var(--font-mono);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 1s forwards;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-cta::before {
+            content: '░░░';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            font-family: var(--font-mono);
+            font-size: 0.5rem;
+            color: var(--sky-blue);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .hero-cta:hover::before {
+            opacity: 1;
+        }
+        
+        .hero-cta:hover {
+            transform: translateY(-4px);
+            box-shadow: 8px 8px 0 var(--sky-blue);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+        }
+        
+        .about {
+            padding: 8rem 2rem;
+            background: var(--cream-dark);
+            border-top: 2px solid var(--black-soft);
+            border-bottom: 2px solid var(--black-soft);
+        }
+        
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-content h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+        
+        .about-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--blue-dark);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-visual {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            line-height: 1.2;
+            color: var(--sky-blue);
+            white-space: pre;
+        }
+        
+        .methodology {
+            padding: 8rem 2rem;
+        }
+        
+        .methodology h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        .methodology-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .method-card {
+            background: var(--cream-dark);
+            border: 2px solid var(--black-soft);
+            padding: 2rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .method-card::before {
+            content: attr(data-number);
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            padding: 0.5rem 1rem;
+            background: var(--black-soft);
+            color: var(--cream);
+            font-family: var(--font-mono);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .method-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 8px 8px 0 var(--sky-blue);
+        }
+        
+        .method-card h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .method-card p {
+            color: var(--blue-dark);
+            line-height: 1.6;
+        }
+        
+        .method-card .decoration {
+            margin-top: 1rem;
+            font-family: var(--font-mono);
+            color: var(--moss-green);
+            font-size: 0.8rem;
+        }
+        
+        /* ========== APP (GRAFO + GRID) ========== */
+        
+        #app {
+            display: none;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        
+        #app.active {
+            display: block;
+        }
+        
+        /* Header */
         header {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            z-index: 1000;
-            background: var(--bg-dark);
-            border-bottom: 2px solid var(--accent-paper);
+            z-index: 100;
+            background: rgba(245, 241, 232, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--black-soft);
             padding: 1rem 2rem;
         }
         
@@ -70,21 +429,30 @@
             font-size: 1.5rem;
             font-weight: 700;
             letter-spacing: -0.05em;
-            color: var(--accent-paper);
+            color: var(--black-soft);
             text-transform: uppercase;
+            font-family: var(--font-mono);
         }
         
         .stats {
             display: flex;
             gap: 2rem;
             font-size: 0.75rem;
-            color: var(--text-dim);
+            color: var(--blue-dark);
+            font-family: var(--font-mono);
         }
         
         .stat-item span {
-            color: var(--text-primary);
+            color: var(--black-soft);
             font-weight: 700;
             margin-left: 0.25rem;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
         }
         
         .view-toggle {
@@ -95,159 +463,158 @@
         .view-btn {
             padding: 0.5rem 1rem;
             background: transparent;
-            border: 1px solid var(--text-dim);
-            color: var(--text-secondary);
+            border: 1px solid var(--black-soft);
+            color: var(--black-soft);
             font-family: var(--font-mono);
             font-size: 0.75rem;
             cursor: pointer;
             transition: all 0.2s;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        .view-btn:hover {
-            border-color: var(--accent-paper);
-            color: var(--accent-paper);
+            letter-spacing: 0.1em;
         }
         
         .view-btn.active {
-            background: var(--accent-paper);
-            border-color: var(--accent-paper);
-            color: var(--bg-dark);
+            background: var(--black-soft);
+            color: var(--cream);
         }
         
-        .filters-panel {
-            position: fixed;
-            top: 80px;
-            left: 2rem;
-            z-index: 999;
-            background: var(--bg-card);
-            border: 1px solid var(--text-dim);
-            padding: 1rem;
-            width: 280px;
-            max-height: calc(100vh - 120px);
-            overflow-y: auto;
-        }
-        
-        .filters-title {
+        .filters {
+            display: flex;
+            gap: 1rem;
+            font-family: var(--font-mono);
             font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--text-dim);
-            margin-bottom: 1rem;
-            border-bottom: 1px solid var(--text-dim);
-            padding-bottom: 0.5rem;
         }
         
-        .filter-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .filter-label {
-            font-size: 0.65rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--text-secondary);
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-        
-        .filter-checkbox {
+        .filter-item {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
         }
         
-        .filter-checkbox input {
+        .filter-item input[type="checkbox"] {
             width: 16px;
             height: 16px;
-            accent-color: var(--accent-paper);
             cursor: pointer;
         }
         
-        .filter-checkbox label {
+        .filter-item label {
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Force Controls Sidebar */
+        #force-controls {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            z-index: 99;
+            background: rgba(245, 241, 232, 0.95);
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--black-soft);
+            padding: 1.5rem;
+            width: 250px;
+            font-family: var(--font-mono);
             font-size: 0.75rem;
+        }
+        
+        #force-controls h3 {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .force-control {
+            margin-bottom: 1rem;
+        }
+        
+        .force-control label {
+            display: block;
+            margin-bottom: 0.25rem;
+            color: var(--blue-dark);
+        }
+        
+        .force-control input[type="range"] {
+            width: 100%;
+            height: 4px;
+            background: var(--cream-dark);
+            border: 1px solid var(--black-soft);
+            outline: none;
+            appearance: none;
+        }
+        
+        .force-control input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            background: var(--sky-blue);
+            border: 2px solid var(--black-soft);
             cursor: pointer;
-            color: var(--text-primary);
         }
         
-        .badge-preview {
-            display: inline-block;
-            padding: 0.125rem 0.5rem;
-            border-radius: 2px;
-            font-size: 0.6rem;
-            font-weight: 700;
-            margin-left: 0.5rem;
+        .force-control span {
+            float: right;
+            color: var(--black-soft);
+            font-weight: 600;
         }
         
-        .badge-arxiv {
-            background: var(--arxiv-color);
-            color: white;
-        }
-        
-        .badge-s2 {
-            background: var(--s2-color);
-            color: white;
-        }
-        
-        main {
-            margin-top: 80px;
-            padding: 2rem;
-            padding-left: 320px;
-        }
-        
+        /* Graph Container */
         #graph-container {
             width: 100%;
-            height: calc(100vh - 120px);
-            background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
-            border: 1px solid var(--text-dim);
+            height: 100vh;
+            padding-top: 80px;
             position: relative;
+        }
+        
+        #graph-3d {
+            width: 100%;
+            height: 100%;
         }
         
         #graph-tooltip {
             position: absolute;
-            background: var(--bg-card);
-            border: 1px solid var(--accent-paper);
+            background: rgba(245, 241, 232, 0.98);
+            border: 2px solid var(--black-soft);
             padding: 1rem;
             pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.2s;
-            max-width: 400px;
-            z-index: 100;
+            font-family: var(--font-mono);
             font-size: 0.75rem;
+            max-width: 300px;
+            z-index: 98;
+            box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
         }
         
-        #graph-tooltip.show {
-            opacity: 1;
-        }
-        
-        .tooltip-title {
-            font-family: var(--font-serif);
-            font-size: 1rem;
-            font-weight: 600;
+        #graph-tooltip h4 {
             margin-bottom: 0.5rem;
-            color: var(--text-primary);
+            font-size: 0.9rem;
+            color: var(--black-soft);
+        }
+        
+        #graph-tooltip p {
+            color: var(--blue-dark);
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
         }
         
         .tooltip-meta {
             display: flex;
             gap: 0.5rem;
-            margin-bottom: 0.5rem;
-            flex-wrap: wrap;
-        }
-        
-        .tooltip-abstract {
-            font-size: 0.7rem;
-            color: var(--text-secondary);
-            line-height: 1.4;
             margin-top: 0.5rem;
         }
         
+        .tooltip-badge {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.65rem;
+            border: 1px solid var(--black-soft);
+            background: var(--cream);
+        }
+        
+        /* Grid Container */
         #grid-container {
             display: none;
-            max-width: 1600px;
+            padding: 100px 2rem 2rem;
+            max-width: 1800px;
             margin: 0 auto;
         }
         
@@ -256,285 +623,489 @@
         }
         
         .grid-section {
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
         }
         
-        .section-title {
-            font-family: var(--font-serif);
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: var(--text-primary);
-            border-left: 4px solid var(--accent-paper);
-            padding-left: 1rem;
+        .grid-section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--black-soft);
+            padding-bottom: 0.5rem;
         }
         
-        .papers-grid {
+        .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 1.5rem;
+            gap: 2rem;
         }
         
         .paper-card {
-            background: var(--bg-card);
-            border: 1px solid var(--text-dim);
+            background: var(--cream-dark);
+            border: 2px solid var(--black-soft);
             padding: 1.5rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
-            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .paper-card::before {
+            content: '░░░';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            font-family: var(--font-mono);
+            font-size: 0.5rem;
+            color: var(--sky-blue);
+            letter-spacing: 0.2em;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .paper-card:hover::before {
+            opacity: 1;
         }
         
         .paper-card:hover {
-            border-color: var(--accent-paper);
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(78, 205, 196, 0.15);
+            transform: translateY(-6px);
+            box-shadow: 8px 8px 0 var(--sky-blue);
         }
         
-        .paper-card.favorite {
-            border-color: var(--accent-paper);
+        .paper-card.seed {
+            border-color: var(--seed-color);
+            background: linear-gradient(135deg, var(--cream-dark), rgba(212, 175, 55, 0.05));
         }
         
-        .paper-header {
+        .paper-card.new {
+            border-left: 4px solid var(--new-today);
+        }
+        
+        .card-header {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 0.75rem;
-            gap: 0.5rem;
+            align-items: start;
+            margin-bottom: 1rem;
         }
         
-        .paper-badges {
+        .card-badges {
             display: flex;
             gap: 0.5rem;
-            flex-wrap: wrap;
         }
         
         .badge {
             padding: 0.25rem 0.5rem;
             font-size: 0.65rem;
-            font-weight: 700;
+            font-family: var(--font-mono);
+            border: 1px solid var(--black-soft);
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
         
-        .badge-source {
+        .badge.arxiv {
             background: var(--arxiv-color);
             color: white;
+            border-color: var(--arxiv-color);
         }
         
-        .badge-source.s2 {
+        .badge.s2 {
             background: var(--s2-color);
+            color: white;
+            border-color: var(--s2-color);
         }
         
-        .badge-new {
+        .badge.seed {
+            background: var(--seed-color);
+            color: var(--black-soft);
+            border-color: var(--seed-color);
+        }
+        
+        .badge.new {
             background: var(--new-today);
-            color: var(--bg-dark);
+            color: var(--black-soft);
+            border-color: var(--new-today);
         }
         
-        .badge-seed {
-            background: var(--accent-seed);
-            color: var(--bg-dark);
+        .card-actions {
+            display: flex;
+            gap: 0.5rem;
         }
         
-        .favorite-btn {
+        .card-action {
+            width: 24px;
+            height: 24px;
+            border: 1px solid var(--black-soft);
             background: transparent;
-            border: none;
-            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
-            transition: transform 0.2s;
-            line-height: 1;
+            transition: all 0.2s;
+            font-size: 0.85rem;
         }
         
-        .favorite-btn:hover {
-            transform: scale(1.2);
+        .card-action:hover {
+            background: var(--sky-blue);
+            border-color: var(--sky-blue);
         }
         
-        .paper-title {
-            font-family: var(--font-serif);
-            font-size: 1.1rem;
-            font-weight: 600;
+        .card-action.active {
+            background: var(--black-soft);
+            color: var(--cream);
+        }
+        
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
             line-height: 1.3;
-            margin-bottom: 0.75rem;
-            color: var(--text-primary);
+            font-weight: 600;
         }
         
-        .paper-abstract {
+        .card-title a {
+            color: var(--black-soft);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .card-title a:hover {
+            color: var(--sky-blue);
+        }
+        
+        .card-abstract {
+            font-size: 0.9rem;
+            color: var(--blue-dark);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .card-meta {
+            font-family: var(--font-mono);
             font-size: 0.75rem;
-            color: var(--text-secondary);
-            line-height: 1.5;
-            margin-bottom: 0.75rem;
-        }
-        
-        .paper-meta {
+            color: var(--blue-dark);
             display: flex;
             gap: 1rem;
-            font-size: 0.65rem;
-            color: var(--text-dim);
-            border-top: 1px solid var(--text-dim);
-            padding-top: 0.75rem;
+            flex-wrap: wrap;
         }
         
-        @media (max-width: 1200px) {
-            main {
-                padding-left: 2rem;
-            }
-            
-            .filters-panel {
-                left: -280px;
-                transition: left 0.3s;
-            }
-            
-            .filters-panel.mobile-open {
-                left: 0;
-            }
+        /* Search */
+        #search-container {
+            margin-bottom: 2rem;
         }
         
+        #search-input {
+            width: 100%;
+            padding: 1rem;
+            font-family: var(--font-mono);
+            font-size: 1rem;
+            background: var(--cream-dark);
+            border: 2px solid var(--black-soft);
+            color: var(--black-soft);
+        }
+        
+        #search-input:focus {
+            outline: none;
+            border-color: var(--sky-blue);
+        }
+        
+        /* Responsive */
         @media (max-width: 768px) {
-            .header-content {
-                flex-wrap: wrap;
+            .hero h1 {
+                font-size: 2.5rem;
             }
             
-            .stats {
-                order: 3;
-                width: 100%;
-                justify-content: center;
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
             }
             
-            .papers-grid {
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .methodology-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            #force-controls {
+                display: none;
+            }
+            
+            .grid {
                 grid-template-columns: 1fr;
             }
         }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .paper-card {
-            animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) backwards;
-        }
-        
-        .paper-card:nth-child(1) { animation-delay: 0.05s; }
-        .paper-card:nth-child(2) { animation-delay: 0.1s; }
-        .paper-card:nth-child(3) { animation-delay: 0.15s; }
-        .paper-card:nth-child(4) { animation-delay: 0.2s; }
-        .paper-card:nth-child(5) { animation-delay: 0.25s; }
-        .paper-card:nth-child(6) { animation-delay: 0.3s; }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">MUSTTELA</div>
-            
-            <div class="stats">
-                <div class="stat-item">PAPERS: <span id="stat-papers">0</span></div>
-                <div class="stat-item">AUTHORS: <span id="stat-authors">0</span></div>
-                <div class="stat-item">TOPICS: <span id="stat-topics">0</span></div>
-            </div>
-            
-            <div class="view-toggle">
-                <button class="view-btn active" data-view="graph">GRAPH</button>
-                <button class="view-btn" data-view="grid">GRID</button>
-            </div>
-        </div>
-    </header>
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
     
-    <aside class="filters-panel">
-        <div class="filters-title">Filtros</div>
-        
-        <div class="filter-group">
-            <label class="filter-label">Favoritos</label>
-            <div class="filter-checkbox">
-                <input type="checkbox" id="filter-favorites">
-                <label for="filter-favorites">Solo favoritos</label>
-            </div>
-        </div>
-        
-        <div class="filter-group">
-            <label class="filter-label">Fuente</label>
-            <div class="filter-checkbox">
-                <input type="checkbox" id="filter-arxiv" checked>
-                <label for="filter-arxiv">ArXiv <span class="badge-preview badge-arxiv">ARXIV</span></label>
-            </div>
-            <div class="filter-checkbox">
-                <input type="checkbox" id="filter-s2" checked>
-                <label for="filter-s2">Semantic Scholar <span class="badge-preview badge-s2">S2</span></label>
-            </div>
-        </div>
-        
-        <div class="filter-group">
-            <label class="filter-label">Novedad</label>
-            <div class="filter-checkbox">
-                <input type="checkbox" id="filter-new-all" checked>
-                <label for="filter-new-all">Todos</label>
-            </div>
-            <div class="filter-checkbox">
-                <input type="checkbox" id="filter-new-today">
-                <label for="filter-new-today">🔥 Solo hoy</label>
-            </div>
-            <div class="filter-checkbox">
-                <input type="checkbox" id="filter-new-week">
-                <label for="filter-new-week">📌 Última semana</label>
-            </div>
-        </div>
-    </aside>
+    <!-- ASCII Rain -->
+    <div id="ascii-rain"></div>
     
-    <main>
+    <!-- ========== LANDING PAGE ========== -->
+    <div id="landing">
+        <section class="hero">
+            <div class="ascii-logo">
+ ███╗   ███╗██╗   ██╗███████╗████████╗████████╗███████╗██╗      █████╗ 
+ ████╗ ████║██║   ██║██╔════╝╚══██╔══╝╚══██╔══╝██╔════╝██║     ██╔══██╗
+ ██╔████╔██║██║   ██║███████╗   ██║      ██║   █████╗  ██║     ███████║
+ ██║╚██╔╝██║██║   ██║╚════██║   ██║      ██║   ██╔══╝  ██║     ██╔══██║
+ ██║ ╚═╝ ██║╚██████╔╝███████║   ██║      ██║   ███████╗███████╗██║  ██║
+ ╚═╝     ╚═╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚═╝  ╚═╝
+            </div>
+            
+            <h1>Visual Research Archive</h1>
+            <p>Mapping the intersection between artificial intelligence and journalism through an interactive network of academic research</p>
+            
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number" id="hero-papers">0</div>
+                    <div class="hero-stat-label">Papers</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number" id="hero-authors">0</div>
+                    <div class="hero-stat-label">Authors</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number" id="hero-topics">0</div>
+                    <div class="hero-stat-label">Topics</div>
+                </div>
+            </div>
+            
+            <button class="hero-cta" onclick="enterApp()">Explore the Network</button>
+        </section>
+        
+        <section class="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>A living archive of AI journalism research</h2>
+                    <p>MUSTTELA combines academic rigor with visual exploration, transforming scattered research papers into an interconnected knowledge graph.</p>
+                    <p>Navigate through foundational works, discover emerging trends, and trace the evolution of ideas as artificial intelligence reshapes journalistic practice.</p>
+                </div>
+                <div class="about-visual">
+    ◆────────◆────────◆
+    │ PAPER  │ AUTHOR │
+    ◆────────◆────────◆
+         │        │
+         └────◆───┘
+            TOPIC
+                </div>
+            </div>
+        </section>
+        
+        <section class="methodology">
+            <h2>How It Works</h2>
+            <div class="methodology-grid">
+                <div class="method-card" data-number="01">
+                    <h3>Curated Seeds</h3>
+                    <p>Start with foundational papers that define the field, manually selected for their impact and relevance.</p>
+                    <div class="decoration">█ █ █</div>
+                </div>
+                <div class="method-card" data-number="02">
+                    <h3>Automated Discovery</h3>
+                    <p>Daily updates pull new research from ArXiv and Semantic Scholar, filtered by keywords and citation networks.</p>
+                    <div class="decoration">█ █ █</div>
+                </div>
+                <div class="method-card" data-number="03">
+                    <h3>Network Analysis</h3>
+                    <p>Papers connect through citations, shared authors, and thematic overlap, revealing hidden patterns.</p>
+                    <div class="decoration">█ █ █</div>
+                </div>
+                <div class="method-card" data-number="04">
+                    <h3>Visual Exploration</h3>
+                    <p>3D force-directed graphs and filtered views make complex research networks intuitive and navigable.</p>
+                    <div class="decoration">█ █ █</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- ========== APP (GRAFO + GRID) ========== -->
+    <div id="app">
+        <header>
+            <div class="header-content">
+                <div class="logo">MUSTTELA</div>
+                
+                <div class="stats">
+                    <div class="stat-item">Papers: <span id="stat-papers">0</span></div>
+                    <div class="stat-item">Authors: <span id="stat-authors">0</span></div>
+                    <div class="stat-item">Topics: <span id="stat-topics">0</span></div>
+                </div>
+                
+                <div class="controls">
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="graph">Graph</button>
+                        <button class="view-btn" data-view="grid">Grid</button>
+                    </div>
+                    
+                    <div class="filters">
+                        <div class="filter-item">
+                            <input type="checkbox" id="filter-favorites">
+                            <label for="filter-favorites">★ Favorites</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" id="filter-arxiv">
+                            <label for="filter-arxiv">ArXiv</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" id="filter-s2">
+                            <label for="filter-s2">S2</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" id="filter-new-all">
+                            <label for="filter-new-all">New</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Force Controls -->
+        <div id="force-controls">
+            <h3>Force Controls</h3>
+            <div class="force-control">
+                <label>Charge <span id="charge-val">-300</span></label>
+                <input type="range" id="charge-force" min="-1000" max="0" value="-300" step="10">
+            </div>
+            <div class="force-control">
+                <label>Link Distance <span id="link-val">30</span></label>
+                <input type="range" id="link-distance" min="10" max="200" value="30" step="5">
+            </div>
+            <div class="force-control">
+                <label>Link Strength <span id="link-str-val">0.5</span></label>
+                <input type="range" id="link-strength" min="0" max="2" value="0.5" step="0.1">
+            </div>
+        </div>
+        
+        <!-- Graph View -->
         <div id="graph-container" class="active">
-            <div id="graph-tooltip">
-                <div class="tooltip-title"></div>
-                <div class="tooltip-meta"></div>
-                <div class="tooltip-abstract"></div>
-            </div>
+            <div id="graph-3d"></div>
+            <div id="graph-tooltip" style="display: none;"></div>
         </div>
         
+        <!-- Grid View -->
         <div id="grid-container">
-            <div class="grid-section" id="section-new" style="display: none;">
-                <h2 class="section-title">🔥 Novedades</h2>
-                <div class="papers-grid" id="grid-new"></div>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Search papers by title, author, or keywords...">
+            </div>
+            
+            <div id="section-new" class="grid-section" style="display: none;">
+                <h2>📌 New Papers</h2>
+                <div id="grid-new" class="grid"></div>
             </div>
             
             <div class="grid-section">
-                <h2 class="section-title">📚 Todos los Papers</h2>
-                <div class="papers-grid" id="grid-all"></div>
+                <h2>All Papers</h2>
+                <div id="grid-all" class="grid"></div>
             </div>
         </div>
-    </main>
+    </div>
     
-    <script src="https://unpkg.com/3d-force-graph"></script>
     <script>
-        let graphData = { nodes: [], links: [] };
-        let favorites = JSON.parse(localStorage.getItem('musttela_favorites') || '[]');
+        // ========== GLOBAL STATE ==========
+        let graphData = null;
+        let graph = null;
         let currentView = 'graph';
-        let Graph3D = null;
-        
-        const filters = {
+        let favorites = JSON.parse(localStorage.getItem('musttela_favorites') || '[]');
+        let readPapers = JSON.parse(localStorage.getItem('musttela_read') || '[]');
+        let activeFilters = {
             favorites: false,
-            arxiv: true,
-            s2: true,
-            newAll: true,
-            newToday: false,
-            newWeek: false
+            arxiv: false,
+            s2: false,
+            newAll: false
         };
         
-        async function init() {
+        // ========== VISUAL EFFECTS ==========
+        
+        // Custom cursor
+        const cursor = document.getElementById('custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 10 + 'px';
+            cursor.style.top = e.clientY - 10 + 'px';
+        });
+        
+        // Cursor hover effect
+        document.addEventListener('mouseover', (e) => {
+            if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.classList.contains('paper-card')) {
+                cursor.classList.add('hover');
+            } else {
+                cursor.classList.remove('hover');
+            }
+        });
+        
+        // Cursor trail
+        let trailSymbols = ['·', '∘', '○', '●', '◆', '■'];
+        let trailCounter = 0;
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.3) return; // 70% chance
+            
+            const trail = document.createElement('div');
+            trail.className = 'cursor-trail';
+            trail.textContent = trailSymbols[trailCounter % trailSymbols.length];
+            trail.style.left = e.clientX + 'px';
+            trail.style.top = e.clientY + 'px';
+            document.body.appendChild(trail);
+            
+            trailCounter++;
+            
+            setTimeout(() => trail.remove(), 1000);
+        });
+        
+        // ASCII rain
+        function createASCIIParticle() {
+            const symbols = ['●', '○', '◆', '◇', '■', '□', '▲', '▼', '░', '▒', '▓', '█'];
+            const particle = document.createElement('div');
+            particle.className = 'ascii-particle';
+            particle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+            particle.style.opacity = 0.1 + Math.random() * 0.3;
+            
+            document.getElementById('ascii-rain').appendChild(particle);
+            
+            setTimeout(() => particle.remove(), 25000);
+        }
+        
+        // Start ASCII rain
+        setInterval(createASCIIParticle, 300);
+        for (let i = 0; i < 20; i++) {
+            setTimeout(createASCIIParticle, i * 150);
+        }
+        
+        // ========== DATA LOADING ==========
+        
+        async function loadData() {
             try {
                 const response = await fetch('graph_data.json');
                 graphData = await response.json();
                 
-                updateStats();
-                initGraph3D();
-                setupEventListeners();
-                renderGridView();
+                // Update hero stats
+                const papers = graphData.nodes.filter(n => n.group === 'paper').length;
+                const authors = graphData.nodes.filter(n => n.group === 'author').length;
+                const topics = graphData.nodes.filter(n => n.group === 'topic').length;
+                
+                document.getElementById('hero-papers').textContent = papers;
+                document.getElementById('hero-authors').textContent = authors;
+                document.getElementById('hero-topics').textContent = topics;
+                
+                console.log('✅ Data loaded:', papers, 'papers');
             } catch (error) {
-                console.error('Error loading data:', error);
+                console.error('❌ Error loading data:', error);
             }
+        }
+        
+        // ========== APP NAVIGATION ==========
+        
+        function enterApp() {
+            document.getElementById('landing').style.display = 'none';
+            document.getElementById('app').classList.add('active');
+            initApp();
+        }
+        
+        function initApp() {
+            updateStats();
+            initGraph3D();
+            renderGridView();
+            setupEventListeners();
         }
         
         function updateStats() {
@@ -547,73 +1118,99 @@
             document.getElementById('stat-topics').textContent = topics;
         }
         
+        // ========== GRAPH 3D ==========
+        
         function initGraph3D() {
-            const container = document.getElementById('graph-container');
+            const container = document.getElementById('graph-3d');
+            const filteredData = getFilteredData();
             
-            Graph3D = ForceGraph3D()(container)
-                .graphData(getFilteredData())
-                .nodeLabel('name')
-                .nodeAutoColorBy('group')
+            graph = ForceGraph3D()(container)
+                .graphData(filteredData)
+                .nodeLabel(node => node.name)
                 .nodeColor(node => getNodeColor(node))
                 .nodeVal(node => getNodeSize(node))
+                .linkColor(() => 'rgba(42, 42, 42, 0.2)')
                 .linkWidth(1)
-                .linkColor(() => 'rgba(78, 205, 196, 0.2)')
-                .onNodeClick(node => handleNodeClick(node))
-                .onNodeHover(node => handleNodeHover(node))
-                .backgroundColor('#0a0a0a');
+                .onNodeHover(handleNodeHover)
+                .onNodeClick(handleNodeClick)
+                .backgroundColor('#f5f1e8')
+                .d3Force('charge').strength(-300)
+                .d3Force('link').distance(30);
+            
+            setupForceControls();
         }
         
         function getNodeColor(node) {
-            if (node.is_seed) return '#FFD700';
-            if (node.group === 'paper' && node.newness_color) return node.newness_color;
-            
-            const colors = { 'paper': '#4ECDC4', 'author': '#FF6B6B', 'topic': '#95E1D3' };
-            return colors[node.group] || '#ffffff';
+            if (node.is_seed) return '#d4af37';
+            if (node.group === 'paper') return '#2a2a2a';
+            if (node.group === 'author') return '#8ba7bd';
+            if (node.group === 'topic') return '#8b9d83';
+            return '#a8c5dd';
         }
         
         function getNodeSize(node) {
-            if (node.is_seed) return 50;
-            
-            if (node.group === 'paper' && node.newness_level) {
-                const multipliers = { 'today': 1.4, 'new': 1.2, 'recent': 1.1 };
-                return (node.val || 30) * (multipliers[node.newness_level] || 1);
-            }
-            
-            return node.val || 10;
+            if (node.is_seed) return node.val * 1.5; // Seeds más grandes
+            if (node.group === 'paper') return node.val || 8;
+            if (node.group === 'author') return 5;
+            if (node.group === 'topic') return 6;
+            return 4;
         }
         
         function handleNodeHover(node) {
             const tooltip = document.getElementById('graph-tooltip');
-            
-            if (!node || node.group !== 'paper') {
-                tooltip.classList.remove('show');
-                return;
+            if (node) {
+                tooltip.style.display = 'block';
+                tooltip.innerHTML = `
+                    <h4>${node.name}</h4>
+                    ${node.abstract ? `<p>${node.abstract.substring(0, 150)}...</p>` : ''}
+                    <div class="tooltip-meta">
+                        <span class="tooltip-badge">${node.group}</span>
+                        ${node.source ? `<span class="tooltip-badge">${node.source}</span>` : ''}
+                        ${node.is_seed ? `<span class="tooltip-badge" style="background: #d4af37;">SEED</span>` : ''}
+                    </div>
+                `;
+            } else {
+                tooltip.style.display = 'none';
             }
-            
-            tooltip.querySelector('.tooltip-title').textContent = node.name;
-            
-            let badges = '';
-            if (node.is_seed) badges += `<span class="badge badge-seed">${node.seed_badge || '📚 FUNDACIONAL'}</span>`;
-            if (node.newness_badge) badges += `<span class="badge badge-new">${node.newness_badge}</span>`;
-            if (node.source) {
-                const sourceClass = node.source === 'arxiv' ? '' : 's2';
-                badges += `<span class="badge badge-source ${sourceClass}">${node.source.toUpperCase()}</span>`;
-            }
-            
-            tooltip.querySelector('.tooltip-meta').innerHTML = badges;
-            tooltip.querySelector('.tooltip-abstract').textContent = node.abstract || '';
-            tooltip.classList.add('show');
         }
         
         function handleNodeClick(node) {
-            if (node.group === 'paper' && node.url) window.open(node.url, '_blank');
+            if (node.url) {
+                window.open(node.url, '_blank');
+            }
         }
+        
+        function setupForceControls() {
+            document.getElementById('charge-force').addEventListener('input', (e) => {
+                const val = parseInt(e.target.value);
+                document.getElementById('charge-val').textContent = val;
+                graph.d3Force('charge').strength(val);
+                graph.numDimensions(3);
+            });
+            
+            document.getElementById('link-distance').addEventListener('input', (e) => {
+                const val = parseInt(e.target.value);
+                document.getElementById('link-val').textContent = val;
+                graph.d3Force('link').distance(val);
+                graph.numDimensions(3);
+            });
+            
+            document.getElementById('link-strength').addEventListener('input', (e) => {
+                const val = parseFloat(e.target.value);
+                document.getElementById('link-str-val').textContent = val.toFixed(1);
+                graph.d3Force('link').strength(val);
+                graph.numDimensions(3);
+            });
+        }
+        
+        // ========== GRID VIEW ==========
         
         function renderGridView() {
             const papers = graphData.nodes.filter(n => n.group === 'paper');
             const filtered = filterPapers(papers);
-            const newPapers = filtered.filter(p => p.newness_level);
             
+            // New papers section
+            const newPapers = filtered.filter(p => isNewPaper(p));
             if (newPapers.length > 0) {
                 document.getElementById('section-new').style.display = 'block';
                 document.getElementById('grid-new').innerHTML = newPapers.map(createPaperCard).join('');
@@ -621,64 +1218,110 @@
                 document.getElementById('section-new').style.display = 'none';
             }
             
+            // All papers
             document.getElementById('grid-all').innerHTML = filtered.map(createPaperCard).join('');
         }
         
         function createPaperCard(paper) {
             const isFavorite = favorites.includes(paper.id);
-            const favoriteIcon = isFavorite ? '★' : '☆';
-            
-            let badges = '';
-            if (paper.is_seed) badges += `<span class="badge badge-seed">${paper.seed_badge || '📚 FUNDACIONAL'}</span>`;
-            if (paper.newness_badge) badges += `<span class="badge badge-new">${paper.newness_badge}</span>`;
-            if (paper.source) {
-                const sourceClass = paper.source === 'arxiv' ? '' : 's2';
-                badges += `<span class="badge badge-source ${sourceClass}">${paper.source.toUpperCase()}</span>`;
-            }
+            const isRead = readPapers.includes(paper.id);
+            const isNew = isNewPaper(paper);
+            const isSeed = paper.is_seed;
             
             return `
-                <div class="paper-card ${isFavorite ? 'favorite' : ''}" data-id="${paper.id}">
-                    <div class="paper-header">
-                        <div class="paper-badges">${badges}</div>
-                        <button class="favorite-btn" data-id="${paper.id}">${favoriteIcon}</button>
+                <div class="paper-card ${isSeed ? 'seed' : ''} ${isNew ? 'new' : ''}">
+                    <div class="card-header">
+                        <div class="card-badges">
+                            ${isSeed ? '<span class="badge seed">📚 SEED</span>' : ''}
+                            ${isNew ? '<span class="badge new">✨ NEW</span>' : ''}
+                            ${paper.source === 'arxiv' ? '<span class="badge arxiv">ArXiv</span>' : ''}
+                            ${paper.source === 's2' ? '<span class="badge s2">S2</span>' : ''}
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-action ${isFavorite ? 'active' : ''}" onclick="toggleFavorite('${paper.id}')">★</button>
+                            <button class="card-action ${isRead ? 'active' : ''}" onclick="toggleRead('${paper.id}')">✓</button>
+                        </div>
                     </div>
-                    <h3 class="paper-title">${paper.name}</h3>
-                    <p class="paper-abstract">${truncate(paper.abstract || '', 200)}</p>
-                    <div class="paper-meta">
-                        <div>📅 ${paper.date || 'N/A'}</div>
-                        ${paper.citation_count ? `<div>📊 ${paper.citation_count} citas</div>` : ''}
+                    <h3 class="card-title">
+                        <a href="${paper.url}" target="_blank">${paper.name}</a>
+                    </h3>
+                    <p class="card-abstract">${truncate(paper.abstract || 'No abstract available', 200)}</p>
+                    <div class="card-meta">
+                        ${paper.date ? `<span>📅 ${paper.date.substring(0, 4)}</span>` : ''}
+                        ${paper.citation_count ? `<span>📊 ${paper.citation_count} cites</span>` : ''}
                     </div>
                 </div>
             `;
         }
         
         function truncate(str, maxLen) {
-            if (str.length <= maxLen) return str;
-            return str.substr(0, maxLen) + '...';
+            if (!str) return '';
+            return str.length > maxLen ? str.substring(0, maxLen) + '...' : str;
         }
         
+        function isNewPaper(paper) {
+            if (!paper.added_date) return false;
+            const added = new Date(paper.added_date);
+            const now = new Date();
+            const diffDays = (now - added) / (1000 * 60 * 60 * 24);
+            return diffDays <= 7;
+        }
+        
+        // ========== FILTERING ==========
+        
         function filterPapers(papers) {
-            return papers.filter(paper => {
-                if (filters.favorites && !favorites.includes(paper.id)) return false;
-                if (!filters.arxiv && paper.source === 'arxiv') return false;
-                if (!filters.s2 && paper.source === 's2') return false;
-                if (filters.newToday && paper.newness_level !== 'today') return false;
-                if (filters.newWeek && !['today', 'new', 'recent'].includes(paper.newness_level)) return false;
-                return true;
-            });
+            let filtered = papers;
+            
+            // Search
+            const searchTerm = document.getElementById('search-input')?.value.toLowerCase();
+            if (searchTerm) {
+                filtered = filtered.filter(p =>
+                    p.name.toLowerCase().includes(searchTerm) ||
+                    (p.abstract && p.abstract.toLowerCase().includes(searchTerm))
+                );
+            }
+            
+            // Favorites
+            if (activeFilters.favorites) {
+                filtered = filtered.filter(p => favorites.includes(p.id));
+            }
+            
+            // Source filters
+            if (activeFilters.arxiv) {
+                filtered = filtered.filter(p => p.source === 'arxiv');
+            }
+            if (activeFilters.s2) {
+                filtered = filtered.filter(p => p.source === 's2');
+            }
+            
+            // New filter
+            if (activeFilters.newAll) {
+                filtered = filtered.filter(p => isNewPaper(p));
+            }
+            
+            return filtered;
         }
         
         function getFilteredData() {
-            const filteredPapers = filterPapers(graphData.nodes.filter(n => n.group === 'paper'));
+            const papers = graphData.nodes.filter(n => n.group === 'paper');
+            const filteredPapers = filterPapers(papers);
             const paperIds = new Set(filteredPapers.map(p => p.id));
             
+            // Include related nodes
             const relatedNodes = new Set();
             graphData.links.forEach(link => {
-                if (paperIds.has(link.source.id || link.source)) relatedNodes.add(link.target.id || link.target);
-                if (paperIds.has(link.target.id || link.target)) relatedNodes.add(link.source.id || link.source);
+                if (paperIds.has(link.source) || paperIds.has(link.source.id)) {
+                    relatedNodes.add(link.target.id || link.target);
+                }
+                if (paperIds.has(link.target) || paperIds.has(link.target.id)) {
+                    relatedNodes.add(link.source.id || link.source);
+                }
             });
             
-            const nodes = graphData.nodes.filter(n => paperIds.has(n.id) || relatedNodes.has(n.id));
+            const nodes = graphData.nodes.filter(n =>
+                paperIds.has(n.id) || relatedNodes.has(n.id)
+            );
+            
             const nodeIds = new Set(nodes.map(n => n.id));
             const links = graphData.links.filter(l => {
                 const sourceId = l.source.id || l.source;
@@ -691,18 +1334,23 @@
         
         function applyFilters() {
             if (currentView === 'graph') {
-                Graph3D.graphData(getFilteredData());
+                const filteredData = getFilteredData();
+                graph.graphData(filteredData);
             } else {
                 renderGridView();
             }
         }
         
+        // ========== EVENT LISTENERS ==========
+        
         function setupEventListeners() {
+            // View toggle
             document.querySelectorAll('.view-btn').forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
-                    e.target.classList.add('active');
-                    currentView = e.target.dataset.view;
+                    btn.classList.add('active');
+                    
+                    currentView = btn.dataset.view;
                     
                     if (currentView === 'graph') {
                         document.getElementById('graph-container').classList.add('active');
@@ -710,84 +1358,63 @@
                     } else {
                         document.getElementById('graph-container').classList.remove('active');
                         document.getElementById('grid-container').classList.add('active');
-                        renderGridView();
                     }
                 });
             });
             
+            // Filters
             document.getElementById('filter-favorites').addEventListener('change', (e) => {
-                filters.favorites = e.target.checked;
+                activeFilters.favorites = e.target.checked;
                 applyFilters();
             });
             
             document.getElementById('filter-arxiv').addEventListener('change', (e) => {
-                filters.arxiv = e.target.checked;
+                activeFilters.arxiv = e.target.checked;
                 applyFilters();
             });
             
             document.getElementById('filter-s2').addEventListener('change', (e) => {
-                filters.s2 = e.target.checked;
+                activeFilters.s2 = e.target.checked;
                 applyFilters();
             });
             
             document.getElementById('filter-new-all').addEventListener('change', (e) => {
-                if (e.target.checked) {
-                    filters.newToday = false;
-                    filters.newWeek = false;
-                    document.getElementById('filter-new-today').checked = false;
-                    document.getElementById('filter-new-week').checked = false;
-                }
-                filters.newAll = e.target.checked;
+                activeFilters.newAll = e.target.checked;
                 applyFilters();
             });
             
-            document.getElementById('filter-new-today').addEventListener('change', (e) => {
-                filters.newToday = e.target.checked;
-                if (e.target.checked) {
-                    filters.newAll = false;
-                    document.getElementById('filter-new-all').checked = false;
-                }
+            // Search
+            document.getElementById('search-input').addEventListener('input', () => {
                 applyFilters();
-            });
-            
-            document.getElementById('filter-new-week').addEventListener('change', (e) => {
-                filters.newWeek = e.target.checked;
-                if (e.target.checked) {
-                    filters.newAll = false;
-                    document.getElementById('filter-new-all').checked = false;
-                }
-                applyFilters();
-            });
-            
-            document.addEventListener('click', (e) => {
-                if (e.target.classList.contains('favorite-btn')) {
-                    const paperId = e.target.dataset.id;
-                    toggleFavorite(paperId);
-                    e.target.textContent = favorites.includes(paperId) ? '★' : '☆';
-                    const card = e.target.closest('.paper-card');
-                    if (card) card.classList.toggle('favorite', favorites.includes(paperId));
-                }
-                
-                if (e.target.closest('.paper-card') && !e.target.classList.contains('favorite-btn')) {
-                    const card = e.target.closest('.paper-card');
-                    const paperId = card.dataset.id;
-                    const paper = graphData.nodes.find(n => n.id === paperId);
-                    if (paper && paper.url) window.open(paper.url, '_blank');
-                }
             });
         }
+        
+        // ========== FAVORITES & READ ==========
         
         function toggleFavorite(paperId) {
             const index = favorites.indexOf(paperId);
-            if (index === -1) {
-                favorites.push(paperId);
-            } else {
+            if (index > -1) {
                 favorites.splice(index, 1);
+            } else {
+                favorites.push(paperId);
             }
             localStorage.setItem('musttela_favorites', JSON.stringify(favorites));
+            renderGridView();
         }
         
-        init();
+        function toggleRead(paperId) {
+            const index = readPapers.indexOf(paperId);
+            if (index > -1) {
+                readPapers.splice(index, 1);
+            } else {
+                readPapers.push(paperId);
+            }
+            localStorage.setItem('musttela_read', JSON.stringify(readPapers));
+            renderGridView();
+        }
+        
+        // ========== INIT ==========
+        loadData();
     </script>
 </body>
 </html>
